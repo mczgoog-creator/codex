@@ -1,0 +1,1372 @@
+{
+  "source": "/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_pcb",
+  "project": "/workspace/drv8701_board/EasyEDA_Pro/DRV8701_DUAL_12V.eprj3",
+  "copperLayers": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu"
+  ],
+  "corrections": [
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:C_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:DRV8701_RGE24.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:R_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:SS12D10G4.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:LED_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:TPH1R403NL_SOPAdvance.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:R_1210_3225Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:XH2.54_1x04_Vertical.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:D_SOD123.",
+    "Corrected component and footprint-pad rotation; verified all placed pad centers against source.",
+    "Enabled 4 copper layers and wrote physical stack in real-export mil units.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:DRV8701_RGE24.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:TPH1R403NL_SOPAdvance.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:C_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:R_1210_3225Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:R_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:D_SOD123.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:SS12D10G4.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:LED_0603_1608Metric.",
+    "Preserved drill slot type/orientation and roundrect corner radii for footprint DRV8701_Custom:XH2.54_1x04_Vertical.",
+    "Embedded full symbol/footprint devices in both schematic and PCB views for 38 components."
+  ],
+  "padCoordinates": [
+    {
+      "reference": "C11",
+      "pad": "1",
+      "xMm": 36.95,
+      "yMm": 9.7,
+      "errorMm": 3.896604152162885e-8
+    },
+    {
+      "reference": "C11",
+      "pad": "2",
+      "xMm": 38.55,
+      "yMm": 9.7,
+      "errorMm": 4.054666947850436e-8
+    },
+    {
+      "reference": "C2",
+      "pad": "1",
+      "xMm": 12.3,
+      "yMm": 15.75,
+      "errorMm": 2.0383483333889118e-8
+    },
+    {
+      "reference": "C2",
+      "pad": "2",
+      "xMm": 12.3,
+      "yMm": 14.149999999999999,
+      "errorMm": 1.9123640248948582e-8
+    },
+    {
+      "reference": "CN1",
+      "pad": "1",
+      "xMm": 10.5,
+      "yMm": 3.6,
+      "errorMm": 1.1322000154229288e-8
+    },
+    {
+      "reference": "CN1",
+      "pad": "2",
+      "xMm": 5.5,
+      "yMm": 3.6,
+      "errorMm": 6.704899908163802e-9
+    },
+    {
+      "reference": "U2",
+      "pad": "1",
+      "xMm": 39,
+      "yMm": 17.1,
+      "errorMm": 4.343584174002333e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "2",
+      "xMm": 38.5,
+      "yMm": 17.1,
+      "errorMm": 4.2969248898232726e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "3",
+      "xMm": 38,
+      "yMm": 17.1,
+      "errorMm": 4.250366005033235e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "4",
+      "xMm": 37.5,
+      "yMm": 17.1,
+      "errorMm": 4.2039101830847464e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "5",
+      "xMm": 37,
+      "yMm": 17.1,
+      "errorMm": 4.1575608787950515e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "6",
+      "xMm": 36.5,
+      "yMm": 17.1,
+      "errorMm": 4.111321694671014e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "7",
+      "xMm": 35.85,
+      "yMm": 17.75,
+      "errorMm": 4.080363612660708e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "8",
+      "xMm": 35.85,
+      "yMm": 18.25,
+      "errorMm": 4.1032473623188154e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "9",
+      "xMm": 35.85,
+      "yMm": 18.75,
+      "errorMm": 4.126634537243283e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "10",
+      "xMm": 35.85,
+      "yMm": 19.25,
+      "errorMm": 4.150516795467115e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "11",
+      "xMm": 35.85,
+      "yMm": 19.75,
+      "errorMm": 4.174885310852145e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "12",
+      "xMm": 35.85,
+      "yMm": 20.25,
+      "errorMm": 4.199731780819512e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "13",
+      "xMm": 36.5,
+      "yMm": 20.9,
+      "errorMm": 4.290139978358914e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "14",
+      "xMm": 37,
+      "yMm": 20.9,
+      "errorMm": 4.334471988342751e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "15",
+      "xMm": 37.5,
+      "yMm": 20.9,
+      "errorMm": 4.378949164386875e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "16",
+      "xMm": 38,
+      "yMm": 20.9,
+      "errorMm": 4.423567127735609e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "17",
+      "xMm": 38.5,
+      "yMm": 20.9,
+      "errorMm": 4.4683216609397794e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "18",
+      "xMm": 39,
+      "yMm": 20.9,
+      "errorMm": 4.5132093274613815e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "19",
+      "xMm": 39.65,
+      "yMm": 20.25,
+      "errorMm": 4.541217636443614e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "20",
+      "xMm": 39.65,
+      "yMm": 19.75,
+      "errorMm": 4.518249434182459e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "21",
+      "xMm": 39.65,
+      "yMm": 19.25,
+      "errorMm": 4.4957424592803036e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "22",
+      "xMm": 39.65,
+      "yMm": 18.75,
+      "errorMm": 4.473703521098619e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "23",
+      "xMm": 39.65,
+      "yMm": 18.25,
+      "errorMm": 4.452139879552013e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "24",
+      "xMm": 39.65,
+      "yMm": 17.75,
+      "errorMm": 4.431058316276896e-8
+    },
+    {
+      "reference": "U2",
+      "pad": "25",
+      "xMm": 37.75,
+      "yMm": 19,
+      "errorMm": 4.3107069307165476e-8
+    },
+    {
+      "reference": "R5",
+      "pad": "1",
+      "xMm": 26.8,
+      "yMm": 24,
+      "errorMm": 3.6695054627417424e-8
+    },
+    {
+      "reference": "R5",
+      "pad": "2",
+      "xMm": 28.400000000000002,
+      "yMm": 24,
+      "errorMm": 3.792644622720637e-8
+    },
+    {
+      "reference": "C12",
+      "pad": "1",
+      "xMm": 34.699999999999996,
+      "yMm": 15.7,
+      "errorMm": 3.884820545504383e-8
+    },
+    {
+      "reference": "C12",
+      "pad": "2",
+      "xMm": 33.1,
+      "yMm": 15.7,
+      "errorMm": 3.7367382153306626e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "1",
+      "xMm": 11.5,
+      "yMm": 17.1,
+      "errorMm": 2.1019430211234353e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "2",
+      "xMm": 11,
+      "yMm": 17.1,
+      "errorMm": 2.0739139939816717e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "3",
+      "xMm": 10.5,
+      "yMm": 17.1,
+      "errorMm": 2.046772201367753e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "4",
+      "xMm": 10,
+      "yMm": 17.1,
+      "errorMm": 2.02055329474196e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "5",
+      "xMm": 9.5,
+      "yMm": 17.1,
+      "errorMm": 1.995293569372037e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "6",
+      "xMm": 9,
+      "yMm": 17.1,
+      "errorMm": 1.9710300820081407e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "7",
+      "xMm": 8.35,
+      "yMm": 17.75,
+      "errorMm": 2.0008258089815373e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "8",
+      "xMm": 8.35,
+      "yMm": 18.25,
+      "errorMm": 2.047089549271695e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "9",
+      "xMm": 8.35,
+      "yMm": 18.75,
+      "errorMm": 2.0935733353121796e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "10",
+      "xMm": 8.35,
+      "yMm": 19.25,
+      "errorMm": 2.1402631557394267e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "11",
+      "xMm": 8.35,
+      "yMm": 19.75,
+      "errorMm": 2.1871451861113595e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "12",
+      "xMm": 8.35,
+      "yMm": 20.25,
+      "errorMm": 2.234207630724258e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "13",
+      "xMm": 9,
+      "yMm": 20.9,
+      "errorMm": 2.3210546182763352e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "14",
+      "xMm": 9.5,
+      "yMm": 20.9,
+      "errorMm": 2.3416941270836996e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "15",
+      "xMm": 10,
+      "yMm": 20.9,
+      "errorMm": 2.3632542338338202e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "16",
+      "xMm": 10.5,
+      "yMm": 20.9,
+      "errorMm": 2.385709831713128e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "17",
+      "xMm": 11,
+      "yMm": 20.9,
+      "errorMm": 2.4090359505980595e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "18",
+      "xMm": 11.5,
+      "yMm": 20.9,
+      "errorMm": 2.4332076403156386e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "19",
+      "xMm": 12.15,
+      "yMm": 20.25,
+      "errorMm": 2.408766356994988e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "20",
+      "xMm": 12.15,
+      "yMm": 19.75,
+      "errorMm": 2.3651798431693297e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "21",
+      "xMm": 12.15,
+      "yMm": 19.25,
+      "errorMm": 2.3218953467415563e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "22",
+      "xMm": 12.15,
+      "yMm": 18.75,
+      "errorMm": 2.278929778587872e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "23",
+      "xMm": 12.15,
+      "yMm": 18.25,
+      "errorMm": 2.2363021370427102e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "24",
+      "xMm": 12.15,
+      "yMm": 17.75,
+      "errorMm": 2.194031800884168e-8
+    },
+    {
+      "reference": "U1",
+      "pad": "25",
+      "xMm": 10.25,
+      "yMm": 19,
+      "errorMm": 2.2020250386921045e-8
+    },
+    {
+      "reference": "U5",
+      "pad": "1",
+      "xMm": 35.7,
+      "yMm": 31.5,
+      "errorMm": 4.8562497037904226e-8
+    },
+    {
+      "reference": "U5",
+      "pad": "2",
+      "xMm": 40.5,
+      "yMm": 31.5,
+      "errorMm": 5.233404621539724e-8
+    },
+    {
+      "reference": "U5",
+      "pad": "3",
+      "xMm": 45.3,
+      "yMm": 31.5,
+      "errorMm": 5.627904453019967e-8
+    },
+    {
+      "reference": "C1",
+      "pad": "1",
+      "xMm": 9.049999999999999,
+      "yMm": 14.3,
+      "errorMm": 1.7261596202423096e-8
+    },
+    {
+      "reference": "C1",
+      "pad": "2",
+      "xMm": 10.65,
+      "yMm": 14.3,
+      "errorMm": 1.8186702214226488e-8
+    },
+    {
+      "reference": "C3",
+      "pad": "1",
+      "xMm": 15.3,
+      "yMm": 16.2,
+      "errorMm": 2.2728612110062803e-8
+    },
+    {
+      "reference": "C3",
+      "pad": "2",
+      "xMm": 16.900000000000002,
+      "yMm": 16.2,
+      "errorMm": 2.3878676733906967e-8
+    },
+    {
+      "reference": "C5",
+      "pad": "1",
+      "xMm": 7.2,
+      "yMm": 15.7,
+      "errorMm": 1.7617675457571753e-8
+    },
+    {
+      "reference": "C5",
+      "pad": "2",
+      "xMm": 5.6000000000000005,
+      "yMm": 15.7,
+      "errorMm": 1.7002209147771832e-8
+    },
+    {
+      "reference": "C4",
+      "pad": "1",
+      "xMm": 9.45,
+      "yMm": 9.7,
+      "errorMm": 1.3813094378762084e-8
+    },
+    {
+      "reference": "C4",
+      "pad": "2",
+      "xMm": 11.05,
+      "yMm": 9.7,
+      "errorMm": 1.4997555989449835e-8
+    },
+    {
+      "reference": "R7",
+      "pad": "1",
+      "xMm": 22.2,
+      "yMm": 24,
+      "errorMm": 3.3346978892719165e-8
+    },
+    {
+      "reference": "R7",
+      "pad": "2",
+      "xMm": 23.8,
+      "yMm": 24,
+      "errorMm": 3.447599757814365e-8
+    },
+    {
+      "reference": "C9",
+      "pad": "1",
+      "xMm": 39.8,
+      "yMm": 15.75,
+      "errorMm": 4.365912795049309e-8
+    },
+    {
+      "reference": "C9",
+      "pad": "2",
+      "xMm": 39.8,
+      "yMm": 14.149999999999999,
+      "errorMm": 4.3085341787501206e-8
+    },
+    {
+      "reference": "LED1",
+      "pad": "1",
+      "xMm": 26.8,
+      "yMm": 26.4,
+      "errorMm": 3.837152656778494e-8
+    },
+    {
+      "reference": "LED1",
+      "pad": "2",
+      "xMm": 28.400000000000002,
+      "yMm": 26.4,
+      "errorMm": 3.9550756509304006e-8
+    },
+    {
+      "reference": "C10",
+      "pad": "1",
+      "xMm": 42.800000000000004,
+      "yMm": 16.2,
+      "errorMm": 4.667857089477316e-8
+    },
+    {
+      "reference": "C10",
+      "pad": "2",
+      "xMm": 44.4,
+      "yMm": 16.2,
+      "errorMm": 4.8208352177736216e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "1",
+      "xMm": 41.595,
+      "yMm": 13.77,
+      "errorMm": 4.469132894846158e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "2",
+      "xMm": 42.865,
+      "yMm": 13.77,
+      "errorMm": 4.5922909102355416e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "3",
+      "xMm": 44.135,
+      "yMm": 13.77,
+      "errorMm": 4.715788949682476e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "4",
+      "xMm": 45.405,
+      "yMm": 13.77,
+      "errorMm": 4.839604211461397e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "5",
+      "xMm": 43.5,
+      "yMm": 10.55,
+      "errorMm": 4.565628594917091e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "5",
+      "xMm": 45.405,
+      "yMm": 8.23,
+      "errorMm": 4.7067748657595254e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "6",
+      "xMm": 44.135,
+      "yMm": 8.23,
+      "errorMm": 4.57936962160711e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "7",
+      "xMm": 42.865,
+      "yMm": 8.23,
+      "errorMm": 4.452089006026574e-8
+    },
+    {
+      "reference": "Q7",
+      "pad": "8",
+      "xMm": 41.595,
+      "yMm": 8.23,
+      "errorMm": 4.3249404094330256e-8
+    },
+    {
+      "reference": "C15",
+      "pad": "1",
+      "xMm": 21.5,
+      "yMm": 12.6,
+      "errorMm": 2.5418470055544256e-8
+    },
+    {
+      "reference": "C15",
+      "pad": "2",
+      "xMm": 26.5,
+      "yMm": 12.6,
+      "errorMm": 2.992983270848795e-8
+    },
+    {
+      "reference": "R8",
+      "pad": "1",
+      "xMm": 5.15,
+      "yMm": 31.5,
+      "errorMm": 3.255657657595324e-8
+    },
+    {
+      "reference": "R8",
+      "pad": "2",
+      "xMm": 8.25,
+      "yMm": 31.5,
+      "errorMm": 3.321368544072625e-8
+    },
+    {
+      "reference": "CN3",
+      "pad": "1",
+      "xMm": 12.19,
+      "yMm": 31.175,
+      "errorMm": 3.414298965181053e-8
+    },
+    {
+      "reference": "CN3",
+      "pad": "2",
+      "xMm": 14.73,
+      "yMm": 31.175,
+      "errorMm": 3.516934713345762e-8
+    },
+    {
+      "reference": "CN3",
+      "pad": "3",
+      "xMm": 17.27,
+      "yMm": 31.175,
+      "errorMm": 3.63517075901517e-8
+    },
+    {
+      "reference": "CN3",
+      "pad": "4",
+      "xMm": 19.81,
+      "yMm": 31.175,
+      "errorMm": 3.7675387022778184e-8
+    },
+    {
+      "reference": "P2",
+      "pad": "1",
+      "xMm": 26.5,
+      "yMm": 3.6,
+      "errorMm": 2.7278280012211093e-8
+    },
+    {
+      "reference": "P2",
+      "pad": "2",
+      "xMm": 21.5,
+      "yMm": 3.6,
+      "errorMm": 2.2235293891269356e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "1",
+      "xMm": 14.095,
+      "yMm": 25.77,
+      "errorMm": 2.9960265060284354e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "2",
+      "xMm": 15.365,
+      "yMm": 25.77,
+      "errorMm": 3.060299330668843e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "3",
+      "xMm": 16.635,
+      "yMm": 25.77,
+      "errorMm": 3.128617961805872e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "4",
+      "xMm": 17.905,
+      "yMm": 25.77,
+      "errorMm": 3.200723441128131e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "5",
+      "xMm": 16,
+      "yMm": 22.55,
+      "errorMm": 2.820263102994128e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "5",
+      "xMm": 17.905,
+      "yMm": 20.23,
+      "errorMm": 2.7555900454972505e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "6",
+      "xMm": 16.635,
+      "yMm": 20.23,
+      "errorMm": 2.671497015381219e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "7",
+      "xMm": 15.365,
+      "yMm": 20.23,
+      "errorMm": 2.5911537865492663e-8
+    },
+    {
+      "reference": "Q4",
+      "pad": "8",
+      "xMm": 14.095,
+      "yMm": 20.23,
+      "errorMm": 2.5149196363067725e-8
+    },
+    {
+      "reference": "C16",
+      "pad": "1",
+      "xMm": 1.9000000000000001,
+      "yMm": 31.5,
+      "errorMm": 3.218839101454313e-8
+    },
+    {
+      "reference": "C16",
+      "pad": "2",
+      "xMm": 3.5,
+      "yMm": 31.5,
+      "errorMm": 3.2327721340653044e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "1",
+      "xMm": 30.095,
+      "yMm": 13.77,
+      "errorMm": 3.3757556969146624e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "2",
+      "xMm": 31.365,
+      "yMm": 13.77,
+      "errorMm": 3.493966986116065e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "3",
+      "xMm": 32.635,
+      "yMm": 13.77,
+      "errorMm": 3.612954581741342e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "4",
+      "xMm": 33.905,
+      "yMm": 13.77,
+      "errorMm": 3.732645486925841e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "5",
+      "xMm": 32,
+      "yMm": 10.55,
+      "errorMm": 3.4368134753737605e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "5",
+      "xMm": 33.905,
+      "yMm": 8.23,
+      "errorMm": 3.5587361583037526e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "6",
+      "xMm": 32.635,
+      "yMm": 8.23,
+      "errorMm": 3.43298725938161e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "7",
+      "xMm": 31.365,
+      "yMm": 8.23,
+      "errorMm": 3.307531710115517e-8
+    },
+    {
+      "reference": "Q5",
+      "pad": "8",
+      "xMm": 30.095,
+      "yMm": 8.23,
+      "errorMm": 3.1824027461342007e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "1",
+      "xMm": 30.095,
+      "yMm": 25.77,
+      "errorMm": 4.041313638396347e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "2",
+      "xMm": 31.365,
+      "yMm": 25.77,
+      "errorMm": 4.140566953776439e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "3",
+      "xMm": 32.635,
+      "yMm": 25.77,
+      "errorMm": 4.2414537847726556e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "4",
+      "xMm": 33.905,
+      "yMm": 25.77,
+      "errorMm": 4.343861384724929e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "5",
+      "xMm": 32,
+      "yMm": 22.55,
+      "errorMm": 3.993013342444224e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "5",
+      "xMm": 33.905,
+      "yMm": 20.23,
+      "errorMm": 4.0271302042472886e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "6",
+      "xMm": 32.635,
+      "yMm": 20.23,
+      "errorMm": 3.9164494329199134e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "7",
+      "xMm": 31.365,
+      "yMm": 20.23,
+      "errorMm": 3.806959502143664e-8
+    },
+    {
+      "reference": "Q6",
+      "pad": "8",
+      "xMm": 30.095,
+      "yMm": 20.23,
+      "errorMm": 3.6987649122571654e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "1",
+      "xMm": 41.595,
+      "yMm": 25.77,
+      "errorMm": 4.9909556430039056e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "2",
+      "xMm": 42.865,
+      "yMm": 25.77,
+      "errorMm": 5.1015316526381087e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "3",
+      "xMm": 44.135,
+      "yMm": 25.77,
+      "errorMm": 5.212979456758281e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "4",
+      "xMm": 45.405,
+      "yMm": 25.77,
+      "errorMm": 5.325247254563062e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "5",
+      "xMm": 43.5,
+      "yMm": 22.55,
+      "errorMm": 4.997742806022689e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "5",
+      "xMm": 45.405,
+      "yMm": 20.23,
+      "errorMm": 5.0701976563530396e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "6",
+      "xMm": 44.135,
+      "yMm": 20.23,
+      "errorMm": 4.9521511254040194e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "7",
+      "xMm": 42.865,
+      "yMm": 20.23,
+      "errorMm": 4.834694525523297e-8
+    },
+    {
+      "reference": "Q8",
+      "pad": "8",
+      "xMm": 41.595,
+      "yMm": 20.23,
+      "errorMm": 4.717868605916125e-8
+    },
+    {
+      "reference": "C13",
+      "pad": "1",
+      "xMm": 34.4,
+      "yMm": 18.2,
+      "errorMm": 3.969622040574144e-8
+    },
+    {
+      "reference": "C13",
+      "pad": "2",
+      "xMm": 32.800000000000004,
+      "yMm": 18.2,
+      "errorMm": 3.826129091562089e-8
+    },
+    {
+      "reference": "R1",
+      "pad": "1",
+      "xMm": 23.2,
+      "yMm": 19.7,
+      "errorMm": 3.104438054266873e-8
+    },
+    {
+      "reference": "R1",
+      "pad": "2",
+      "xMm": 24.8,
+      "yMm": 19.7,
+      "errorMm": 3.2305671701065324e-8
+    },
+    {
+      "reference": "R9",
+      "pad": "1",
+      "xMm": 29.45,
+      "yMm": 31.5,
+      "errorMm": 4.398497974326693e-8
+    },
+    {
+      "reference": "R9",
+      "pad": "2",
+      "xMm": 32.55,
+      "yMm": 31.5,
+      "errorMm": 4.6202195908405704e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "1",
+      "xMm": 14.095,
+      "yMm": 13.77,
+      "errorMm": 2.0098968695404335e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "2",
+      "xMm": 15.365,
+      "yMm": 13.77,
+      "errorMm": 2.1045053087734526e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "3",
+      "xMm": 16.635,
+      "yMm": 13.77,
+      "errorMm": 2.2026713218948048e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "4",
+      "xMm": 17.905,
+      "yMm": 13.77,
+      "errorMm": 2.3039403525157904e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "5",
+      "xMm": 16,
+      "yMm": 10.55,
+      "errorMm": 1.9548440555919392e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "5",
+      "xMm": 17.905,
+      "yMm": 8.23,
+      "errorMm": 2.010000463010216e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "6",
+      "xMm": 16.635,
+      "yMm": 8.23,
+      "errorMm": 1.8930720180829116e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "7",
+      "xMm": 15.365,
+      "yMm": 8.23,
+      "errorMm": 1.7778929405356065e-8
+    },
+    {
+      "reference": "Q3",
+      "pad": "8",
+      "xMm": 14.095,
+      "yMm": 8.23,
+      "errorMm": 1.6648261589544826e-8
+    },
+    {
+      "reference": "C17",
+      "pad": "1",
+      "xMm": 26.3,
+      "yMm": 31.5,
+      "errorMm": 4.185655264929876e-8
+    },
+    {
+      "reference": "C17",
+      "pad": "2",
+      "xMm": 27.900000000000002,
+      "yMm": 31.5,
+      "errorMm": 4.292079284116147e-8
+    },
+    {
+      "reference": "D1",
+      "pad": "1",
+      "xMm": 25.05,
+      "yMm": 21.8,
+      "errorMm": 3.3871718873287326e-8
+    },
+    {
+      "reference": "D1",
+      "pad": "2",
+      "xMm": 28.349999999999998,
+      "yMm": 21.8,
+      "errorMm": 3.647783808356174e-8
+    },
+    {
+      "reference": "CN2",
+      "pad": "1",
+      "xMm": 42.5,
+      "yMm": 3.6,
+      "errorMm": 4.3505248298638755e-8
+    },
+    {
+      "reference": "CN2",
+      "pad": "2",
+      "xMm": 37.5,
+      "yMm": 3.6,
+      "errorMm": 3.842585231074974e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "1",
+      "xMm": 2.5949999999999998,
+      "yMm": 13.77,
+      "errorMm": 1.4292631837057054e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "2",
+      "xMm": 3.865,
+      "yMm": 13.77,
+      "errorMm": 1.4588179419319014e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "3",
+      "xMm": 5.135,
+      "yMm": 13.77,
+      "errorMm": 1.4990221476801247e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "4",
+      "xMm": 6.405,
+      "yMm": 13.77,
+      "errorMm": 1.5490469544402335e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "5",
+      "xMm": 4.5,
+      "yMm": 10.55,
+      "errorMm": 1.1699027199171314e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "5",
+      "xMm": 6.405,
+      "yMm": 8.23,
+      "errorMm": 1.0637232630770392e-8
+    },
+    {
+      "reference": "Q1",
+      "pad": "6",
+      "xMm": 5.135,
+      "yMm": 8.23,
+      "errorMm": 9.89458494625335e-9
+    },
+    {
+      "reference": "Q1",
+      "pad": "7",
+      "xMm": 3.865,
+      "yMm": 8.23,
+      "errorMm": 9.274214258109036e-9
+    },
+    {
+      "reference": "Q1",
+      "pad": "8",
+      "xMm": 2.5949999999999998,
+      "yMm": 8.23,
+      "errorMm": 8.802010915962725e-9
+    },
+    {
+      "reference": "Q2",
+      "pad": "1",
+      "xMm": 2.5949999999999998,
+      "yMm": 25.77,
+      "errorMm": 2.6418331981662076e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "2",
+      "xMm": 3.865,
+      "yMm": 25.77,
+      "errorMm": 2.6579388981575466e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "3",
+      "xMm": 5.135,
+      "yMm": 25.77,
+      "errorMm": 2.680215811809201e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "4",
+      "xMm": 6.405,
+      "yMm": 25.77,
+      "errorMm": 2.7085117436882357e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "5",
+      "xMm": 4.5,
+      "yMm": 22.55,
+      "errorMm": 2.3454511426368338e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "5",
+      "xMm": 6.405,
+      "yMm": 20.23,
+      "errorMm": 2.1644125803444958e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "6",
+      "xMm": 5.135,
+      "yMm": 20.23,
+      "errorMm": 2.1288970736342533e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "7",
+      "xMm": 3.865,
+      "yMm": 20.23,
+      "errorMm": 2.100782030243829e-8
+    },
+    {
+      "reference": "Q2",
+      "pad": "8",
+      "xMm": 2.5949999999999998,
+      "yMm": 20.23,
+      "errorMm": 2.080367419277067e-8
+    },
+    {
+      "reference": "C8",
+      "pad": "1",
+      "xMm": 36.550000000000004,
+      "yMm": 14.3,
+      "errorMm": 4.0032794970884205e-8
+    },
+    {
+      "reference": "C8",
+      "pad": "2",
+      "xMm": 38.15,
+      "yMm": 14.3,
+      "errorMm": 4.155686436744071e-8
+    },
+    {
+      "reference": "LED2",
+      "pad": "1",
+      "xMm": 22.2,
+      "yMm": 26.4,
+      "errorMm": 3.51833485942503e-8
+    },
+    {
+      "reference": "LED2",
+      "pad": "2",
+      "xMm": 23.8,
+      "yMm": 26.4,
+      "errorMm": 3.6255226189354317e-8
+    },
+    {
+      "reference": "C6",
+      "pad": "1",
+      "xMm": 6.8999999999999995,
+      "yMm": 18.2,
+      "errorMm": 1.9853352762575655e-8
+    },
+    {
+      "reference": "C6",
+      "pad": "2",
+      "xMm": 5.3,
+      "yMm": 18.2,
+      "errorMm": 1.9335123563447756e-8
+    }
+  ],
+  "warnings": [
+    "The current upstream layer_phys field description says 0.1 mm; actual exported template encodes mil. A desktop-client open remains required to confirm stack interpretation."
+  ],
+  "physicalStack": {
+    "nominalBoardThicknessMm": 1.6,
+    "copperThicknessMm": 0.035,
+    "sourceStackupPresent": true,
+    "layers": [
+      {
+        "name": "F.SilkS",
+        "thicknessMm": 0
+      },
+      {
+        "name": "F.Paste",
+        "thicknessMm": 0
+      },
+      {
+        "name": "F.Mask",
+        "thicknessMm": 0.01
+      },
+      {
+        "name": "F.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric1",
+        "thicknessMm": 0.2,
+        "material": "FR4"
+      },
+      {
+        "name": "In1.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric2",
+        "thicknessMm": 1.04,
+        "material": "FR4"
+      },
+      {
+        "name": "In2.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric3",
+        "thicknessMm": 0.2,
+        "material": "FR4"
+      },
+      {
+        "name": "B.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "B.Mask",
+        "thicknessMm": 0.01
+      },
+      {
+        "name": "B.Paste",
+        "thicknessMm": 0
+      },
+      {
+        "name": "B.SilkS",
+        "thicknessMm": 0
+      }
+    ],
+    "encodedTotalThicknessMm": 1.5999999999999999
+  }
+}

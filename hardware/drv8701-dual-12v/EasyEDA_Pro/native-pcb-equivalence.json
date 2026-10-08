@@ -1,0 +1,461 @@
+{
+  "passed": true,
+  "source": "/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_pcb",
+  "nativePcb": "/workspace/drv8701_board/EasyEDA_Pro/pcb/PCB1.epcb2",
+  "components": 38,
+  "uniquePhysicalPins": 173,
+  "padInstances": 181,
+  "namedNets": 34,
+  "tracks": 258,
+  "vias": 76,
+  "outlineEdges": 4,
+  "zones": 3,
+  "zoneBorders": 3,
+  "filledCopperPolygons": 3,
+  "copperLayerReport": [
+    {
+      "name": "F.Cu",
+      "nativeLayerId": 1,
+      "enabled": true,
+      "shown": true
+    },
+    {
+      "name": "In1.Cu",
+      "nativeLayerId": 15,
+      "enabled": true,
+      "shown": true
+    },
+    {
+      "name": "In2.Cu",
+      "nativeLayerId": 16,
+      "enabled": true,
+      "shown": true
+    },
+    {
+      "name": "B.Cu",
+      "nativeLayerId": 2,
+      "enabled": true,
+      "shown": true
+    }
+  ],
+  "physicalLayerReport": [
+    {
+      "name": "F.SilkS",
+      "sourceThicknessMm": 0,
+      "nativeThicknessMm": 0
+    },
+    {
+      "name": "F.Paste",
+      "sourceThicknessMm": 0,
+      "nativeThicknessMm": 0
+    },
+    {
+      "name": "F.Mask",
+      "sourceThicknessMm": 0.01,
+      "nativeThicknessMm": 0.01
+    },
+    {
+      "name": "F.Cu",
+      "sourceThicknessMm": 0.035,
+      "nativeThicknessMm": 0.035
+    },
+    {
+      "name": "dielectric 1",
+      "sourceThicknessMm": 0.2,
+      "nativeThicknessMm": 0.2
+    },
+    {
+      "name": "In1.Cu",
+      "sourceThicknessMm": 0.035,
+      "nativeThicknessMm": 0.035
+    },
+    {
+      "name": "dielectric 2",
+      "sourceThicknessMm": 1.04,
+      "nativeThicknessMm": 1.04
+    },
+    {
+      "name": "In2.Cu",
+      "sourceThicknessMm": 0.035,
+      "nativeThicknessMm": 0.035
+    },
+    {
+      "name": "dielectric 3",
+      "sourceThicknessMm": 0.2,
+      "nativeThicknessMm": 0.2
+    },
+    {
+      "name": "B.Cu",
+      "sourceThicknessMm": 0.035,
+      "nativeThicknessMm": 0.035
+    },
+    {
+      "name": "B.Mask",
+      "sourceThicknessMm": 0.01,
+      "nativeThicknessMm": 0.01
+    },
+    {
+      "name": "B.Paste",
+      "sourceThicknessMm": 0,
+      "nativeThicknessMm": 0
+    },
+    {
+      "name": "B.SilkS",
+      "sourceThicknessMm": 0,
+      "nativeThicknessMm": 0
+    }
+  ],
+  "totalPhysicalThicknessMm": 1.5999999999999999,
+  "widthByNet": {
+    "VM": {
+      "segments": 20,
+      "widthsMm": [
+        0.25,
+        0.3,
+        1.8
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "L_VCP": {
+      "segments": 2,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "L_CPH": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "L_CPL": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "GND": {
+      "segments": 41,
+      "widthsMm": [
+        0.2,
+        0.5,
+        0.7
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "L_AVDD": {
+      "segments": 9,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "L_DVDD": {
+      "segments": 1,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "NSLEEP": {
+      "segments": 8,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "L_EN_IN": {
+      "segments": 5,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "L_PH_IN": {
+      "segments": 4,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "L_GH1": {
+      "segments": 7,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "L_B": {
+      "segments": 20,
+      "widthsMm": [
+        0.2,
+        0.25,
+        0.5,
+        0.7
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "L_GL1": {
+      "segments": 4,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "L_GL2": {
+      "segments": 5,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "L_A": {
+      "segments": 19,
+      "widthsMm": [
+        0.2,
+        0.25,
+        0.5,
+        0.7
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "L_GH2": {
+      "segments": 5,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "R_VCP": {
+      "segments": 2,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_CPH": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_CPL": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_AVDD": {
+      "segments": 9,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "R_DVDD": {
+      "segments": 1,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_EN_IN": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_PH_IN": {
+      "segments": 5,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "R_GH1": {
+      "segments": 7,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "R_B": {
+      "segments": 20,
+      "widthsMm": [
+        0.2,
+        0.25,
+        0.5,
+        0.7
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "R_GL1": {
+      "segments": 4,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "R_GL2": {
+      "segments": 5,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "R_A": {
+      "segments": 22,
+      "widthsMm": [
+        0.2,
+        0.25,
+        0.5,
+        0.7
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "R_GH2": {
+      "segments": 5,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        16
+      ]
+    },
+    "L_SNUBBER": {
+      "segments": 1,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "R_SNUBBER": {
+      "segments": 1,
+      "widthsMm": [
+        0.25
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "3V3": {
+      "segments": 9,
+      "widthsMm": [
+        0.2,
+        0.25
+      ],
+      "nativeLayerIds": [
+        1,
+        2,
+        16
+      ]
+    },
+    "ENABLE_LED_A": {
+      "segments": 1,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "POWER_LED_A": {
+      "segments": 1,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    }
+  },
+  "errors": []
+}

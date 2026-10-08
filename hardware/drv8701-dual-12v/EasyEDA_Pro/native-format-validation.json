@@ -1,0 +1,493 @@
+{
+  "records": 3129,
+  "outerValid": 3129,
+  "schemaValid": 1526,
+  "trustedExportRecords": 165,
+  "documentedDifferences": 4058,
+  "unmapped": 0,
+  "failures": [],
+  "documentedDifferenceExamples": [
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "unit",
+      "message": "must have required property 'unit'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridXSize",
+      "message": "must have required property 'gridXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridYSize",
+      "message": "must have required property 'gridYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapXSize",
+      "message": "must have required property 'snapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapYSize",
+      "message": "must have required property 'snapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapXSize",
+      "message": "must have required property 'altSnapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapYSize",
+      "message": "must have required property 'altSnapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridType",
+      "message": "must have required property 'gridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridType",
+      "message": "must have required property 'multiGridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridRatio",
+      "message": "must have required property 'multiGridRatio'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "highlightValue",
+      "message": "must have required property 'highlightValue'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "layerBrightness",
+      "message": "must have required property 'layerBrightness'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_PAD",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_PAD",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "unit",
+      "message": "must have required property 'unit'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridXSize",
+      "message": "must have required property 'gridXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridYSize",
+      "message": "must have required property 'gridYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapXSize",
+      "message": "must have required property 'snapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapYSize",
+      "message": "must have required property 'snapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapXSize",
+      "message": "must have required property 'altSnapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapYSize",
+      "message": "must have required property 'altSnapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridType",
+      "message": "must have required property 'gridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridType",
+      "message": "must have required property 'multiGridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridRatio",
+      "message": "must have required property 'multiGridRatio'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "highlightValue",
+      "message": "must have required property 'highlightValue'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "layerBrightness",
+      "message": "must have required property 'layerBrightness'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_PAD",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_PAD",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_ATTR",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "unit",
+      "message": "must have required property 'unit'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridXSize",
+      "message": "must have required property 'gridXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridYSize",
+      "message": "must have required property 'gridYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapXSize",
+      "message": "must have required property 'snapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "snapYSize",
+      "message": "must have required property 'snapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapXSize",
+      "message": "must have required property 'altSnapXSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "altSnapYSize",
+      "message": "must have required property 'altSnapYSize'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "gridType",
+      "message": "must have required property 'gridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridType",
+      "message": "must have required property 'multiGridType'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "multiGridRatio",
+      "message": "must have required property 'multiGridRatio'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "highlightValue",
+      "message": "must have required property 'highlightValue'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_CANVAS",
+      "field": "layerBrightness",
+      "message": "must have required property 'layerBrightness'",
+      "reason": "Real PCB template uses the two-field CANVAS form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_POLY",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    },
+    {
+      "type": "FOOTPRINT_PAD",
+      "field": "groupId",
+      "message": "must be string",
+      "reason": "Numeric 0 is the documented real-export ungrouped form."
+    }
+  ],
+  "unmappedTypes": [],
+  "compatibility": "Static format/reference validation only. No EasyEDA desktop client was available; actual open/DRC remains unverified."
+}

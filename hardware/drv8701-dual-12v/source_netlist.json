@@ -1,0 +1,737 @@
+{
+  "source": {
+    "file": "8701驱动板（无电流检测2.0）.pdf",
+    "drawing_title": "8701驱动板驱动板",
+    "revision": "V1.0",
+    "pages": 1
+  },
+  "scope": "Faithful logical transcription of original source only; no design, value or routing changes.",
+  "components": [
+    {
+      "ref": "U1",
+      "value": "DRV8701ERGET",
+      "kind": "motor_driver",
+      "pins": {
+        "1": "VM",
+        "2": "L_VCP",
+        "3": "L_CPH",
+        "4": "L_CPL",
+        "5": "GND",
+        "6": "L_AVDD",
+        "7": "L_AVDD",
+        "8": "L_DVDD",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": "L_AVDD",
+        "13": "NSLEEP",
+        "14": "L_EN_IN",
+        "15": "L_PH_IN",
+        "16": "GND",
+        "17": "L_GH1",
+        "18": "L_B",
+        "19": "L_GL1",
+        "20": "GND",
+        "21": "GND",
+        "22": "L_GL2",
+        "23": "L_A",
+        "24": "L_GH2",
+        "25": "GND"
+      },
+      "pin_names": {
+        "1": "VM",
+        "2": "VCP",
+        "3": "CPH",
+        "4": "CPL",
+        "5": "GND",
+        "6": "VREF",
+        "7": "AVDD",
+        "8": "DVDD",
+        "9": "nFAULT",
+        "10": "SNSOUT",
+        "11": "SO",
+        "12": "IDRIVE",
+        "13": "nSLEEP",
+        "14": "EN",
+        "15": "PH",
+        "16": "GND",
+        "17": "GH1",
+        "18": "SH1",
+        "19": "GL1",
+        "20": "SN",
+        "21": "SP",
+        "22": "GL2",
+        "23": "SH2",
+        "24": "GH2",
+        "25": "EP"
+      },
+      "nc_pins": [
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "DRV8701ERGET",
+      "kind": "motor_driver",
+      "pins": {
+        "1": "VM",
+        "2": "R_VCP",
+        "3": "R_CPH",
+        "4": "R_CPL",
+        "5": "GND",
+        "6": "R_AVDD",
+        "7": "R_AVDD",
+        "8": "R_DVDD",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": "R_AVDD",
+        "13": "NSLEEP",
+        "14": "R_EN_IN",
+        "15": "R_PH_IN",
+        "16": "GND",
+        "17": "R_GH1",
+        "18": "R_B",
+        "19": "R_GL1",
+        "20": "GND",
+        "21": "GND",
+        "22": "R_GL2",
+        "23": "R_A",
+        "24": "R_GH2",
+        "25": "GND"
+      },
+      "pin_names": {
+        "1": "VM",
+        "2": "VCP",
+        "3": "CPH",
+        "4": "CPL",
+        "5": "GND",
+        "6": "VREF",
+        "7": "AVDD",
+        "8": "DVDD",
+        "9": "nFAULT",
+        "10": "SNSOUT",
+        "11": "SO",
+        "12": "IDRIVE",
+        "13": "nSLEEP",
+        "14": "EN",
+        "15": "PH",
+        "16": "GND",
+        "17": "GH1",
+        "18": "SH1",
+        "19": "GL1",
+        "20": "SN",
+        "21": "SP",
+        "22": "GL2",
+        "23": "SH2",
+        "24": "GH2",
+        "25": "EP"
+      },
+      "nc_pins": [
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "L_CPL",
+        "2": "L_CPH"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C2",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "L_VCP",
+        "2": "VM"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C3",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C4",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C5",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "L_AVDD",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C6",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "L_DVDD",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C8",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "R_CPL",
+        "2": "R_CPH"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C9",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "R_VCP",
+        "2": "VM"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C10",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C11",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C12",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "R_AVDD",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C13",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "R_DVDD",
+        "2": "GND"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C16",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "L_A",
+        "2": "L_SNUBBER"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C17",
+      "value": "100nF",
+      "kind": "capacitor",
+      "pins": {
+        "1": "R_A",
+        "2": "R_SNUBBER"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "C15",
+      "value": "470uF",
+      "kind": "electrolytic_capacitor",
+      "pins": {
+        "+": "VM",
+        "-": "GND"
+      }
+    },
+    {
+      "ref": "R1",
+      "value": "10kΩ",
+      "kind": "resistor",
+      "pins": {
+        "1": "VM",
+        "2": "3V3"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "R5",
+      "value": "10kΩ",
+      "kind": "resistor",
+      "pins": {
+        "1": "NSLEEP",
+        "2": "ENABLE_LED_A"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "R7",
+      "value": "10kΩ",
+      "kind": "resistor",
+      "pins": {
+        "1": "3V3",
+        "2": "POWER_LED_A"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "R8",
+      "value": "100Ω",
+      "kind": "resistor",
+      "pins": {
+        "1": "L_SNUBBER",
+        "2": "L_B"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "R9",
+      "value": "100Ω",
+      "kind": "resistor",
+      "pins": {
+        "1": "R_SNUBBER",
+        "2": "R_B"
+      },
+      "terminal_numbering_note": "Source drawing does not print terminal numbers; symmetric terminals numbered for netlist use."
+    },
+    {
+      "ref": "D1",
+      "value": "BZT52C3V3",
+      "kind": "zener_diode",
+      "pins": {
+        "K": "3V3",
+        "A": "GND"
+      },
+      "terminal_numbering_note": "Logical A/K; numeric package pin mapping must follow manufacturer/library."
+    },
+    {
+      "ref": "LED1",
+      "value": "KT-0603R",
+      "kind": "led",
+      "pins": {
+        "A": "ENABLE_LED_A",
+        "K": "GND"
+      }
+    },
+    {
+      "ref": "LED2",
+      "value": "KT-0603R",
+      "kind": "led",
+      "pins": {
+        "A": "POWER_LED_A",
+        "K": "GND"
+      }
+    },
+    {
+      "ref": "Q1",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "L_GH2",
+        "D": "VM",
+        "S": "L_A"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "L_A_high",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q2",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "L_GL2",
+        "D": "L_A",
+        "S": "GND"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "L_A_low",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q3",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "L_GH1",
+        "D": "VM",
+        "S": "L_B"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "L_B_high",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q4",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "L_GL1",
+        "D": "L_B",
+        "S": "GND"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "L_B_low",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q5",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "R_GH2",
+        "D": "VM",
+        "S": "R_A"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "R_A_high",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q6",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "R_GL2",
+        "D": "R_A",
+        "S": "GND"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "R_A_low",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q7",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "R_GH1",
+        "D": "VM",
+        "S": "R_B"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "R_B_high",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "Q8",
+      "value": "TPH1R403NL",
+      "kind": "n_channel_mosfet",
+      "pins": {
+        "G": "R_GL1",
+        "D": "R_B",
+        "S": "GND"
+      },
+      "original_ref": null,
+      "assignment_note": "New unique reference assigned to unnumbered symbol in PDF.",
+      "position": "R_B_low",
+      "terminal_numbering_note": "Logical D/G/S; physical numeric mapping to be independently verified against Toshiba datasheet."
+    },
+    {
+      "ref": "CN1",
+      "value": "XT30UPB-M",
+      "kind": "motor_connector",
+      "pins": {
+        "1": "L_A",
+        "2": "L_B"
+      }
+    },
+    {
+      "ref": "CN2",
+      "value": "XT30UPB-M",
+      "kind": "motor_connector",
+      "pins": {
+        "1": "R_A",
+        "2": "R_B"
+      }
+    },
+    {
+      "ref": "CN3",
+      "value": "XH2.54-4P",
+      "kind": "signal_connector",
+      "pins": {
+        "1": "R_EN_IN",
+        "2": "R_PH_IN",
+        "3": "L_PH_IN",
+        "4": "L_EN_IN"
+      }
+    },
+    {
+      "ref": "P2",
+      "value": "XT30UPB-M",
+      "kind": "power_connector",
+      "pins": {
+        "1": "VM",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U5",
+      "value": "SS12D10G4",
+      "kind": "spdt_slide_switch",
+      "pins": {
+        "1": null,
+        "2": "NSLEEP",
+        "3": "3V3"
+      },
+      "nc_pins": [
+        "1"
+      ],
+      "common_pin": "2",
+      "source_footprint": "SW-TH_SHOU-HAN_SS12D10G4"
+    }
+  ],
+  "nets": {
+    "VM": [
+      "U1.1",
+      "U2.1",
+      "C2.2",
+      "C3.1",
+      "C4.1",
+      "C9.2",
+      "C10.1",
+      "C11.1",
+      "C15.+",
+      "R1.1",
+      "Q1.D",
+      "Q3.D",
+      "Q5.D",
+      "Q7.D",
+      "P2.1"
+    ],
+    "L_VCP": [
+      "U1.2",
+      "C2.1"
+    ],
+    "L_CPH": [
+      "U1.3",
+      "C1.2"
+    ],
+    "L_CPL": [
+      "U1.4",
+      "C1.1"
+    ],
+    "GND": [
+      "U1.5",
+      "U1.16",
+      "U1.20",
+      "U1.21",
+      "U1.25",
+      "U2.5",
+      "U2.16",
+      "U2.20",
+      "U2.21",
+      "U2.25",
+      "C3.2",
+      "C4.2",
+      "C5.2",
+      "C6.2",
+      "C10.2",
+      "C11.2",
+      "C12.2",
+      "C13.2",
+      "C15.-",
+      "D1.A",
+      "LED1.K",
+      "LED2.K",
+      "Q2.S",
+      "Q4.S",
+      "Q6.S",
+      "Q8.S",
+      "P2.2"
+    ],
+    "L_AVDD": [
+      "U1.6",
+      "U1.7",
+      "U1.12",
+      "C5.1"
+    ],
+    "L_DVDD": [
+      "U1.8",
+      "C6.1"
+    ],
+    "NSLEEP": [
+      "U1.13",
+      "U2.13",
+      "R5.1",
+      "U5.2"
+    ],
+    "L_EN_IN": [
+      "U1.14",
+      "CN3.4"
+    ],
+    "L_PH_IN": [
+      "U1.15",
+      "CN3.3"
+    ],
+    "L_GH1": [
+      "U1.17",
+      "Q3.G"
+    ],
+    "L_B": [
+      "U1.18",
+      "R8.2",
+      "Q3.S",
+      "Q4.D",
+      "CN1.2"
+    ],
+    "L_GL1": [
+      "U1.19",
+      "Q4.G"
+    ],
+    "L_GL2": [
+      "U1.22",
+      "Q2.G"
+    ],
+    "L_A": [
+      "U1.23",
+      "C16.1",
+      "Q1.S",
+      "Q2.D",
+      "CN1.1"
+    ],
+    "L_GH2": [
+      "U1.24",
+      "Q1.G"
+    ],
+    "R_VCP": [
+      "U2.2",
+      "C9.1"
+    ],
+    "R_CPH": [
+      "U2.3",
+      "C8.2"
+    ],
+    "R_CPL": [
+      "U2.4",
+      "C8.1"
+    ],
+    "R_AVDD": [
+      "U2.6",
+      "U2.7",
+      "U2.12",
+      "C12.1"
+    ],
+    "R_DVDD": [
+      "U2.8",
+      "C13.1"
+    ],
+    "R_EN_IN": [
+      "U2.14",
+      "CN3.1"
+    ],
+    "R_PH_IN": [
+      "U2.15",
+      "CN3.2"
+    ],
+    "R_GH1": [
+      "U2.17",
+      "Q7.G"
+    ],
+    "R_B": [
+      "U2.18",
+      "R9.2",
+      "Q7.S",
+      "Q8.D",
+      "CN2.2"
+    ],
+    "R_GL1": [
+      "U2.19",
+      "Q8.G"
+    ],
+    "R_GL2": [
+      "U2.22",
+      "Q6.G"
+    ],
+    "R_A": [
+      "U2.23",
+      "C17.1",
+      "Q5.S",
+      "Q6.D",
+      "CN2.1"
+    ],
+    "R_GH2": [
+      "U2.24",
+      "Q5.G"
+    ],
+    "L_SNUBBER": [
+      "C16.2",
+      "R8.1"
+    ],
+    "R_SNUBBER": [
+      "C17.2",
+      "R9.1"
+    ],
+    "3V3": [
+      "R1.2",
+      "R7.1",
+      "D1.K",
+      "U5.3"
+    ],
+    "ENABLE_LED_A": [
+      "R5.2",
+      "LED1.A"
+    ],
+    "POWER_LED_A": [
+      "R7.2",
+      "LED2.A"
+    ]
+  },
+  "component_count": 38,
+  "notes": [
+    "CN3 contains no GND terminal. External controller and motor power supply need a common ground through another connection.",
+    "U5 pin 2 is connected to NSLEEP. Pin 1 is NC and pin 3 is connected to 3V3. This is verified from a 600x440 high-resolution crop.",
+    "U1/U2 SP and SN are directly grounded; no shunt resistor or current detection is present.",
+    "For each driver, VREF and IDRIVE connect directly to that driver AVDD, not to the external 3V3 zener supply.",
+    "The only net named DVDD in the source is the left driver DVDD annotation. Right DVDD remains a separate physical rail.",
+    "Q1-Q8 are assigned identifiers for MOSFET symbols originally without reference designators.",
+    "C7, C14, R2, R3, R4, R6, U3, U4 are not present in the PDF."
+  ]
+}

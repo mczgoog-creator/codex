@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "DRV8701_Custom")(type "KiCad")(uri "${KIPRJMOD}/DRV8701_Custom.pretty")(options "")(descr "Project footprints; hardware review limitations recorded in footprint_geometry.json"))
+)

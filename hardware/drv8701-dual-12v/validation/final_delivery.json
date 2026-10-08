@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-10-09T07:36:42.869723+08:00",
+  "status": "Ready for EasyEDA Pro desktop client review; hardware not validated",
+  "nativeEntry": "EasyEDA_Pro/DRV8701_DUAL_12V.eprj3",
+  "nativeClientTarget": "EasyEDA Pro V4.1+ offline/semi-offline desktop",
+  "sourcePcbSha256": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
+  "boardMm": [
+    48,
+    36
+  ],
+  "layers": 4,
+  "nominalTotalThicknessMm": 1.5999999999999999,
+  "copperThicknessMmEach": 0.035,
+  "assumedFinishedHoleCopperMinMm": 0.02,
+  "motorSupplyV": 12,
+  "currentBasisA": {
+    "motorEach": 1.8,
+    "common": 3.6
+  },
+  "mainTraceWidthMm": {
+    "motorEachOuter": 0.7,
+    "commonVMOuter": 1.8
+  },
+  "components": 38,
+  "nets": 34,
+  "uniquePhysicalPins": 173,
+  "padInstances": 181,
+  "segments": 258,
+  "vias": 76,
+  "pours": 3,
+  "sourceValuesAndConnectionsPreserved": true,
+  "autorouterUsed": false,
+  "pathfinderUsed": false,
+  "kicadErc": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "kicadDrc": {
+    "violations": 0,
+    "unconnectedItems": 0,
+    "exclusionsUsed": false
+  },
+  "schematicSourceNetEquivalent": true,
+  "nativeSchematicNetEquivalent": true,
+  "nativePcbNetAndCopperEquivalent": true,
+  "nativeFormat": {
+    "outerRecords": 3129,
+    "outerValid": 3129,
+    "schemaValidRecords": 1526,
+    "documentedFieldDifferences": 4058,
+    "unexplainedFailures": 0,
+    "unmappedTypes": 0
+  },
+  "easyedaActualClientOpenVerified": false,
+  "easyedaActualClientDrcRun": false,
+  "hardwarePowerAndThermalTestsRun": false,
+  "toshibaExactManufacturerDatasheetRead": false,
+  "limits": [
+    "Exact Toshiba TPH1R403NL PDF download was blocked; package checked against exact-model native footprint only.",
+    "Actual EasyEDA client was unavailable; confirm dimensions, stack, units, copper filling and DRC in client.",
+    "Current official schema and real exported template differ; all known differences are listed in native-format-validation.json.",
+    "Original 100nF charge-pump/LDO caps, Zener feed, IDRIVE choice and control interface without GND are preserved by user request.",
+    "Gate/SH geometry is not strict Kelvin and local VM bypass includes two vias; switching waveforms need hardware measurement."
+  ]
+}

@@ -1,0 +1,2430 @@
+[
+  {
+    "reference": "C11",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C11",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C2",
+    "pad": "1",
+    "net": "L_VCP",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C2",
+    "pad": "2",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN1",
+    "pad": "1",
+    "net": "L_A",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN1",
+    "pad": "2",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "2",
+    "net": "R_VCP",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "3",
+    "net": "R_CPH",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "4",
+    "net": "R_CPL",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "5",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "6",
+    "net": "R_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "7",
+    "net": "R_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "8",
+    "net": "R_DVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "9",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "10",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "11",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "12",
+    "net": "R_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "13",
+    "net": "NSLEEP",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "14",
+    "net": "R_EN_IN",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "15",
+    "net": "R_PH_IN",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "16",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "17",
+    "net": "R_GH1",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "18",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "19",
+    "net": "R_GL1",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "20",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "21",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "22",
+    "net": "R_GL2",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "23",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "24",
+    "net": "R_GH2",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U2",
+    "pad": "25",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 110.23622047244095,
+      "height": 110.23622047244095,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R5",
+    "pad": "1",
+    "net": "NSLEEP",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R5",
+    "pad": "2",
+    "net": "ENABLE_LED_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C12",
+    "pad": "1",
+    "net": "R_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C12",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "2",
+    "net": "L_VCP",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "3",
+    "net": "L_CPH",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "4",
+    "net": "L_CPL",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "5",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "6",
+    "net": "L_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "7",
+    "net": "L_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "8",
+    "net": "L_DVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "9",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "10",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "11",
+    "net": null,
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "12",
+    "net": "L_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "13",
+    "net": "NSLEEP",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "14",
+    "net": "L_EN_IN",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "15",
+    "net": "L_PH_IN",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "16",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "17",
+    "net": "L_GH1",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "18",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 23.62204724409449,
+      "height": 9.448818897637794,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "19",
+    "net": "L_GL1",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "20",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "21",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "22",
+    "net": "L_GL2",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "23",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "24",
+    "net": "L_GH2",
+    "shape": {
+      "padType": "RECT",
+      "width": 9.448818897637794,
+      "height": 23.62204724409449,
+      "radius": 1.8897637795275593
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U1",
+    "pad": "25",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 110.23622047244095,
+      "height": 110.23622047244095,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "U5",
+    "pad": "1",
+    "net": null,
+    "shape": {
+      "padType": "OVAL",
+      "width": 66.92913385826772,
+      "height": 114.1732283464567,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "SLOT",
+      "width": 90.55118110236221,
+      "height": 43.30708661417323,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 90
+  },
+  {
+    "reference": "U5",
+    "pad": "2",
+    "net": "NSLEEP",
+    "shape": {
+      "padType": "OVAL",
+      "width": 66.92913385826772,
+      "height": 114.1732283464567,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "SLOT",
+      "width": 90.55118110236221,
+      "height": 43.30708661417323,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 90
+  },
+  {
+    "reference": "U5",
+    "pad": "3",
+    "net": "3V3",
+    "shape": {
+      "padType": "OVAL",
+      "width": 66.92913385826772,
+      "height": 114.1732283464567,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "SLOT",
+      "width": 90.55118110236221,
+      "height": 43.30708661417323,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 90
+  },
+  {
+    "reference": "C1",
+    "pad": "1",
+    "net": "L_CPL",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C1",
+    "pad": "2",
+    "net": "L_CPH",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C3",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C3",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C5",
+    "pad": "1",
+    "net": "L_AVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C5",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C4",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C4",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R7",
+    "pad": "1",
+    "net": "3V3",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R7",
+    "pad": "2",
+    "net": "POWER_LED_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C9",
+    "pad": "1",
+    "net": "R_VCP",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C9",
+    "pad": "2",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "LED1",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "LED1",
+    "pad": "2",
+    "net": "ENABLE_LED_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C10",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C10",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "1",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "2",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "3",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "4",
+    "net": "R_GH1",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "6",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "7",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q7",
+    "pad": "8",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C15",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 78.74015748031496,
+      "height": 78.74015748031496,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 35.43307086614173,
+      "height": 35.43307086614173,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C15",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 78.74015748031496,
+      "height": 78.74015748031496,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 35.43307086614173,
+      "height": 35.43307086614173,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R8",
+    "pad": "1",
+    "net": "L_SNUBBER",
+    "shape": {
+      "padType": "RECT",
+      "width": 45.275590551181104,
+      "height": 106.2992125984252,
+      "radius": 9.05511811023622
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R8",
+    "pad": "2",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 45.275590551181104,
+      "height": 106.2992125984252,
+      "radius": 9.05511811023622
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN3",
+    "pad": "1",
+    "net": "R_EN_IN",
+    "shape": {
+      "padType": "RECT",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 39.37007874015748,
+      "height": 39.37007874015748,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN3",
+    "pad": "2",
+    "net": "R_PH_IN",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 39.37007874015748,
+      "height": 39.37007874015748,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN3",
+    "pad": "3",
+    "net": "L_PH_IN",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 39.37007874015748,
+      "height": 39.37007874015748,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN3",
+    "pad": "4",
+    "net": "L_EN_IN",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 39.37007874015748,
+      "height": 39.37007874015748,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "P2",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "P2",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "3",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "4",
+    "net": "L_GL1",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "5",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "5",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "6",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "7",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q4",
+    "pad": "8",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C16",
+    "pad": "1",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C16",
+    "pad": "2",
+    "net": "L_SNUBBER",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "1",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "2",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "3",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "4",
+    "net": "R_GH2",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "6",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "7",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q5",
+    "pad": "8",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "3",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "4",
+    "net": "R_GL2",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "5",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "5",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "6",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "7",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q6",
+    "pad": "8",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "3",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "4",
+    "net": "R_GL1",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "5",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "5",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "6",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "7",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q8",
+    "pad": "8",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C13",
+    "pad": "1",
+    "net": "R_DVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C13",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R1",
+    "pad": "1",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R1",
+    "pad": "2",
+    "net": "3V3",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R9",
+    "pad": "1",
+    "net": "R_SNUBBER",
+    "shape": {
+      "padType": "RECT",
+      "width": 45.275590551181104,
+      "height": 106.2992125984252,
+      "radius": 9.05511811023622
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "R9",
+    "pad": "2",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 45.275590551181104,
+      "height": 106.2992125984252,
+      "radius": 9.05511811023622
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "1",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "2",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "3",
+    "net": "L_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "4",
+    "net": "L_GH1",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "6",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "7",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q3",
+    "pad": "8",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C17",
+    "pad": "1",
+    "net": "R_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C17",
+    "pad": "2",
+    "net": "R_SNUBBER",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "D1",
+    "pad": "1",
+    "net": "3V3",
+    "shape": {
+      "padType": "RECT",
+      "width": 43.30708661417323,
+      "height": 49.21259842519685,
+      "radius": 8.661417322834646
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "D1",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 43.30708661417323,
+      "height": 49.21259842519685,
+      "radius": 8.661417322834646
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN2",
+    "pad": "1",
+    "net": "R_A",
+    "shape": {
+      "padType": "ELLIPSE",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "CN2",
+    "pad": "2",
+    "net": "R_B",
+    "shape": {
+      "padType": "RECT",
+      "width": 118.11023622047244,
+      "height": 118.11023622047244,
+      "radius": 0
+    },
+    "hole": {
+      "holeType": "ROUND",
+      "width": 70.86614173228347,
+      "height": 70.86614173228347,
+      "cornerRadius": 0
+    },
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "1",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "2",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "3",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "4",
+    "net": "L_GH2",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "5",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "6",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "7",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q1",
+    "pad": "8",
+    "net": "VM",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "3",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "4",
+    "net": "L_GL2",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "5",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 167.3228346456693,
+      "height": 137.79527559055117,
+      "radius": 0
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "5",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "6",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "7",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "Q2",
+    "pad": "8",
+    "net": "L_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 19.68503937007874,
+      "height": 47.24409448818898,
+      "radius": 3.937007874015748
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C8",
+    "pad": "1",
+    "net": "R_CPL",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C8",
+    "pad": "2",
+    "net": "R_CPH",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "LED2",
+    "pad": "1",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "LED2",
+    "pad": "2",
+    "net": "POWER_LED_A",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C6",
+    "pad": "1",
+    "net": "L_DVDD",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  },
+  {
+    "reference": "C6",
+    "pad": "2",
+    "net": "GND",
+    "shape": {
+      "padType": "RECT",
+      "width": 37.40157480314961,
+      "height": 37.40157480314961,
+      "radius": 7.480314960629921
+    },
+    "hole": null,
+    "slotRelativeAngle": 0
+  }
+]

@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_sch</source>
+    <date>2026-10-08T15:53:47+0000</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DRV8701 DUAL MOTOR / 12 V</title>
+        <company>Source: 8701 driver board, no current sensing 2.0</company>
+        <rev>1.0</rev>
+        <date>2026-10-08</date>
+        <source>DRV8701_DUAL_12V.kicad_sch</source>
+        <comment number="1" value="Manual PCB routing only; no hardware validation"/>
+        <comment number="2" value="Original source values and net connections preserved"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7de1a066-18c1-564b-92d1-7f9f15c8920c</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7af576ae-e425-550e-a2e0-b39d4ac00380</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a6d88dd-9701-52ac-bb2e-a04f5b3ccf5e</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d87410ef-0009-51b0-830a-c7d54b8a64e8</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2de694f5-0a37-5dd9-9d93-4cb6f1928433</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dee3c30-e184-5b12-ae4b-a720622d9432</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bafa88f-b51d-5886-8670-59c089c7eb4a</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>163bcbc7-1127-55a4-ac12-3f750a0eb6f5</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a641fdf9-9c3e-5e2a-b864-438940008e24</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a34ac5c1-4d4d-5dee-a425-bf509bd8065d</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a2d688c-51c6-59a5-bdbb-3777bfb7d255</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffcc4e3a-9379-519a-83bc-3ae3e7e1a11b</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>470uF</value>
+      <footprint>DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df8b882f-5028-5be2-a0e6-8def8e7aaa7a</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b7525f6-427f-5c41-8128-03e2a4bf41d7</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91efb947-0478-5cec-9bb6-884578d91ec4</tstamps>
+    </comp>
+    <comp ref="CN1">
+      <value>XT30UPB-M</value>
+      <footprint>DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="XT30_OUTPUT" description="Motor output connector; source schematic numbering retained"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d658b4e5-c6f5-57c8-8fb4-912926f3d6f8</tstamps>
+    </comp>
+    <comp ref="CN2">
+      <value>XT30UPB-M</value>
+      <footprint>DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="XT30_OUTPUT" description="Motor output connector; source schematic numbering retained"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fdfa0590-2cb6-5b73-9906-abdbdfaa7795</tstamps>
+    </comp>
+    <comp ref="CN3">
+      <value>XH2.54-4P</value>
+      <footprint>DRV8701_Custom:XH2.54_1x04_Vertical</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:XH2.54_1x04_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="CONTROL_4PIN" description="External controller signal entry; original connector has no ground terminal"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02e15c2f-fe73-5382-a137-4d979ed4bcf3</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>BZT52C3V3</value>
+      <footprint>DRV8701_Custom:D_SOD123</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:D_SOD123</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="D_Zener" description="Zener diode"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2a87802-5356-5f90-ae31-fad66f61e3b0</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>KT-0603R</value>
+      <footprint>DRV8701_Custom:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="LED" description="Light emitting diode"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81111e96-2588-5354-bfba-3f58acda44f5</tstamps>
+    </comp>
+    <comp ref="LED2">
+      <value>KT-0603R</value>
+      <footprint>DRV8701_Custom:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="LED" description="Light emitting diode"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1d65730-f443-52ce-bef4-006f8807629b</tstamps>
+    </comp>
+    <comp ref="P2">
+      <value>XT30UPB-M</value>
+      <footprint>DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="XT30_POWER" description="External 12 V supply entry; connected supply drives VM and GND"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d94d7a6-0b6c-5040-b819-cde3a02c01a3</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3406b920-c284-5def-b195-4429fb22aeee</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70c42064-282f-569e-867c-d1707c9159e4</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd6f8503-e4e3-564d-be1f-72a0b1ee740d</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b157d71-8761-5553-b01d-bdd6bddbb4ac</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8659d3b7-3d72-5061-b41d-dd31a752bf73</tstamps>
+    </comp>
+    <comp ref="Q6">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54baa8a4-ac79-5962-8abd-86febd33991f</tstamps>
+    </comp>
+    <comp ref="Q7">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bfcd16a-20b8-511f-bde0-7e99ffa6d928</tstamps>
+    </comp>
+    <comp ref="Q8">
+      <value>TPH1R403NL</value>
+      <footprint>DRV8701_Custom:TPH1R403NL_SOPAdvance</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:TPH1R403NL_SOPAdvance</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&amp;prodName=TPH1R403NL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPH1R403NL" description="Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>544bbb89-dd00-5aef-a453-d237417d8bd0</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74635cb5-21df-5d08-99c5-325cca06488c</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf5d60c9-d89b-5734-8204-51508735ce86</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46735bb7-b6b3-5414-9e04-a37ac8bcde26</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100Ω</value>
+      <footprint>DRV8701_Custom:R_1210_3225Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:R_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6df295e-49ec-5737-822e-35c6905c27f6</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100Ω</value>
+      <footprint>DRV8701_Custom:R_1210_3225Metric</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:R_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b8064a2-6498-508f-8c3c-49b6f2768e82</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>DRV8701ERGET</value>
+      <footprint>DRV8701_Custom:DRV8701_RGE24</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv8701.pdf</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:DRV8701_RGE24</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv8701.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="DRV8701ERGET" description="Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aabafb2b-145d-54da-b922-0684eeb49a96</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>DRV8701ERGET</value>
+      <footprint>DRV8701_Custom:DRV8701_RGE24</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv8701.pdf</datasheet>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:DRV8701_RGE24</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv8701.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="DRV8701ERGET" description="Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fc5504d-14ee-5d83-9e09-65e19f78db69</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>SS12D10G4</value>
+      <footprint>DRV8701_Custom:SS12D10G4</footprint>
+      <fields>
+        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Footprint">DRV8701_Custom:SS12D10G4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="SS12D10G4" description="SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3"/>
+      <property name="Source" value="Original PDF; connections and values retained"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d827f031-87fd-59ae-bfed-c4a8b0476fc3</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="DRV8701_Custom" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="CONTROL_4PIN">
+      <description>External controller signal entry; original connector has no ground terminal</description>
+      <fields>
+        <field name="Reference">CN</field>
+        <field name="Value">CONTROL_4PIN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">External controller signal entry; original connector has no ground terminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R_EN" type="output"/>
+        <pin num="2" name="R_PH" type="output"/>
+        <pin num="3" name="L_PH" type="output"/>
+        <pin num="4" name="L_EN" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="DRV8701ERGET">
+      <description>Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV8701ERGET</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VM" type="power_in"/>
+        <pin num="2" name="VCP" type="power_out"/>
+        <pin num="3" name="CPH" type="output"/>
+        <pin num="4" name="CPL" type="output"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="VREF" type="input"/>
+        <pin num="7" name="AVDD" type="power_out"/>
+        <pin num="8" name="DVDD" type="power_out"/>
+        <pin num="9" name="nFAULT" type="open_collector"/>
+        <pin num="10" name="SNSOUT" type="output"/>
+        <pin num="11" name="SO" type="output"/>
+        <pin num="12" name="IDRIVE" type="input"/>
+        <pin num="13" name="nSLEEP" type="input"/>
+        <pin num="14" name="EN" type="input"/>
+        <pin num="15" name="PH" type="input"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="GH1" type="output"/>
+        <pin num="18" name="SH1" type="input"/>
+        <pin num="19" name="GL1" type="output"/>
+        <pin num="20" name="SN" type="input"/>
+        <pin num="21" name="SP" type="input"/>
+        <pin num="22" name="GL2" type="output"/>
+        <pin num="23" name="SH2" type="input"/>
+        <pin num="24" name="GH2" type="output"/>
+        <pin num="25" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="SS12D10G4">
+      <description>SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SS12D10G4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OFF" type="passive"/>
+        <pin num="2" name="COM" type="passive"/>
+        <pin num="3" name="ON" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="TPH1R403NL">
+      <description>Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TPH1R403NL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="XT30_OUTPUT">
+      <description>Motor output connector; source schematic numbering retained</description>
+      <fields>
+        <field name="Reference">CN</field>
+        <field name="Value">XT30_OUTPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Motor output connector; source schematic numbering retained</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8701_Custom" part="XT30_POWER">
+      <description>External 12 V supply entry; connected supply drives VM and GND</description>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">XT30_POWER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">External 12 V supply entry; connected supply drives VM and GND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+12V" type="power_out"/>
+        <pin num="2" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="DRV8701_Custom">
+      <uri>/workspace/drv8701_board/DRV8701_Custom.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="ON" pintype="passive"/>
+    </net>
+    <net code="2" name="/ENABLE_LED_A" class="Default">
+      <node ref="LED1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/GND" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="LED1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="LED2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="P2" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="Q2" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="20" pinfunction="SN" pintype="input"/>
+      <node ref="U1" pin="21" pinfunction="SP" pintype="input"/>
+      <node ref="U1" pin="25" pinfunction="EP" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="16" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="SN" pintype="input"/>
+      <node ref="U2" pin="21" pinfunction="SP" pintype="input"/>
+      <node ref="U2" pin="25" pinfunction="EP" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="4" name="/L_A" class="Default">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="CN1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q2" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q2" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q2" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="SH2" pintype="input"/>
+    </net>
+    <net code="5" name="/L_AVDD" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="IDRIVE" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="VREF" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="AVDD" pintype="power_out"/>
+    </net>
+    <net code="6" name="/L_B" class="Default">
+      <node ref="CN1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q4" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q4" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q4" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="SH1" pintype="input"/>
+    </net>
+    <net code="7" name="/L_CPH" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="CPH" pintype="output"/>
+    </net>
+    <net code="8" name="/L_CPL" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="CPL" pintype="output"/>
+    </net>
+    <net code="9" name="/L_DVDD" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="DVDD" pintype="power_out"/>
+    </net>
+    <net code="10" name="/L_EN_IN" class="Default">
+      <node ref="CN3" pin="4" pinfunction="L_EN" pintype="output"/>
+      <node ref="U1" pin="14" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="11" name="/L_GH1" class="Default">
+      <node ref="Q3" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U1" pin="17" pinfunction="GH1" pintype="output"/>
+    </net>
+    <net code="12" name="/L_GH2" class="Default">
+      <node ref="Q1" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U1" pin="24" pinfunction="GH2" pintype="output"/>
+    </net>
+    <net code="13" name="/L_GL1" class="Default">
+      <node ref="Q4" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U1" pin="19" pinfunction="GL1" pintype="output"/>
+    </net>
+    <net code="14" name="/L_GL2" class="Default">
+      <node ref="Q2" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U1" pin="22" pinfunction="GL2" pintype="output"/>
+    </net>
+    <net code="15" name="/L_PH_IN" class="Default">
+      <node ref="CN3" pin="3" pinfunction="L_PH" pintype="output"/>
+      <node ref="U1" pin="15" pinfunction="PH" pintype="input"/>
+    </net>
+    <net code="16" name="/L_SNUBBER" class="Default">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/L_VCP" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VCP" pintype="power_out"/>
+    </net>
+    <net code="18" name="/NSLEEP" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="nSLEEP" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="nSLEEP" pintype="input"/>
+      <node ref="U5" pin="2" pinfunction="COM" pintype="passive"/>
+    </net>
+    <net code="19" name="/POWER_LED_A" class="Default">
+      <node ref="LED2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="/R_A" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="CN2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="Q5" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q6" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q6" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q6" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="SH2" pintype="input"/>
+    </net>
+    <net code="21" name="/R_AVDD" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="IDRIVE" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="VREF" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="AVDD" pintype="power_out"/>
+    </net>
+    <net code="22" name="/R_B" class="Default">
+      <node ref="CN2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q7" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q7" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q8" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q8" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q8" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="SH1" pintype="input"/>
+    </net>
+    <net code="23" name="/R_CPH" class="Default">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="CPH" pintype="output"/>
+    </net>
+    <net code="24" name="/R_CPL" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="CPL" pintype="output"/>
+    </net>
+    <net code="25" name="/R_DVDD" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="DVDD" pintype="power_out"/>
+    </net>
+    <net code="26" name="/R_EN_IN" class="Default">
+      <node ref="CN3" pin="1" pinfunction="R_EN" pintype="output"/>
+      <node ref="U2" pin="14" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="27" name="/R_GH1" class="Default">
+      <node ref="Q7" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U2" pin="17" pinfunction="GH1" pintype="output"/>
+    </net>
+    <net code="28" name="/R_GH2" class="Default">
+      <node ref="Q5" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U2" pin="24" pinfunction="GH2" pintype="output"/>
+    </net>
+    <net code="29" name="/R_GL1" class="Default">
+      <node ref="Q8" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U2" pin="19" pinfunction="GL1" pintype="output"/>
+    </net>
+    <net code="30" name="/R_GL2" class="Default">
+      <node ref="Q6" pin="4" pinfunction="G" pintype="input"/>
+      <node ref="U2" pin="22" pinfunction="GL2" pintype="output"/>
+    </net>
+    <net code="31" name="/R_PH_IN" class="Default">
+      <node ref="CN3" pin="2" pinfunction="R_PH" pintype="output"/>
+      <node ref="U2" pin="15" pinfunction="PH" pintype="input"/>
+    </net>
+    <net code="32" name="/R_SNUBBER" class="Default">
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="/R_VCP" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="VCP" pintype="power_out"/>
+    </net>
+    <net code="34" name="/VM" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="P2" pin="1" pinfunction="+12V" pintype="power_out"/>
+      <node ref="Q1" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q1" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="Q5" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q5" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q5" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q5" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="Q7" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="Q7" pin="6" pinfunction="D" pintype="passive"/>
+      <node ref="Q7" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="Q7" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VM" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="VM" pintype="power_in"/>
+    </net>
+    <net code="35" name="unconnected-(U1-SNSOUT-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="SNSOUT" pintype="output+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U1-SO-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="SO" pintype="output+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U1-nFAULT-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="nFAULT" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U2-SNSOUT-Pad10)" class="Default">
+      <node ref="U2" pin="10" pinfunction="SNSOUT" pintype="output+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U2-SO-Pad11)" class="Default">
+      <node ref="U2" pin="11" pinfunction="SO" pintype="output+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U2-nFAULT-Pad9)" class="Default">
+      <node ref="U2" pin="9" pinfunction="nFAULT" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U5-OFF-Pad1)" class="Default">
+      <node ref="U5" pin="1" pinfunction="OFF" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

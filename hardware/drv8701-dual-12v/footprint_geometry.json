@@ -1,0 +1,814 @@
+{
+  "DRV8701_RGE24": {
+    "description": "TI RGE0024F VQFN24 4x4mm P0.5; pads0.24x0.6, opposite pad-centre3.8mm, EP2.8x2.8. EP pin25 GND. Hot-air/paste required for reliable centre-pad soldering.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "Texas Instruments DRV8701 datasheet RGE0024F recommended land pattern; verified /workspace/scratch/datasheets/drv8701-ti-github-mirror.pdf",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -1.9,
+        "y_mm": -1.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "7",
+        "x_mm": -1.25,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "13",
+        "x_mm": 1.9,
+        "y_mm": 1.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "19",
+        "x_mm": 1.25,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "2",
+        "x_mm": -1.9,
+        "y_mm": -0.75,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "8",
+        "x_mm": -0.75,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "14",
+        "x_mm": 1.9,
+        "y_mm": 0.75,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "20",
+        "x_mm": 0.75,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "3",
+        "x_mm": -1.9,
+        "y_mm": -0.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "9",
+        "x_mm": -0.25,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "15",
+        "x_mm": 1.9,
+        "y_mm": 0.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "21",
+        "x_mm": 0.25,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "4",
+        "x_mm": -1.9,
+        "y_mm": 0.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "10",
+        "x_mm": 0.25,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "16",
+        "x_mm": 1.9,
+        "y_mm": -0.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "22",
+        "x_mm": -0.25,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "5",
+        "x_mm": -1.9,
+        "y_mm": 0.75,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "11",
+        "x_mm": 0.75,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "17",
+        "x_mm": 1.9,
+        "y_mm": -0.75,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "23",
+        "x_mm": -0.75,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "6",
+        "x_mm": -1.9,
+        "y_mm": 1.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "12",
+        "x_mm": 1.25,
+        "y_mm": 1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "18",
+        "x_mm": 1.9,
+        "y_mm": -1.25,
+        "size_x_mm": 0.6,
+        "size_y_mm": 0.24,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "24",
+        "x_mm": -1.25,
+        "y_mm": -1.9,
+        "size_x_mm": 0.24,
+        "size_y_mm": 0.6,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "25",
+        "x_mm": 0,
+        "y_mm": 0,
+        "size_x_mm": 2.8,
+        "size_y_mm": 2.8,
+        "type": "smd",
+        "shape": "rect",
+        "drill_mm": null,
+        "role": "GND_EP"
+      }
+    ],
+    "courtyard_mm": [
+      -2.5,
+      -2.5,
+      2.5,
+      2.5
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/DRV8701_RGE24.kicad_mod"
+  },
+  "TPH1R403NL_SOPAdvance": {
+    "description": "TPH1R403NL SOP Advance 5x5 body / nominal6mm lead span; source1-3, gate4, drain5-8 and exposed-drain pad5. JLC native footprint crosscheck. Exact Toshiba part land-pattern PDF still unavailable: hardware review required before fabrication.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "Native JLC footprint 572e0c5f381c446594eedc8b8157fefb.efoo from public project mirror-zdxddmx/eda/ProPrj_DRV8701电机双驱.epro; only library geometry reused, board layout not reused.",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -1.905,
+        "y_mm": 2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "S"
+      },
+      {
+        "number": "2",
+        "x_mm": -0.635,
+        "y_mm": 2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "S"
+      },
+      {
+        "number": "3",
+        "x_mm": 0.635,
+        "y_mm": 2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "S"
+      },
+      {
+        "number": "4",
+        "x_mm": 1.905,
+        "y_mm": 2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "G"
+      },
+      {
+        "number": "5",
+        "x_mm": 1.905,
+        "y_mm": -2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "D"
+      },
+      {
+        "number": "6",
+        "x_mm": 0.635,
+        "y_mm": -2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "D"
+      },
+      {
+        "number": "7",
+        "x_mm": -0.635,
+        "y_mm": -2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "D"
+      },
+      {
+        "number": "8",
+        "x_mm": -1.905,
+        "y_mm": -2.77,
+        "size_x_mm": 0.5,
+        "size_y_mm": 1.2,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "D"
+      },
+      {
+        "number": "5",
+        "x_mm": 0,
+        "y_mm": -0.45,
+        "size_x_mm": 4.25,
+        "size_y_mm": 3.5,
+        "type": "smd",
+        "shape": "rect",
+        "drill_mm": null,
+        "role": "D_EP"
+      }
+    ],
+    "courtyard_mm": [
+      -2.75,
+      -3.7,
+      2.75,
+      3.7
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/TPH1R403NL_SOPAdvance.kicad_mod"
+  },
+  "C_0603_1608Metric": {
+    "description": "Hand-solderable metric passive; body-centred; symmetric two-terminal passive",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": null,
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "2",
+        "x_mm": 0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      }
+    ],
+    "courtyard_mm": [
+      -1.525,
+      -0.725,
+      1.525,
+      0.725
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/C_0603_1608Metric.kicad_mod"
+  },
+  "R_0603_1608Metric": {
+    "description": "Hand-solderable metric passive; body-centred; symmetric two-terminal passive",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": null,
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "2",
+        "x_mm": 0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      }
+    ],
+    "courtyard_mm": [
+      -1.525,
+      -0.725,
+      1.525,
+      0.725
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/R_0603_1608Metric.kicad_mod"
+  },
+  "LED_0603_1608Metric": {
+    "description": "Hand-solderable metric passive; body-centred; pin1 cathode, pin2 anode",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": null,
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "K"
+      },
+      {
+        "number": "2",
+        "x_mm": 0.8,
+        "y_mm": 0,
+        "size_x_mm": 0.95,
+        "size_y_mm": 0.95,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "A"
+      }
+    ],
+    "courtyard_mm": [
+      -1.525,
+      -0.725,
+      1.525,
+      0.725
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/LED_0603_1608Metric.kicad_mod"
+  },
+  "R_1210_3225Metric": {
+    "description": "Hand-solderable metric passive; body-centred; symmetric two-terminal passive",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": null,
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -1.55,
+        "y_mm": 0,
+        "size_x_mm": 1.15,
+        "size_y_mm": 2.7,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      },
+      {
+        "number": "2",
+        "x_mm": 1.55,
+        "y_mm": 0,
+        "size_x_mm": 1.15,
+        "size_y_mm": 2.7,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": null
+      }
+    ],
+    "courtyard_mm": [
+      -2.375,
+      -1.6,
+      2.375,
+      1.6
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/R_1210_3225Metric.kicad_mod"
+  },
+  "D_SOD123": {
+    "description": "SOD-123 BZT52 family 2-pin; pin1 cathode, pin2 anode; verify selected manufacturer; hand-solderable pads.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "Industry SOD-123 body nominal2.8x1.8mm, lead-span nominal3.7mm",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -1.65,
+        "y_mm": 0,
+        "size_x_mm": 1.1,
+        "size_y_mm": 1.25,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "K"
+      },
+      {
+        "number": "2",
+        "x_mm": 1.65,
+        "y_mm": 0,
+        "size_x_mm": 1.1,
+        "size_y_mm": 1.25,
+        "type": "smd",
+        "shape": "roundrect",
+        "drill_mm": null,
+        "role": "A"
+      }
+    ],
+    "courtyard_mm": [
+      -2.45,
+      -1.25,
+      2.45,
+      1.25
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/D_SOD123.kicad_mod"
+  },
+  "CP_Radial_D10.0mm_P5.00mm": {
+    "description": "470uF radial electrolytic procurement envelope: body diameter10mm, pitch5mm, positive1 atx-2.5. Select a real25V low-ESR part within this envelope; voltage/capacitance/height not guaranteed by footprint.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "Explicit PCB procurement envelope; real capacitor manufacturer still to be selected and checked",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -2.5,
+        "y_mm": 0,
+        "size_x_mm": 2.0,
+        "size_y_mm": 2.0,
+        "type": "thru_hole",
+        "shape": "rect",
+        "drill_mm": 0.9,
+        "role": "+"
+      },
+      {
+        "number": "2",
+        "x_mm": 2.5,
+        "y_mm": 0,
+        "size_x_mm": 2.0,
+        "size_y_mm": 2.0,
+        "type": "thru_hole",
+        "shape": "circle",
+        "drill_mm": 0.9,
+        "role": "-"
+      }
+    ],
+    "courtyard_mm": [
+      -5.25,
+      -5.25,
+      5.25,
+      5.25
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/CP_Radial_D10.0mm_P5.00mm.kicad_mod"
+  },
+  "AMASS_XT30UPB_M_SourceNumbering": {
+    "description": "AMASS XT30UPB-M vertical male. Source numbering1=positive/right,2=negative/left. Official KiCad library physical polarity retained but pad numbers reversed and origin translated to body centre. Body10.2x5.2mm,pitch5mm,drill1.8mm.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/Connector_AMASS.pretty/AMASS_XT30UPB-M_1x02_P5.0mm_Vertical.kicad_mod ; upstream manufacturer link https://www.tme.eu/en/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf",
+    "pads": [
+      {
+        "number": "2",
+        "x_mm": -2.5,
+        "y_mm": 0,
+        "size_x_mm": 3,
+        "size_y_mm": 3,
+        "type": "thru_hole",
+        "shape": "rect",
+        "drill_mm": 1.8,
+        "role": "negative"
+      },
+      {
+        "number": "1",
+        "x_mm": 2.5,
+        "y_mm": 0,
+        "size_x_mm": 3,
+        "size_y_mm": 3,
+        "type": "thru_hole",
+        "shape": "circle",
+        "drill_mm": 1.8,
+        "role": "positive"
+      }
+    ],
+    "courtyard_mm": [
+      -5.6,
+      -3.1,
+      5.6,
+      3.1
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/AMASS_XT30UPB_M_SourceNumbering.kicad_mod"
+  },
+  "XH2.54_1x04_Vertical": {
+    "description": "Source XH2.54-4P retained. Four pins pitch2.54mm, pin-row-centred origin; body centre is(0,+0.525mm). Imported JST XH2.50 body envelope enlarged0.12mm for pitch; not an interchangeable JST-certified part. Verify domestic connector real housing/lock and pin dimensions before fabrication.",
+    "origin": "pin_row_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0.525
+    ],
+    "source": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/Connector_JST.pretty/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.kicad_mod ; body envelope only, pitch intentionally changed to source2.54mm",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -3.81,
+        "y_mm": 0,
+        "size_x_mm": 1.8,
+        "size_y_mm": 1.8,
+        "type": "thru_hole",
+        "shape": "rect",
+        "drill_mm": 1.0,
+        "role": null
+      },
+      {
+        "number": "2",
+        "x_mm": -1.27,
+        "y_mm": 0,
+        "size_x_mm": 1.8,
+        "size_y_mm": 1.8,
+        "type": "thru_hole",
+        "shape": "circle",
+        "drill_mm": 1.0,
+        "role": null
+      },
+      {
+        "number": "3",
+        "x_mm": 1.27,
+        "y_mm": 0,
+        "size_x_mm": 1.8,
+        "size_y_mm": 1.8,
+        "type": "thru_hole",
+        "shape": "circle",
+        "drill_mm": 1.0,
+        "role": null
+      },
+      {
+        "number": "4",
+        "x_mm": 3.81,
+        "y_mm": 0,
+        "size_x_mm": 1.8,
+        "size_y_mm": 1.8,
+        "type": "thru_hole",
+        "shape": "circle",
+        "drill_mm": 1.0,
+        "role": null
+      }
+    ],
+    "courtyard_mm": [
+      -6.76,
+      -2.85,
+      6.76,
+      3.9
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/XH2.54_1x04_Vertical.kicad_mod"
+  },
+  "SS12D10G4": {
+    "description": "Exact native JLC footprint SW-TH_SHOU-HAN_SS12D10G4 for HX SS12D10G4 C5149841. Body12.7x6.7mm,pitch4.8mm; vertical plated slots1.1x2.3mm with oval pads1.7x2.9mm. Common pin2; no invented mounting holes. Match real selected switch before fabrication.",
+    "origin": "body_center_mm",
+    "body_center_offset_mm": [
+      0,
+      0
+    ],
+    "source": "Native JLC footprint6fe0c40ca65a4350ad02ae7d2df1c4e9.efoo in ProDoc_DRV8701单驱2_2025-04-30.epro; same PAD records in footprint ef13eca from a second exact same-model JLC project. Manufacturer attached PDF https://atta.szlcsc.com/upload/public/pdf/source/20220907/2020D7183ED16DD6E2B9F5A13FB144CF.pdf remains network-blocked.",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -4.8,
+        "y_mm": 0,
+        "size_x_mm": 1.7,
+        "size_y_mm": 2.9,
+        "type": "thru_hole",
+        "shape": "oval",
+        "drill_mm": [
+          1.1,
+          2.3
+        ],
+        "role": "throw"
+      },
+      {
+        "number": "2",
+        "x_mm": 0,
+        "y_mm": 0,
+        "size_x_mm": 1.7,
+        "size_y_mm": 2.9,
+        "type": "thru_hole",
+        "shape": "oval",
+        "drill_mm": [
+          1.1,
+          2.3
+        ],
+        "role": "common"
+      },
+      {
+        "number": "3",
+        "x_mm": 4.8,
+        "y_mm": 0,
+        "size_x_mm": 1.7,
+        "size_y_mm": 2.9,
+        "type": "thru_hole",
+        "shape": "oval",
+        "drill_mm": [
+          1.1,
+          2.3
+        ],
+        "role": "throw"
+      }
+    ],
+    "courtyard_mm": [
+      -6.6,
+      -3.6,
+      6.6,
+      3.6
+    ],
+    "file": "/workspace/drv8701_board/DRV8701_Custom.pretty/SS12D10G4.kicad_mod"
+  }
+}

@@ -1,0 +1,12 @@
+References,Value,Quantity,Package,Selection requirements,Verification status
+U1 U2,DRV8701ERGET,2,VQFN RGE24 4x4mm 0.5mm pitch,Exposed GND pad must be soldered; TI RGE0024F land pattern,TI SLVSCX5B read
+Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8,TPH1R403NL,8,SOP Advance,Exact model; 1-3 S / 4 G / 5-8 D / exposed D; do not substitute package,Exact native footprint cross-checked; Toshiba electrical PDF still unavailable
+C1 C2 C3 C4 C5 C6 C8 C9 C10 C11 C12 C13 C16 C17,100nF,14,0603,25V or higher X7R ceramic; original capacitance preserved,Package verified; exact purchased part DC-bias curve must be checked
+C15,470uF,1,Radial diameter 10mm pitch 5mm,25V low-ESR electrolytic; maximum body diameter 10mm; verify ripple-current rating,Value preserved; package envelope selected
+R1 R5 R7,10kΩ,3,0603,1% or 5%; rated power at least 0.1W,Original resistance preserved
+R8 R9,100Ω,2,1210,Rated power at least 0.5W; for EN PWM <=20kHz at 12V,Original resistance preserved; RC heat estimate documented
+D1,BZT52C3V3,1,SOD123,Exact 3.3V Zener model; pin1 K / pin2 A; low-current Zener voltage requires measurement,Original value and network preserved
+LED1 LED2,KT-0603R,2,0603,Red LED; pin1 K / pin2 A,Original model and network preserved
+CN1 CN2 P2,XT30UPB-M,3,Through-hole pitch 5mm,Check board-mount male part; source pin1 positive at +2.5mm and pin2 negative at -2.5mm; motor polarity is phase-dependent,Source numbering intentionally differs from some library conventions
+CN3,XH2.54-4P,1,Through-hole pitch 2.54mm,Buy 2.54mm-pitch part matching footprint; four signals only; controller needs separate common GND,Do not substitute JST 2.50mm part without footprint check
+U5,SS12D10G4,1,Through-hole slide switch,Body 12.7x6.7mm; pin pitch 4.8mm; user pin 1.3x0.8mm fits 2.3x1.1mm slots; no mounting holes,Exact native footprint and user dimensions cross-checked

@@ -1,0 +1,1156 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "0ffffc7b-32e0-5a53-95c6-2edceef5b628") (paper "A3") (title_block (title "DRV8701 DUAL MOTOR / 12 V") (date "2026-10-08") (rev "1.0") (company "Source: 8701 driver board, no current sensing 2.0") (comment 1 "Manual PCB routing only; no hardware validation") (comment 2 "Original source values and net connections preserved")) (lib_symbols (symbol "DRV8701_Custom:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "DRV8701_Custom:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "DRV8701_Custom:C_Polarized"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "CP_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_Polarized_0_1"
+			(rectangle
+				(start -2.286 0.508)
+				(end 2.286 1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286) (xy -0.762 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.794) (xy -1.27 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.286 -0.508)
+				(end -2.286 -1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "C_Polarized_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "DRV8701_Custom:D_Zener"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Zener_0_1"
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Zener_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "DRV8701_Custom:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "DRV8701_Custom:DRV8701ERGET" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "DRV8701ERGET" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "DRV8701ERGET_0_1" (rectangle (start -11.43 17.78) (end 11.43 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "DRV8701ERGET_1_1" (pin power_in line (at -13.97 15.24 0) (length 2.54) (name "VM" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin power_out line (at -13.97 12.7 0) (length 2.54) (name "VCP" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin output line (at -13.97 10.16 0) (length 2.54) (name "CPH" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016))))) (pin output line (at -13.97 7.62 0) (length 2.54) (name "CPL" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016))))) (pin power_in line (at -13.97 5.08 0) (length 2.54) (name "GND" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016))))) (pin input line (at -13.97 2.54 0) (length 2.54) (name "VREF" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016))))) (pin power_out line (at -13.97 0 0) (length 2.54) (name "AVDD" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016))))) (pin power_out line (at -13.97 -2.54 0) (length 2.54) (name "DVDD" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016))))) (pin open_collector line (at -13.97 -5.08 0) (length 2.54) (name "nFAULT" (effects (font (size 1.016 1.016)))) (number "9" (effects (font (size 1.016 1.016))))) (pin output line (at -13.97 -7.62 0) (length 2.54) (name "SNSOUT" (effects (font (size 1.016 1.016)))) (number "10" (effects (font (size 1.016 1.016))))) (pin output line (at -13.97 -10.16 0) (length 2.54) (name "SO" (effects (font (size 1.016 1.016)))) (number "11" (effects (font (size 1.016 1.016))))) (pin input line (at -13.97 -12.7 0) (length 2.54) (name "IDRIVE" (effects (font (size 1.016 1.016)))) (number "12" (effects (font (size 1.016 1.016))))) (pin input line (at -13.97 -15.24 0) (length 2.54) (name "nSLEEP" (effects (font (size 1.016 1.016)))) (number "13" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 15.24 180) (length 2.54) (name "EN" (effects (font (size 1.016 1.016)))) (number "14" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 12.7 180) (length 2.54) (name "PH" (effects (font (size 1.016 1.016)))) (number "15" (effects (font (size 1.016 1.016))))) (pin power_in line (at 13.97 10.16 180) (length 2.54) (name "GND" (effects (font (size 1.016 1.016)))) (number "16" (effects (font (size 1.016 1.016))))) (pin output line (at 13.97 7.62 180) (length 2.54) (name "GH1" (effects (font (size 1.016 1.016)))) (number "17" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 5.08 180) (length 2.54) (name "SH1" (effects (font (size 1.016 1.016)))) (number "18" (effects (font (size 1.016 1.016))))) (pin output line (at 13.97 2.54 180) (length 2.54) (name "GL1" (effects (font (size 1.016 1.016)))) (number "19" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 0 180) (length 2.54) (name "SN" (effects (font (size 1.016 1.016)))) (number "20" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 -2.54 180) (length 2.54) (name "SP" (effects (font (size 1.016 1.016)))) (number "21" (effects (font (size 1.016 1.016))))) (pin output line (at 13.97 -5.08 180) (length 2.54) (name "GL2" (effects (font (size 1.016 1.016)))) (number "22" (effects (font (size 1.016 1.016))))) (pin input line (at 13.97 -7.62 180) (length 2.54) (name "SH2" (effects (font (size 1.016 1.016)))) (number "23" (effects (font (size 1.016 1.016))))) (pin output line (at 13.97 -10.16 180) (length 2.54) (name "GH2" (effects (font (size 1.016 1.016)))) (number "24" (effects (font (size 1.016 1.016))))) (pin power_in line (at 13.97 -12.7 180) (length 2.54) (name "EP" (effects (font (size 1.016 1.016)))) (number "25" (effects (font (size 1.016 1.016)))))) (embedded_fonts no))
+(symbol "DRV8701_Custom:TPH1R403NL" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "Q" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "TPH1R403NL_0_1" (rectangle (start -6.35 10.16) (end 6.35 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))(polyline (pts (xy -3.81 7.62) (xy -3.81 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -1.27 7.62) (xy -1.27 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -6.35 7.62) (xy -3.81 7.62)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -1.27 5.08) (xy 3.81 5.08) (xy 3.81 7.62) (xy 6.35 7.62)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -1.27 0) (xy -3.048 -1.016) (xy -3.048 1.016) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -1.27 -2.54) (xy -3.81 -2.54) (xy -3.81 -5.08) (xy -6.35 -5.08)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "TPH1R403NL_1_1" (pin passive line (at -8.89 0 0) (length 2.54) (name "S" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at -8.89 -2.54 0) (length 2.54) (name "S" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin passive line (at -8.89 -5.08 0) (length 2.54) (name "S" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016))))) (pin input line (at -8.89 7.62 0) (length 2.54) (name "G" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016))))) (pin passive line (at 8.89 7.62 180) (length 2.54) (name "D" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016))))) (pin passive line (at 8.89 5.08 180) (length 2.54) (name "D" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016))))) (pin passive line (at 8.89 2.54 180) (length 2.54) (name "D" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016))))) (pin passive line (at 8.89 0 180) (length 2.54) (name "D" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016)))))) (embedded_fonts no))
+(symbol "DRV8701_Custom:XT30_OUTPUT" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "CN" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "XT30_OUTPUT" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "Motor output connector; source schematic numbering retained" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "XT30_OUTPUT_0_1" (rectangle (start -2.54 3.81) (end 2.54 -3.81) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "XT30_OUTPUT_1_1" (pin passive line (at -5.08 1.27 0) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at -5.08 -1.27 0) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))) (embedded_fonts no))
+(symbol "DRV8701_Custom:XT30_POWER" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "P" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "XT30_POWER" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "External 12 V supply entry; connected supply drives VM and GND" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "XT30_POWER_0_1" (rectangle (start -2.54 3.81) (end 2.54 -3.81) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "XT30_POWER_1_1" (pin power_out line (at -5.08 1.27 0) (length 2.54) (name "+12V" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin power_out line (at -5.08 -1.27 0) (length 2.54) (name "GND" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))) (embedded_fonts no))
+(symbol "DRV8701_Custom:CONTROL_4PIN" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "CN" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "CONTROL_4PIN" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "External controller signal entry; original connector has no ground terminal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "CONTROL_4PIN_0_1" (rectangle (start -2.54 6.35) (end 10.16 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "CONTROL_4PIN_1_1" (pin output line (at -5.08 3.81 0) (length 2.54) (name "R_EN" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin output line (at -5.08 1.27 0) (length 2.54) (name "R_PH" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin output line (at -5.08 -1.27 0) (length 2.54) (name "L_PH" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016))))) (pin output line (at -5.08 -3.81 0) (length 2.54) (name "L_EN" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))) (embedded_fonts no))
+(symbol "DRV8701_Custom:SS12D10G4" (pin_names (offset 0.762)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "SS12D10G4" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))(symbol "SS12D10G4_0_1" (polyline (pts (xy -5.08 0) (xy -2.54 0) (xy 3.81 2.54) (xy 5.08 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 3.81 -2.54) (xy 5.08 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "SS12D10G4_1_1" (pin passive line (at 7.62 2.54 180) (length 2.54) (name "OFF" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at -7.62 0 0) (length 2.54) (name "COM" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin passive line (at 7.62 -2.54 180) (length 2.54) (name "ON" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))) (embedded_fonts no)))
+(text "L MOTOR CHANNEL — ORIGINAL PH/EN DRIVER" (at 17.78 25.4 0) (effects (font (size 1.778 1.778)) (justify left)) (uuid "26fbf0cd-cb02-5780-a939-7cd6ffa5cc01"))
+(wire (pts (xy 46.99 60.96) (xy 41.91 60.96)) (stroke (width 0) (type default)) (uuid "16b36bc4-0fbe-5be5-87f0-fb0ffe138414"))
+(label "VM" (at 41.91 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "8ad948dc-59d7-53e7-a36d-66d80f49ff58"))
+(wire (pts (xy 46.99 63.5) (xy 41.91 63.5)) (stroke (width 0) (type default)) (uuid "3952b691-203e-5f44-8a5e-97104e3f817f"))
+(label "L_VCP" (at 41.91 63.5 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "04935761-47c7-5c0b-8595-fd71d32a6bda"))
+(wire (pts (xy 46.99 66.04) (xy 41.91 66.04)) (stroke (width 0) (type default)) (uuid "728fac28-75e8-5e1e-bb2c-ef885a200756"))
+(label "L_CPH" (at 41.91 66.04 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1b497172-7f04-5ca4-93e9-c1ef76b86601"))
+(wire (pts (xy 46.99 68.58) (xy 41.91 68.58)) (stroke (width 0) (type default)) (uuid "d5632580-59c0-54a2-920a-71381dd5b487"))
+(label "L_CPL" (at 41.91 68.58 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ef57929f-b63a-5316-a1b0-6f0837741c82"))
+(wire (pts (xy 46.99 71.12) (xy 41.91 71.12)) (stroke (width 0) (type default)) (uuid "53d2d158-9e55-5629-bebb-8c882f8c4d64"))
+(label "GND" (at 41.91 71.12 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c019f5ae-5eb9-5f0f-8cbe-54f8d82e2ec9"))
+(wire (pts (xy 46.99 73.66) (xy 41.91 73.66)) (stroke (width 0) (type default)) (uuid "04c2ec0c-fbf8-59e2-9da8-059e886d4abd"))
+(label "L_AVDD" (at 41.91 73.66 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2d412699-1414-5a54-9a71-deb7ea90167e"))
+(wire (pts (xy 46.99 76.2) (xy 41.91 76.2)) (stroke (width 0) (type default)) (uuid "f475f4fe-cb4e-5ee8-aa52-33ffb41a3b68"))
+(label "L_AVDD" (at 41.91 76.2 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "92cdc97b-e1cd-5c9e-b0a2-2c2d6e3e45d9"))
+(wire (pts (xy 46.99 78.74) (xy 41.91 78.74)) (stroke (width 0) (type default)) (uuid "55841069-f7bd-57cd-a401-8e65a1ed5841"))
+(label "L_DVDD" (at 41.91 78.74 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "22135c77-222d-57c7-98c3-a872284615a9"))
+(no_connect (at 46.99 81.28) (uuid "5c1f9961-b36e-5b31-be3e-63f138799ab2"))
+(no_connect (at 46.99 83.82) (uuid "d5dd60fe-b0f0-5a89-a233-cdf0d1a38b6f"))
+(no_connect (at 46.99 86.36) (uuid "18b7a841-64c1-5e7c-9333-ece5fef53680"))
+(wire (pts (xy 46.99 88.9) (xy 41.91 88.9)) (stroke (width 0) (type default)) (uuid "11807e21-7aca-522b-a55b-2646355071e3"))
+(label "L_AVDD" (at 41.91 88.9 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "d6a8059f-1934-5982-bab1-b7533186a2c4"))
+(wire (pts (xy 46.99 91.44) (xy 41.91 91.44)) (stroke (width 0) (type default)) (uuid "50ba10b8-9db4-5172-a759-e431d053102d"))
+(label "NSLEEP" (at 41.91 91.44 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "d7368376-635e-5be1-a255-ee3a0c539085"))
+(wire (pts (xy 74.93 60.96) (xy 80.01 60.96)) (stroke (width 0) (type default)) (uuid "8b0b510c-2c43-50a4-995f-e4d89bddb51d"))
+(label "L_EN_IN" (at 80.01 60.96 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f1c3db16-310c-5347-94ea-79ea6e95b0e4"))
+(wire (pts (xy 74.93 63.5) (xy 80.01 63.5)) (stroke (width 0) (type default)) (uuid "1f44bbb3-83bb-5cf3-9f4e-47e9e038b07e"))
+(label "L_PH_IN" (at 80.01 63.5 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "89339688-bc3d-5ef8-b4ae-f821761bc136"))
+(wire (pts (xy 74.93 66.04) (xy 80.01 66.04)) (stroke (width 0) (type default)) (uuid "a98a1c04-98fe-57ac-aebd-f94a111b6f50"))
+(label "GND" (at 80.01 66.04 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "1b72c062-cc48-503f-985d-62394d4a0c52"))
+(wire (pts (xy 74.93 68.58) (xy 80.01 68.58)) (stroke (width 0) (type default)) (uuid "d17937b2-ceef-5710-a223-0f693c9d16e7"))
+(label "L_GH1" (at 80.01 68.58 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "281848b5-aa7e-55d1-9b65-7fc0ab26ab9a"))
+(wire (pts (xy 74.93 71.12) (xy 80.01 71.12)) (stroke (width 0) (type default)) (uuid "e3129cb8-e7a1-56b8-b66e-962ec193ddea"))
+(label "L_B" (at 80.01 71.12 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "1cda5069-907d-5a56-b7a1-1193a3c76e9b"))
+(wire (pts (xy 74.93 73.66) (xy 80.01 73.66)) (stroke (width 0) (type default)) (uuid "cacb6002-b83b-5f89-9aa3-87ec5bf449b2"))
+(label "L_GL1" (at 80.01 73.66 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2eb1de2b-32b2-58d8-be21-feba3ea0c0f2"))
+(wire (pts (xy 74.93 76.2) (xy 80.01 76.2)) (stroke (width 0) (type default)) (uuid "a82a194f-9829-52e9-8422-03cff90712bc"))
+(label "GND" (at 80.01 76.2 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "971ab91d-5e2a-5aa7-9d64-4c8b14ca7eef"))
+(wire (pts (xy 74.93 78.74) (xy 80.01 78.74)) (stroke (width 0) (type default)) (uuid "241a1a07-4c0c-5af6-b1c3-3279d8f810d8"))
+(label "GND" (at 80.01 78.74 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "1c8e4665-bd68-5f02-bdba-27c1758ef672"))
+(wire (pts (xy 74.93 81.28) (xy 80.01 81.28)) (stroke (width 0) (type default)) (uuid "c8e1ce90-7151-572f-8060-1bcebb68ffe8"))
+(label "L_GL2" (at 80.01 81.28 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ec00b32e-130e-543e-b3e5-89fa2fd09705"))
+(wire (pts (xy 74.93 83.82) (xy 80.01 83.82)) (stroke (width 0) (type default)) (uuid "17217163-a0e8-56a6-8f06-04e971bf1fd0"))
+(label "L_A" (at 80.01 83.82 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2bf006c8-6983-54e3-ab48-1e8694be1671"))
+(wire (pts (xy 74.93 86.36) (xy 80.01 86.36)) (stroke (width 0) (type default)) (uuid "c1c82e25-fd59-5c4e-879c-4b42a5cb72cd"))
+(label "L_GH2" (at 80.01 86.36 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ea91da04-2896-59d7-95c6-5bbfcd3c020b"))
+(wire (pts (xy 74.93 88.9) (xy 80.01 88.9)) (stroke (width 0) (type default)) (uuid "a177220c-4121-51ce-848a-5cc5665c00e4"))
+(label "GND" (at 80.01 88.9 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e9c8cd57-bd5a-5911-9122-6f7efb30eaba"))
+(symbol (lib_id "DRV8701_Custom:DRV8701ERGET") (at 60.96 76.2 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "aabafb2b-145d-54da-b922-0684eeb49a96") (property "Reference" "U1" (at 60.96 53.34 0) (effects (font (size 1.27 1.27))))(property "Value" "DRV8701ERGET" (at 60.96 55.88 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:DRV8701_RGE24" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8701.pdf" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "81b5345c-4a04-521f-9743-2116c9599799"))(pin "2" (uuid "0793883b-2f99-593c-9d4f-5d372668e949"))(pin "3" (uuid "e3276740-1b79-536d-b8b8-499a642fe1e5"))(pin "4" (uuid "6f849a6b-fb78-5c62-9118-ea61ae149bf5"))(pin "5" (uuid "584fa43d-11e4-55f8-951e-794f5957ce25"))(pin "6" (uuid "37683571-0118-51f7-bb68-bade73007592"))(pin "7" (uuid "870c019f-3b98-5d8f-83e2-142efd56ffc1"))(pin "8" (uuid "50fdd818-375f-59df-9561-35f527af45ec"))(pin "9" (uuid "201ebdfc-16f8-5edd-a6d7-c5d9dd977baa"))(pin "10" (uuid "8c49e141-7147-5f76-8102-ffd054862681"))(pin "11" (uuid "4c779cff-419c-54ec-bd08-a290d33f0fff"))(pin "12" (uuid "aad02bc3-32ec-520b-8627-c5e251e7752d"))(pin "13" (uuid "fedac1c6-f9b7-5b13-a68a-d0b0bf4870d4"))(pin "14" (uuid "d17e5f5b-cb01-5588-ba53-14a3e5f90b64"))(pin "15" (uuid "2b6c6f6c-f18e-5e66-9d33-0c916ed478b9"))(pin "16" (uuid "40d2882b-027f-5a76-b827-1c6ccd7d9920"))(pin "17" (uuid "3b2f0006-5230-5ae3-9803-ea38ee012e22"))(pin "18" (uuid "e23f8f7b-10d9-51bc-a052-6005b6ba3bce"))(pin "19" (uuid "7e8a8488-5af8-5652-98de-b003846b0f89"))(pin "20" (uuid "5dcbf19e-331c-5ffa-8540-f1ef127057f6"))(pin "21" (uuid "c202396b-cd08-5276-ab32-26317d7a7533"))(pin "22" (uuid "89b251d9-50d5-5cbd-951f-72a7cd163567"))(pin "23" (uuid "c0de9526-265e-5b6a-880d-513a85ec5342"))(pin "24" (uuid "6874bd5a-f640-5e41-97b7-9f2fbdbe7db3"))(pin "25" (uuid "8be165d5-7c96-5e80-9f14-c311360cb4ca"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "U1") (unit 1)))))
+(wire (pts (xy 123.19 55.88) (xy 118.11 55.88)) (stroke (width 0) (type default)) (uuid "32e964d0-2951-5ac7-abb7-50dc55180231"))
+(label "L_A" (at 118.11 55.88 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2033c0aa-80b4-50bf-9f1d-3acc55678f57"))
+(wire (pts (xy 123.19 58.42) (xy 118.11 58.42)) (stroke (width 0) (type default)) (uuid "75a0e266-2d7e-57e2-8dcb-7c1be9bd8a32"))
+(label "L_A" (at 118.11 58.42 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "95f5540d-9670-5ada-9493-76ecde9e86cf"))
+(wire (pts (xy 123.19 60.96) (xy 118.11 60.96)) (stroke (width 0) (type default)) (uuid "4edeeff1-0b53-5e4d-9bd3-fa4b5ba2e37f"))
+(label "L_A" (at 118.11 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b7f440e9-6b7a-53ef-bca0-4fb9ac55c7f6"))
+(wire (pts (xy 123.19 48.26) (xy 118.11 48.26)) (stroke (width 0) (type default)) (uuid "c296011c-ded7-5afe-8c5c-c947956cded0"))
+(label "L_GH2" (at 118.11 48.26 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "818f585f-e800-5ef5-a1ca-2450e5627d75"))
+(wire (pts (xy 140.97 48.26) (xy 146.05 48.26)) (stroke (width 0) (type default)) (uuid "d969adfc-884c-5bd2-9290-3950a213bd43"))
+(label "VM" (at 146.05 48.26 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3d78c0a4-470c-5f78-bc13-a1240f70c535"))
+(wire (pts (xy 140.97 50.8) (xy 146.05 50.8)) (stroke (width 0) (type default)) (uuid "8b1e0e48-4482-5c17-bd8e-50a4d40edec8"))
+(label "VM" (at 146.05 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ca9b6dea-d605-575f-bd30-87919db87226"))
+(wire (pts (xy 140.97 53.34) (xy 146.05 53.34)) (stroke (width 0) (type default)) (uuid "5de24121-b06f-5f08-ad43-3b66174d87cc"))
+(label "VM" (at 146.05 53.34 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5f822dc1-2336-5420-b635-97e22559c2ad"))
+(wire (pts (xy 140.97 55.88) (xy 146.05 55.88)) (stroke (width 0) (type default)) (uuid "40ecd745-6c88-51fe-abe8-22bac5e3ba5f"))
+(label "VM" (at 146.05 55.88 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "18c6c62b-2b93-5a0d-a34b-3d17b0420f7e"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 132.08 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3406b920-c284-5def-b195-4429fb22aeee") (property "Reference" "Q1" (at 132.08 40.64 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 132.08 67.31 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 132.08 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 132.08 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 132.08 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "663549d3-7934-53e0-b498-d11f49a9a2a6"))(pin "2" (uuid "c04723ee-04da-5c13-b3f7-f515f8f147e3"))(pin "3" (uuid "36db7bf3-32cb-5beb-ba32-7ee4211993ea"))(pin "4" (uuid "9f571af8-f804-572f-8140-8e270df50268"))(pin "5" (uuid "aba2f6eb-1389-52d6-855e-6ee50f41be6f"))(pin "6" (uuid "8ce572e2-c986-5510-b1ba-f013c8ae70b7"))(pin "7" (uuid "1b01145a-2193-5199-a0f0-36608b2b635f"))(pin "8" (uuid "490c0911-5048-527e-9829-6553fd58f215"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q1") (unit 1)))))
+(wire (pts (xy 123.19 101.6) (xy 118.11 101.6)) (stroke (width 0) (type default)) (uuid "4fdb3eee-9d22-5ce9-ad8e-ffea46d16b44"))
+(label "GND" (at 118.11 101.6 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "be823879-5747-524b-939a-305ad7303ebb"))
+(wire (pts (xy 123.19 104.14) (xy 118.11 104.14)) (stroke (width 0) (type default)) (uuid "b5fd1ce6-fd9f-5bd7-b966-708f2813f53e"))
+(label "GND" (at 118.11 104.14 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "93048bf9-625a-50dc-853f-0c26af0879a3"))
+(wire (pts (xy 123.19 106.68) (xy 118.11 106.68)) (stroke (width 0) (type default)) (uuid "8d9bbbb7-b5d3-5ef1-a997-d63315f84727"))
+(label "GND" (at 118.11 106.68 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "5aa6ead2-247a-54d6-8d9c-c1e43dd9a6fe"))
+(wire (pts (xy 123.19 93.98) (xy 118.11 93.98)) (stroke (width 0) (type default)) (uuid "4d7b56dd-eb53-559c-85b4-3adecc3fba77"))
+(label "L_GL2" (at 118.11 93.98 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1161c893-4f48-55a4-ac77-cfbf11424edb"))
+(wire (pts (xy 140.97 93.98) (xy 146.05 93.98)) (stroke (width 0) (type default)) (uuid "c7fa5d34-4245-53fd-b7f0-d39c5d5e23a1"))
+(label "L_A" (at 146.05 93.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5fae0822-a7b7-58b2-8861-b9d8cd669f50"))
+(wire (pts (xy 140.97 96.52) (xy 146.05 96.52)) (stroke (width 0) (type default)) (uuid "703621b6-df3d-5d96-9629-678318259285"))
+(label "L_A" (at 146.05 96.52 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3fe96456-c9d7-5333-9cb5-11995f70aa99"))
+(wire (pts (xy 140.97 99.06) (xy 146.05 99.06)) (stroke (width 0) (type default)) (uuid "2a8e34af-48f2-5ee7-858d-e9b9a70fca86"))
+(label "L_A" (at 146.05 99.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8b04e445-d747-5219-a9bf-22dd931928d2"))
+(wire (pts (xy 140.97 101.6) (xy 146.05 101.6)) (stroke (width 0) (type default)) (uuid "77f76028-eb2d-537c-b365-f6e962916140"))
+(label "L_A" (at 146.05 101.6 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "30ba6365-a67e-5b43-9603-0c72454c5618"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 132.08 101.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70c42064-282f-569e-867c-d1707c9159e4") (property "Reference" "Q2" (at 132.08 86.36 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 132.08 113.03 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 132.08 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 132.08 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 132.08 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "09b97bad-3d94-53b0-b0cd-1ce6489dfbf9"))(pin "2" (uuid "d4316edd-caf7-558a-948f-08d9e289aee9"))(pin "3" (uuid "9ed6dc5d-9151-502a-a7a3-a2f603a7fbc2"))(pin "4" (uuid "146a7995-ca48-51ef-a63a-0424c1078727"))(pin "5" (uuid "d41bd93d-8392-5638-a39f-0fd365196cef"))(pin "6" (uuid "a6bea59c-24c5-5c47-8fb0-ef7124dda1c0"))(pin "7" (uuid "4b0ef694-9306-55c0-895b-bcdda6dbf259"))(pin "8" (uuid "d0c1f1b2-7e2f-5aa6-b3ad-2c7e8dc63c16"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q2") (unit 1)))))
+(wire (pts (xy 166.37 55.88) (xy 161.29 55.88)) (stroke (width 0) (type default)) (uuid "90190d96-131f-5543-9eea-4ea7fb912a18"))
+(label "L_B" (at 161.29 55.88 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "756f5348-8202-5687-a617-e61516cac492"))
+(wire (pts (xy 166.37 58.42) (xy 161.29 58.42)) (stroke (width 0) (type default)) (uuid "bd1dfae1-725f-500e-b162-09df78ac22a6"))
+(label "L_B" (at 161.29 58.42 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e2c0d709-505b-5999-852c-4ffc27a45b57"))
+(wire (pts (xy 166.37 60.96) (xy 161.29 60.96)) (stroke (width 0) (type default)) (uuid "fe06bc96-39c1-58f9-b7fb-3a6f9c89746c"))
+(label "L_B" (at 161.29 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2d94d378-8c61-5236-aea1-c8f0e8205091"))
+(wire (pts (xy 166.37 48.26) (xy 161.29 48.26)) (stroke (width 0) (type default)) (uuid "7a79cbbf-e154-5f51-b8c9-429c267f7db4"))
+(label "L_GH1" (at 161.29 48.26 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c19124c1-c8ba-5c0e-a229-319061c1fd3d"))
+(wire (pts (xy 184.15 48.26) (xy 189.23 48.26)) (stroke (width 0) (type default)) (uuid "86269dae-7860-5597-b5b8-20402ca08738"))
+(label "VM" (at 189.23 48.26 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "bb084e3e-6687-5280-b1d9-cbbf72e33307"))
+(wire (pts (xy 184.15 50.8) (xy 189.23 50.8)) (stroke (width 0) (type default)) (uuid "bd8eb2e0-8282-565e-9db3-861fe3ff9bb2"))
+(label "VM" (at 189.23 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2d545144-6f8d-572d-8cb4-cf97f6279fc3"))
+(wire (pts (xy 184.15 53.34) (xy 189.23 53.34)) (stroke (width 0) (type default)) (uuid "5a3fd1e7-0e57-5b53-a132-5a5cf660a08b"))
+(label "VM" (at 189.23 53.34 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fa705c9d-0203-5f11-8c00-378602d74a4e"))
+(wire (pts (xy 184.15 55.88) (xy 189.23 55.88)) (stroke (width 0) (type default)) (uuid "dd745380-dc72-5f54-b58c-95f878c7a8a8"))
+(label "VM" (at 189.23 55.88 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b5bf9745-cb81-5faf-8ed6-90eaa2b2f54b"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 175.26 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fd6f8503-e4e3-564d-be1f-72a0b1ee740d") (property "Reference" "Q3" (at 175.26 40.64 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 175.26 67.31 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 175.26 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 175.26 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 175.26 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "12a6dafa-d22e-510b-bc4b-4f5b283b4ff3"))(pin "2" (uuid "08877b06-991a-50f6-91aa-9cf9c790042e"))(pin "3" (uuid "06fbb814-144f-544a-8fba-c7e7145acde9"))(pin "4" (uuid "f64058c1-9aa9-539d-873b-37704fc33a6b"))(pin "5" (uuid "97b721ef-5fe1-5eb4-8498-4f5aebf2a5bf"))(pin "6" (uuid "5f0e70dd-625c-586f-ae06-cb95a68fb293"))(pin "7" (uuid "79505d0d-02f2-5aae-a145-bd01690f5cd8"))(pin "8" (uuid "76a40bc6-8390-5815-ad53-060f3a7ae907"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q3") (unit 1)))))
+(wire (pts (xy 166.37 101.6) (xy 161.29 101.6)) (stroke (width 0) (type default)) (uuid "b16100fc-3c76-5d25-a24e-4afb57e4cdcd"))
+(label "GND" (at 161.29 101.6 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "98e42168-0c8f-5dcd-a448-c86da1d05b19"))
+(wire (pts (xy 166.37 104.14) (xy 161.29 104.14)) (stroke (width 0) (type default)) (uuid "65cd5970-62e8-5aaf-976e-179b71d1ffb8"))
+(label "GND" (at 161.29 104.14 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c99ca6c3-8fd4-5df0-8c40-3a941888455c"))
+(wire (pts (xy 166.37 106.68) (xy 161.29 106.68)) (stroke (width 0) (type default)) (uuid "cbd1a687-199f-5018-8eef-33daeb3dbe12"))
+(label "GND" (at 161.29 106.68 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "745b0944-f7cf-50ba-ac48-80607194212e"))
+(wire (pts (xy 166.37 93.98) (xy 161.29 93.98)) (stroke (width 0) (type default)) (uuid "57421e88-2319-5731-b9ee-7e512c3b6712"))
+(label "L_GL1" (at 161.29 93.98 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ac8960e9-ea3e-5cde-acd5-086f3954bd3b"))
+(wire (pts (xy 184.15 93.98) (xy 189.23 93.98)) (stroke (width 0) (type default)) (uuid "6909dfd8-5cfe-5962-acf2-40a973fe7283"))
+(label "L_B" (at 189.23 93.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c80708b8-f71e-5c67-b51d-08b4b41006e1"))
+(wire (pts (xy 184.15 96.52) (xy 189.23 96.52)) (stroke (width 0) (type default)) (uuid "49b3d12d-af3c-55bb-a785-938fb4c6daa4"))
+(label "L_B" (at 189.23 96.52 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e46c91aa-4a68-5454-8a36-662197a22182"))
+(wire (pts (xy 184.15 99.06) (xy 189.23 99.06)) (stroke (width 0) (type default)) (uuid "735ff1a7-3dd7-5262-a7be-cf20389d61a3"))
+(label "L_B" (at 189.23 99.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5f9b70e3-02c5-55ed-b837-fa89aad990ef"))
+(wire (pts (xy 184.15 101.6) (xy 189.23 101.6)) (stroke (width 0) (type default)) (uuid "f2e5c7fb-1e75-5e80-bbd1-3a9988d8c7ab"))
+(label "L_B" (at 189.23 101.6 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "40327aca-7dd7-5853-adf0-cacfaf1a58ad"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 175.26 101.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3b157d71-8761-5553-b01d-bdd6bddbb4ac") (property "Reference" "Q4" (at 175.26 86.36 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 175.26 113.03 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 175.26 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 175.26 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 175.26 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "3ed12acc-217d-5c34-a9a5-9ea47d7e44aa"))(pin "2" (uuid "2af9f9fb-70d3-560f-b319-204b4a5ed024"))(pin "3" (uuid "48992e72-5b85-53a0-bc5a-4027eb54abe7"))(pin "4" (uuid "42179ac3-5409-5f55-a841-aa7616ac20c2"))(pin "5" (uuid "9d73122a-62df-5423-8d02-986e319d1fb2"))(pin "6" (uuid "67bf15f0-91c1-5ff9-9e58-e9ff80edd2f7"))(pin "7" (uuid "d1ac4d63-f820-5430-af60-4f20565ecc18"))(pin "8" (uuid "318c3870-a721-5eaa-9e50-6b12f687304c"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q4") (unit 1)))))
+(text "SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad" (at 105.41 124.46 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "d70367a7-d093-5a9e-89d6-1e3fa538d72d"))
+(text "Original charge-pump and supply capacitors: all 100nF" (at 17.78 132.08 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2f07d4d9-1649-54b2-b6b2-d7f1cbdfabc9"))
+(wire (pts (xy 27.94 146.05) (xy 27.94 140.97)) (stroke (width 0) (type default)) (uuid "a5b12fae-10e9-5e50-bf03-f6c5f23130c1"))
+(label "L_CPL" (at 27.94 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c3d8ffed-8b7f-5a55-875b-54a2458a9e1b"))
+(wire (pts (xy 27.94 153.67) (xy 27.94 158.75)) (stroke (width 0) (type default)) (uuid "7ced4dab-e188-5403-aa3b-7922e4083508"))
+(label "L_CPH" (at 27.94 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b5aaffb1-8045-5595-ae22-5caed1b970ef"))
+(symbol (lib_id "DRV8701_Custom:C") (at 27.94 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7de1a066-18c1-564b-92d1-7f9f15c8920c") (property "Reference" "C1" (at 31.75 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 31.75 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 27.94 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 27.94 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 27.94 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "08f05402-ac85-5227-83e6-5a1ee8b1bcde"))(pin "2" (uuid "3ce53d47-868f-571b-bb14-e98121b0e469"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C1") (unit 1)))))
+(wire (pts (xy 55.88 146.05) (xy 55.88 140.97)) (stroke (width 0) (type default)) (uuid "807fb918-7a88-5f94-9385-a5f41903faea"))
+(label "L_VCP" (at 55.88 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8651478e-d01d-5b17-9ebf-d2cdccaa1a84"))
+(wire (pts (xy 55.88 153.67) (xy 55.88 158.75)) (stroke (width 0) (type default)) (uuid "6b6197ac-cdb4-5df8-9b3a-6f57dbff55d7"))
+(label "VM" (at 55.88 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8d52f09f-2555-5028-86d5-b795c216182a"))
+(symbol (lib_id "DRV8701_Custom:C") (at 55.88 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7af576ae-e425-550e-a2e0-b39d4ac00380") (property "Reference" "C2" (at 59.69 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 59.69 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 55.88 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 55.88 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 55.88 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a503ed53-80a3-5dd4-bb29-fb67c58c9945"))(pin "2" (uuid "e356ab60-5aa8-57f7-aa31-2a7c38967caa"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C2") (unit 1)))))
+(wire (pts (xy 83.82 146.05) (xy 83.82 140.97)) (stroke (width 0) (type default)) (uuid "0bc7c56d-b180-57d1-9acd-d8b12ac0e2ae"))
+(label "VM" (at 83.82 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "066307f8-f10e-538f-bf6a-225b6e010f75"))
+(wire (pts (xy 83.82 153.67) (xy 83.82 158.75)) (stroke (width 0) (type default)) (uuid "cd79de6a-ccff-5478-a7bd-ed5aa0a87a80"))
+(label "GND" (at 83.82 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b3097383-e6e1-5544-9d80-b528389bcf69"))
+(symbol (lib_id "DRV8701_Custom:C") (at 83.82 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6a6d88dd-9701-52ac-bb2e-a04f5b3ccf5e") (property "Reference" "C3" (at 87.63 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 87.63 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 83.82 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 83.82 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 83.82 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "6ac3e53f-0107-5315-bf8c-c9d1d9ad4236"))(pin "2" (uuid "d3b58c44-f18e-5fd8-a41e-8ae0826c43e4"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C3") (unit 1)))))
+(wire (pts (xy 111.76 146.05) (xy 111.76 140.97)) (stroke (width 0) (type default)) (uuid "b7614083-ce8a-5a7d-add1-31f34dc7850d"))
+(label "VM" (at 111.76 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b08e6e10-187c-5495-b1fd-d1e2f208476a"))
+(wire (pts (xy 111.76 153.67) (xy 111.76 158.75)) (stroke (width 0) (type default)) (uuid "76ccf62a-0bf3-5229-9a35-078520b67084"))
+(label "GND" (at 111.76 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "10bdfcb8-2f97-53b2-abdf-6d72517b0845"))
+(symbol (lib_id "DRV8701_Custom:C") (at 111.76 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d87410ef-0009-51b0-830a-c7d54b8a64e8") (property "Reference" "C4" (at 115.57 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 115.57 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 111.76 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 111.76 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 111.76 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "8bca19ad-db93-5ea9-9e82-8a2b25259b0f"))(pin "2" (uuid "955f4987-9d0b-55f2-92f3-552d6596a97d"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C4") (unit 1)))))
+(wire (pts (xy 139.7 146.05) (xy 139.7 140.97)) (stroke (width 0) (type default)) (uuid "e20da720-b6b7-5849-ad86-f72b99b9ce5c"))
+(label "L_AVDD" (at 139.7 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5a0c779a-aae9-5e2f-bdfd-4f1327352194"))
+(wire (pts (xy 139.7 153.67) (xy 139.7 158.75)) (stroke (width 0) (type default)) (uuid "87b60b7d-1978-5f50-82a8-1e7eb9690e4e"))
+(label "GND" (at 139.7 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "6caff5f4-bc4b-5317-a288-53a93f9811ff"))
+(symbol (lib_id "DRV8701_Custom:C") (at 139.7 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2de694f5-0a37-5dd9-9d93-4cb6f1928433") (property "Reference" "C5" (at 143.51 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 143.51 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 139.7 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 139.7 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "644a0d7e-d987-56ca-b6b3-dd7a0e05772d"))(pin "2" (uuid "8a884212-f389-5ed9-9b94-43f1602bee7c"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C5") (unit 1)))))
+(wire (pts (xy 167.64 146.05) (xy 167.64 140.97)) (stroke (width 0) (type default)) (uuid "eb19804e-5bb3-5144-80a1-82154cd092ae"))
+(label "L_DVDD" (at 167.64 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a0315454-cc17-53cb-a36c-f6ac2ec80f6f"))
+(wire (pts (xy 167.64 153.67) (xy 167.64 158.75)) (stroke (width 0) (type default)) (uuid "fd9e6324-2264-5f59-8c70-cb3d5fef3b23"))
+(label "GND" (at 167.64 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "4b253396-0642-5f9e-beb5-3db88f6b47dd"))
+(symbol (lib_id "DRV8701_Custom:C") (at 167.64 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3dee3c30-e184-5b12-ae4b-a720622d9432") (property "Reference" "C6" (at 171.45 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 171.45 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 167.64 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 167.64 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 167.64 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "f01154d5-f034-5c5a-9009-10762dc23480"))(pin "2" (uuid "44eebaf3-68db-598f-91ce-20f7879c3719"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C6") (unit 1)))))
+(text "Series RC across motor outputs: 100nF + 100 ohm" (at 17.78 171.45 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f6f5030a-da5a-56ed-adbf-453da58569df"))
+(wire (pts (xy 60.96 182.88) (xy 60.96 177.8)) (stroke (width 0) (type default)) (uuid "4473bb24-6f33-5554-a39f-d4c70c52a5bb"))
+(label "L_A" (at 60.96 177.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "cf613acd-6294-520a-9bbb-6999654d5b70"))
+(wire (pts (xy 60.96 190.5) (xy 60.96 195.58)) (stroke (width 0) (type default)) (uuid "088e1dd0-96a3-58dc-b5cf-5e778c33ca62"))
+(label "L_SNUBBER" (at 60.96 195.58 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "eb9d3f9a-0ea7-5deb-a054-2039c0dbe397"))
+(symbol (lib_id "DRV8701_Custom:C") (at 60.96 186.69 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9b7525f6-427f-5c41-8128-03e2a4bf41d7") (property "Reference" "C16" (at 64.77 185.42 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 64.77 187.96 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 60.96 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 60.96 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 60.96 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "e6ec25e3-77cc-50b2-a1b7-28959210acd6"))(pin "2" (uuid "1dc2191b-01b8-56d4-b068-3fab2fe2d6cf"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C16") (unit 1)))))
+(wire (pts (xy 60.96 203.2) (xy 60.96 198.12)) (stroke (width 0) (type default)) (uuid "c18c0bcf-d1f9-5091-b04e-1ca50645c1b0"))
+(label "L_SNUBBER" (at 60.96 198.12 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "21e8ffa6-5375-5162-86c9-a755bd4dff96"))
+(wire (pts (xy 60.96 210.82) (xy 60.96 215.9)) (stroke (width 0) (type default)) (uuid "de016ad6-b3b8-5fe7-b25a-3e715fea1527"))
+(label "L_B" (at 60.96 215.9 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7eff1606-69d6-5599-a9f0-0a5e5a850858"))
+(symbol (lib_id "DRV8701_Custom:R") (at 60.96 207.01 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b6df295e-49ec-5737-822e-35c6905c27f6") (property "Reference" "R8" (at 64.77 205.74 0) (effects (font (size 1.27 1.27))))(property "Value" "100Ω" (at 64.77 208.28 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:R_1210_3225Metric" (at 60.96 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 60.96 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 60.96 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "e182fdb2-61b6-5d8a-8013-8c84fce4b898"))(pin "2" (uuid "5157db59-dd1d-5c3f-a7a4-767befae63ba"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "R8") (unit 1)))))
+(wire (pts (xy 144.78 193.04) (xy 139.7 193.04)) (stroke (width 0) (type default)) (uuid "b086b1b9-99a5-5a6d-a863-aec8f920bbd3"))
+(label "L_A" (at 139.7 193.04 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e81a0faa-b63b-56a2-b125-831edd342de0"))
+(wire (pts (xy 144.78 195.58) (xy 139.7 195.58)) (stroke (width 0) (type default)) (uuid "4cff948d-ebde-5072-b84f-d2b971182889"))
+(label "L_B" (at 139.7 195.58 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "6a48c145-021d-51eb-b9b3-4013f8584b8f"))
+(symbol (lib_id "DRV8701_Custom:XT30_OUTPUT") (at 149.86 194.31 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d658b4e5-c6f5-57c8-8fb4-912926f3d6f8") (property "Reference" "CN1" (at 149.86 181.61 0) (effects (font (size 1.27 1.27))))(property "Value" "XT30UPB-M" (at 149.86 184.15 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" (at 149.86 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 149.86 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 149.86 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a2747482-b1dc-50ad-8122-971f6469e5c8"))(pin "2" (uuid "44a7beca-504e-5ac5-b393-d09db17adc9c"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "CN1") (unit 1)))))
+(text "12V motor: 0.4A rated / 1.8A stall max" (at 116.84 209.55 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b8e6e9ae-bf6b-53fc-8983-e52c814c2234"))
+(text "R MOTOR CHANNEL — ORIGINAL PH/EN DRIVER" (at 223.52 25.4 0) (effects (font (size 1.778 1.778)) (justify left)) (uuid "d1e833dd-9963-56ff-afd9-518cdf698996"))
+(wire (pts (xy 252.73 60.96) (xy 247.65 60.96)) (stroke (width 0) (type default)) (uuid "f58446b0-c7b4-5dbf-8ce9-bb0618ce7fd3"))
+(label "VM" (at 247.65 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "59fb5ec0-ff75-5d8e-ad99-a83ac8cc2074"))
+(wire (pts (xy 252.73 63.5) (xy 247.65 63.5)) (stroke (width 0) (type default)) (uuid "997caf20-2e6c-556b-a195-edd888f6bc87"))
+(label "R_VCP" (at 247.65 63.5 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "880954da-a633-5e79-ab9f-9e856d316568"))
+(wire (pts (xy 252.73 66.04) (xy 247.65 66.04)) (stroke (width 0) (type default)) (uuid "80a3cd71-9024-5a65-bcfd-5311c110cafc"))
+(label "R_CPH" (at 247.65 66.04 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b685db60-4db5-5f77-91a0-bea06d603220"))
+(wire (pts (xy 252.73 68.58) (xy 247.65 68.58)) (stroke (width 0) (type default)) (uuid "8975c649-4e85-53c9-905a-b5a040ca8127"))
+(label "R_CPL" (at 247.65 68.58 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c36615a1-46fe-51e4-a7ec-a869dd23ad3f"))
+(wire (pts (xy 252.73 71.12) (xy 247.65 71.12)) (stroke (width 0) (type default)) (uuid "8cb0f28e-4a10-5230-90f9-bd5ce257287d"))
+(label "GND" (at 247.65 71.12 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "54833e21-b6f5-5417-affc-b63888f8088f"))
+(wire (pts (xy 252.73 73.66) (xy 247.65 73.66)) (stroke (width 0) (type default)) (uuid "8f9202a2-b68c-5f7a-ac90-0131e60a3fec"))
+(label "R_AVDD" (at 247.65 73.66 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ef538f52-d6fb-5320-8773-1ba1d2f869d3"))
+(wire (pts (xy 252.73 76.2) (xy 247.65 76.2)) (stroke (width 0) (type default)) (uuid "370c3b83-478a-5b9d-a48e-daf64b2f8188"))
+(label "R_AVDD" (at 247.65 76.2 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "23d9c3eb-5a39-5e85-9255-78b334a7f344"))
+(wire (pts (xy 252.73 78.74) (xy 247.65 78.74)) (stroke (width 0) (type default)) (uuid "7dd94b05-f2d1-5392-9952-e7771c5678e1"))
+(label "R_DVDD" (at 247.65 78.74 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ab619248-0380-562b-b69b-3fc353ca1d28"))
+(no_connect (at 252.73 81.28) (uuid "55590200-ceb1-5045-acac-55ea3bfed0cc"))
+(no_connect (at 252.73 83.82) (uuid "e99db169-661f-54b1-8ae6-c6a019ba9095"))
+(no_connect (at 252.73 86.36) (uuid "08983782-3109-567b-9744-4dd48a4d9171"))
+(wire (pts (xy 252.73 88.9) (xy 247.65 88.9)) (stroke (width 0) (type default)) (uuid "7718223a-54ce-5db9-8d32-5290290a19b4"))
+(label "R_AVDD" (at 247.65 88.9 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b460d223-ba40-5a1b-824a-1e60baa24f53"))
+(wire (pts (xy 252.73 91.44) (xy 247.65 91.44)) (stroke (width 0) (type default)) (uuid "00d7a67b-3292-5969-9b5b-1815a3a1c7d4"))
+(label "NSLEEP" (at 247.65 91.44 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2ec86e14-8e23-5042-a2ef-2b5999da4a39"))
+(wire (pts (xy 280.67 60.96) (xy 285.75 60.96)) (stroke (width 0) (type default)) (uuid "d1a66685-fa1b-5887-9d3f-aab3a2339fe0"))
+(label "R_EN_IN" (at 285.75 60.96 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "20aa055e-0d5d-5af1-a40b-9725bb509af7"))
+(wire (pts (xy 280.67 63.5) (xy 285.75 63.5)) (stroke (width 0) (type default)) (uuid "f56933d4-74ff-5a5a-a6f8-4f8513bef916"))
+(label "R_PH_IN" (at 285.75 63.5 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "0bf73026-c7d4-56bb-82a4-a42c5207d99d"))
+(wire (pts (xy 280.67 66.04) (xy 285.75 66.04)) (stroke (width 0) (type default)) (uuid "d7991fb8-12a7-5e1a-acfc-6bbf435c0074"))
+(label "GND" (at 285.75 66.04 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3ed64335-8c84-510b-b980-ab7fe184eafd"))
+(wire (pts (xy 280.67 68.58) (xy 285.75 68.58)) (stroke (width 0) (type default)) (uuid "9852381e-5965-5d92-9266-dac1c0d305fc"))
+(label "R_GH1" (at 285.75 68.58 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c00f1fae-66e6-54f9-9f5b-bb156e08fcd4"))
+(wire (pts (xy 280.67 71.12) (xy 285.75 71.12)) (stroke (width 0) (type default)) (uuid "445553e5-d1f1-5bf4-a398-8dc6eaad9a93"))
+(label "R_B" (at 285.75 71.12 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8728be3d-7a33-56a2-8826-4704a6a48965"))
+(wire (pts (xy 280.67 73.66) (xy 285.75 73.66)) (stroke (width 0) (type default)) (uuid "e83a34a9-027e-5c2b-a00b-5fc54b357aa6"))
+(label "R_GL1" (at 285.75 73.66 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8bdd3053-5eae-5117-8704-da878091510f"))
+(wire (pts (xy 280.67 76.2) (xy 285.75 76.2)) (stroke (width 0) (type default)) (uuid "d43014a6-bbfe-565b-a8f4-dc8f92c0c988"))
+(label "GND" (at 285.75 76.2 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7dcf730a-9060-5f9d-85e2-7db7819281e0"))
+(wire (pts (xy 280.67 78.74) (xy 285.75 78.74)) (stroke (width 0) (type default)) (uuid "5fa819aa-137b-5fa5-9bac-7900ba5ba509"))
+(label "GND" (at 285.75 78.74 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "175fea3d-aed8-5b86-aa6f-3e5296e412e0"))
+(wire (pts (xy 280.67 81.28) (xy 285.75 81.28)) (stroke (width 0) (type default)) (uuid "00b8248d-c690-5272-8b8e-6bf40a0c5e6e"))
+(label "R_GL2" (at 285.75 81.28 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "9dff90ee-7123-5105-ba48-09b3f28a89d8"))
+(wire (pts (xy 280.67 83.82) (xy 285.75 83.82)) (stroke (width 0) (type default)) (uuid "f255b64f-2008-5916-b2c1-71cf8b1be266"))
+(label "R_A" (at 285.75 83.82 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "73d3c1d1-ee3c-5bec-8c1e-7b9f0932b2ef"))
+(wire (pts (xy 280.67 86.36) (xy 285.75 86.36)) (stroke (width 0) (type default)) (uuid "467b1b68-ecfb-540a-93d0-d3c3e3642767"))
+(label "R_GH2" (at 285.75 86.36 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "9942a7da-8f26-565b-ae6e-6c0c73656f98"))
+(wire (pts (xy 280.67 88.9) (xy 285.75 88.9)) (stroke (width 0) (type default)) (uuid "0e3ce758-4dd6-59b8-b343-7fcc634a6165"))
+(label "GND" (at 285.75 88.9 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "36831356-aa82-541a-a8aa-399848d38a1b"))
+(symbol (lib_id "DRV8701_Custom:DRV8701ERGET") (at 266.7 76.2 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3fc5504d-14ee-5d83-9e09-65e19f78db69") (property "Reference" "U2" (at 266.7 53.34 0) (effects (font (size 1.27 1.27))))(property "Value" "DRV8701ERGET" (at 266.7 55.88 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:DRV8701_RGE24" (at 266.7 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8701.pdf" (at 266.7 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 266.7 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "5914711a-10cf-5696-b302-e820e1219c5f"))(pin "2" (uuid "f798ece5-0af8-5a04-a47c-eb420e0057c3"))(pin "3" (uuid "765199f6-847c-50a3-bb83-a6e6a9fc9169"))(pin "4" (uuid "aae123c6-b58a-5ea2-bde0-f384b54903c1"))(pin "5" (uuid "4515c350-4cfd-56a5-a99f-4a04a5b73236"))(pin "6" (uuid "9685bbed-d989-545a-bc4f-7c792790b079"))(pin "7" (uuid "6330e367-4a75-5ada-830d-347d0fc4ae21"))(pin "8" (uuid "5040edbe-5c52-5eb3-b423-c5efd6af2403"))(pin "9" (uuid "681ccad5-979c-56be-956f-17240e4faea4"))(pin "10" (uuid "058bfff0-6217-596b-8960-23f3a8b47e7f"))(pin "11" (uuid "f685f616-130e-5453-8d57-ccfbd2e1238c"))(pin "12" (uuid "7bdd01db-4592-5a32-ba3e-9192fddde2f3"))(pin "13" (uuid "2435aa97-23d1-5453-bc57-6fa1a3007635"))(pin "14" (uuid "f76c3e62-3635-555c-a05e-eb0e8d266439"))(pin "15" (uuid "002d6f94-af29-5a31-b3b4-92a7f6ff0675"))(pin "16" (uuid "a921efc4-5df8-5eac-9ccd-856ccaebc35a"))(pin "17" (uuid "69604c24-99c8-597a-a1f4-690c1278bcb0"))(pin "18" (uuid "d690ba4f-c612-5def-bafe-e2e9ca5aff90"))(pin "19" (uuid "0283011d-e813-51e4-aa83-513ffc2296e8"))(pin "20" (uuid "2522672e-53d9-5442-aac4-a4b422146ee4"))(pin "21" (uuid "116c37c6-0908-5e7e-bcd9-70feab45a98b"))(pin "22" (uuid "523ae3cd-5641-52cf-bf73-0d47b93e62d2"))(pin "23" (uuid "70eab74f-3e68-5e23-aa80-e87e6c856cd4"))(pin "24" (uuid "16c30b84-12ea-5c06-a1c2-b2c9d54ef8eb"))(pin "25" (uuid "65117d19-b132-5386-bca5-f3af9a218d22"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "U2") (unit 1)))))
+(wire (pts (xy 328.93 55.88) (xy 323.85 55.88)) (stroke (width 0) (type default)) (uuid "bcdf4bc8-41a8-5fab-8c07-bafb543f69b4"))
+(label "R_A" (at 323.85 55.88 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "05c0dbd7-d364-5954-96b6-3dc29374f3a7"))
+(wire (pts (xy 328.93 58.42) (xy 323.85 58.42)) (stroke (width 0) (type default)) (uuid "c0556c7e-3cf4-5783-a0e2-ebbaa3620164"))
+(label "R_A" (at 323.85 58.42 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "7a565eca-8967-5536-baca-abcb1da2d193"))
+(wire (pts (xy 328.93 60.96) (xy 323.85 60.96)) (stroke (width 0) (type default)) (uuid "b03650d1-b82b-55d3-bc0b-7ec7ccc3173b"))
+(label "R_A" (at 323.85 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b148ed2e-fc32-535d-8140-092cc773fbe1"))
+(wire (pts (xy 328.93 48.26) (xy 323.85 48.26)) (stroke (width 0) (type default)) (uuid "a97d26d0-441c-5503-964a-109bf274e622"))
+(label "R_GH2" (at 323.85 48.26 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2dcd9471-c444-51cd-93b9-d146d3bd08c8"))
+(wire (pts (xy 346.71 48.26) (xy 351.79 48.26)) (stroke (width 0) (type default)) (uuid "b999e7aa-e5c1-5b5f-8f03-ffa3dbc88112"))
+(label "VM" (at 351.79 48.26 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f3b44996-6b83-51ac-90f3-7932aae50105"))
+(wire (pts (xy 346.71 50.8) (xy 351.79 50.8)) (stroke (width 0) (type default)) (uuid "adab02f1-4643-57fc-a26e-8fd996169816"))
+(label "VM" (at 351.79 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7cff9934-e8be-56b1-9d82-0106ee3d7910"))
+(wire (pts (xy 346.71 53.34) (xy 351.79 53.34)) (stroke (width 0) (type default)) (uuid "9ed2b3d4-088a-5d87-b661-f0421c010d7d"))
+(label "VM" (at 351.79 53.34 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "0e837e77-9294-52f0-be10-94a15f275046"))
+(wire (pts (xy 346.71 55.88) (xy 351.79 55.88)) (stroke (width 0) (type default)) (uuid "5fdff77a-2ac0-5c09-9f5e-7e61a06ea695"))
+(label "VM" (at 351.79 55.88 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "54c87438-882a-523e-adca-d2d9b47c6556"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 337.82 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8659d3b7-3d72-5061-b41d-dd31a752bf73") (property "Reference" "Q5" (at 337.82 40.64 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 337.82 67.31 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 337.82 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 337.82 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 337.82 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "b0bb9787-67a6-54f5-8103-0bc8ffea8303"))(pin "2" (uuid "b31b3b38-3bf4-51e0-acb8-3da7aa1d88cf"))(pin "3" (uuid "a180b20e-a775-52ca-8ec3-574d3e3402a9"))(pin "4" (uuid "32285cb1-e07b-5678-bd18-b415c5c99a22"))(pin "5" (uuid "06d5209f-b6cf-5d5d-a539-4c8aec68858e"))(pin "6" (uuid "a7fdbf94-0ba9-57ec-adf5-36af1464c9ae"))(pin "7" (uuid "939c7853-3e0b-5da4-a1cb-2d51d036cfcd"))(pin "8" (uuid "e25c53e4-3142-5080-80c3-04a38b220903"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q5") (unit 1)))))
+(wire (pts (xy 328.93 101.6) (xy 323.85 101.6)) (stroke (width 0) (type default)) (uuid "69911444-0a21-5c1f-ae7e-88bcd5facf3c"))
+(label "GND" (at 323.85 101.6 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "20e4555e-d20f-5637-8873-99b302833b8f"))
+(wire (pts (xy 328.93 104.14) (xy 323.85 104.14)) (stroke (width 0) (type default)) (uuid "464b13bf-19be-544d-9dee-79accc4b7bfd"))
+(label "GND" (at 323.85 104.14 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "4fa46629-eaff-565a-88da-9c613553670f"))
+(wire (pts (xy 328.93 106.68) (xy 323.85 106.68)) (stroke (width 0) (type default)) (uuid "a1297878-4ad9-51b4-9f2c-cb6c8a3aa2bb"))
+(label "GND" (at 323.85 106.68 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ca895d0d-1247-5b10-bc7a-eaaffa2f8d1d"))
+(wire (pts (xy 328.93 93.98) (xy 323.85 93.98)) (stroke (width 0) (type default)) (uuid "f5d1c1ff-1626-57e4-b64c-b7651fbc69d8"))
+(label "R_GL2" (at 323.85 93.98 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "9338d463-e40f-5016-bec5-7ce8b95a76bc"))
+(wire (pts (xy 346.71 93.98) (xy 351.79 93.98)) (stroke (width 0) (type default)) (uuid "3fb51071-2a9d-528b-b087-23708e3e167d"))
+(label "R_A" (at 351.79 93.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "992e0072-74c3-5dfd-9a62-66d21d33506d"))
+(wire (pts (xy 346.71 96.52) (xy 351.79 96.52)) (stroke (width 0) (type default)) (uuid "732ef5b3-253d-5644-8ec4-35e8dc964fc6"))
+(label "R_A" (at 351.79 96.52 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "cfdc0b1c-c655-5ea6-8280-f1a9029a9481"))
+(wire (pts (xy 346.71 99.06) (xy 351.79 99.06)) (stroke (width 0) (type default)) (uuid "a958d928-cfbc-5375-8bc5-e46cbd24030c"))
+(label "R_A" (at 351.79 99.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "155b06c2-92a9-542a-904a-f2dc42af6fd3"))
+(wire (pts (xy 346.71 101.6) (xy 351.79 101.6)) (stroke (width 0) (type default)) (uuid "0673d676-3859-55c7-a6ff-ffc2abd2557f"))
+(label "R_A" (at 351.79 101.6 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "381ccf56-8923-5b86-bdd7-7254ed633c8b"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 337.82 101.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "54baa8a4-ac79-5962-8abd-86febd33991f") (property "Reference" "Q6" (at 337.82 86.36 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 337.82 113.03 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 337.82 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 337.82 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 337.82 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a53801a5-3f18-5834-952c-53b72b6527cf"))(pin "2" (uuid "182c06b5-a652-59ba-97d8-4643b01b0b0a"))(pin "3" (uuid "96d13174-d58c-5a7c-aa60-97d73f4c2bda"))(pin "4" (uuid "96e807e8-c82b-59b0-94b4-57e8d872ac08"))(pin "5" (uuid "e7a9d64f-c5cb-5188-82f1-83d682178891"))(pin "6" (uuid "6e8884ec-7d61-57f8-83b0-529b4aaf6ac4"))(pin "7" (uuid "742bfb0c-daee-5600-9ee1-44867837ba7f"))(pin "8" (uuid "60ad7a71-c4dc-545f-9cb0-e25311d2199b"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q6") (unit 1)))))
+(wire (pts (xy 372.11 55.88) (xy 367.03 55.88)) (stroke (width 0) (type default)) (uuid "c1460678-4d23-51ef-88c4-045ca5c10ff3"))
+(label "R_B" (at 367.03 55.88 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e17d8efa-5300-5386-8a69-14600956c7d1"))
+(wire (pts (xy 372.11 58.42) (xy 367.03 58.42)) (stroke (width 0) (type default)) (uuid "caca183c-fcfb-552c-b49f-e8de0e4d5bab"))
+(label "R_B" (at 367.03 58.42 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "16bb17e3-d3d9-5dd8-ad40-7c020db9a812"))
+(wire (pts (xy 372.11 60.96) (xy 367.03 60.96)) (stroke (width 0) (type default)) (uuid "1ed0f9a0-431e-5881-9714-ed14ea049b8b"))
+(label "R_B" (at 367.03 60.96 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "cca288bd-29d4-5270-8526-65a61ca048f9"))
+(wire (pts (xy 372.11 48.26) (xy 367.03 48.26)) (stroke (width 0) (type default)) (uuid "4066616c-298d-5307-9d31-2ffac5170f13"))
+(label "R_GH1" (at 367.03 48.26 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "394de816-84a6-5182-89d6-7c75773bcfe6"))
+(wire (pts (xy 389.89 48.26) (xy 394.97 48.26)) (stroke (width 0) (type default)) (uuid "1c6849e8-489d-51a3-9c19-d6dc86e34b80"))
+(label "VM" (at 394.97 48.26 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c43143ec-ebd6-5af3-a758-12c894084fd5"))
+(wire (pts (xy 389.89 50.8) (xy 394.97 50.8)) (stroke (width 0) (type default)) (uuid "0920f81d-8e5c-5ea9-b866-ecb7cc82c0c1"))
+(label "VM" (at 394.97 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "61ededd7-7a74-5aaf-8621-cb6433badd87"))
+(wire (pts (xy 389.89 53.34) (xy 394.97 53.34)) (stroke (width 0) (type default)) (uuid "b71c76ed-1e0f-5256-acd2-c4b652cc1985"))
+(label "VM" (at 394.97 53.34 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2467471c-4b15-5337-9cb3-4fbff19bdc59"))
+(wire (pts (xy 389.89 55.88) (xy 394.97 55.88)) (stroke (width 0) (type default)) (uuid "96e13711-d480-532d-9a3e-cf9a239b746c"))
+(label "VM" (at 394.97 55.88 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "112ec7e6-7619-553e-a9cb-10cfb95c2dd5"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 381 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4bfcd16a-20b8-511f-bde0-7e99ffa6d928") (property "Reference" "Q7" (at 381 40.64 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 381 67.31 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 381 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 381 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 381 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "89ea24d8-6f3c-544d-87da-89d2815d2734"))(pin "2" (uuid "bf7f1e0e-f8a2-5dfe-aae5-b6f140380fc9"))(pin "3" (uuid "b65339d8-bb32-54db-a362-3a430b751368"))(pin "4" (uuid "3b281900-92eb-5af4-9236-366a8f8ef95c"))(pin "5" (uuid "26a73591-84a0-5454-a5a3-7e7d06791c70"))(pin "6" (uuid "55ebc3f1-1d6f-56e7-a6c1-d44fc8c0a160"))(pin "7" (uuid "bcf24fdb-f6f2-5f66-9e88-f40d693287c2"))(pin "8" (uuid "cca780c4-a0b7-5760-84a4-8ab73c019e07"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q7") (unit 1)))))
+(wire (pts (xy 372.11 101.6) (xy 367.03 101.6)) (stroke (width 0) (type default)) (uuid "95ba9caf-7b9f-5714-991b-9f5c65a463e5"))
+(label "GND" (at 367.03 101.6 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "85c05cb1-dd7b-591f-9dd2-da15e77129cf"))
+(wire (pts (xy 372.11 104.14) (xy 367.03 104.14)) (stroke (width 0) (type default)) (uuid "e259e0d3-ca58-572c-95ba-07dfb9af17e6"))
+(label "GND" (at 367.03 104.14 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "5ffa6328-d838-59e7-a02f-acb615e748c9"))
+(wire (pts (xy 372.11 106.68) (xy 367.03 106.68)) (stroke (width 0) (type default)) (uuid "227431ca-f8b9-5616-842c-bc70f63f054c"))
+(label "GND" (at 367.03 106.68 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "a55ed91f-ec0a-5121-8db5-7b09b782eebe"))
+(wire (pts (xy 372.11 93.98) (xy 367.03 93.98)) (stroke (width 0) (type default)) (uuid "3569991e-0272-5ea2-aea6-a952cdf7f43c"))
+(label "R_GL1" (at 367.03 93.98 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "3f6d8f51-8f7d-5c2c-80cb-1eafa6741225"))
+(wire (pts (xy 389.89 93.98) (xy 394.97 93.98)) (stroke (width 0) (type default)) (uuid "532b1909-d9e2-549e-837b-0cf4089bb153"))
+(label "R_B" (at 394.97 93.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2948215e-6a42-5196-814c-272b7bc50b99"))
+(wire (pts (xy 389.89 96.52) (xy 394.97 96.52)) (stroke (width 0) (type default)) (uuid "d1f02ea2-c454-5f94-9092-e06d02336d00"))
+(label "R_B" (at 394.97 96.52 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "4bf19d90-e8bf-5aae-bd8e-8b08e953a36d"))
+(wire (pts (xy 389.89 99.06) (xy 394.97 99.06)) (stroke (width 0) (type default)) (uuid "10aea3e3-cbda-55b2-a752-511b4df2962a"))
+(label "R_B" (at 394.97 99.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f23fc727-7420-5caf-96f6-e9c8941f513f"))
+(wire (pts (xy 389.89 101.6) (xy 394.97 101.6)) (stroke (width 0) (type default)) (uuid "2607e6c0-83ad-5c1e-8ae1-70294e329510"))
+(label "R_B" (at 394.97 101.6 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c14cf3db-a415-56e8-a0be-3f5a2c7c28cd"))
+(symbol (lib_id "DRV8701_Custom:TPH1R403NL") (at 381 101.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "544bbb89-dd00-5aef-a453-d237417d8bd0") (property "Reference" "Q8" (at 381 86.36 0) (effects (font (size 1.27 1.27))))(property "Value" "TPH1R403NL" (at 381 113.03 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:TPH1R403NL_SOPAdvance" (at 381 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" (at 381 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 381 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "4233731f-6f96-5d2e-ad32-0f19fe4646f0"))(pin "2" (uuid "3423a668-024d-5497-a4ab-eb1a3604d2a1"))(pin "3" (uuid "a94a9e3d-7e07-5557-ad78-8379c783283c"))(pin "4" (uuid "c38a8e1b-6c22-537d-a6b9-144322439546"))(pin "5" (uuid "04a399da-4e6b-5a57-8c1c-80376552446f"))(pin "6" (uuid "6ead5cf1-0d87-5222-afab-bdd6ff83e511"))(pin "7" (uuid "a15eb31b-9577-5abb-8792-595f1427a626"))(pin "8" (uuid "98551aeb-e715-542a-9089-13d4eb284fc0"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "Q8") (unit 1)))))
+(text "SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad" (at 311.15 124.46 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "66a35326-bb81-52fb-8587-32c0cfc2e67e"))
+(text "Original charge-pump and supply capacitors: all 100nF" (at 223.52 132.08 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d5f6beac-6bb2-53fe-9028-2552bcba6007"))
+(wire (pts (xy 233.68 146.05) (xy 233.68 140.97)) (stroke (width 0) (type default)) (uuid "c18489d5-1368-588b-be4f-1ba556fd41a7"))
+(label "R_CPL" (at 233.68 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "9139dd48-6586-5466-824e-6421589bf276"))
+(wire (pts (xy 233.68 153.67) (xy 233.68 158.75)) (stroke (width 0) (type default)) (uuid "5564c78b-733a-53a2-bda3-d8e1abc1e224"))
+(label "R_CPH" (at 233.68 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b92eddc7-8b00-51fc-af72-0f8f628471c7"))
+(symbol (lib_id "DRV8701_Custom:C") (at 233.68 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9bafa88f-b51d-5886-8670-59c089c7eb4a") (property "Reference" "C8" (at 237.49 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 237.49 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 233.68 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 233.68 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 233.68 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "5b0b7488-2e6a-53ff-8b7d-ef91add08fe2"))(pin "2" (uuid "1380573e-b569-5a85-af75-96fd2cc9d475"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C8") (unit 1)))))
+(wire (pts (xy 261.62 146.05) (xy 261.62 140.97)) (stroke (width 0) (type default)) (uuid "203141db-683e-5bd9-88bb-5e0282f18584"))
+(label "R_VCP" (at 261.62 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "9d41a50d-cb43-5de7-8f2a-7fc2e0bd4317"))
+(wire (pts (xy 261.62 153.67) (xy 261.62 158.75)) (stroke (width 0) (type default)) (uuid "caba52e4-8b3f-53d3-a214-9a6a21d90fad"))
+(label "VM" (at 261.62 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "03946ecc-e3c1-5f11-8372-ce8c9436474e"))
+(symbol (lib_id "DRV8701_Custom:C") (at 261.62 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "163bcbc7-1127-55a4-ac12-3f750a0eb6f5") (property "Reference" "C9" (at 265.43 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 265.43 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 261.62 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 261.62 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 261.62 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "97dd16c2-cee0-5ea6-b74a-ad0246473f57"))(pin "2" (uuid "73dd6ba7-8af3-56ad-9060-813e55f35cfd"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C9") (unit 1)))))
+(wire (pts (xy 289.56 146.05) (xy 289.56 140.97)) (stroke (width 0) (type default)) (uuid "2ae212f2-4141-5c10-a48c-fe6ac5217466"))
+(label "VM" (at 289.56 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "4ed08a6f-dbcb-570e-b0d7-2860be7901dc"))
+(wire (pts (xy 289.56 153.67) (xy 289.56 158.75)) (stroke (width 0) (type default)) (uuid "23df047a-c969-53ad-9610-0379d1e29a8b"))
+(label "GND" (at 289.56 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a80bebd0-ad8b-5c5f-aede-c477fd0675bf"))
+(symbol (lib_id "DRV8701_Custom:C") (at 289.56 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a641fdf9-9c3e-5e2a-b864-438940008e24") (property "Reference" "C10" (at 293.37 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 293.37 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 289.56 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 289.56 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 289.56 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "434c0e78-e166-5e45-bac2-ea0d77f3febd"))(pin "2" (uuid "dd790a0d-78a3-5ac7-867c-d8367cc68f29"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C10") (unit 1)))))
+(wire (pts (xy 317.5 146.05) (xy 317.5 140.97)) (stroke (width 0) (type default)) (uuid "ad9593a0-8bfc-5d10-ba5b-d3b9cd887bd1"))
+(label "VM" (at 317.5 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "1f4f4565-5cd0-5973-8969-96aa45fddec5"))
+(wire (pts (xy 317.5 153.67) (xy 317.5 158.75)) (stroke (width 0) (type default)) (uuid "dbdee636-7fb7-5c6f-9fe2-6ca50d18b85f"))
+(label "GND" (at 317.5 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "07ddc373-bce3-5864-a2e8-6ca9519ffd91"))
+(symbol (lib_id "DRV8701_Custom:C") (at 317.5 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a34ac5c1-4d4d-5dee-a425-bf509bd8065d") (property "Reference" "C11" (at 321.31 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 321.31 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 317.5 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 317.5 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 317.5 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "cd89e732-ca32-5ee3-889e-df5b2b74537d"))(pin "2" (uuid "e915f037-32e4-543b-a88f-a8da3aa1d42e"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C11") (unit 1)))))
+(wire (pts (xy 345.44 146.05) (xy 345.44 140.97)) (stroke (width 0) (type default)) (uuid "d7d2bf8e-af1c-5204-8deb-d5689ef36d08"))
+(label "R_AVDD" (at 345.44 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "593c6de6-6f60-5738-9816-17013f10553c"))
+(wire (pts (xy 345.44 153.67) (xy 345.44 158.75)) (stroke (width 0) (type default)) (uuid "574d1247-63d8-5a49-ba8e-56cbc96ec80e"))
+(label "GND" (at 345.44 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "25897961-c230-5f7f-a7f7-29ec63774a3f"))
+(symbol (lib_id "DRV8701_Custom:C") (at 345.44 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9a2d688c-51c6-59a5-bdbb-3777bfb7d255") (property "Reference" "C12" (at 349.25 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 349.25 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 345.44 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 345.44 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 345.44 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "383a6a96-5a31-5a84-823f-efbcc7033dee"))(pin "2" (uuid "0278b761-3489-548e-985d-8ab662e5054a"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C12") (unit 1)))))
+(wire (pts (xy 373.38 146.05) (xy 373.38 140.97)) (stroke (width 0) (type default)) (uuid "c87edd24-d2e9-59f9-aec4-836c8afdb430"))
+(label "R_DVDD" (at 373.38 140.97 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c1497e8b-e31e-5ed0-b2e8-e9429a7ea4de"))
+(wire (pts (xy 373.38 153.67) (xy 373.38 158.75)) (stroke (width 0) (type default)) (uuid "493ea056-212d-5072-97ee-42f4ac8ea351"))
+(label "GND" (at 373.38 158.75 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c2a35012-140e-5c4c-87a6-69985b150c8b"))
+(symbol (lib_id "DRV8701_Custom:C") (at 373.38 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ffcc4e3a-9379-519a-83bc-3ae3e7e1a11b") (property "Reference" "C13" (at 377.19 148.59 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 377.19 151.13 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 373.38 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 373.38 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 373.38 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "f97c574e-7192-5898-98ba-7741ff35d8ad"))(pin "2" (uuid "d3fa1987-90a3-593d-bf44-2d254d977259"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C13") (unit 1)))))
+(text "Series RC across motor outputs: 100nF + 100 ohm" (at 223.52 171.45 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e22453fd-fc71-558b-83e6-e39cdce265fa"))
+(wire (pts (xy 266.7 182.88) (xy 266.7 177.8)) (stroke (width 0) (type default)) (uuid "43fe9864-afb3-5a03-be51-9949c60b191b"))
+(label "R_A" (at 266.7 177.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8efaa8a3-e9bc-5e0a-b256-7fb6d4eaba4e"))
+(wire (pts (xy 266.7 190.5) (xy 266.7 195.58)) (stroke (width 0) (type default)) (uuid "8824c543-4144-5fdb-bdec-9f336d048084"))
+(label "R_SNUBBER" (at 266.7 195.58 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fa391ad0-ae62-5496-b421-1f1ad7ae3ce6"))
+(symbol (lib_id "DRV8701_Custom:C") (at 266.7 186.69 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "91efb947-0478-5cec-9bb6-884578d91ec4") (property "Reference" "C17" (at 270.51 185.42 0) (effects (font (size 1.27 1.27))))(property "Value" "100nF" (at 270.51 187.96 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:C_0603_1608Metric" (at 266.7 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 266.7 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 266.7 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "fd45959b-1e93-55ce-86cc-d5e959a2506f"))(pin "2" (uuid "7c031f0a-6aae-57ec-a628-90ee506e7eac"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C17") (unit 1)))))
+(wire (pts (xy 266.7 203.2) (xy 266.7 198.12)) (stroke (width 0) (type default)) (uuid "e05fc04c-793b-50d8-aa4c-c145f92fded3"))
+(label "R_SNUBBER" (at 266.7 198.12 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e3aa824b-f74c-5a93-9614-9d5541c54dbc"))
+(wire (pts (xy 266.7 210.82) (xy 266.7 215.9)) (stroke (width 0) (type default)) (uuid "1959a870-d556-56be-93bf-46b9b0e2963f"))
+(label "R_B" (at 266.7 215.9 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5c043688-5500-5713-85f6-45e2e15d43ae"))
+(symbol (lib_id "DRV8701_Custom:R") (at 266.7 207.01 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9b8064a2-6498-508f-8c3c-49b6f2768e82") (property "Reference" "R9" (at 270.51 205.74 0) (effects (font (size 1.27 1.27))))(property "Value" "100Ω" (at 270.51 208.28 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:R_1210_3225Metric" (at 266.7 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 266.7 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 266.7 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "c63d7046-a121-5aba-a06d-cc20031575eb"))(pin "2" (uuid "d9d4c942-23bb-5817-a07e-cc7443d68146"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "R9") (unit 1)))))
+(wire (pts (xy 350.52 193.04) (xy 345.44 193.04)) (stroke (width 0) (type default)) (uuid "2caaa5c4-72ce-51aa-846d-e7693808c81c"))
+(label "R_A" (at 345.44 193.04 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "cc95f94f-eca5-5821-b8c9-06dd3a006ecb"))
+(wire (pts (xy 350.52 195.58) (xy 345.44 195.58)) (stroke (width 0) (type default)) (uuid "bba260dd-8d7e-5792-8995-8fc734bfc0ea"))
+(label "R_B" (at 345.44 195.58 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "07d11547-8656-5f72-8965-e0370ca610f2"))
+(symbol (lib_id "DRV8701_Custom:XT30_OUTPUT") (at 355.6 194.31 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fdfa0590-2cb6-5b73-9906-abdbdfaa7795") (property "Reference" "CN2" (at 355.6 181.61 0) (effects (font (size 1.27 1.27))))(property "Value" "XT30UPB-M" (at 355.6 184.15 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" (at 355.6 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 355.6 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 355.6 194.31 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "028f6817-f7ae-579b-a6d8-316c940c0038"))(pin "2" (uuid "b3e60671-f569-5129-92cb-16d46ea0e235"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "CN2") (unit 1)))))
+(text "12V motor: 0.4A rated / 1.8A stall max" (at 322.58 209.55 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e67947f6-3aed-5bb1-93dc-f71fff731ea3"))
+(text "COMMON POWER, ENABLE AND ORIGINAL FOUR-SIGNAL INTERFACE" (at 17.78 225.425 0) (effects (font (size 1.778 1.778)) (justify left)) (uuid "0a272499-afe6-5437-aac0-29b1504021b5"))
+(wire (pts (xy 22.86 245.11) (xy 17.78 245.11)) (stroke (width 0) (type default)) (uuid "56f936ec-80b3-5772-b0ac-ac96e7d5586e"))
+(label "VM" (at 17.78 245.11 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b0053173-2fcb-5b27-b865-848d6ffc8afa"))
+(wire (pts (xy 22.86 247.65) (xy 17.78 247.65)) (stroke (width 0) (type default)) (uuid "fb8a97b6-3a70-5683-9900-0e52d010d123"))
+(label "GND" (at 17.78 247.65 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "357df19f-4b8f-565a-909b-ee4b8c91fab5"))
+(symbol (lib_id "DRV8701_Custom:XT30_POWER") (at 27.94 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5d94d7a6-0b6c-5040-b819-cde3a02c01a3") (property "Reference" "P2" (at 27.94 233.68 0) (effects (font (size 1.27 1.27))))(property "Value" "XT30UPB-M" (at 27.94 236.22 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" (at 27.94 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 27.94 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 27.94 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "681e0811-2b2f-556f-98e0-4c3befd65643"))(pin "2" (uuid "f2336d84-2d04-509e-b980-6204c8ad7c85"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "P2") (unit 1)))))
+(wire (pts (xy 66.04 242.57) (xy 66.04 237.49)) (stroke (width 0) (type default)) (uuid "1772a13d-6d0f-5f6c-9530-1f71111070fd"))
+(label "VM" (at 66.04 237.49 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "dd181ecd-755b-5c3a-acd0-41708bed652d"))
+(wire (pts (xy 66.04 250.19) (xy 66.04 255.27)) (stroke (width 0) (type default)) (uuid "b3a915e2-2646-590a-b9d2-358a5b6e88ce"))
+(label "GND" (at 66.04 255.27 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "cdf54ed8-a493-5985-9e43-3af3834c265d"))
+(symbol (lib_id "DRV8701_Custom:C_Polarized") (at 66.04 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "df8b882f-5028-5be2-a0e6-8def8e7aaa7a") (property "Reference" "C15" (at 69.85 245.11 0) (effects (font (size 1.27 1.27))))(property "Value" "470uF" (at 69.85 247.65 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm" (at 66.04 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 66.04 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "8d85ab62-31d7-5bd3-a267-c3a39854b88d"))(pin "2" (uuid "921fd884-5b54-58e8-ab06-42fd12172c57"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "C15") (unit 1)))))
+(wire (pts (xy 104.14 242.57) (xy 104.14 237.49)) (stroke (width 0) (type default)) (uuid "c700c9e2-21da-582f-81a1-a61c8b9c4320"))
+(label "VM" (at 104.14 237.49 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5832c511-92b0-5ce7-97e6-b180f0aef81d"))
+(wire (pts (xy 104.14 250.19) (xy 104.14 255.27)) (stroke (width 0) (type default)) (uuid "354ef36f-00bf-5a02-b551-242bc75f191a"))
+(label "3V3" (at 104.14 255.27 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "bf8e5d0c-955c-5e3a-af5b-5adeee339bce"))
+(symbol (lib_id "DRV8701_Custom:R") (at 104.14 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74635cb5-21df-5d08-99c5-325cca06488c") (property "Reference" "R1" (at 107.95 245.11 0) (effects (font (size 1.27 1.27))))(property "Value" "10kΩ" (at 107.95 247.65 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:R_0603_1608Metric" (at 104.14 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 104.14 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 104.14 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "6d9ad1c0-9aa3-58be-b28b-89b6e99510c4"))(pin "2" (uuid "eb4c7690-9c3d-513c-aab2-483003a179d7"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "R1") (unit 1)))))
+(wire (pts (xy 135.89 246.38) (xy 130.81 246.38)) (stroke (width 0) (type default)) (uuid "ef416663-64f6-504c-974c-2a07a2c96b50"))
+(label "3V3" (at 130.81 246.38 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2e1292b0-8d7b-50a5-81a5-bb7459b1fb7e"))
+(wire (pts (xy 143.51 246.38) (xy 148.59 246.38)) (stroke (width 0) (type default)) (uuid "88d91ad3-5558-5d8f-916b-00ae932740a3"))
+(label "GND" (at 148.59 246.38 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "001aa16e-8b06-5ae4-b52c-db508660d0f7"))
+(symbol (lib_id "DRV8701_Custom:D_Zener") (at 139.7 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f2a87802-5356-5f90-ae31-fad66f61e3b0") (property "Reference" "D1" (at 143.51 245.11 0) (effects (font (size 1.27 1.27))))(property "Value" "BZT52C3V3" (at 143.51 247.65 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:D_SOD123" (at 139.7 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 139.7 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "fa396fa0-7265-592e-b9f2-ccc99078fe6f"))(pin "2" (uuid "c677c957-ccf0-5eb3-a3ff-e18a53e2b7af"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "D1") (unit 1)))))
+(no_connect (at 191.77 243.84) (uuid "81d3125e-80f8-5b7a-bd53-6bd6e36d15d4"))
+(wire (pts (xy 176.53 246.38) (xy 171.45 246.38)) (stroke (width 0) (type default)) (uuid "e0568249-340e-5cf2-a767-ffc9d31b1f12"))
+(label "NSLEEP" (at 171.45 246.38 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "61a0ba38-903f-5278-a32a-82142825c770"))
+(wire (pts (xy 191.77 248.92) (xy 196.85 248.92)) (stroke (width 0) (type default)) (uuid "7fc9f447-a397-5ae9-b21c-c96b63a1836c"))
+(label "3V3" (at 196.85 248.92 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "027973a2-0786-5e23-8f16-5d23b4015b2f"))
+(symbol (lib_id "DRV8701_Custom:SS12D10G4") (at 184.15 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d827f031-87fd-59ae-bfed-c4a8b0476fc3") (property "Reference" "U5" (at 184.15 233.68 0) (effects (font (size 1.27 1.27))))(property "Value" "SS12D10G4" (at 184.15 236.22 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:SS12D10G4" (at 184.15 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 184.15 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 184.15 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "58dcbaf3-442d-58fd-834b-48001ba2ce3c"))(pin "2" (uuid "d68a8b63-9696-550e-97f1-c7157a037511"))(pin "3" (uuid "b969ca77-bee9-55cc-ae10-a423e191aa52"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "U5") (unit 1)))))
+(wire (pts (xy 228.6 237.49) (xy 228.6 232.41)) (stroke (width 0) (type default)) (uuid "513fb09c-2121-5e6b-88e0-ce536d9d44d4"))
+(label "NSLEEP" (at 228.6 232.41 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3cdbc3a5-7d55-5df3-b181-b95fd82bdf1b"))
+(wire (pts (xy 228.6 245.11) (xy 228.6 250.19)) (stroke (width 0) (type default)) (uuid "aa1e4a31-bf32-5fd2-ae1b-bc6d6f2c976f"))
+(label "ENABLE_LED_A" (at 228.6 250.19 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "76a8b4f7-29d6-5bd8-84ba-582cd202fc6b"))
+(symbol (lib_id "DRV8701_Custom:R") (at 228.6 241.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cf5d60c9-d89b-5734-8204-51508735ce86") (property "Reference" "R5" (at 232.41 240.03 0) (effects (font (size 1.27 1.27))))(property "Value" "10kΩ" (at 232.41 242.57 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:R_0603_1608Metric" (at 228.6 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 228.6 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 228.6 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "d309e5f5-168c-5163-9a6f-687011c7a961"))(pin "2" (uuid "74c8608e-719e-57d2-9fa5-37a056e4cfbe"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "R5") (unit 1)))))
+(wire (pts (xy 250.19 246.38) (xy 245.11 246.38)) (stroke (width 0) (type default)) (uuid "7ad01032-20d4-5138-8df5-477c71cf1d7c"))
+(label "GND" (at 245.11 246.38 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "25b385c8-a11c-507b-a5be-4d7207dfd3c6"))
+(wire (pts (xy 257.81 246.38) (xy 262.89 246.38)) (stroke (width 0) (type default)) (uuid "8f38e189-1db1-5c20-a227-84bead771dbe"))
+(label "ENABLE_LED_A" (at 262.89 246.38 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b7652a5c-54c7-5ea2-995f-ddd55c246b3d"))
+(symbol (lib_id "DRV8701_Custom:LED") (at 254 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "81111e96-2588-5354-bfba-3f58acda44f5") (property "Reference" "LED1" (at 257.81 245.11 0) (effects (font (size 1.27 1.27))))(property "Value" "KT-0603R" (at 257.81 247.65 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:LED_0603_1608Metric" (at 254 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 254 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 254 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "0d5929de-978a-517f-b3ef-6534f4c340c0"))(pin "2" (uuid "6fdcf39e-bf27-543c-8e5a-35ae39f3806a"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "LED1") (unit 1)))))
+(wire (pts (xy 292.1 237.49) (xy 292.1 232.41)) (stroke (width 0) (type default)) (uuid "22795f04-232d-50e8-9bac-5b67d512a90d"))
+(label "3V3" (at 292.1 232.41 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "67a6af69-6ec3-5fbb-a78c-37b1b603a350"))
+(wire (pts (xy 292.1 245.11) (xy 292.1 250.19)) (stroke (width 0) (type default)) (uuid "8c491822-df30-5a95-8f61-48e5c7b0ddef"))
+(label "POWER_LED_A" (at 292.1 250.19 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e1c9b8d9-ab18-5691-baa5-e5ec4b43ff2c"))
+(symbol (lib_id "DRV8701_Custom:R") (at 292.1 241.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "46735bb7-b6b3-5414-9e04-a37ac8bcde26") (property "Reference" "R7" (at 295.91 240.03 0) (effects (font (size 1.27 1.27))))(property "Value" "10kΩ" (at 295.91 242.57 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:R_0603_1608Metric" (at 292.1 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 292.1 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 292.1 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "e9436fdb-2126-57b7-876a-e5fb0e5436f6"))(pin "2" (uuid "1a61d116-67b3-5ce4-9b8f-5c77e0ba49a6"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "R7") (unit 1)))))
+(wire (pts (xy 313.69 246.38) (xy 308.61 246.38)) (stroke (width 0) (type default)) (uuid "65e5ff38-8b01-5d90-9e03-8efa3dc06d54"))
+(label "GND" (at 308.61 246.38 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "537bd29f-9e7e-51c8-bc81-ad54783dd471"))
+(wire (pts (xy 321.31 246.38) (xy 326.39 246.38)) (stroke (width 0) (type default)) (uuid "af4d83cf-5716-5017-be4c-054a973aa212"))
+(label "POWER_LED_A" (at 326.39 246.38 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7fce254f-8248-5fe1-ac42-de74cd6d1828"))
+(symbol (lib_id "DRV8701_Custom:LED") (at 317.5 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d1d65730-f443-52ce-bef4-006f8807629b") (property "Reference" "LED2" (at 321.31 245.11 0) (effects (font (size 1.27 1.27))))(property "Value" "KT-0603R" (at 321.31 247.65 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:LED_0603_1608Metric" (at 317.5 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 317.5 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 317.5 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a59f38c1-62d7-5a94-8415-dac062372b33"))(pin "2" (uuid "31a2e2b3-4ad2-5d2e-a6c6-b685401521c2"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "LED2") (unit 1)))))
+(wire (pts (xy 374.65 242.57) (xy 369.57 242.57)) (stroke (width 0) (type default)) (uuid "8faefeef-588d-5a22-81a2-4939728474d8"))
+(label "R_EN_IN" (at 369.57 242.57 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "3d1bfa8b-887f-5e8d-a331-3b7545dc3c0b"))
+(wire (pts (xy 374.65 245.11) (xy 369.57 245.11)) (stroke (width 0) (type default)) (uuid "a4bf22e8-8902-5d89-8c82-576c29547f45"))
+(label "R_PH_IN" (at 369.57 245.11 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1a8839ee-8dca-525f-b272-ec6d55da3477"))
+(wire (pts (xy 374.65 247.65) (xy 369.57 247.65)) (stroke (width 0) (type default)) (uuid "e99baa24-bb42-5b75-95c5-b45edd999829"))
+(label "L_PH_IN" (at 369.57 247.65 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "39c9ea8d-1181-5dc4-911f-a2925c873ba4"))
+(wire (pts (xy 374.65 250.19) (xy 369.57 250.19)) (stroke (width 0) (type default)) (uuid "8e78e533-7c6d-52b7-9429-97401bd017db"))
+(label "L_EN_IN" (at 369.57 250.19 0) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e9a974d0-0ef4-534d-a565-baa7728af08f"))
+(symbol (lib_id "DRV8701_Custom:CONTROL_4PIN") (at 379.73 246.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "02e15c2f-fe73-5382-a137-4d979ed4bcf3") (property "Reference" "CN3" (at 379.73 233.68 0) (effects (font (size 1.27 1.27))))(property "Value" "XH2.54-4P" (at 379.73 236.22 0) (effects (font (size 1.016 1.016))))(property "Footprint" "DRV8701_Custom:XH2.54_1x04_Vertical" (at 379.73 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 379.73 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Source" "Original PDF; connections and values retained" (at 379.73 246.38 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "c20efc97-a17c-58b4-8627-ac44d84c5f82"))(pin "2" (uuid "d2d098bb-3ee5-5aa2-8def-ff8bb602937d"))(pin "3" (uuid "bc3db710-e02f-569d-a6ae-8f26f083460b"))(pin "4" (uuid "e3430046-9c5f-52ec-8278-cdf2b5f62fd6"))(instances (project "DRV8701_DUAL_12V" (path "/0ffffc7b-32e0-5a53-95c6-2edceef5b628" (reference "CN3") (unit 1)))))
+(text "SOURCE-FAITHFUL DESIGN — values and connections intentionally retained; no hardware validation." (at 17.78 266.7 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "166670f2-a437-515e-a2df-b5cbe2a4fac1"))
+(text "CN3 has no ground pin: controller must share ground via power return. 3V3 is a 10k-fed zener node." (at 17.78 269.24 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5d70b03a-deeb-505a-b7b3-b377d8d29d4c"))
+(text "VREF/IDRIVE tied to AVDD; SP/SN grounded; nFAULT/SNSOUT/SO NC. No external current sensing or limit." (at 17.78 271.78 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "dcedc1ba-61c9-5eac-9f70-cd3a71ff34a5"))
+(text "Original 100nF bypass values retained: compare TI recommendations before manufacture." (at 17.78 274.32 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "afd4c104-21fd-574e-9fcf-6f72dc71f0e7"))
+(embedded_fonts no))

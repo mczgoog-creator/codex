@@ -1,0 +1,14 @@
+{
+  "kicad-to-easyeda-eprj3": {
+    "url": "https://github.com/easyeda/kicad-to-easyeda-eprj3",
+    "commit": "a16545dd7922455e6a20f69adeb234c924af08b5"
+  },
+  "easyeda-eprj3-skill": {
+    "url": "https://github.com/easyeda/easyeda-eprj3-skill",
+    "commit": "40c94e129df18e94232f8c94260134bfcac6cabf"
+  },
+  "easyeda-format-skill": {
+    "url": "https://github.com/easyeda/easyeda-format-skill",
+    "commit": "9e42727cc4cf13a8e442140e8e7794ae94d5f41b"
+  }
+}

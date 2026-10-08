@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "acSetting": {
+      "description": "交流分析（AC）设置",
+      "type": "object",
+      "properties": {
+        "acAnalysisType": {
+          "description": "扫描类型：DEC 十倍频程 / OCT 倍频程 / LIN 线性"
+        },
+        "freMult": {
+          "description": "每档采样点数（**无量纲**，直接作为 `.ac` 的第 2 个参数），如 `10`\r\n——配合 DEC 即每十倍频程 10 点"
+        },
+        "startFrequency": {
+          "description": "起始频率：带单位的数值，如 `500`、`1k`"
+        },
+        "stopFrequency": {
+          "description": "终止频率：带单位的数值，如 `5G`"
+        }
+      }
+    },
+    "dcSetting": {
+      "description": "直流扫描（DC）设置",
+      "type": "object",
+      "properties": {
+        "dcSourceData1": {
+          "description": "第一个扫描源：**`sourceStatus` 为 `true` 时只扫它**；为 `false` 时它参与双源嵌套扫描"
+        },
+        "dcSourceData2": {
+          "description": "第二个扫描源：只在 `sourceStatus` 为 `false`（双源嵌套）时参与扫描"
+        },
+        "sourceStatus": {
+          "description": "⚠️ **极性容易记反**：`true` ⇒ **只扫 `dcSourceData1`**（命令里只出现\r\n`d1.sourceName` / `startValue` / `stopValue` / `increment`）；`false` ⇒ **两源做嵌套扫描**\r\n（命令含 8 个参数，`dcSourceData1` 与 `dcSourceData2` 拼接）。\r\n依据：仿真网表生成时 `DC` 分支的行为。"
+        }
+      }
+    },
+    "trSetting": {
+      "description": "瞬态分析（TR）设置",
+      "type": "object",
+      "properties": {
+        "timeStep": {
+          "description": "仿真步长：带单位的数值，如 `5u`"
+        },
+        "stopTime": {
+          "description": "终止时间：带单位的数值，如 `25m`"
+        },
+        "startTime": {
+          "description": "起始时间：带单位的数值，通常为 `0`"
+        },
+        "maxTimeStep": {
+          "description": "最大步长：带单位的数值；为空表示不限制"
+        }
+      }
+    },
+    "currentSetting": {
+      "description": "当前选中的仿真类型，同上三个分组一一对应",
+      "type": "string",
+      "enum": [
+        "AC",
+        "DC",
+        "TR"
+      ]
+    },
+    "startDisable": {
+      "description": "各仿真类型启动按钮的禁用状态：键为仿真类型（如 `DC` / `AC` / `tr`），值为 true 表示该类型禁止启动",
+      "type": "object"
+    }
+  },
+  "required": [
+    "acSetting",
+    "dcSetting",
+    "trSetting",
+    "currentSetting",
+    "startDisable"
+  ],
+  "description": "仿真图页 - 仿真设置\r\n\r\n**仿真图页专有的仿真设置**，一个仿真页只有一行（`type:\"NG_SETTING\"`）：把 AC / DC / TR 三类分析的\r\n参数、当前选中的分析类型（`currentSetting`）以及各分析启动按钮的禁用状态收在一处。\r\n\r\n载荷含 5 个字段：`acSetting` / `dcSetting` / `trSetting` / `currentSetting` / `startDisable`。\r\n⚠️ 参数取值是**带单位的字符串**（如 `500`、`5G`、`25m`）而不是数字；`dcSetting.sourceStatus`\r\n的极性也容易记反（见字段说明）。\r\n外壳的 `id` **固定为类型名 `NG_SETTING`**（同 CANVAS），不是随机 16 位十六进制；\r\n这类固定单例 id 的形态与判别见 `TSingletonElementId`。"
+}

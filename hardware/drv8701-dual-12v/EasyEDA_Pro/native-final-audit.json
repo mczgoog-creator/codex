@@ -1,0 +1,248 @@
+{
+  "generatedAtUtc": "2026-10-08T23:36:05.663160+00:00",
+  "projectEntry": "/workspace/drv8701_board/EasyEDA_Pro/DRV8701_DUAL_12V.eprj3",
+  "nativeFolderFormat": "official .eprj3 + .esch2 + .epcb2",
+  "sourceChecksumsSha256": {
+    "DRV8701_DUAL_12V.kicad_sch": "642f0af1d8e44ea7d2db1c35512eceb67f7d1ccb20e4d2d50548fd96d415ca2f",
+    "DRV8701_DUAL_12V.kicad_pcb": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
+    "final_drc.json": "00beb2dfa443ab6f90cf82b29d7318c685ccfd0479aca9cf5e1fd3d0678c13a7"
+  },
+  "noAutoroutingCalled": true,
+  "officialStructureCheck": {
+    "errors": 0,
+    "warnings": 0,
+    "command": "node tools/easyeda-native/easyeda-eprj3-skill/scripts/validate.js --dir EasyEDA_Pro"
+  },
+  "formatCheck": {
+    "records": 3129,
+    "outerValid": 3129,
+    "schemaValid": 1526,
+    "trustedExportRecords": 165,
+    "documentedDifferences": 4058,
+    "unmapped": 0,
+    "failures": []
+  },
+  "schematicCheck": {
+    "passed": true,
+    "components": 38,
+    "physicalPinAssignments": 173,
+    "namedNets": 34,
+    "noConnectPins": 7,
+    "errors": []
+  },
+  "pcbCheck": {
+    "passed": true,
+    "source": "/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_pcb",
+    "nativePcb": "/workspace/drv8701_board/EasyEDA_Pro/pcb/PCB1.epcb2",
+    "components": 38,
+    "uniquePhysicalPins": 173,
+    "padInstances": 181,
+    "namedNets": 34,
+    "tracks": 258,
+    "vias": 76,
+    "outlineEdges": 4,
+    "zones": 3,
+    "zoneBorders": 3,
+    "filledCopperPolygons": 3,
+    "copperLayerReport": [
+      {
+        "name": "F.Cu",
+        "nativeLayerId": 1,
+        "enabled": true,
+        "shown": true
+      },
+      {
+        "name": "In1.Cu",
+        "nativeLayerId": 15,
+        "enabled": true,
+        "shown": true
+      },
+      {
+        "name": "In2.Cu",
+        "nativeLayerId": 16,
+        "enabled": true,
+        "shown": true
+      },
+      {
+        "name": "B.Cu",
+        "nativeLayerId": 2,
+        "enabled": true,
+        "shown": true
+      }
+    ],
+    "physicalLayerReport": [
+      {
+        "name": "F.SilkS",
+        "sourceThicknessMm": 0,
+        "nativeThicknessMm": 0
+      },
+      {
+        "name": "F.Paste",
+        "sourceThicknessMm": 0,
+        "nativeThicknessMm": 0
+      },
+      {
+        "name": "F.Mask",
+        "sourceThicknessMm": 0.01,
+        "nativeThicknessMm": 0.01
+      },
+      {
+        "name": "F.Cu",
+        "sourceThicknessMm": 0.035,
+        "nativeThicknessMm": 0.035
+      },
+      {
+        "name": "dielectric 1",
+        "sourceThicknessMm": 0.2,
+        "nativeThicknessMm": 0.2
+      },
+      {
+        "name": "In1.Cu",
+        "sourceThicknessMm": 0.035,
+        "nativeThicknessMm": 0.035
+      },
+      {
+        "name": "dielectric 2",
+        "sourceThicknessMm": 1.04,
+        "nativeThicknessMm": 1.04
+      },
+      {
+        "name": "In2.Cu",
+        "sourceThicknessMm": 0.035,
+        "nativeThicknessMm": 0.035
+      },
+      {
+        "name": "dielectric 3",
+        "sourceThicknessMm": 0.2,
+        "nativeThicknessMm": 0.2
+      },
+      {
+        "name": "B.Cu",
+        "sourceThicknessMm": 0.035,
+        "nativeThicknessMm": 0.035
+      },
+      {
+        "name": "B.Mask",
+        "sourceThicknessMm": 0.01,
+        "nativeThicknessMm": 0.01
+      },
+      {
+        "name": "B.Paste",
+        "sourceThicknessMm": 0,
+        "nativeThicknessMm": 0
+      },
+      {
+        "name": "B.SilkS",
+        "sourceThicknessMm": 0,
+        "nativeThicknessMm": 0
+      }
+    ],
+    "totalPhysicalThicknessMm": 1.5999999999999999,
+    "errors": []
+  },
+  "libraryLinkCheck": {
+    "passed": true,
+    "components": 38,
+    "pairedDevices": 12,
+    "pairedFootprints": 11,
+    "externalLibraryDependencies": 0,
+    "errors": []
+  },
+  "physicalStack": {
+    "nominalBoardThicknessMm": 1.6,
+    "copperThicknessMm": 0.035,
+    "sourceStackupPresent": true,
+    "layers": [
+      {
+        "name": "F.SilkS",
+        "thicknessMm": 0
+      },
+      {
+        "name": "F.Paste",
+        "thicknessMm": 0
+      },
+      {
+        "name": "F.Mask",
+        "thicknessMm": 0.01
+      },
+      {
+        "name": "F.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric1",
+        "thicknessMm": 0.2,
+        "material": "FR4"
+      },
+      {
+        "name": "In1.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric2",
+        "thicknessMm": 1.04,
+        "material": "FR4"
+      },
+      {
+        "name": "In2.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "dielectric3",
+        "thicknessMm": 0.2,
+        "material": "FR4"
+      },
+      {
+        "name": "B.Cu",
+        "thicknessMm": 0.035
+      },
+      {
+        "name": "B.Mask",
+        "thicknessMm": 0.01
+      },
+      {
+        "name": "B.Paste",
+        "thicknessMm": 0
+      },
+      {
+        "name": "B.SilkS",
+        "thicknessMm": 0
+      }
+    ],
+    "encodedTotalThicknessMm": 1.5999999999999999
+  },
+  "sourceDrc": {
+    "violations": 0,
+    "unconnectedItems": 0
+  },
+  "nativeDesktopOpenVerified": false,
+  "nativeDesktopDrcRun": false,
+  "requiredDesktopVersion": "EasyEDA/JLCEDA Pro V4.1+ offline or semi-offline desktop client",
+  "knownUnitDiscrepancy": "Current upstream schema descriptions use 0.254mm for RULE lengths and 0.1mm for LAYER_PHYS thickness. The official real V4.1.36 PCB export template uses apparent mil values; generated PCB follows that authentic template. Actual client units remain unverified.",
+  "minimumClientConfirmation": {
+    "boardThicknessMm": 1.6,
+    "copperLayers": 4,
+    "copperThicknessEachMm": 0.035,
+    "clearanceMm": 0.15,
+    "minimumTraceMm": 0.15,
+    "minimumHoleMm": 0.2,
+    "minimumAnnularRingMm": 0.1,
+    "defaultViaMm": {
+      "diameter": 0.45,
+      "drill": 0.2
+    }
+  },
+  "legacyEproArchiveProvided": false,
+  "legacyEproReason": "No reliable no-client official re-export path was available; the complete native folder project is provided.",
+  "padMaskPasteExpansionComparison": {
+    "passed": true,
+    "checkedPadInstances": 181,
+    "sourceMaskExpansionMm": 0,
+    "nativeMaskExpansionMm": 0,
+    "sourcePasteExpansionMm": 0,
+    "nativePasteExpansionMm": 0,
+    "correction": "Replaced official converter default 2mil mask expansion with each source pad/footprint/global mask value. Updated native default pad mask rule to0."
+  },
+  "sourceFilesUnchangedDuringConversion": true,
+  "frozenForDelivery": true
+}

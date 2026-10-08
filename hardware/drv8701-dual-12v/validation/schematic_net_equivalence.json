@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "components": 38,
+  "named_nets": 34,
+  "physical_pin_assignments": 173,
+  "source_faithful": true,
+  "errors": []
+}

@@ -1,0 +1,54 @@
+{
+  "unitEncoding": "mil-real-export-V4.1.36",
+  "unitConflict": "Latest official TRuleContext description uses 0.254mm internal units; real official V4.1.36 PCB template uses apparent mil values. No desktop client was available to resolve that discrepancy.",
+  "clearanceMm": 0.15,
+  "minTraceMm": 0.15,
+  "minDrillMm": 0.2,
+  "minAnnularRingMm": 0.1,
+  "defaultViaDiameterMm": 0.45,
+  "defaultViaDrillMm": 0.2,
+  "defaultTrackWidthsMm": {
+    "VM": 1.8,
+    "MOTOR": 0.7,
+    "GATE": 0.25,
+    "SIGNAL": 0.2
+  },
+  "rules": [
+    {
+      "type": "TRACK",
+      "name": "copperThickness1oz"
+    },
+    {
+      "type": "TRACK",
+      "name": "DRV8701_VM"
+    },
+    {
+      "type": "TRACK",
+      "name": "DRV8701_MOTOR"
+    },
+    {
+      "type": "TRACK",
+      "name": "DRV8701_GATE"
+    },
+    {
+      "type": "TRACK",
+      "name": "DRV8701_SIGNAL"
+    },
+    {
+      "type": "RADIUS",
+      "name": "viaSize"
+    },
+    {
+      "type": "DFM_MIN_HOLE_SIZE",
+      "name": "DRV8701_min_drill"
+    },
+    {
+      "type": "DFM_PAD_RING_DEFECT",
+      "name": "DRV8701_min_annular_ring"
+    },
+    {
+      "type": "SOLDER",
+      "name": "solderMaskExpansion"
+    }
+  ]
+}

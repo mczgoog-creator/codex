@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "components": 38,
+  "physicalPinAssignments": 173,
+  "namedNets": 34,
+  "noConnectPins": 7,
+  "errors": []
+}

@@ -1,0 +1,9 @@
+# Preserve the bytes covered by the engineering delivery SHA256 manifest.
+hardware/drv8701-dual-12v/** -text
+downloads/*.zip binary
+*.pdf binary
+*.png binary
+
+# The reviewed CSV uses CRLF; upstream tools are vendored without edits.
+*.csv whitespace=cr-at-eol
+hardware/drv8701-dual-12v/tools/easyeda-native/** whitespace=-blank-at-eof
