@@ -6,11 +6,13 @@ PCB 的元件位置、每段线路、过孔及铜区均逐项人工规划。没�
 
 ## 工程文件与打开方法
 
-嘉立创 EDA 专业版原生入口为 **`EasyEDA_Pro/DRV8701_DUAL_12V.eprj3`**，面向 **V4.1+ 离线／半离线桌面客户端**。解压交付包后保留完整目录，在专业版使用“打开本地工程”选择此文件；不要只取出入口文件，否则会丢失同目录下的原理图、PCB 等关联文档。入口对应 `pcb/PCB1.epcb2` 和 `sch/Schematic1/P1.esch2`，符号、封装及器件映射已内嵌。
+用户当前使用嘉立创 EDA 专业版**网页端**。主要交付入口已改为 **`DRV8701_12V_KiCad5_Import.zip`**：在网页开始页选择 **「导入 KiCad」**，直接选择该 ZIP。依据用户提供的[官方指引](https://prodocs.lceda.cn/cn/import-export/import-kicad/index.html)，导入包采用真实 KiCad 5.1 格式的 `.pro/.sch/.lib/.kicad_pcb` 和本地封装库，源文件见 `KiCad_Import_5/`。详细步骤见 **`IMPORT_IN_WEB_PRO.md`**。
 
-原生文件使用嘉立创官方开源转换器及针对当前文件格式的后处理生成，已进行结构和转换等价核对。**本工程尚未在真实嘉立创 EDA 专业版客户端中打开验证；静态检查不能替代客户端的打开、铺铜重建及 DRC。** 如当前客户端不接受 `.eprj3`，请先核实专业版版本与“本地工程”功能；此包不是标准版 JSON。
+原 KiCad 9 源文件及新版桌面原生工程仍保留供审查。新版桌面入口为 `EasyEDA_Pro/DRV8701_DUAL_12V.eprj3`，使用官方开源转换器与后处理生成，面向 V4.1+ 离线／半离线桌面客户端；它不属于当前网页端 `.epro` 导入入口的文件格式。
 
-官方当前 schema 文档与 V4.1.36 真实 PCB 导出模板对部分长度字段的单位说明存在差异，文件按真实导出模板使用 mil 编码。打开后须确认板尺寸 48×36 mm、总厚 1.6 mm、四层铜各 35 μm、规则最小间距 0.15 mm，以及公共 VM 1.8 mm／电机主线 0.7 mm；详见 `tools/easyeda-native/RESEARCH.md`。原生验证报告逐项列出这些格式差异，没有把真实客户端测试记作已完成。
+**尚未在真实嘉立创 EDA 专业版中完成导入与 DRC；静态检查不能替代客户端导入、铺铜重建及检查。** 官方指引明确 PCB 导入会自动重建铺铜，结果可能随填充器有差异。导入后须确认板尺寸 48×36 mm、总厚 1.6 mm、四层铜各 35 μm、规则最小间距 0.15 mm，以及公共 VM 1.8 mm／电机主线 0.7 mm。重建铜区属于铺铜填充，不是自动布线。
+
+新版桌面 `.eprj3` 的官方 schema 与真实导出模板单位说明差异，仍见 `tools/easyeda-native/RESEARCH.md`；这是保留的另一种工程格式，不影响网页端专用 KiCad 包的格式选择。
 
 保留以下可编辑源文件供检查、重建或在导入异常时追踪：
 
@@ -19,6 +21,8 @@ PCB 的元件位置、每段线路、过孔及铜区均逐项人工规划。没�
 |`DRV8701_DUAL_12V.kicad_sch`|38 元件的可编辑原理图|
 |`DRV8701_DUAL_12V.kicad_pcb`|人工规划的可编辑 PCB|
 |`DRV8701_DUAL_12V.kicad_pro`|工程规则及制造约束|
+|`KiCad_Import_5/`|经真实 KiCad 5.1.9 读取、检查的网页导入副本|
+|`imports/DRV8701_12V_KiCad5_Import.zip`|由 KiCad 自带归档功能生成的专用网页导入 ZIP|
 |`DRV8701_Custom.kicad_sym`、`sym-lib-table`|工程自带符号库|
 |`DRV8701_Custom.pretty/`、`fp-lib-table`|工程自带封装库|
 |`DRV8701_DUAL_12V_schematic.pdf`|原理图阅读版|
@@ -95,7 +99,9 @@ DRV8701 使用 TI RGE24 VQFN，4 mm × 4 mm、引脚间距 0.5 mm，中心 GND �
 
 TPH1R403NL 使用 SOP Advance：1/2/3=S、4=G、5/6/7/8=D，中心裸露焊盘同属 D，工程使用重复的 5 号焊盘。**高边 MOS 裸露焊盘连接 VM，低边连接电机相节点，均不能默认接 GND。**
 
-Toshiba 精确型号 PDF 已找到，但厂家下载在当前环境仍返回 403，尚未读到原厂 MOS 手册。当前 MOS 引脚及机械图使用第三方该型号工程交叉核对，不能代替厂家原图。制板前须取得精确 TPH1R403NL 手册，复核 VDS/VGS、Qg/Qgd、导通电阻、端子及推荐焊盘尺寸。该限制未通过关闭校验或修改预期数据规避。
+现已下载并读取 Toshiba 精确 TPH1R403NL 原厂手册，实际返回版本为 **2026-04-14 Rev.3.0.A**，文件见 `source/Toshiba_TPH1R403NL_Rev3_0_A.pdf`。原厂规定 VDS 绝对最大 30 V、VGS ±20 V；Qg 典型 46 nC（10 V）／20 nC（4.5 V）、Qgd 典型 4.3 nC。10 V 时 RDS(on) 典型 1.2 mΩ、最大 1.4 mΩ。引脚及普通 SOP Advance 的 5×5 mm、1.27 mm 脚距、4.25×3.5 mm 裸露 Drain 金属尺寸与当前封装核对相符。
+
+手册 p8 为普通 **SOP Advance**，p9 另列机械尺寸不同的 SOP Advance(N)；采购须匹配 p8 所用封装。手册提供封装金属图，未提供推荐 PCB 铜焊盘图，因此当前 0.5×1.2 mm 外围铜焊盘仍属于设计尺寸。以典型 Qg 估算原图 25/50 mA 驱动约 1.84/0.92 μs，只是典型参数初筛，不是最坏公差或实板 VGS 验证。完整测试条件与证据见 `source/tph1r403nl_manufacturer_review.md`。
 
 SS12D10G4 根据用户补充的实际引脚为宽 1.3 mm、厚 0.8 mm；所用 2.3 mm × 1.1 mm 槽孔可以容纳该引脚，未因此更改孔径。XT30 与 XH 插座也应在购买后检查实际外形及极性标识；以本工程清楚标出的脚号和网络为连接依据。
 
@@ -103,7 +109,7 @@ SS12D10G4 根据用户补充的实际引脚为宽 1.3 mm、厚 0.8 mm；所用 2
 
 - 原始 PDF 与独立网表：用户提供，连接复核见 `source/source_netlist.json`。
 - TI DRV8701 原厂手册：SLVSCX5B，<https://www.ti.com/lit/ds/symlink/drv8701.pdf>。官网访问受阻时，读取了 Tinkerforge 官方开源硬件仓库所附的原厂文档镜像：<https://github.com/Tinkerforge/performance-dc-bricklet/blob/master/datasheets/drv8701.pdf>。镜像 PDF SHA256：`5993f171a311fa8403ba77d5921534348ffddbbcf0c5d59c00c46b074671d850`。
-- 待取得的 Toshiba 原厂 MOS PDF：<https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL>。
+- 已读取的 Toshiba 原厂 MOS PDF：<https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL>。尽管 URL 包含旧日期，实际内容为 2026-04-14 Rev.3.0.A；PDF SHA256：`12a06e5d86ab4f4fd7d9dc543e2c7d85796f29c18ecd32b010ac4c99267ede17`。
 - MOS 封装实际依据同型号嘉立创原生库：<https://github.com/zdxddmx/smartcar-hardware> 内 `eda/ProPrj_DRV8701电机双驱.epro` 的封装 `572e0c5f381c446594eedc8b8157fefb`。仅复用封装几何，没有复用该工程的 PCB 布局或布线。
 - MOS 引脚与封装另以第三方工程交叉核对：<https://github.com/CaptainJaja/DRV8701_2Motors>。
 - 详细资料与推荐值对照：`source/datasheet_review.md`。
@@ -114,6 +120,8 @@ SS12D10G4 根据用户补充的实际引脚为宽 1.3 mm、厚 0.8 mm；所用 2
 
 最终 PCB 使用 KiCad 9.0.2 DRC 检查，**0 违规、0 未连接项**，见 `final_drc.json`。检查开启所有走线错误，没有使用规则排除项；原理图/PCB 逐脚一致性由独立源网表比较补充。此 DRC 结果对应 KiCad 源板，不是嘉立创客户端 DRC。
 
+网页导入副本采用真实 KiCad 5.1 格式，已通过 **KiCad 5.1.9 实际 ERC 0 错误／0 警告、实际 PCB DRC 0 错误／0 未连接**。38 个元件及原值、34 个网络、173 个物理脚和原有 258 段线路均保留。副本补充 32 段只位于原 MOS Drain 焊盘铜内的连接段，解决旧版对窄焊盘重叠的连通判定；总计 290 段、76 过孔，独立几何包含证明确认新增实际铜面积 0.0 mm²。新旧填充缓存随软件版本有差异，原始铜区边界和参数保持，旧副本已由真实 5.1.9 重填。最终兼容审计与实际软件报告见 `validation/kicad5-import-validation.json`、`validation/legacy5_final_pcb_equivalence.json` 和 `KiCad_Import_5/validation/`。
+
 原生工程的结构、schema、逐脚网络和铜几何核对见 `EasyEDA_Pro/native-*.json` 及 `validation/final_delivery.json`。源板含 38 个元件、34 个网络、181 个焊盘实例（MOS 重复裸露焊盘计入）、258 段人工指定走线、76 个过孔、3 个 GND 铜区、4 条板框边。转换核对覆盖已填铜多边形、焊盘尺寸与方向、槽孔、走线宽度及层号。
 
-本交付不包含生产下单或 Gerber 制造放行。真实嘉立创客户端打开、客户端铺铜/DRC、MOS 原厂手册核实及样板电气验证尚未完成；这些具体限制与原图电气差异均保留，不能用结构校验通过或 DRC 为零替代。
+本交付不包含生产下单或 Gerber 制造放行。MOS 原厂手册的电气与机械参数已核实；真实嘉立创导入、其铺铜/DRC、采购封装匹配及样板电气验证仍须完成。不能用结构校验通过或源板 DRC 为零替代这些检查。

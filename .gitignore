@@ -3,4 +3,8 @@ __pycache__/
 *.py[cod]
 *.kicad_prl
 *.lck
+*.sch-bak
+*.kicad_pcb-bak
+*.pro-bak
+fp-info-cache
 .venv/

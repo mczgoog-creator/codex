@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-10-09T09:39:42.192576+08:00",
+  "target": "JLCEDA Pro web start page > Import KiCad",
+  "guideUrl": "https://prodocs.lceda.cn/cn/import-export/import-kicad/index.html",
+  "officialGuideVersions": [
+    "KiCad 5.1",
+    "KiCad 5.9"
+  ],
+  "actualRuntime": "KiCad 5.1.9+dfsg1-1+deb11u1",
+  "archiveGenerator": "Actual KiCad 5.1 project manager File > Archive Project",
+  "archive": "downloads/DRV8701_12V_KiCad5_Import.zip",
+  "archiveBytes": 81143,
+  "archiveSha256": "16d29c8f063f8b118e5d523f60ba6e37a8b48e80fd3f017d3731b83368945ce0",
+  "archiveEntries": 22,
+  "archiveCrcPassed": true,
+  "allArchiveEntryBytesMatchFinalProject": true,
+  "projectEntry": "DRV8701_DUAL_12V.pro",
+  "pcbVersion": 20171130,
+  "schematicVersion": "EESchema Schematic File Version 4",
+  "pcbSha256": "60e045bd378a7faf1e4eb44393369eb0c9ce2441f0d3720b1e695684e156de0d",
+  "components": 38,
+  "nets": 34,
+  "physicalPins": 173,
+  "actualPadInstances": 181,
+  "originalTrackSegmentsRetained": 258,
+  "internalPadBridgeSegments": 32,
+  "totalSegments": 290,
+  "vias": 76,
+  "addedCopperAreaByBridgesMm2": 0.0,
+  "physicalGeometryAndSourceConnectionsPreserved": true,
+  "independentGeometryProof": "validation/legacy5_final_pcb_equivalence.json",
+  "actual5Drc": {
+    "errors": 0,
+    "unconnected_pads": 0,
+    "report": "KiCad_Import_5/validation/legacy5_drc.rpt",
+    "report_time": "2026-10-09 01:34:30",
+    "refill_all_zones": true,
+    "report_all_track_errors": true,
+    "test_tracks_against_filled_copper": true
+  },
+  "actual5Erc": {
+    "errors": 0,
+    "warnings": 0,
+    "report": "KiCad_Import_5/validation/DRV8701_DUAL_12V.erc"
+  },
+  "actual5ExportedNetlistEquivalentToSource": true,
+  "actual5ComponentTimestampsMatchPcb": 38,
+  "realEasyedaWebImportExecuted": false,
+  "realEasyedaDrcExecuted": false,
+  "hardwareTested": false,
+  "autorouterUsed": false,
+  "limits": [
+    "Professional web import has not been executed in a logged-in user session.",
+    "Professional importer automatically regenerates copper; inspect copper and run destination DRC.",
+    "Confirm four copper layers at 35um and 1.6mm total thickness; detailed modern stackup is supplied as a sidecar."
+  ]
+}

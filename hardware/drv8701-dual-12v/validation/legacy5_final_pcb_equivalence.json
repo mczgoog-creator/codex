@@ -1,0 +1,812 @@
+{
+  "reader": "9.0.2",
+  "source_sha256": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
+  "legacy_sha256": "60e045bd378a7faf1e4eb44393369eb0c9ce2441f0d3720b1e695684e156de0d",
+  "passed": true,
+  "source_track_segments": 258,
+  "legacy_track_segments": 290,
+  "added_bridge_segments": 32,
+  "original_258_track_segment_multiset_retained": true,
+  "added_segments_exactly_authorised_drain_bridges": true,
+  "equivalence_excluding_added_bridges_and_version_specific_zone_fill_cache": {
+    "footprints": true,
+    "pads": true,
+    "vias": true,
+    "zone_boundaries_and_settings": true,
+    "outline": true,
+    "board_thickness": true,
+    "copper_layers": true
+  },
+  "original_76_vias_retained": true,
+  "physical_pad_count": 181,
+  "all_38_schematic_component_paths_retained": true,
+  "library_pad_geometry_unchanged": true,
+  "physical_copper_added_by_bridges_mm2": 0.0,
+  "geometric_proof": {
+    "method": "Conservative polygon BooleanSubtract: outward track capsule minus union of inward original small-drain and exposed-drain pad shapes",
+    "max_arc_error_nm": 1,
+    "track_error_direction": "ERROR_OUTSIDE",
+    "pad_error_direction": "ERROR_INSIDE",
+    "includes_track_endpoint_caps": true,
+    "numeric_coordinate_units": "nanometres; integer clipping",
+    "source_shapes_from": "actual pcbnew PAD.TransformShapeToPolygon for original roundrect/rect pads"
+  },
+  "source_fill_cache": [
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 5006
+    },
+    {
+      "layer": "B.Cu",
+      "filled": true,
+      "vertices": 2677
+    },
+    {
+      "layer": "In1.Cu",
+      "filled": true,
+      "vertices": 2572
+    }
+  ],
+  "legacy_fill_cache": [
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 5298
+    },
+    {
+      "layer": "B.Cu",
+      "filled": true,
+      "vertices": 2625
+    },
+    {
+      "layer": "In1.Cu",
+      "filled": true,
+      "vertices": 2181
+    }
+  ],
+  "fill_cache_comparison": "KiCad 5 uses its native regenerated fill cache. Copper-zone boundaries and parameters are compared; cache geometry is version dependent and is not asserted identical.",
+  "bridges": [
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q7",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          45405000,
+          8230000
+        ],
+        "end": [
+          45405000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q7",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          44135000,
+          8230000
+        ],
+        "end": [
+          44135000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q7",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          42865000,
+          8230000
+        ],
+        "end": [
+          42865000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q7",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          41595000,
+          8230000
+        ],
+        "end": [
+          41595000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q5",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          33905000,
+          8230000
+        ],
+        "end": [
+          33905000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q5",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          32635000,
+          8230000
+        ],
+        "end": [
+          32635000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q5",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          31365000,
+          8230000
+        ],
+        "end": [
+          31365000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q5",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          30095000,
+          8230000
+        ],
+        "end": [
+          30095000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q3",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          17905000,
+          8230000
+        ],
+        "end": [
+          17905000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q3",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          16635000,
+          8230000
+        ],
+        "end": [
+          16635000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q3",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          15365000,
+          8230000
+        ],
+        "end": [
+          15365000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q3",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          14095000,
+          8230000
+        ],
+        "end": [
+          14095000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q1",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          6405000,
+          8230000
+        ],
+        "end": [
+          6405000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q1",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          5135000,
+          8230000
+        ],
+        "end": [
+          5135000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q1",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          3865000,
+          8230000
+        ],
+        "end": [
+          3865000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q1",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          2595000,
+          8230000
+        ],
+        "end": [
+          2595000,
+          10550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "VM"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q4",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          17905000,
+          20230000
+        ],
+        "end": [
+          17905000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q4",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          16635000,
+          20230000
+        ],
+        "end": [
+          16635000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q4",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          15365000,
+          20230000
+        ],
+        "end": [
+          15365000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q4",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          14095000,
+          20230000
+        ],
+        "end": [
+          14095000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q2",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          6405000,
+          20230000
+        ],
+        "end": [
+          6405000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q2",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          5135000,
+          20230000
+        ],
+        "end": [
+          5135000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q2",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          3865000,
+          20230000
+        ],
+        "end": [
+          3865000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q2",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          2595000,
+          20230000
+        ],
+        "end": [
+          2595000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "L_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q8",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          45405000,
+          20230000
+        ],
+        "end": [
+          45405000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q8",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          44135000,
+          20230000
+        ],
+        "end": [
+          44135000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q8",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          42865000,
+          20230000
+        ],
+        "end": [
+          42865000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q8",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          41595000,
+          20230000
+        ],
+        "end": [
+          41595000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_B"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q6",
+      "drain_pad_number": "5",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          33905000,
+          20230000
+        ],
+        "end": [
+          33905000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q6",
+      "drain_pad_number": "6",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          32635000,
+          20230000
+        ],
+        "end": [
+          32635000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.454460641158,
+      "reference": "Q6",
+      "drain_pad_number": "7",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          31365000,
+          20230000
+        ],
+        "end": [
+          31365000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_A"
+      }
+    },
+    {
+      "full_track_capsule_contained_in_original_pad_union": true,
+      "outside_original_pad_union_area_mm2": 0.0,
+      "outside_original_pad_union_outline_count": 0,
+      "conservative_track_capsule_area_mm2": 0.629087681002,
+      "conservative_pad_union_area_mm2": 15.4544616473375,
+      "reference": "Q6",
+      "drain_pad_number": "8",
+      "exposed_pad_number": "5",
+      "track": {
+        "start": [
+          30095000,
+          20230000
+        ],
+        "end": [
+          30095000,
+          22550000
+        ],
+        "width": 250000,
+        "layer": "F.Cu",
+        "net": "R_A"
+      }
+    }
+  ],
+  "unexpected_additional_segments": [],
+  "missing_expected_bridges": [],
+  "missing_source_track_segments": [],
+  "component_link_errors": [],
+  "failures": []
+}

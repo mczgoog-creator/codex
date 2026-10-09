@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reader": "Official KiCad legacy LIB parser via kicad-cli sym upgrade",
+  "symbols": 11,
+  "pin_definitions": 54,
+  "pin_positions_numbers_names_types_styles_and_lengths_preserved": true,
+  "errors": []
+}

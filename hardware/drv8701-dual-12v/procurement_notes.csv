@@ -1,6 +1,6 @@
 References,Value,Quantity,Package,Selection requirements,Verification status
 U1 U2,DRV8701ERGET,2,VQFN RGE24 4x4mm 0.5mm pitch,Exposed GND pad must be soldered; TI RGE0024F land pattern,TI SLVSCX5B read
-Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8,TPH1R403NL,8,SOP Advance,Exact model; 1-3 S / 4 G / 5-8 D / exposed D; do not substitute package,Exact native footprint cross-checked; Toshiba electrical PDF still unavailable
+Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8,TPH1R403NL,8,SOP Advance,Exact model; ordinary SOP Advance per manufacturer p8; 1-3 S / 4 G / 5-8 D / exposed D; do not substitute SOP Advance(N),Toshiba Rev3.0.A electrical data and package outline read; recommended PCB land pattern not in PDF
 C1 C2 C3 C4 C5 C6 C8 C9 C10 C11 C12 C13 C16 C17,100nF,14,0603,25V or higher X7R ceramic; original capacitance preserved,Package verified; exact purchased part DC-bias curve must be checked
 C15,470uF,1,Radial diameter 10mm pitch 5mm,25V low-ESR electrolytic; maximum body diameter 10mm; verify ripple-current rating,Value preserved; package envelope selected
 R1 R5 R7,10kΩ,3,0603,1% or 5%; rated power at least 0.1W,Original resistance preserved

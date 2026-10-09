@@ -1,0 +1,1174 @@
+EESchema Schematic File Version 4
+LIBS:DRV8701_Custom
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "DRV8701 DUAL MOTOR / 12 V"
+Date "2026-10-08"
+Rev "1.0"
+Comp "Source: 8701 driver board, no current sensing 2.0"
+Comment1 "Manual PCB routing only; no hardware validation"
+Comment2 "Original source values and net connections preserved"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DRV8701_Custom:DRV8701ERGET U1
+U 1 1 AABAFB2B
+P 2400 3000
+F 0 "U1" H 2400 2100 50 0000 C CNN
+F 1 "DRV8701ERGET" H 2400 2200 40 0000 C CNN
+F 2 "DRV8701_Custom:DRV8701_RGE24" H 2400 3000 50 0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/drv8701.pdf" H 2400 3000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 2400 3000 50 0001 C CNN "Source"
+	1    2400 3000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q1
+U 1 1 3406B920
+P 5200 2200
+F 0 "Q1" H 5200 1600 50 0000 C CNN
+F 1 "TPH1R403NL" H 5200 2650 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 5200 2200 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 5200 2200 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 5200 2200 50 0001 C CNN "Source"
+	1    5200 2200
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q2
+U 1 1 70C42064
+P 5200 4000
+F 0 "Q2" H 5200 3400 50 0000 C CNN
+F 1 "TPH1R403NL" H 5200 4450 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 5200 4000 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 5200 4000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 5200 4000 50 0001 C CNN "Source"
+	1    5200 4000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q3
+U 1 1 FD6F8503
+P 6900 2200
+F 0 "Q3" H 6900 1600 50 0000 C CNN
+F 1 "TPH1R403NL" H 6900 2650 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 6900 2200 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 6900 2200 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 6900 2200 50 0001 C CNN "Source"
+	1    6900 2200
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q4
+U 1 1 3B157D71
+P 6900 4000
+F 0 "Q4" H 6900 3400 50 0000 C CNN
+F 1 "TPH1R403NL" H 6900 4450 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 6900 4000 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 6900 4000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 6900 4000 50 0001 C CNN "Source"
+	1    6900 4000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C1
+U 1 1 7DE1A066
+P 1100 5900
+F 0 "C1" H 1250 5850 50 0000 C CNN
+F 1 "100nF" H 1250 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 1100 5900 50 0001 C CNN
+F 3 "" H 1100 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 1100 5900 50 0001 C CNN "Source"
+	1    1100 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C2
+U 1 1 7AF576AE
+P 2200 5900
+F 0 "C2" H 2350 5850 50 0000 C CNN
+F 1 "100nF" H 2350 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 2200 5900 50 0001 C CNN
+F 3 "" H 2200 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 2200 5900 50 0001 C CNN "Source"
+	1    2200 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C3
+U 1 1 6A6D88DD
+P 3300 5900
+F 0 "C3" H 3450 5850 50 0000 C CNN
+F 1 "100nF" H 3450 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 3300 5900 50 0001 C CNN
+F 3 "" H 3300 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 3300 5900 50 0001 C CNN "Source"
+	1    3300 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C4
+U 1 1 D87410EF
+P 4400 5900
+F 0 "C4" H 4550 5850 50 0000 C CNN
+F 1 "100nF" H 4550 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 4400 5900 50 0001 C CNN
+F 3 "" H 4400 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 4400 5900 50 0001 C CNN "Source"
+	1    4400 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C5
+U 1 1 2DE694F5
+P 5500 5900
+F 0 "C5" H 5650 5850 50 0000 C CNN
+F 1 "100nF" H 5650 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 5500 5900 50 0001 C CNN
+F 3 "" H 5500 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 5500 5900 50 0001 C CNN "Source"
+	1    5500 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C6
+U 1 1 3DEE3C30
+P 6600 5900
+F 0 "C6" H 6750 5850 50 0000 C CNN
+F 1 "100nF" H 6750 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 6600 5900 50 0001 C CNN
+F 3 "" H 6600 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 6600 5900 50 0001 C CNN "Source"
+	1    6600 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C16
+U 1 1 9B7525F6
+P 2400 7350
+F 0 "C16" H 2550 7300 50 0000 C CNN
+F 1 "100nF" H 2550 7400 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 2400 7350 50 0001 C CNN
+F 3 "" H 2400 7350 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 2400 7350 50 0001 C CNN "Source"
+	1    2400 7350
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R8
+U 1 1 B6DF295E
+P 2400 8150
+F 0 "R8" H 2550 8100 50 0000 C CNN
+F 1 "100Ω" H 2550 8200 40 0000 C CNN
+F 2 "DRV8701_Custom:R_1210_3225Metric" H 2400 8150 50 0001 C CNN
+F 3 "" H 2400 8150 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 2400 8150 50 0001 C CNN "Source"
+	1    2400 8150
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:XT30_OUTPUT CN1
+U 1 1 D658B4E5
+P 5900 7650
+F 0 "CN1" H 5900 7150 50 0000 C CNN
+F 1 "XT30UPB-M" H 5900 7250 40 0000 C CNN
+F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 5900 7650 50 0001 C CNN
+F 3 "" H 5900 7650 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 5900 7650 50 0001 C CNN "Source"
+	1    5900 7650
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:DRV8701ERGET U2
+U 1 1 3FC5504D
+P 10500 3000
+F 0 "U2" H 10500 2100 50 0000 C CNN
+F 1 "DRV8701ERGET" H 10500 2200 40 0000 C CNN
+F 2 "DRV8701_Custom:DRV8701_RGE24" H 10500 3000 50 0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/drv8701.pdf" H 10500 3000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 10500 3000 50 0001 C CNN "Source"
+	1    10500 3000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q5
+U 1 1 8659D3B7
+P 13300 2200
+F 0 "Q5" H 13300 1600 50 0000 C CNN
+F 1 "TPH1R403NL" H 13300 2650 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 13300 2200 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 13300 2200 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 13300 2200 50 0001 C CNN "Source"
+	1    13300 2200
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q6
+U 1 1 54BAA8A4
+P 13300 4000
+F 0 "Q6" H 13300 3400 50 0000 C CNN
+F 1 "TPH1R403NL" H 13300 4450 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 13300 4000 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 13300 4000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 13300 4000 50 0001 C CNN "Source"
+	1    13300 4000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q7
+U 1 1 4BFCD16A
+P 15000 2200
+F 0 "Q7" H 15000 1600 50 0000 C CNN
+F 1 "TPH1R403NL" H 15000 2650 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 15000 2200 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 15000 2200 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 15000 2200 50 0001 C CNN "Source"
+	1    15000 2200
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPH1R403NL Q8
+U 1 1 544BBB89
+P 15000 4000
+F 0 "Q8" H 15000 3400 50 0000 C CNN
+F 1 "TPH1R403NL" H 15000 4450 40 0000 C CNN
+F 2 "DRV8701_Custom:TPH1R403NL_SOPAdvance" H 15000 4000 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL" H 15000 4000 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 15000 4000 50 0001 C CNN "Source"
+	1    15000 4000
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C8
+U 1 1 9BAFA88F
+P 9200 5900
+F 0 "C8" H 9350 5850 50 0000 C CNN
+F 1 "100nF" H 9350 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 9200 5900 50 0001 C CNN
+F 3 "" H 9200 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 9200 5900 50 0001 C CNN "Source"
+	1    9200 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C9
+U 1 1 163BCBC7
+P 10300 5900
+F 0 "C9" H 10450 5850 50 0000 C CNN
+F 1 "100nF" H 10450 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 10300 5900 50 0001 C CNN
+F 3 "" H 10300 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 10300 5900 50 0001 C CNN "Source"
+	1    10300 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C10
+U 1 1 A641FDF9
+P 11400 5900
+F 0 "C10" H 11550 5850 50 0000 C CNN
+F 1 "100nF" H 11550 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 11400 5900 50 0001 C CNN
+F 3 "" H 11400 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 11400 5900 50 0001 C CNN "Source"
+	1    11400 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C11
+U 1 1 A34AC5C1
+P 12500 5900
+F 0 "C11" H 12650 5850 50 0000 C CNN
+F 1 "100nF" H 12650 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 12500 5900 50 0001 C CNN
+F 3 "" H 12500 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 12500 5900 50 0001 C CNN "Source"
+	1    12500 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C12
+U 1 1 9A2D688C
+P 13600 5900
+F 0 "C12" H 13750 5850 50 0000 C CNN
+F 1 "100nF" H 13750 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 13600 5900 50 0001 C CNN
+F 3 "" H 13600 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 13600 5900 50 0001 C CNN "Source"
+	1    13600 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C13
+U 1 1 FFCC4E3A
+P 14700 5900
+F 0 "C13" H 14850 5850 50 0000 C CNN
+F 1 "100nF" H 14850 5950 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 14700 5900 50 0001 C CNN
+F 3 "" H 14700 5900 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 14700 5900 50 0001 C CNN "Source"
+	1    14700 5900
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C17
+U 1 1 91EFB947
+P 10500 7350
+F 0 "C17" H 10650 7300 50 0000 C CNN
+F 1 "100nF" H 10650 7400 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 10500 7350 50 0001 C CNN
+F 3 "" H 10500 7350 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 10500 7350 50 0001 C CNN "Source"
+	1    10500 7350
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R9
+U 1 1 9B8064A2
+P 10500 8150
+F 0 "R9" H 10650 8100 50 0000 C CNN
+F 1 "100Ω" H 10650 8200 40 0000 C CNN
+F 2 "DRV8701_Custom:R_1210_3225Metric" H 10500 8150 50 0001 C CNN
+F 3 "" H 10500 8150 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 10500 8150 50 0001 C CNN "Source"
+	1    10500 8150
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:XT30_OUTPUT CN2
+U 1 1 FDFA0590
+P 14000 7650
+F 0 "CN2" H 14000 7150 50 0000 C CNN
+F 1 "XT30UPB-M" H 14000 7250 40 0000 C CNN
+F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 14000 7650 50 0001 C CNN
+F 3 "" H 14000 7650 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 14000 7650 50 0001 C CNN "Source"
+	1    14000 7650
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:XT30_POWER P2
+U 1 1 5D94D7A6
+P 1100 9700
+F 0 "P2" H 1100 9200 50 0000 C CNN
+F 1 "XT30UPB-M" H 1100 9300 40 0000 C CNN
+F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 1100 9700 50 0001 C CNN
+F 3 "" H 1100 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 1100 9700 50 0001 C CNN "Source"
+	1    1100 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C_Polarized C15
+U 1 1 DF8B882F
+P 2600 9700
+F 0 "C15" H 2750 9650 50 0000 C CNN
+F 1 "470uF" H 2750 9750 40 0000 C CNN
+F 2 "DRV8701_Custom:CP_Radial_D10.0mm_P5.00mm" H 2600 9700 50 0001 C CNN
+F 3 "" H 2600 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 2600 9700 50 0001 C CNN "Source"
+	1    2600 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R1
+U 1 1 74635CB5
+P 4100 9700
+F 0 "R1" H 4250 9650 50 0000 C CNN
+F 1 "10kΩ" H 4250 9750 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 4100 9700 50 0001 C CNN
+F 3 "" H 4100 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 4100 9700 50 0001 C CNN "Source"
+	1    4100 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:D_Zener D1
+U 1 1 F2A87802
+P 5500 9700
+F 0 "D1" H 5650 9650 50 0000 C CNN
+F 1 "BZT52C3V3" H 5650 9750 40 0000 C CNN
+F 2 "DRV8701_Custom:D_SOD123" H 5500 9700 50 0001 C CNN
+F 3 "" H 5500 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 5500 9700 50 0001 C CNN "Source"
+	1    5500 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:SS12D10G4 U5
+U 1 1 D827F031
+P 7250 9700
+F 0 "U5" H 7250 9200 50 0000 C CNN
+F 1 "SS12D10G4" H 7250 9300 40 0000 C CNN
+F 2 "DRV8701_Custom:SS12D10G4" H 7250 9700 50 0001 C CNN
+F 3 "" H 7250 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 7250 9700 50 0001 C CNN "Source"
+	1    7250 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R5
+U 1 1 CF5D60C9
+P 9000 9500
+F 0 "R5" H 9150 9450 50 0000 C CNN
+F 1 "10kΩ" H 9150 9550 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 9000 9500 50 0001 C CNN
+F 3 "" H 9000 9500 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 9000 9500 50 0001 C CNN "Source"
+	1    9000 9500
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:LED LED1
+U 1 1 81111E96
+P 10000 9700
+F 0 "LED1" H 10150 9650 50 0000 C CNN
+F 1 "KT-0603R" H 10150 9750 40 0000 C CNN
+F 2 "DRV8701_Custom:LED_0603_1608Metric" H 10000 9700 50 0001 C CNN
+F 3 "" H 10000 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 10000 9700 50 0001 C CNN "Source"
+	1    10000 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R7
+U 1 1 46735BB7
+P 11500 9500
+F 0 "R7" H 11650 9450 50 0000 C CNN
+F 1 "10kΩ" H 11650 9550 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 11500 9500 50 0001 C CNN
+F 3 "" H 11500 9500 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 11500 9500 50 0001 C CNN "Source"
+	1    11500 9500
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:LED LED2
+U 1 1 D1D65730
+P 12500 9700
+F 0 "LED2" H 12650 9650 50 0000 C CNN
+F 1 "KT-0603R" H 12650 9750 40 0000 C CNN
+F 2 "DRV8701_Custom:LED_0603_1608Metric" H 12500 9700 50 0001 C CNN
+F 3 "" H 12500 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 12500 9700 50 0001 C CNN "Source"
+	1    12500 9700
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:CONTROL_4PIN CN3
+U 1 1 02E15C2F
+P 14950 9700
+F 0 "CN3" H 14950 9200 50 0000 C CNN
+F 1 "XH2.54-4P" H 14950 9300 40 0000 C CNN
+F 2 "DRV8701_Custom:XH2.54_1x04_Vertical" H 14950 9700 50 0001 C CNN
+F 3 "" H 14950 9700 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 14950 9700 50 0001 C CNN "Source"
+	1    14950 9700
+	1    0    0    -1
+$EndComp
+Text Notes 700 1000 0 70 ~ 0
+L MOTOR CHANNEL — ORIGINAL PH/EN DRIVER
+Wire Wire Line
+	1850 2400 1650 2400
+Text Label 1650 2400 2 40 ~ 0
+VM
+Wire Wire Line
+	1850 2500 1650 2500
+Text Label 1650 2500 2 40 ~ 0
+L_VCP
+Wire Wire Line
+	1850 2600 1650 2600
+Text Label 1650 2600 2 40 ~ 0
+L_CPH
+Wire Wire Line
+	1850 2700 1650 2700
+Text Label 1650 2700 2 40 ~ 0
+L_CPL
+Wire Wire Line
+	1850 2800 1650 2800
+Text Label 1650 2800 2 40 ~ 0
+GND
+Wire Wire Line
+	1850 2900 1650 2900
+Text Label 1650 2900 2 40 ~ 0
+L_AVDD
+Wire Wire Line
+	1850 3000 1650 3000
+Text Label 1650 3000 2 40 ~ 0
+L_AVDD
+Wire Wire Line
+	1850 3100 1650 3100
+Text Label 1650 3100 2 40 ~ 0
+L_DVDD
+NoConn ~ 1850 3200
+NoConn ~ 1850 3300
+NoConn ~ 1850 3400
+Wire Wire Line
+	1850 3500 1650 3500
+Text Label 1650 3500 2 40 ~ 0
+L_AVDD
+Wire Wire Line
+	1850 3600 1650 3600
+Text Label 1650 3600 2 40 ~ 0
+NSLEEP
+Wire Wire Line
+	2950 2400 3150 2400
+Text Label 3150 2400 0 40 ~ 0
+L_EN_IN
+Wire Wire Line
+	2950 2500 3150 2500
+Text Label 3150 2500 0 40 ~ 0
+L_PH_IN
+Wire Wire Line
+	2950 2600 3150 2600
+Text Label 3150 2600 0 40 ~ 0
+GND
+Wire Wire Line
+	2950 2700 3150 2700
+Text Label 3150 2700 0 40 ~ 0
+L_GH1
+Wire Wire Line
+	2950 2800 3150 2800
+Text Label 3150 2800 0 40 ~ 0
+L_B
+Wire Wire Line
+	2950 2900 3150 2900
+Text Label 3150 2900 0 40 ~ 0
+L_GL1
+Wire Wire Line
+	2950 3000 3150 3000
+Text Label 3150 3000 0 40 ~ 0
+GND
+Wire Wire Line
+	2950 3100 3150 3100
+Text Label 3150 3100 0 40 ~ 0
+GND
+Wire Wire Line
+	2950 3200 3150 3200
+Text Label 3150 3200 0 40 ~ 0
+L_GL2
+Wire Wire Line
+	2950 3300 3150 3300
+Text Label 3150 3300 0 40 ~ 0
+L_A
+Wire Wire Line
+	2950 3400 3150 3400
+Text Label 3150 3400 0 40 ~ 0
+L_GH2
+Wire Wire Line
+	2950 3500 3150 3500
+Text Label 3150 3500 0 40 ~ 0
+GND
+Wire Wire Line
+	4850 2200 4650 2200
+Text Label 4650 2200 2 40 ~ 0
+L_A
+Wire Wire Line
+	4850 2300 4650 2300
+Text Label 4650 2300 2 40 ~ 0
+L_A
+Wire Wire Line
+	4850 2400 4650 2400
+Text Label 4650 2400 2 40 ~ 0
+L_A
+Wire Wire Line
+	4850 1900 4650 1900
+Text Label 4650 1900 2 40 ~ 0
+L_GH2
+Wire Wire Line
+	5550 1900 5750 1900
+Text Label 5750 1900 0 40 ~ 0
+VM
+Wire Wire Line
+	5550 2000 5750 2000
+Text Label 5750 2000 0 40 ~ 0
+VM
+Wire Wire Line
+	5550 2100 5750 2100
+Text Label 5750 2100 0 40 ~ 0
+VM
+Wire Wire Line
+	5550 2200 5750 2200
+Text Label 5750 2200 0 40 ~ 0
+VM
+Wire Wire Line
+	4850 4000 4650 4000
+Text Label 4650 4000 2 40 ~ 0
+GND
+Wire Wire Line
+	4850 4100 4650 4100
+Text Label 4650 4100 2 40 ~ 0
+GND
+Wire Wire Line
+	4850 4200 4650 4200
+Text Label 4650 4200 2 40 ~ 0
+GND
+Wire Wire Line
+	4850 3700 4650 3700
+Text Label 4650 3700 2 40 ~ 0
+L_GL2
+Wire Wire Line
+	5550 3700 5750 3700
+Text Label 5750 3700 0 40 ~ 0
+L_A
+Wire Wire Line
+	5550 3800 5750 3800
+Text Label 5750 3800 0 40 ~ 0
+L_A
+Wire Wire Line
+	5550 3900 5750 3900
+Text Label 5750 3900 0 40 ~ 0
+L_A
+Wire Wire Line
+	5550 4000 5750 4000
+Text Label 5750 4000 0 40 ~ 0
+L_A
+Wire Wire Line
+	6550 2200 6350 2200
+Text Label 6350 2200 2 40 ~ 0
+L_B
+Wire Wire Line
+	6550 2300 6350 2300
+Text Label 6350 2300 2 40 ~ 0
+L_B
+Wire Wire Line
+	6550 2400 6350 2400
+Text Label 6350 2400 2 40 ~ 0
+L_B
+Wire Wire Line
+	6550 1900 6350 1900
+Text Label 6350 1900 2 40 ~ 0
+L_GH1
+Wire Wire Line
+	7250 1900 7450 1900
+Text Label 7450 1900 0 40 ~ 0
+VM
+Wire Wire Line
+	7250 2000 7450 2000
+Text Label 7450 2000 0 40 ~ 0
+VM
+Wire Wire Line
+	7250 2100 7450 2100
+Text Label 7450 2100 0 40 ~ 0
+VM
+Wire Wire Line
+	7250 2200 7450 2200
+Text Label 7450 2200 0 40 ~ 0
+VM
+Wire Wire Line
+	6550 4000 6350 4000
+Text Label 6350 4000 2 40 ~ 0
+GND
+Wire Wire Line
+	6550 4100 6350 4100
+Text Label 6350 4100 2 40 ~ 0
+GND
+Wire Wire Line
+	6550 4200 6350 4200
+Text Label 6350 4200 2 40 ~ 0
+GND
+Wire Wire Line
+	6550 3700 6350 3700
+Text Label 6350 3700 2 40 ~ 0
+L_GL1
+Wire Wire Line
+	7250 3700 7450 3700
+Text Label 7450 3700 0 40 ~ 0
+L_B
+Wire Wire Line
+	7250 3800 7450 3800
+Text Label 7450 3800 0 40 ~ 0
+L_B
+Wire Wire Line
+	7250 3900 7450 3900
+Text Label 7450 3900 0 40 ~ 0
+L_B
+Wire Wire Line
+	7250 4000 7450 4000
+Text Label 7450 4000 0 40 ~ 0
+L_B
+Text Notes 4150 4900 0 40 ~ 0
+SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad
+Text Notes 700 5200 0 50 ~ 0
+Original charge-pump and supply capacitors: all 100nF
+Wire Wire Line
+	1100 5750 1100 5550
+Text Label 1100 5550 0 40 ~ 0
+L_CPL
+Wire Wire Line
+	1100 6050 1100 6250
+Text Label 1100 6250 0 40 ~ 0
+L_CPH
+Wire Wire Line
+	2200 5750 2200 5550
+Text Label 2200 5550 0 40 ~ 0
+L_VCP
+Wire Wire Line
+	2200 6050 2200 6250
+Text Label 2200 6250 0 40 ~ 0
+VM
+Wire Wire Line
+	3300 5750 3300 5550
+Text Label 3300 5550 0 40 ~ 0
+VM
+Wire Wire Line
+	3300 6050 3300 6250
+Text Label 3300 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	4400 5750 4400 5550
+Text Label 4400 5550 0 40 ~ 0
+VM
+Wire Wire Line
+	4400 6050 4400 6250
+Text Label 4400 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	5500 5750 5500 5550
+Text Label 5500 5550 0 40 ~ 0
+L_AVDD
+Wire Wire Line
+	5500 6050 5500 6250
+Text Label 5500 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	6600 5750 6600 5550
+Text Label 6600 5550 0 40 ~ 0
+L_DVDD
+Wire Wire Line
+	6600 6050 6600 6250
+Text Label 6600 6250 0 40 ~ 0
+GND
+Text Notes 700 6750 0 50 ~ 0
+Series RC across motor outputs: 100nF + 100 ohm
+Wire Wire Line
+	2400 7200 2400 7000
+Text Label 2400 7000 0 40 ~ 0
+L_A
+Wire Wire Line
+	2400 7500 2400 7700
+Text Label 2400 7700 0 40 ~ 0
+L_SNUBBER
+Wire Wire Line
+	2400 8000 2400 7800
+Text Label 2400 7800 0 40 ~ 0
+L_SNUBBER
+Wire Wire Line
+	2400 8300 2400 8500
+Text Label 2400 8500 0 40 ~ 0
+L_B
+Wire Wire Line
+	5700 7600 5500 7600
+Text Label 5500 7600 2 40 ~ 0
+L_A
+Wire Wire Line
+	5700 7700 5500 7700
+Text Label 5500 7700 2 40 ~ 0
+L_B
+Text Notes 4600 8250 0 40 ~ 0
+12V motor: 0.4A rated / 1.8A stall max
+Text Notes 8800 1000 0 70 ~ 0
+R MOTOR CHANNEL — ORIGINAL PH/EN DRIVER
+Wire Wire Line
+	9950 2400 9750 2400
+Text Label 9750 2400 2 40 ~ 0
+VM
+Wire Wire Line
+	9950 2500 9750 2500
+Text Label 9750 2500 2 40 ~ 0
+R_VCP
+Wire Wire Line
+	9950 2600 9750 2600
+Text Label 9750 2600 2 40 ~ 0
+R_CPH
+Wire Wire Line
+	9950 2700 9750 2700
+Text Label 9750 2700 2 40 ~ 0
+R_CPL
+Wire Wire Line
+	9950 2800 9750 2800
+Text Label 9750 2800 2 40 ~ 0
+GND
+Wire Wire Line
+	9950 2900 9750 2900
+Text Label 9750 2900 2 40 ~ 0
+R_AVDD
+Wire Wire Line
+	9950 3000 9750 3000
+Text Label 9750 3000 2 40 ~ 0
+R_AVDD
+Wire Wire Line
+	9950 3100 9750 3100
+Text Label 9750 3100 2 40 ~ 0
+R_DVDD
+NoConn ~ 9950 3200
+NoConn ~ 9950 3300
+NoConn ~ 9950 3400
+Wire Wire Line
+	9950 3500 9750 3500
+Text Label 9750 3500 2 40 ~ 0
+R_AVDD
+Wire Wire Line
+	9950 3600 9750 3600
+Text Label 9750 3600 2 40 ~ 0
+NSLEEP
+Wire Wire Line
+	11050 2400 11250 2400
+Text Label 11250 2400 0 40 ~ 0
+R_EN_IN
+Wire Wire Line
+	11050 2500 11250 2500
+Text Label 11250 2500 0 40 ~ 0
+R_PH_IN
+Wire Wire Line
+	11050 2600 11250 2600
+Text Label 11250 2600 0 40 ~ 0
+GND
+Wire Wire Line
+	11050 2700 11250 2700
+Text Label 11250 2700 0 40 ~ 0
+R_GH1
+Wire Wire Line
+	11050 2800 11250 2800
+Text Label 11250 2800 0 40 ~ 0
+R_B
+Wire Wire Line
+	11050 2900 11250 2900
+Text Label 11250 2900 0 40 ~ 0
+R_GL1
+Wire Wire Line
+	11050 3000 11250 3000
+Text Label 11250 3000 0 40 ~ 0
+GND
+Wire Wire Line
+	11050 3100 11250 3100
+Text Label 11250 3100 0 40 ~ 0
+GND
+Wire Wire Line
+	11050 3200 11250 3200
+Text Label 11250 3200 0 40 ~ 0
+R_GL2
+Wire Wire Line
+	11050 3300 11250 3300
+Text Label 11250 3300 0 40 ~ 0
+R_A
+Wire Wire Line
+	11050 3400 11250 3400
+Text Label 11250 3400 0 40 ~ 0
+R_GH2
+Wire Wire Line
+	11050 3500 11250 3500
+Text Label 11250 3500 0 40 ~ 0
+GND
+Wire Wire Line
+	12950 2200 12750 2200
+Text Label 12750 2200 2 40 ~ 0
+R_A
+Wire Wire Line
+	12950 2300 12750 2300
+Text Label 12750 2300 2 40 ~ 0
+R_A
+Wire Wire Line
+	12950 2400 12750 2400
+Text Label 12750 2400 2 40 ~ 0
+R_A
+Wire Wire Line
+	12950 1900 12750 1900
+Text Label 12750 1900 2 40 ~ 0
+R_GH2
+Wire Wire Line
+	13650 1900 13850 1900
+Text Label 13850 1900 0 40 ~ 0
+VM
+Wire Wire Line
+	13650 2000 13850 2000
+Text Label 13850 2000 0 40 ~ 0
+VM
+Wire Wire Line
+	13650 2100 13850 2100
+Text Label 13850 2100 0 40 ~ 0
+VM
+Wire Wire Line
+	13650 2200 13850 2200
+Text Label 13850 2200 0 40 ~ 0
+VM
+Wire Wire Line
+	12950 4000 12750 4000
+Text Label 12750 4000 2 40 ~ 0
+GND
+Wire Wire Line
+	12950 4100 12750 4100
+Text Label 12750 4100 2 40 ~ 0
+GND
+Wire Wire Line
+	12950 4200 12750 4200
+Text Label 12750 4200 2 40 ~ 0
+GND
+Wire Wire Line
+	12950 3700 12750 3700
+Text Label 12750 3700 2 40 ~ 0
+R_GL2
+Wire Wire Line
+	13650 3700 13850 3700
+Text Label 13850 3700 0 40 ~ 0
+R_A
+Wire Wire Line
+	13650 3800 13850 3800
+Text Label 13850 3800 0 40 ~ 0
+R_A
+Wire Wire Line
+	13650 3900 13850 3900
+Text Label 13850 3900 0 40 ~ 0
+R_A
+Wire Wire Line
+	13650 4000 13850 4000
+Text Label 13850 4000 0 40 ~ 0
+R_A
+Wire Wire Line
+	14650 2200 14450 2200
+Text Label 14450 2200 2 40 ~ 0
+R_B
+Wire Wire Line
+	14650 2300 14450 2300
+Text Label 14450 2300 2 40 ~ 0
+R_B
+Wire Wire Line
+	14650 2400 14450 2400
+Text Label 14450 2400 2 40 ~ 0
+R_B
+Wire Wire Line
+	14650 1900 14450 1900
+Text Label 14450 1900 2 40 ~ 0
+R_GH1
+Wire Wire Line
+	15350 1900 15550 1900
+Text Label 15550 1900 0 40 ~ 0
+VM
+Wire Wire Line
+	15350 2000 15550 2000
+Text Label 15550 2000 0 40 ~ 0
+VM
+Wire Wire Line
+	15350 2100 15550 2100
+Text Label 15550 2100 0 40 ~ 0
+VM
+Wire Wire Line
+	15350 2200 15550 2200
+Text Label 15550 2200 0 40 ~ 0
+VM
+Wire Wire Line
+	14650 4000 14450 4000
+Text Label 14450 4000 2 40 ~ 0
+GND
+Wire Wire Line
+	14650 4100 14450 4100
+Text Label 14450 4100 2 40 ~ 0
+GND
+Wire Wire Line
+	14650 4200 14450 4200
+Text Label 14450 4200 2 40 ~ 0
+GND
+Wire Wire Line
+	14650 3700 14450 3700
+Text Label 14450 3700 2 40 ~ 0
+R_GL1
+Wire Wire Line
+	15350 3700 15550 3700
+Text Label 15550 3700 0 40 ~ 0
+R_B
+Wire Wire Line
+	15350 3800 15550 3800
+Text Label 15550 3800 0 40 ~ 0
+R_B
+Wire Wire Line
+	15350 3900 15550 3900
+Text Label 15550 3900 0 40 ~ 0
+R_B
+Wire Wire Line
+	15350 4000 15550 4000
+Text Label 15550 4000 0 40 ~ 0
+R_B
+Text Notes 12250 4900 0 40 ~ 0
+SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad
+Text Notes 8800 5200 0 50 ~ 0
+Original charge-pump and supply capacitors: all 100nF
+Wire Wire Line
+	9200 5750 9200 5550
+Text Label 9200 5550 0 40 ~ 0
+R_CPL
+Wire Wire Line
+	9200 6050 9200 6250
+Text Label 9200 6250 0 40 ~ 0
+R_CPH
+Wire Wire Line
+	10300 5750 10300 5550
+Text Label 10300 5550 0 40 ~ 0
+R_VCP
+Wire Wire Line
+	10300 6050 10300 6250
+Text Label 10300 6250 0 40 ~ 0
+VM
+Wire Wire Line
+	11400 5750 11400 5550
+Text Label 11400 5550 0 40 ~ 0
+VM
+Wire Wire Line
+	11400 6050 11400 6250
+Text Label 11400 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	12500 5750 12500 5550
+Text Label 12500 5550 0 40 ~ 0
+VM
+Wire Wire Line
+	12500 6050 12500 6250
+Text Label 12500 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	13600 5750 13600 5550
+Text Label 13600 5550 0 40 ~ 0
+R_AVDD
+Wire Wire Line
+	13600 6050 13600 6250
+Text Label 13600 6250 0 40 ~ 0
+GND
+Wire Wire Line
+	14700 5750 14700 5550
+Text Label 14700 5550 0 40 ~ 0
+R_DVDD
+Wire Wire Line
+	14700 6050 14700 6250
+Text Label 14700 6250 0 40 ~ 0
+GND
+Text Notes 8800 6750 0 50 ~ 0
+Series RC across motor outputs: 100nF + 100 ohm
+Wire Wire Line
+	10500 7200 10500 7000
+Text Label 10500 7000 0 40 ~ 0
+R_A
+Wire Wire Line
+	10500 7500 10500 7700
+Text Label 10500 7700 0 40 ~ 0
+R_SNUBBER
+Wire Wire Line
+	10500 8000 10500 7800
+Text Label 10500 7800 0 40 ~ 0
+R_SNUBBER
+Wire Wire Line
+	10500 8300 10500 8500
+Text Label 10500 8500 0 40 ~ 0
+R_B
+Wire Wire Line
+	13800 7600 13600 7600
+Text Label 13600 7600 2 40 ~ 0
+R_A
+Wire Wire Line
+	13800 7700 13600 7700
+Text Label 13600 7700 2 40 ~ 0
+R_B
+Text Notes 12700 8250 0 40 ~ 0
+12V motor: 0.4A rated / 1.8A stall max
+Text Notes 700 8875 0 70 ~ 0
+COMMON POWER, ENABLE AND ORIGINAL FOUR-SIGNAL INTERFACE
+Wire Wire Line
+	900 9650 700 9650
+Text Label 700 9650 2 40 ~ 0
+VM
+Wire Wire Line
+	900 9750 700 9750
+Text Label 700 9750 2 40 ~ 0
+GND
+Wire Wire Line
+	2600 9550 2600 9350
+Text Label 2600 9350 0 40 ~ 0
+VM
+Wire Wire Line
+	2600 9850 2600 10050
+Text Label 2600 10050 0 40 ~ 0
+GND
+Wire Wire Line
+	4100 9550 4100 9350
+Text Label 4100 9350 0 40 ~ 0
+VM
+Wire Wire Line
+	4100 9850 4100 10050
+Text Label 4100 10050 0 40 ~ 0
+3V3
+Wire Wire Line
+	5350 9700 5150 9700
+Text Label 5150 9700 2 40 ~ 0
+3V3
+Wire Wire Line
+	5650 9700 5850 9700
+Text Label 5850 9700 0 40 ~ 0
+GND
+NoConn ~ 7550 9600
+Wire Wire Line
+	6950 9700 6750 9700
+Text Label 6750 9700 2 40 ~ 0
+NSLEEP
+Wire Wire Line
+	7550 9800 7750 9800
+Text Label 7750 9800 0 40 ~ 0
+3V3
+Wire Wire Line
+	9000 9350 9000 9150
+Text Label 9000 9150 0 40 ~ 0
+NSLEEP
+Wire Wire Line
+	9000 9650 9000 9850
+Text Label 9000 9850 0 40 ~ 0
+ENABLE_LED_A
+Wire Wire Line
+	9850 9700 9650 9700
+Text Label 9650 9700 2 40 ~ 0
+GND
+Wire Wire Line
+	10150 9700 10350 9700
+Text Label 10350 9700 0 40 ~ 0
+ENABLE_LED_A
+Wire Wire Line
+	11500 9350 11500 9150
+Text Label 11500 9150 0 40 ~ 0
+3V3
+Wire Wire Line
+	11500 9650 11500 9850
+Text Label 11500 9850 0 40 ~ 0
+POWER_LED_A
+Wire Wire Line
+	12350 9700 12150 9700
+Text Label 12150 9700 2 40 ~ 0
+GND
+Wire Wire Line
+	12650 9700 12850 9700
+Text Label 12850 9700 0 40 ~ 0
+POWER_LED_A
+Wire Wire Line
+	14750 9550 14550 9550
+Text Label 14550 9550 2 40 ~ 0
+R_EN_IN
+Wire Wire Line
+	14750 9650 14550 9650
+Text Label 14550 9650 2 40 ~ 0
+R_PH_IN
+Wire Wire Line
+	14750 9750 14550 9750
+Text Label 14550 9750 2 40 ~ 0
+L_PH_IN
+Wire Wire Line
+	14750 9850 14550 9850
+Text Label 14550 9850 2 40 ~ 0
+L_EN_IN
+Text Notes 700 10500 0 40 ~ 0
+SOURCE-FAITHFUL DESIGN — values and connections intentionally retained; no hardware validation.
+Text Notes 700 10600 0 40 ~ 0
+CN3 has no ground pin: controller must share ground via power return. 3V3 is a 10k-fed zener node.
+Text Notes 700 10700 0 40 ~ 0
+VREF/IDRIVE tied to AVDD; SP/SN grounded; nFAULT/SNSOUT/SO NC. No external current sensing or limit.
+Text Notes 700 10800 0 40 ~ 0
+Original 100nF bypass values retained: compare TI recommendations before manufacture.
+$EndSCHEMATC

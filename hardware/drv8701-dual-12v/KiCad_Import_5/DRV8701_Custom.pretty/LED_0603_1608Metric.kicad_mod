@@ -1,0 +1,104 @@
+(module "LED_0603_1608Metric"
+  (layer "F.Cu")
+  (descr "Hand-solderable metric passive; body-centred; pin1 cathode, pin2 anode")
+  (attr smd)
+  (fp_text reference "REF**"
+    (at 0 -4.2)
+    (layer "F.SilkS")
+    (effects
+      (font
+        (size 0.7 0.7)
+        (thickness 0.12)
+      )
+    )
+  )
+  (fp_text value "LED_0603_1608Metric"
+    (at 0 4.2)
+    (layer "F.Fab")
+    hide
+    (effects
+      (font
+        (size 0.7 0.7)
+        (thickness 0.12)
+      )
+    )
+  )
+  (pad "1" smd roundrect
+    (at -0.8 0)
+    (size 0.95 0.95)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.2)
+  )
+  (pad "2" smd roundrect
+    (at 0.8 0)
+    (size 0.95 0.95)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.2)
+  )
+  (fp_line
+    (start -0.8 -0.4)
+    (end 0.8 -0.4)
+    (layer "F.Fab")
+    (width 0.1)
+  )
+  (fp_line
+    (start 0.8 -0.4)
+    (end 0.8 0.4)
+    (layer "F.Fab")
+    (width 0.1)
+  )
+  (fp_line
+    (start 0.8 0.4)
+    (end -0.8 0.4)
+    (layer "F.Fab")
+    (width 0.1)
+  )
+  (fp_line
+    (start -0.8 0.4)
+    (end -0.8 -0.4)
+    (layer "F.Fab")
+    (width 0.1)
+  )
+  (fp_line
+    (start -0.25 -0.775)
+    (end 0.25 -0.775)
+    (layer "F.SilkS")
+    (width 0.12)
+  )
+  (fp_line
+    (start -0.25 0.775)
+    (end 0.25 0.775)
+    (layer "F.SilkS")
+    (width 0.12)
+  )
+  (fp_line
+    (start -1.595 -0.775)
+    (end -1.595 0.775)
+    (layer "F.SilkS")
+    (width 0.12)
+  )
+  (fp_line
+    (start -1.525 -0.725)
+    (end 1.525 -0.725)
+    (layer "F.CrtYd")
+    (width 0.05)
+  )
+  (fp_line
+    (start 1.525 -0.725)
+    (end 1.525 0.725)
+    (layer "F.CrtYd")
+    (width 0.05)
+  )
+  (fp_line
+    (start 1.525 0.725)
+    (end -1.525 0.725)
+    (layer "F.CrtYd")
+    (width 0.05)
+  )
+  (fp_line
+    (start -1.525 0.725)
+    (end -1.525 -0.725)
+    (layer "F.CrtYd")
+    (width 0.05)
+  )
+)

@@ -1,0 +1,176 @@
+{
+  "runtime": "KiCad 5.1.9+dfsg1-1+deb11u1",
+  "origin": "Signed Debian bullseye repository; deb packages downloaded and extracted under workspace, no system installation",
+  "native_saved_board_sha256": "60e045bd378a7faf1e4eb44393369eb0c9ce2441f0d3720b1e695684e156de0d",
+  "board_format_version": 20171130,
+  "board_counts": {
+    "components": 38,
+    "pads": 181,
+    "segments": 290,
+    "source_segments_retained": 258,
+    "explicit_drain_bridge_segments": 32,
+    "vias": 76,
+    "named_nets": 34,
+    "zones": 3,
+    "outline_edges": 4,
+    "copper_layers": 4
+  },
+  "native_refill": {
+    "ZONE_FILLER.Fill": true,
+    "actual5_GUI_DRC_refill": true
+  },
+  "actual5_DRC": {
+    "errors": 0,
+    "unconnected_pads": 0,
+    "report": "KiCad_Import_5/validation/legacy5_drc.rpt",
+    "report_time": "2026-10-09 01:34:30",
+    "refill_all_zones": true,
+    "report_all_track_errors": true,
+    "test_tracks_against_filled_copper": true
+  },
+  "actual5_ERC": {
+    "errors": 0,
+    "warnings": 0,
+    "report": "KiCad_Import_5/validation/DRV8701_DUAL_12V.erc"
+  },
+  "actual5_netlist": {
+    "tool": "Eeschema 5.1.9+dfsg1-1+deb11u1",
+    "components": 38,
+    "named_nets": 34,
+    "pins": 173,
+    "connected_pins": 166,
+    "single_node_NC_pins": 7,
+    "timestamp_matches": 38
+  },
+  "native_archive": {
+    "operation": "Actual KiCad 5.1 project manager File > Archive Project",
+    "zip_sha256": "16d29c8f063f8b118e5d523f60ba6e37a8b48e80fd3f017d3731b83368945ce0",
+    "zip_bytes": 81143,
+    "crc_errors": null,
+    "entries": [
+      {
+        "path": "DRV8701_Custom.dcm",
+        "bytes": 853,
+        "sha256": "64b0ed13444015d8481425b8c6003df880e06f6ed22b560c59a9d7c11bf2f0f4"
+      },
+      {
+        "path": "DRV8701_Custom.lib",
+        "bytes": 4694,
+        "sha256": "f8364580d2ebd6c00d7fa5f618b7c7273b10a77cbc6d22e87762477d891dbb52"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/AMASS_XT30UPB_M_SourceNumbering.kicad_mod",
+        "bytes": 2867,
+        "sha256": "27d2191f8f3dd0c14b53ada78619ccf9f582e61b78097dfc261b0fdac97ec2b5"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/CP_Radial_D10.0mm_P5.00mm.kicad_mod",
+        "bytes": 1325,
+        "sha256": "efa8007b0e6ed0c4337562e17858e971139c214a594accc2b9bb9e0f3aaf59cd"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/C_0603_1608Metric.kicad_mod",
+        "bytes": 1714,
+        "sha256": "88a47305efc84ad275b6f54054f504ed7a3e71a42d018031453201fdb5932878"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/DRV8701_RGE24.kicad_mod",
+        "bytes": 5445,
+        "sha256": "cb8e1d8e214cff8e70067e2c5d4c8432f46330cd4a36a5bcbae421a7e624f0b5"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/D_SOD123.kicad_mod",
+        "bytes": 1891,
+        "sha256": "c1b232d8048a1893b5708cac4e7d6e1ebbcacb8e9883e6189560b73a4a3eda23"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/LED_0603_1608Metric.kicad_mod",
+        "bytes": 1815,
+        "sha256": "ec256e62bf427c57e16fd9f312c0b1ebfdf51dff32ae5e1e7f57e16901430c04"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/R_0603_1608Metric.kicad_mod",
+        "bytes": 1714,
+        "sha256": "434e525594c19c0d2b618b76d54b81219636c7de0da64c6915fa9a4356a1bca4"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/R_1210_3225Metric.kicad_mod",
+        "bytes": 1702,
+        "sha256": "cdaedd43573be03222d0d73cb977d53bd13aa50bfe71cddf395134288c02a97d"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/SS12D10G4.kicad_mod",
+        "bytes": 2948,
+        "sha256": "47c9f0e1ba51d74344165001bce671c610017a32d808c02ebff32ab894b7386a"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/TPH1R403NL_SOPAdvance.kicad_mod",
+        "bytes": 2868,
+        "sha256": "4692b8cb42fcef87783398b74f086c4cef53cfb050fdc1d47631bfe2ebd0d594"
+      },
+      {
+        "path": "DRV8701_Custom.pretty/XH2.54_1x04_Vertical.kicad_mod",
+        "bytes": 2624,
+        "sha256": "6622b28fbae307367dee995b74684c630411da8bf59835ad4d42bf7df298b244"
+      },
+      {
+        "path": "DRV8701_DUAL_12V-cache.lib",
+        "bytes": 5024,
+        "sha256": "6feca6152637fb8d57c741f21560c091061605add27cb9c7dadb3607d0601c40"
+      },
+      {
+        "path": "DRV8701_DUAL_12V.kicad_pcb",
+        "bytes": 332459,
+        "sha256": "60e045bd378a7faf1e4eb44393369eb0c9ce2441f0d3720b1e695684e156de0d"
+      },
+      {
+        "path": "DRV8701_DUAL_12V.net",
+        "bytes": 27558,
+        "sha256": "aeda6635136b7ad516c147f96e92442bf974e3e0fe1b3e785bc515b4bb9e4604"
+      },
+      {
+        "path": "DRV8701_DUAL_12V.pro",
+        "bytes": 1497,
+        "sha256": "95d0634a0157ecaf844361da1cbb786db4d80b7ab392a01a269d35fa039f4bfc"
+      },
+      {
+        "path": "DRV8701_DUAL_12V.sch",
+        "bytes": 28865,
+        "sha256": "9ed6b6b0e8c9cd699d8b24d4be7db5984f825a1ccbb19ba7b505da6273b27dcb"
+      },
+      {
+        "path": "fp-lib-table",
+        "bytes": 168,
+        "sha256": "2fa3610a90cf4f4e8cee98154b33ed6f0d96b608db23d674acfa2aec7b066739"
+      },
+      {
+        "path": "stackup-source.kicad-sexpr.txt",
+        "bytes": 1147,
+        "sha256": "7b0f3a67820fcfca994b2d8f49f5659291efb4ccc77976875a441276a24a19e2"
+      },
+      {
+        "path": "sym-lib-table",
+        "bytes": 168,
+        "sha256": "526891f24c40bf055869fdb44a0f721e5fd77d7c135fe11566f14be6e4dd9245"
+      },
+      {
+        "path": "validation/legacy5_drc.rpt",
+        "bytes": 218,
+        "sha256": "1b5c2fc19e291ae6e2b35db29593ade5332597d96a528c8a040b7b5499988331"
+      }
+    ]
+  },
+  "limitations": [
+    "嘉立创EDA Pro web import has not been executed in a logged-in browser.",
+    "Official KiCad import guide explicitly says the import refills copper and its result may differ.",
+    "KiCad 5 format retains four copper layers and overall board thickness 1.6 mm, but detailed 35 µm stackup is supplied separately in stackup-source.kicad-sexpr.txt and must be confirmed in the destination editor."
+  ],
+  "portable_bridge_script_test": {
+    "runtime": "5.1.9+dfsg1-1+deb11u1",
+    "status": "passed",
+    "original_tracks_and_vias": 334,
+    "final_tracks_and_vias": 366,
+    "explicit_bridges": 32,
+    "fixed_coordinates_match_final_bridge_manifest": true
+  }
+}

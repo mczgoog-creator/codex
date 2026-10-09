@@ -1,0 +1,3 @@
+(sym_lib_table
+ (lib (name "DRV8701_Custom")(type "Legacy")(uri "${KIPRJMOD}/DRV8701_Custom.lib")(options "")(descr "Self-contained genuine KiCad 5 legacy symbols"))
+)

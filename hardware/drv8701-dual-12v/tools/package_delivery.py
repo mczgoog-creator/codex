@@ -8,7 +8,8 @@ import json
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT.parent / 'DRV8701_12V_EasyEDA_Pro.zip'
+DOWNLOADS = ROOT.parents[1] / 'downloads'
+ARCHIVE = (DOWNLOADS if DOWNLOADS.is_dir() else ROOT.parent) / 'DRV8701_12V_EasyEDA_Pro.zip'
 PREFIX = 'DRV8701_12V_EasyEDA_Pro'
 
 def read(relative):
@@ -39,10 +40,27 @@ assert manual['autorouter_used'] is False and manual['pathfinder_used'] is False
 audit = read('source/engineering_audit_snapshot.json')
 pcb_sha = sha(ROOT / 'DRV8701_DUAL_12V.kicad_pcb')
 assert audit['sha256'] == pcb_sha, 'Independent engineering audit is from an older PCB.'
+web_import = read('validation/kicad5-import-validation.json')
+assert web_import['actual5Drc']['errors'] == 0 and web_import['actual5Drc']['unconnected_pads'] == 0
+assert web_import['actual5Erc']['errors'] == 0 and web_import['actual5Erc']['warnings'] == 0
+assert web_import['addedCopperAreaByBridgesMm2'] == 0.0
+assert sha(ROOT / 'imports/DRV8701_12V_KiCad5_Import.zip') == web_import['archiveSha256']
+assert sha(ROOT / 'source/Toshiba_TPH1R403NL_Rev3_0_A.pdf') == '12a06e5d86ab4f4fd7d9dc543e2c7d85796f29c18ecd32b010ac4c99267ede17'
 
 report = {
     'generatedAt': datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),
-    'status': 'Ready for EasyEDA Pro desktop client review; hardware not validated',
+    'status': 'Web import uses the separate KiCad5 archive; full source package retained for review; hardware not validated',
+    'webImportArchive': 'DRV8701_12V_KiCad5_Import.zip',
+    'webImportGuide': 'IMPORT_IN_WEB_PRO.md',
+    'webImportFormat': 'KiCad 5.1 legacy .pro/.sch/.lib/.kicad_pcb with local libraries',
+    'easyedaActualWebImportVerified': False,
+    'webImportValidation': 'validation/kicad5-import-validation.json',
+    'webImportArchiveSha256': web_import['archiveSha256'],
+    'actualKiCad5Drc': web_import['actual5Drc'],
+    'actualKiCad5Erc': web_import['actual5Erc'],
+    'legacyImportTracks': 290,
+    'legacyImportDrainBridgeSegments': 32,
+    'legacyDrainBridgeAddedPhysicalCopperMm2': 0.0,
     'nativeEntry': 'EasyEDA_Pro/DRV8701_DUAL_12V.eprj3',
     'nativeClientTarget': 'EasyEDA Pro V4.1+ offline/semi-offline desktop',
     'sourcePcbSha256': pcb_sha,
@@ -80,9 +98,11 @@ report = {
     'easyedaActualClientOpenVerified': False,
     'easyedaActualClientDrcRun': False,
     'hardwarePowerAndThermalTestsRun': False,
-    'toshibaExactManufacturerDatasheetRead': False,
+    'toshibaExactManufacturerDatasheetRead': True,
+    'toshibaManufacturerPdf': 'source/Toshiba_TPH1R403NL_Rev3_0_A.pdf',
+    'toshibaManufacturerPdfSha256': '12a06e5d86ab4f4fd7d9dc543e2c7d85796f29c18ecd32b010ac4c99267ede17',
     'limits': [
-        'Exact Toshiba TPH1R403NL PDF download was blocked; package checked against exact-model native footprint only.',
+        'Toshiba exact-model PDF electrical data and ordinary SOP Advance package outline read; PDF does not supply recommended PCB copper land pattern.',
         'Actual EasyEDA client was unavailable; confirm dimensions, stack, units, copper filling and DRC in client.',
         'Current official schema and real exported template differ; all known differences are listed in native-format-validation.json.',
         'Original 100nF charge-pump/LDO caps, Zener feed, IDRIVE choice and control interface without GND are preserved by user request.',
@@ -95,7 +115,8 @@ excluded = {'initial_drc.json', 'current_drc.json', 'DRV8701_DUAL_12V.kicad_prl'
 files = [p for p in sorted(ROOT.rglob('*')) if p.is_file()
          and p.relative_to(ROOT).as_posix() not in excluded
          and '.git' not in p.parts and 'node_modules' not in p.parts
-         and '__pycache__' not in p.parts]
+         and '__pycache__' not in p.parts
+         and not p.name.endswith(('.bak', '.sch-bak', '.kicad_pcb-bak', '.lck'))]
 manifest = ''.join(f'{sha(p)}  {p.relative_to(ROOT).as_posix()}\n' for p in files)
 (ROOT / 'FILES_SHA256.txt').write_text(manifest)
 files.append(ROOT / 'FILES_SHA256.txt')

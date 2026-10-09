@@ -7,7 +7,7 @@
 - TI 官方原文：SLVSCX5B，2015-03，2015-07 修订。官网 https://www.ti.com/lit/ds/symlink/drv8701.pdf 。
 - 官网当前在云机器 CONNECT 返回403；使用 Tinkerforge 官方开源硬件仓库所附 TI 原厂文档镜像：https://github.com/Tinkerforge/performance-dc-bricklet/blob/master/datasheets/drv8701.pdf 。
 - 交付包内原厂文档镜像为 `TI_DRV8701_SLVSCX5B.pdf`。PDF SHA256：5993f171a311fa8403ba77d5921534348ffddbbcf0c5d59c00c46b074671d850。
-- TPH1R403NL 精确 Toshiba 官方PDF链接已核实（来自现成该器件KiCad原理图Datasheet字段）：https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL 。目前仍不能下载，不能标注为已读原厂MOS手册。
+- TPH1R403NL 精确 Toshiba 官方 PDF 已成功下载并读取：https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL 。实际 PDF 内容为 2026-04-14 Rev.3.0.A；交付文件 `Toshiba_TPH1R403NL_Rev3_0_A.pdf`，完整核对见 `tph1r403nl_manufacturer_review.md`。
 - 第三方该器件KiCad工程供交叉核对：https://github.com/CaptainJaja/DRV8701_2Motors 。本机 `mirror-captainjaja/lib/TPH1R403NL.pretty/TPH1R403NL.kicad_mod`。这是第三方封装，不能代替Toshiba机械图。
 - 最终 MOS 焊盘几何依据 https://github.com/zdxddmx/smartcar-hardware 内 `eda/ProPrj_DRV8701电机双驱.epro` 的精确型号嘉立创原生封装 `572e0c5f381c446594eedc8b8157fefb`；具体尺寸见交付包 `footprint_geometry.json`。仅复用库几何，布局与每段布线均另行人工规划。
 
@@ -49,7 +49,9 @@ TI p33：VM–GND 100nF应尽量贴近pin1并以粗线/地平面到IC GND；bulk
 
 TI附录RGE0024F：封装4×4mm，0.5mm pitch；PCB端子24个焊盘0.24×0.60mm，对侧端子焊盘中心距离3.8mm；EP为2.8×2.8mm，必须焊接。QFN中心焊盘无法只靠普通烙铁充分焊接，建议焊膏+热风/预热或手动回流。焊膏开窗采用分区，防漂浮/锡珠；可选0.2mm热孔，若非填孔会吸锡，应设计钢网开口绕开。
 
-Toshiba MOS pin map暂由第三方符号/行业SOP-Advance常见定义交叉核对：pin1/2/3 source、pin4 gate、pin5/6/7/8 drain，中心裸露焊盘也是drain。必须与Toshiba PDF最后确认。不得将FET裸露焊盘默认当GND；高边FET裸露D属VM，低边裸露D属电机相节点。
+Toshiba 原厂 PDF 已确认 MOS pin1/2/3 source、pin4 gate、pin5/6/7/8 drain，中心裸露金属也是 drain；普通 SOP Advance 的 5×5 mm、1.27 mm 脚距、4.25×3.5 mm 裸露金属与现用封装相符。手册 p8 的普通 SOP Advance 与 p9 的 SOP Advance(N) 机械尺寸不同，采购须匹配前者。PDF 未提供推荐 PCB 铜焊盘图，现有外围焊盘为设计尺寸。不得将 FET 裸露 D 默认当 GND；高边裸露 D 属 VM，低边裸露 D 属电机相节点。
+
+原厂电气表给出 VDS=30 V、VGS=±20 V 绝对最大值；10 V 栅压 RDS(on) 最大 1.4 mΩ，4.5 V 时最大 2.1 mΩ。典型 Qg 为 46 nC（10 V）／20 nC（4.5 V）、Qgd 4.3 nC，测试条件见新核对记录；这些电荷值没有最大值保证，驱动时间推算只能作为初筛，不能替代实际 VGS 与相节点波形测试。
 
 ## 线宽与电流
 
@@ -71,7 +73,7 @@ IPC-2221近似公式 I=k ΔT^0.44 A^0.725，A[平方mil]；外层k=0.048，内�
 
 ## 仍需完成
 
-1. 下载并读TPH1R403NL Toshiba 2019-10-30 PDF，核实VDS、VGS、Qg/Qgd、导通电阻与SOP-Advance制造焊盘图；当前厂家域名网络阻断。
+1. 采购时匹配原厂 p8 普通 SOP Advance 封装，并核对实际焊接工艺。原厂电气和机械手册现已读取；推荐 PCB 铜焊盘图未包含在该手册中。
 2. 在真实嘉立创 EDA 专业版客户端中确认打开、尺寸、叠层和规则单位，重建铺铜并运行 DRC。
 3. 上述核实完成后制作样板；冷启动、睡眠/唤醒、1.8A瞬时负载下测AVDD/DVDD/VCP与3V3/nSLEEP；记录nFAULT可用临时测量，不添加板上连接。
 4. 按实际PWM频率和模式测试R8/R9温升及MOS开关波形，检查原图电容值下是否CPUV触发。制造完成不等于电气规格已实测通过。

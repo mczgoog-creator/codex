@@ -1,0 +1,62 @@
+{
+  "reader": "9.0.2",
+  "all_equal": true,
+  "footprints": [
+    {
+      "footprint": "AMASS_XT30UPB_M_SourceNumbering",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "CP_Radial_D10.0mm_P5.00mm",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "C_0603_1608Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "DRV8701_RGE24",
+      "physical_pads": 25,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "D_SOD123",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "LED_0603_1608Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "R_0603_1608Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "R_1210_3225Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "SS12D10G4",
+      "physical_pads": 3,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "TPH1R403NL_SOPAdvance",
+      "physical_pads": 9,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "XH2.54_1x04_Vertical",
+      "physical_pads": 4,
+      "source_and_legacy_pad_geometry_identical": true
+    }
+  ],
+  "mismatched_footprints": []
+}

@@ -1,0 +1,52 @@
+{
+  "reader": "9.0.2",
+  "source_sha256": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
+  "legacy_sha256": "ab34bc200ca05e84dce2275fd3891df67ee4836e229cac37e3d61c3bec4b1466",
+  "exactly_equal_excluding_native_fill_cache": true,
+  "component_link_errors": [],
+  "library_geometry_errors": [],
+  "counts": {
+    "footprints": 38,
+    "pads": 181,
+    "tracks": 258,
+    "vias": 76,
+    "zone_boundaries_and_settings": 3,
+    "outline": 4
+  },
+  "source_fill_cache": [
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 5006
+    },
+    {
+      "layer": "B.Cu",
+      "filled": true,
+      "vertices": 2677
+    },
+    {
+      "layer": "In1.Cu",
+      "filled": true,
+      "vertices": 2572
+    }
+  ],
+  "legacy_fill_cache": [
+    {
+      "layer": "F.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "B.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In1.Cu",
+      "filled": false,
+      "vertices": 0
+    }
+  ],
+  "fill_cache_status": "Legacy fill caches intentionally cleared; actual KiCad 5.1 native refill and DRC are separate required checks.",
+  "mismatches": {}
+}
