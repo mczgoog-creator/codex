@@ -92,12 +92,19 @@ const actualTotal=phys.reduce((s,r)=>s+r.body.thickness/MIL,0);if(sourceStack.le
 const r2=x=>Math.round(x*100)/100;
 function canonical(pts){if(pts.length>1&&JSON.stringify(pts[0])===JSON.stringify(pts.at(-1)))pts=pts.slice(0,-1);const keys=pts.map(p=>JSON.stringify(p)),min=[...keys].sort()[0],options=[];for(const p of[pts,[...pts].reverse()])for(let i=0;i<p.length;i++)if(JSON.stringify(p[i])===min)options.push(JSON.stringify([...p.slice(i),...p.slice(0,i)]));return options.sort()[0];}
 function pathPoints(p){if(p[0]==='R'){const[_,x,y,w,h]=p;return[[x,y],[r2(x+w),y],[r2(x+w),r2(y-h)],[x,r2(y-h)]];}if(p[2]!=='L')throw new Error('Unsupported polygon descriptor '+JSON.stringify(p));const a=[p[0],p[1],...p.slice(3)];if(a.some(v=>typeof v!=='number'))throw new Error('Unsupported mixed polygon path');const pts=[];for(let i=0;i<a.length;i+=2)pts.push([r2(a[i]),r2(a[i+1])]);return pts;}
-const srcBorders=[],srcFill=[];
+const srcBorders=[],srcFill=[],sourceZoneSettings=[];
 let srcZoneCount=0;
 for(const z of children(root,'zone')){
  if(child(z,'keepout'))continue;
  const layers=child(z,'layer')?[str(z,'layer')]:vals(child(z,'layers'));
- for(const l of layers){srcZoneCount++;for(const poly of children(z,'polygon')){const pts=children(child(poly,'pts'),'xy').map(p=>[r2(Number(p[1].v)*MIL),r2(-Number(p[2].v)*MIL)]);srcBorders.push([net(z),lid(l),canonical(pts)]);}
+ for(const l of layers){srcZoneCount++;const boundaries=[];for(const poly of children(z,'polygon')){const pts=children(child(poly,'pts'),'xy').map(p=>[r2(Number(p[1].v)*MIL),r2(-Number(p[2].v)*MIL)]);const boundary=canonical(pts);srcBorders.push([net(z),lid(l),boundary]);boundaries.push(boundary);}
+  const cp=child(z,'connect_pads'),fill=child(z,'fill'),mode=vals(cp)[0];
+  const padConnection=mode==='yes'?'DIRECT':mode==='no'?'NON_CONNECT':mode===undefined?'DIVERGENCE':null;
+  if(!padConnection)errors.push('Unsupported source zone pad connection '+mode);
+  const islandMode=num(fill,'island_removal_mode');if(![0,1].includes(islandMode))errors.push('Source area-threshold island removal cannot be compared with native keepIsland boolean');
+  sourceZoneSettings.push({net:net(z),layer:l,layerId:lid(l),boundaries:boundaries.sort(),priority:num(z,'priority'),clearanceMm:num(cp,'clearance'),
+   minimumThicknessMm:num(z,'min_thickness'),padConnection,thermalGapMm:num(fill,'thermal_gap'),thermalSpokeWidthMm:num(fill,'thermal_bridge_width'),
+   fillMode:str(fill,'mode')||'polygon',islandRemovalMode:islandMode,keepIsland:islandMode===1,minimumIslandAreaMm2:child(fill,'island_area_min')?num(fill,'island_area_min'):10});
   for(const poly of children(z,'filled_polygon')){if(str(poly,'layer')&&str(poly,'layer')!==l)continue;const pts=children(child(poly,'pts'),'xy').map(p=>[r2(Number(p[1].v)/.254),r2(-Number(p[2].v)/.254)]);srcFill.push([net(z),lid(l),canonical(pts)]);}
  }
 }
@@ -106,8 +113,33 @@ const nativeBorders=pours.flatMap(r=>r.body.path.map(p=>[r.body.netName,r.body.l
 const nativeFill=[];for(const r of pcb.records.filter(r=>r.type==='POURED')){const p=pourById.get(JSON.parse(r.id)[1]);if(!p){errors.push('POURED references missing POUR '+r.id);continue;}for(const f of r.body.pourFill)for(const pp of f.path)nativeFill.push([p.body.netName,p.body.layerId,canonical(pathPoints(pp))]);}
 compare('Zone border/net/layer',srcBorders,nativeBorders);compare('Filled copper polygon/net/layer',srcFill,nativeFill);
 if(srcZoneCount!==pours.length)errors.push('Source/native zone count differs');
+const copperRule=pcb.records.find(r=>r.id===JSON.stringify(['RULE','COPPER','copperRegion']))?.body.ruleContext;
+const safeRule=pcb.records.find(r=>r.id===JSON.stringify(['RULE','SAFE','copperThickness1oz']))?.body.ruleContext;
+const zoneSettingsReport=[];
+for(const source of sourceZoneSettings){
+ const matching=pours.filter(r=>r.body.netName===source.net&&r.body.layerId===source.layerId&&JSON.stringify(r.body.path.map(p=>canonical(pathPoints(p))).sort())===JSON.stringify(source.boundaries));
+ if(matching.length!==1){errors.push('Expected exactly one native region for source zone settings '+source.net+' / '+source.layer);continue;}
+ const native=matching[0],b=native.body,label='Zone '+source.net+' / '+source.layer+' / '+native.id;
+ close(source.priority,b.order,label+' priority');
+ close(source.minimumThicknessMm,b.width,label+' minimum width (official converter real-export mm exception)');
+ if(b.pourType?.pourType!=='SOLID'||source.fillMode!=='polygon')errors.push(label+' fill mode differs');
+ close(source.minimumThicknessMm,(b.pourType?.fineness||0)/MIL,label+' solid minimum fineness');
+ if(b.keepIsland!==source.keepIsland)errors.push(label+' island removal mode differs');
+ for(const key of ['sglPad','mulPad']){
+  const rule=copperRule?.[key]?.content?.find(r=>r.layerId===source.layerId);
+  if(!rule){errors.push(label+' missing native '+key+' copper connection rule');continue;}
+  if(rule.connType!==source.padConnection)errors.push(label+' '+key+' pad connection differs');
+  close(source.thermalGapMm,rule.spoSpac/MIL,label+' '+key+' thermal gap');
+  close(source.thermalSpokeWidthMm,rule.spoWidth/MIL,label+' '+key+' thermal spoke width');
+ }
+ const spacing=safeRule?.safeSpacing?.[0]?.content;
+ if(!spacing)errors.push(label+' missing native clearance table');
+ else for(const row of spacing.slice(0,7))for(const value of row)close(source.clearanceMm,value/MIL,label+' copper-object clearance');
+ zoneSettingsReport.push({...source,boundaries:undefined,nativePourId:native.id,nativePriority:b.order,nativePadConnection:copperRule?.sglPad?.content?.find(r=>r.layerId===source.layerId)?.connType,
+  areaThresholdStatus:source.islandRemovalMode===0?'Unused: all unconnected islands removed':source.islandRemovalMode===1?'Unused: all islands retained':'unsupported'});
+}
 const widthByNet={};for(const t of nativeTracks){const s=widthByNet[t[0]]??={segments:0,widthsMm:[],nativeLayerIds:[]};s.segments++;if(!s.widthsMm.includes(t[6]))s.widthsMm.push(t[6]);if(!s.nativeLayerIds.includes(t[1]))s.nativeLayerIds.push(t[1]);}for(const s of Object.values(widthByNet))s.widthsMm.sort((a,b)=>a-b);
-const report={passed:errors.length===0,source:sourceFile,nativePcb:files[0],components:pcb.records.filter(r=>r.type==='COMPONENT').length,uniquePhysicalPins:Object.keys(nativePhysical).length,padInstances:padReport.length,namedNets:new Set(Object.values(nativePhysical).filter(Boolean)).size,tracks:srcTracks.length,vias:srcVias.length,outlineEdges:srcEdges.length,zones:srcZoneCount,zoneBorders:srcBorders.length,filledCopperPolygons:srcFill.length,copperLayerReport,physicalLayerReport,totalPhysicalThicknessMm:actualTotal,widthByNet,errors};
+const report={passed:errors.length===0,source:sourceFile,nativePcb:files[0],components:pcb.records.filter(r=>r.type==='COMPONENT').length,uniquePhysicalPins:Object.keys(nativePhysical).length,padInstances:padReport.length,namedNets:new Set(Object.values(nativePhysical).filter(Boolean)).size,tracks:srcTracks.length,vias:srcVias.length,outlineEdges:srcEdges.length,zones:srcZoneCount,zoneBorders:srcBorders.length,filledCopperPolygons:srcFill.length,zoneSettingsReport,copperLayerReport,physicalLayerReport,totalPhysicalThicknessMm:actualTotal,widthByNet,errors};
 fs.writeFileSync(path.join(projectDir,'native-pcb-equivalence.json'),JSON.stringify(report,null,2));
 fs.writeFileSync(path.join(projectDir,'native-pcb-physical-pin-nets.json'),JSON.stringify(nativePhysical,null,2));
 fs.writeFileSync(path.join(projectDir,'native-pcb-pad-geometry.json'),JSON.stringify(padReport,null,2));

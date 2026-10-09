@@ -1,10 +1,10 @@
 {
   "name": "DRV8701_DUAL_12V",
-  "owner_uuid": "4aab3c52be7450023678d78fa871e560",
-  "creator_uuid": "4aab3c52be7450023678d78fa871e560",
-  "created_at": "2026-10-08 23:29:11",
-  "updated_at": "2026-10-08 23:29:11",
-  "modifier_uuid": "4aab3c52be7450023678d78fa871e560",
+  "owner_uuid": "14cd91c77d3f1c1536d6f5a59a49fd3b",
+  "creator_uuid": "14cd91c77d3f1c1536d6f5a59a49fd3b",
+  "created_at": "2026-10-09 05:47:33",
+  "updated_at": "2026-10-09 05:47:33",
+  "modifier_uuid": "14cd91c77d3f1c1536d6f5a59a49fd3b",
   "content": "",
   "archive": false,
   "cbb_project": 0,
@@ -19,48 +19,48 @@
   "format": "folder",
   "profile": {
     "boards": {
-      "e24f755ee414d42e": {
-        "uuid": "e24f755ee414d42e",
+      "13d8e9d7dc3a13d9": {
+        "uuid": "13d8e9d7dc3a13d9",
         "title": "Board1",
         "zIndex": 1
       }
     },
     "schematics": {
-      "b371a02348ef6d44": {
-        "uuid": "b371a02348ef6d44",
+      "4a3c7928b76d498d": {
+        "uuid": "4a3c7928b76d498d",
         "name": "Schematic1",
-        "board": "e24f755ee414d42e",
+        "board": "13d8e9d7dc3a13d9",
         "source": "",
-        "version": "1791502151611",
-        "updateTime": 1791502151611
+        "version": "1791524853675",
+        "updateTime": 1791524853675
       }
     },
     "sheets": {
-      "e0b860482670fa4a": {
-        "uuid": "e0b860482670fa4a",
+      "a3d1b2f042523d04": {
+        "uuid": "a3d1b2f042523d04",
         "title": "P1",
-        "schematic_uuid": "b371a02348ef6d44",
+        "schematic_uuid": "4a3c7928b76d498d",
         "zIndex": 1,
         "source": "",
-        "version": "1791502151611",
-        "updateTime": 1791502151611
+        "version": "1791524853676",
+        "updateTime": 1791524853676
       }
     },
     "pcbs": {
-      "a2b1bf4194c76f68": {
-        "uuid": "a2b1bf4194c76f68",
+      "84b9cb32b81fadec": {
+        "uuid": "84b9cb32b81fadec",
         "title": "PCB1",
-        "board": "e24f755ee414d42e",
+        "board": "13d8e9d7dc3a13d9",
         "parent_uuid": "",
         "source": "",
-        "version": "1791502151641",
-        "updateTime": 1791502151641
+        "version": "1791524853706",
+        "updateTime": 1791524853706
       }
     },
     "panels": {},
     "blockSymbols": {},
     "owner": {
-      "uuid": "4aab3c52be7450023678d78fa871e560"
+      "uuid": "14cd91c77d3f1c1536d6f5a59a49fd3b"
     },
     "simSchematics": {},
     "simulations": {}

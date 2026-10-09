@@ -139,6 +139,41 @@
     "timestamp": "FDFA0590",
     "pcb_path": "/FDFA0590"
   },
+  "U6": {
+    "uuid": "f9e5366a-c6f6-5b16-9b28-2decbf414173",
+    "timestamp": "F9E5366A",
+    "pcb_path": "/F9E5366A"
+  },
+  "C18": {
+    "uuid": "7a3f8977-e774-5fa7-8b42-a87194a78f25",
+    "timestamp": "7A3F8977",
+    "pcb_path": "/7A3F8977"
+  },
+  "R10": {
+    "uuid": "c41c878c-67f3-52f9-99b3-6e20fecf3105",
+    "timestamp": "C41C878C",
+    "pcb_path": "/C41C878C"
+  },
+  "R11": {
+    "uuid": "17833ebd-2c24-5ab3-8809-cf3f790a8b05",
+    "timestamp": "17833EBD",
+    "pcb_path": "/17833EBD"
+  },
+  "R12": {
+    "uuid": "d7da2d7a-5788-5270-9e00-828f3c98a4dc",
+    "timestamp": "D7DA2D7A",
+    "pcb_path": "/D7DA2D7A"
+  },
+  "C19": {
+    "uuid": "e7ad9aec-8352-5997-8468-6d29a3677cdf",
+    "timestamp": "E7AD9AEC",
+    "pcb_path": "/E7AD9AEC"
+  },
+  "SW1": {
+    "uuid": "fcd028fa-5a95-5b70-acc8-841a06aa63e7",
+    "timestamp": "FCD028FA",
+    "pcb_path": "/FCD028FA"
+  },
   "P2": {
     "uuid": "5d94d7a6-0b6c-5040-b819-cde3a02c01a3",
     "timestamp": "5D94D7A6",

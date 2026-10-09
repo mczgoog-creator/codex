@@ -131,7 +131,8 @@ def symbol_library(symbols):
         show_names = "N" if value(pin_names, "hide", "no") == "yes" else "Y"
         show_numbers = "N" if value(child(symbol, "pin_numbers", []), "hide", "no") == "yes" else "Y"
         prefix = properties["Reference"][2]
-        output += ["#", "# " + name, "#", f"DEF {name} {prefix} 0 {offset} {show_numbers} {show_names} 1 F N"]
+        symbol_kind = "P" if child(symbol, "power") else "N"
+        output += ["#", "# " + name, "#", f"DEF {name} {prefix} 0 {offset} {show_numbers} {show_names} 1 F {symbol_kind}"]
         for i, key in enumerate(("Reference", "Value", "Footprint", "Datasheet")):
             output.append(fieldline(i, properties[key]))
         output.append("DRAW")
@@ -210,14 +211,18 @@ def schematic(tree):
         x, y = dimensions(symbol)
         assert float(child(symbol, "at")[3]) == 0, "This source only uses unrotated symbols"
         assert not child(symbol, "mirror"), "No mirror expected in this source"
-        output += ["$Comp", f"L {value(symbol, 'lib_id')} {ref}", f"U {unit} 1 {timestamp}", f"P {x} {y}"]
+        library_symbol = LIB_NAME + ":" + value(symbol, "lib_id").split(":", 1)[-1]
+        output += ["$Comp", f"L {library_symbol} {ref}", f"U {unit} 1 {timestamp}", f"P {x} {y}"]
         keys = ["Reference", "Value", "Footprint", "Datasheet"]
         keys += [key for key in properties if key not in keys]
         for i, key in enumerate(keys):
             output.append(fieldline(i, properties[key], schematic=True))
         output += [f"\t{unit}    {x} {y}", "\t1    0    0    -1", "$EndComp"]
     assert len(set(m["timestamp"] for m in timestamp_map.values())) == len(timestamp_map), "Timestamp prefix collision"
-    count = {"components": len(symbols), "wires": 0, "labels": 0, "no_connects": 0, "texts": 0}
+    count = {"components": sum(value(s, "on_board", "yes") == "yes" for s in symbols),
+             "schematic_symbols": len(symbols),
+             "nonphysical_symbols": sum(value(s, "on_board", "yes") != "yes" for s in symbols),
+             "wires": 0, "labels": 0, "no_connects": 0, "texts": 0}
     for item in tree[1:]:
         if not isinstance(item, list):
             continue
@@ -341,7 +346,7 @@ def expected_physical(source):
     expected = {}
     for component in source["components"]:
         ref, kind, pins = component["ref"], component["kind"], component["pins"]
-        if kind == "n_channel_mosfet":
+        if kind in {"n_channel_mosfet", "p_channel_mosfet"}:
             pins = {str(i): pins["S" if i <= 3 else "G" if i == 4 else "D"] for i in range(1, 9)}
         elif kind == "electrolytic_capacitor":
             pins = {"1": pins["+"], "2": pins["-"]}
@@ -494,18 +499,24 @@ def validate(source, timestamps, provided_netlist=None):
 
 
 def main():
+    global ROOT, TARGET
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--no-validate", action="store_true", help="Generate only; leave verification for a separately installed KiCad reader")
     parser.add_argument("--legacy-netlist", type=Path,
                         help="Validate an XML or S-expression netlist exported after actually loading SCH/LIB in Eeschema 5.1")
+    parser.add_argument("--base", type=Path, default=ROOT, help="Read modern source files from this project directory")
+    parser.add_argument("--out", type=Path, help="Write a self-contained legacy project to this directory")
     args = parser.parse_args()
+    ROOT = args.base.resolve()
+    TARGET = args.out.resolve() if args.out else ROOT/"KiCad_Import_5"
     TARGET.mkdir(parents=True, exist_ok=True)
     (TARGET/"validation").mkdir(exist_ok=True)
     original = ROOT/(NAME+".kicad_sch")
     text = original.read_text()
     tree = parse(text)
     assert tree[0] == "kicad_sch"
-    source = json.loads((ROOT/"source_netlist.json").read_text())
+    design_path = ROOT/"design_netlist.json"
+    source = json.loads((design_path if design_path.is_file() else ROOT/"source_netlist.json").read_text())
     lib, dcm, libcounts = symbol_library(children(child(tree, "lib_symbols"), "symbol"))
     sch, timestamps, counts = schematic(tree)
     (TARGET/(NAME+".sch")).write_text(sch)

@@ -9,10 +9,203 @@
   "defaultViaDrillMm": 0.2,
   "defaultTrackWidthsMm": {
     "VM": 1.8,
+    "VM_RAW": 1.8,
     "MOTOR": 0.7,
     "GATE": 0.25,
     "SIGNAL": 0.2
   },
+  "netRuleAssignments": [
+    {
+      "net": "3V3",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "ENABLE_LED_A",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "GND",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_A",
+      "trackRule": "DRV8701_MOTOR",
+      "defaultWidthMm": 0.7
+    },
+    {
+      "net": "L_AVDD",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_B",
+      "trackRule": "DRV8701_MOTOR",
+      "defaultWidthMm": 0.7
+    },
+    {
+      "net": "L_CPH",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_CPL",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_DVDD",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_EN_IN",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_GH1",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "L_GH2",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "L_GL1",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "L_GL2",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "L_PH_IN",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_SNUBBER",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "L_VCP",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "NSLEEP",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "POWER_LED_A",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "PWR_EN",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "PWR_GATE",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "PWR_ILIM",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_A",
+      "trackRule": "DRV8701_MOTOR",
+      "defaultWidthMm": 0.7
+    },
+    {
+      "net": "R_AVDD",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_B",
+      "trackRule": "DRV8701_MOTOR",
+      "defaultWidthMm": 0.7
+    },
+    {
+      "net": "R_CPH",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_CPL",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_DVDD",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_EN_IN",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_GH1",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "R_GH2",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "R_GL1",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "R_GL2",
+      "trackRule": "DRV8701_GATE",
+      "defaultWidthMm": 0.25
+    },
+    {
+      "net": "R_PH_IN",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_SNUBBER",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "R_VCP",
+      "trackRule": "DRV8701_SIGNAL",
+      "defaultWidthMm": 0.2
+    },
+    {
+      "net": "VM",
+      "trackRule": "DRV8701_VM",
+      "defaultWidthMm": 1.8
+    },
+    {
+      "net": "VM_RAW",
+      "trackRule": "DRV8701_VM",
+      "defaultWidthMm": 1.8
+    }
+  ],
   "rules": [
     {
       "type": "TRACK",

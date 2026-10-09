@@ -1,49 +1,293 @@
 {
-  "generatedAtUtc": "2026-10-08T23:36:05.663160+00:00",
-  "projectEntry": "/workspace/drv8701_board/EasyEDA_Pro/DRV8701_DUAL_12V.eprj3",
+  "passed": true,
+  "generatedAtUtc": "2026-10-09T05:47:34.891Z",
+  "projectEntry": "DRV8701_DUAL_12V.eprj3",
   "nativeFolderFormat": "official .eprj3 + .esch2 + .epcb2",
   "sourceChecksumsSha256": {
-    "DRV8701_DUAL_12V.kicad_sch": "642f0af1d8e44ea7d2db1c35512eceb67f7d1ccb20e4d2d50548fd96d415ca2f",
-    "DRV8701_DUAL_12V.kicad_pcb": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
-    "final_drc.json": "00beb2dfa443ab6f90cf82b29d7318c685ccfd0479aca9cf5e1fd3d0678c13a7"
+    "DRV8701_DUAL_12V.kicad_sch": "da70605eba1826030f21ac655e2cb976c7ec27bc7cdd6379871e1fb34a657f04",
+    "DRV8701_DUAL_12V.kicad_pcb": "daa3c5be68e8667a06f6da7ec5fd3c1238de758fb6982bcae6e130e6b8204989",
+    "DRV8701_DUAL_12V.kicad_pro": "ec00b51f0194ce1083e7f023d20ff8139f9580f525e74415d0028350c958cc19",
+    "design_netlist.json": "078ad5512688c7ad6808af251422ce2e00bb51d3554aafcb76c24e25fd8d12fa",
+    "expected_physical_pin_nets.json": "bbf3e793121fae86d8b20675f2066509c657da74553e8ed548c1b9137e2d0728"
   },
   "noAutoroutingCalled": true,
+  "expectedDesign": {
+    "components": 45,
+    "physicalPins": 203,
+    "namedNets": 38,
+    "scope": "Authorized Rev B: high-side TPS25910 eFuse main power control; original 38 components and values retained except P2.1 VM to VM_RAW."
+  },
+  "componentMetadataCheck": {
+    "schematicComponents": 45,
+    "pcbComponents": 45,
+    "allValuesMatchDesign": true
+  },
   "officialStructureCheck": {
     "errors": 0,
     "warnings": 0,
-    "command": "node tools/easyeda-native/easyeda-eprj3-skill/scripts/validate.js --dir EasyEDA_Pro"
+    "log": "native-structure-validation.log"
   },
   "formatCheck": {
-    "records": 3129,
-    "outerValid": 3129,
-    "schemaValid": 1526,
-    "trustedExportRecords": 165,
-    "documentedDifferences": 4058,
+    "records": 4096,
+    "outerValid": 4096,
+    "schemaValid": 1877,
+    "trustedExportRecords": 164,
+    "documentedDifferences": 5273,
     "unmapped": 0,
     "failures": []
   },
   "schematicCheck": {
     "passed": true,
-    "components": 38,
-    "physicalPinAssignments": 173,
-    "namedNets": 34,
-    "noConnectPins": 7,
+    "components": 45,
+    "physicalPinAssignments": 203,
+    "namedNets": 38,
+    "noConnectPins": 9,
     "errors": []
   },
   "pcbCheck": {
     "passed": true,
-    "source": "/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_pcb",
-    "nativePcb": "/workspace/drv8701_board/EasyEDA_Pro/pcb/PCB1.epcb2",
-    "components": 38,
-    "uniquePhysicalPins": 173,
-    "padInstances": 181,
-    "namedNets": 34,
-    "tracks": 258,
-    "vias": 76,
+    "source": "/workspace/codex/hardware/drv8701-dual-12v/DRV8701_DUAL_12V.kicad_pcb",
+    "nativePcb": "/workspace/codex/hardware/drv8701-dual-12v/EasyEDA_Pro/pcb/PCB1.epcb2",
+    "components": 45,
+    "uniquePhysicalPins": 203,
+    "padInstances": 211,
+    "namedNets": 38,
+    "tracks": 592,
+    "vias": 151,
     "outlineEdges": 4,
-    "zones": 3,
-    "zoneBorders": 3,
-    "filledCopperPolygons": 3,
+    "zones": 12,
+    "zoneBorders": 12,
+    "filledCopperPolygons": 12,
+    "zoneSettingsReport": [
+      {
+        "net": "GND",
+        "layer": "F.Cu",
+        "layerId": 1,
+        "priority": 0,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "def32c1091bc0991",
+        "nativePriority": 0,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "L_B",
+        "layer": "F.Cu",
+        "layerId": 1,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "e346dd8786b6c836",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "R_B",
+        "layer": "F.Cu",
+        "layerId": 1,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "cf82541ecf036d2d",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "R_A",
+        "layer": "F.Cu",
+        "layerId": 1,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "542382a2ae2571fb",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "L_A",
+        "layer": "F.Cu",
+        "layerId": 1,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "d182c0f03e0f0dff",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "GND",
+        "layer": "B.Cu",
+        "layerId": 2,
+        "priority": 0,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "df53c1d59a1ca142",
+        "nativePriority": 0,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "GND",
+        "layer": "In1.Cu",
+        "layerId": 15,
+        "priority": 0,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "059fbc73b874c4fa",
+        "nativePriority": 0,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "VM",
+        "layer": "In2.Cu",
+        "layerId": 16,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "c3aa340723450b4d",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "VM",
+        "layer": "In2.Cu",
+        "layerId": 16,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "f561172efe63cb0c",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "VM",
+        "layer": "In2.Cu",
+        "layerId": 16,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "81c60b0c7d0f2f34",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "VM",
+        "layer": "In2.Cu",
+        "layerId": 16,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "f43048b4826a1c9e",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      },
+      {
+        "net": "VM",
+        "layer": "In2.Cu",
+        "layerId": 16,
+        "priority": 2,
+        "clearanceMm": 0.15,
+        "minimumThicknessMm": 0.15,
+        "padConnection": "DIRECT",
+        "thermalGapMm": 0.25,
+        "thermalSpokeWidthMm": 0.5,
+        "fillMode": "polygon",
+        "islandRemovalMode": 0,
+        "keepIsland": false,
+        "minimumIslandAreaMm2": 10,
+        "nativePourId": "490dd59ce0dd5797",
+        "nativePriority": 2,
+        "nativePadConnection": "DIRECT",
+        "areaThresholdStatus": "Unused: all unconnected islands removed"
+      }
+    ],
     "copperLayerReport": [
       {
         "name": "F.Cu",
@@ -138,111 +382,674 @@
       }
     ],
     "totalPhysicalThicknessMm": 1.5999999999999999,
+    "widthByNet": {
+      "VM": {
+        "segments": 115,
+        "widthsMm": [
+          0.25,
+          0.3,
+          0.45,
+          0.7,
+          0.9,
+          1,
+          1.1,
+          1.8
+        ],
+        "nativeLayerIds": [
+          1,
+          2,
+          16
+        ]
+      },
+      "L_VCP": {
+        "segments": 2,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "L_CPH": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "L_CPL": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "GND": {
+        "segments": 147,
+        "widthsMm": [
+          0.2,
+          0.5,
+          0.7,
+          0.9
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "L_AVDD": {
+        "segments": 9,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_DVDD": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "NSLEEP": {
+        "segments": 17,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "L_EN_IN": {
+        "segments": 7,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_PH_IN": {
+        "segments": 6,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_GH1": {
+        "segments": 6,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "L_B": {
+        "segments": 33,
+        "widthsMm": [
+          0.2,
+          0.25,
+          0.5,
+          0.7,
+          0.9,
+          1
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "L_GL1": {
+        "segments": 4,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_GL2": {
+        "segments": 5,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_A": {
+        "segments": 35,
+        "widthsMm": [
+          0.2,
+          0.25,
+          0.5,
+          0.7,
+          0.9,
+          1
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "L_GH2": {
+        "segments": 5,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "R_VCP": {
+        "segments": 2,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "R_CPH": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "R_CPL": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "R_AVDD": {
+        "segments": 9,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "R_DVDD": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "R_EN_IN": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "R_PH_IN": {
+        "segments": 4,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "R_GH1": {
+        "segments": 6,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "R_B": {
+        "segments": 33,
+        "widthsMm": [
+          0.2,
+          0.25,
+          0.5,
+          0.7,
+          0.9,
+          1
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "R_GL1": {
+        "segments": 4,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "R_GL2": {
+        "segments": 5,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "R_A": {
+        "segments": 35,
+        "widthsMm": [
+          0.2,
+          0.25,
+          0.5,
+          0.7,
+          0.9,
+          1
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "R_GH2": {
+        "segments": 5,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "L_SNUBBER": {
+        "segments": 2,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "R_SNUBBER": {
+        "segments": 2,
+        "widthsMm": [
+          0.25
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "3V3": {
+        "segments": 13,
+        "widthsMm": [
+          0.2,
+          0.25
+        ],
+        "nativeLayerIds": [
+          1,
+          16
+        ]
+      },
+      "ENABLE_LED_A": {
+        "segments": 1,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "POWER_LED_A": {
+        "segments": 1,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "VM_RAW": {
+        "segments": 38,
+        "widthsMm": [
+          0.2,
+          0.25,
+          0.45,
+          0.7,
+          1.1,
+          1.8
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      },
+      "PWR_GATE": {
+        "segments": 3,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "PWR_ILIM": {
+        "segments": 2,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1
+        ]
+      },
+      "PWR_EN": {
+        "segments": 8,
+        "widthsMm": [
+          0.2
+        ],
+        "nativeLayerIds": [
+          1,
+          2
+        ]
+      }
+    },
     "errors": []
   },
   "libraryLinkCheck": {
     "passed": true,
-    "components": 38,
-    "pairedDevices": 12,
-    "pairedFootprints": 11,
+    "components": 45,
+    "pairedDevices": 14,
+    "pairedFootprints": 13,
     "externalLibraryDependencies": 0,
     "errors": []
   },
-  "physicalStack": {
-    "nominalBoardThicknessMm": 1.6,
-    "copperThicknessMm": 0.035,
-    "sourceStackupPresent": true,
-    "layers": [
+  "ruleCheck": {
+    "unitEncoding": "mil-real-export-V4.1.36",
+    "unitConflict": "Latest official TRuleContext description uses 0.254mm internal units; real official V4.1.36 PCB template uses apparent mil values. No desktop client was available to resolve that discrepancy.",
+    "clearanceMm": 0.15,
+    "minTraceMm": 0.15,
+    "minDrillMm": 0.2,
+    "minAnnularRingMm": 0.1,
+    "defaultViaDiameterMm": 0.45,
+    "defaultViaDrillMm": 0.2,
+    "defaultTrackWidthsMm": {
+      "VM": 1.8,
+      "VM_RAW": 1.8,
+      "MOTOR": 0.7,
+      "GATE": 0.25,
+      "SIGNAL": 0.2
+    },
+    "netRuleAssignments": [
       {
-        "name": "F.SilkS",
-        "thicknessMm": 0
+        "net": "3V3",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "F.Paste",
-        "thicknessMm": 0
+        "net": "ENABLE_LED_A",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "F.Mask",
-        "thicknessMm": 0.01
+        "net": "GND",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "F.Cu",
-        "thicknessMm": 0.035
+        "net": "L_A",
+        "trackRule": "DRV8701_MOTOR",
+        "defaultWidthMm": 0.7
       },
       {
-        "name": "dielectric1",
-        "thicknessMm": 0.2,
-        "material": "FR4"
+        "net": "L_AVDD",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "In1.Cu",
-        "thicknessMm": 0.035
+        "net": "L_B",
+        "trackRule": "DRV8701_MOTOR",
+        "defaultWidthMm": 0.7
       },
       {
-        "name": "dielectric2",
-        "thicknessMm": 1.04,
-        "material": "FR4"
+        "net": "L_CPH",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "In2.Cu",
-        "thicknessMm": 0.035
+        "net": "L_CPL",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "dielectric3",
-        "thicknessMm": 0.2,
-        "material": "FR4"
+        "net": "L_DVDD",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "B.Cu",
-        "thicknessMm": 0.035
+        "net": "L_EN_IN",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
       },
       {
-        "name": "B.Mask",
-        "thicknessMm": 0.01
+        "net": "L_GH1",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
       },
       {
-        "name": "B.Paste",
-        "thicknessMm": 0
+        "net": "L_GH2",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
       },
       {
-        "name": "B.SilkS",
-        "thicknessMm": 0
+        "net": "L_GL1",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "L_GL2",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "L_PH_IN",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "L_SNUBBER",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "L_VCP",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "NSLEEP",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "POWER_LED_A",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "PWR_EN",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "PWR_GATE",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "PWR_ILIM",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_A",
+        "trackRule": "DRV8701_MOTOR",
+        "defaultWidthMm": 0.7
+      },
+      {
+        "net": "R_AVDD",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_B",
+        "trackRule": "DRV8701_MOTOR",
+        "defaultWidthMm": 0.7
+      },
+      {
+        "net": "R_CPH",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_CPL",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_DVDD",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_EN_IN",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_GH1",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "R_GH2",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "R_GL1",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "R_GL2",
+        "trackRule": "DRV8701_GATE",
+        "defaultWidthMm": 0.25
+      },
+      {
+        "net": "R_PH_IN",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_SNUBBER",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "R_VCP",
+        "trackRule": "DRV8701_SIGNAL",
+        "defaultWidthMm": 0.2
+      },
+      {
+        "net": "VM",
+        "trackRule": "DRV8701_VM",
+        "defaultWidthMm": 1.8
+      },
+      {
+        "net": "VM_RAW",
+        "trackRule": "DRV8701_VM",
+        "defaultWidthMm": 1.8
       }
     ],
-    "encodedTotalThicknessMm": 1.5999999999999999
+    "rules": [
+      {
+        "type": "TRACK",
+        "name": "copperThickness1oz"
+      },
+      {
+        "type": "TRACK",
+        "name": "DRV8701_VM"
+      },
+      {
+        "type": "TRACK",
+        "name": "DRV8701_MOTOR"
+      },
+      {
+        "type": "TRACK",
+        "name": "DRV8701_GATE"
+      },
+      {
+        "type": "TRACK",
+        "name": "DRV8701_SIGNAL"
+      },
+      {
+        "type": "RADIUS",
+        "name": "viaSize"
+      },
+      {
+        "type": "DFM_MIN_HOLE_SIZE",
+        "name": "DRV8701_min_drill"
+      },
+      {
+        "type": "DFM_PAD_RING_DEFECT",
+        "name": "DRV8701_min_annular_ring"
+      },
+      {
+        "type": "SOLDER",
+        "name": "solderMaskExpansion"
+      }
+    ]
   },
-  "sourceDrc": {
-    "violations": 0,
-    "unconnectedItems": 0
-  },
-  "nativeDesktopOpenVerified": false,
-  "nativeDesktopDrcRun": false,
-  "requiredDesktopVersion": "EasyEDA/JLCEDA Pro V4.1+ offline or semi-offline desktop client",
-  "knownUnitDiscrepancy": "Current upstream schema descriptions use 0.254mm for RULE lengths and 0.1mm for LAYER_PHYS thickness. The official real V4.1.36 PCB export template uses apparent mil values; generated PCB follows that authentic template. Actual client units remain unverified.",
-  "minimumClientConfirmation": {
-    "boardThicknessMm": 1.6,
-    "copperLayers": 4,
-    "copperThicknessEachMm": 0.035,
-    "clearanceMm": 0.15,
-    "minimumTraceMm": 0.15,
-    "minimumHoleMm": 0.2,
-    "minimumAnnularRingMm": 0.1,
-    "defaultViaMm": {
-      "diameter": 0.45,
-      "drill": 0.2
-    }
-  },
-  "legacyEproArchiveProvided": false,
-  "legacyEproReason": "No reliable no-client official re-export path was available; the complete native folder project is provided.",
-  "padMaskPasteExpansionComparison": {
-    "passed": true,
-    "checkedPadInstances": 181,
-    "sourceMaskExpansionMm": 0,
-    "nativeMaskExpansionMm": 0,
-    "sourcePasteExpansionMm": 0,
-    "nativePasteExpansionMm": 0,
-    "correction": "Replaced official converter default 2mil mask expansion with each source pad/footprint/global mask value. Updated native default pad mask rule to0."
-  },
-  "sourceFilesUnchangedDuringConversion": true,
-  "frozenForDelivery": true
+  "actualEasyedaClientOpenVerified": false,
+  "actualEasyedaClientDrcVerified": false,
+  "limitations": [
+    "This optional .eprj3 directory targets supported offline/semi-offline desktop clients, not the web .epro import picker.",
+    "Official current schema descriptions and real V4.1.36 export disagree on some length units; actual client stack/rule display remains unverified.",
+    "Copper and geometry are compared to source; actual EasyEDA client open and DRC have not been executed."
+  ],
+  "errors": []
 }

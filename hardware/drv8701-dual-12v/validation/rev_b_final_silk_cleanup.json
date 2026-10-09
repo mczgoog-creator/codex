@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "pcb_sha256": "daa3c5be68e8667a06f6da7ec5fd3c1238de758fb6982bcae6e130e6b8204989",
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "independent_silk_pad_or_via_collisions": 0,
+  "driver_capacitor_longest_measured_path_mm": 2.9713,
+  "right_or_acute_trace_bends": 0,
+  "unmeasured_paths": 0,
+  "copper_geometry_delta": {
+    "removed": [
+      [
+        "track",
+        "VM_RAW",
+        0,
+        16399999,
+        29500000,
+        17950000,
+        29500000,
+        900000
+      ]
+    ],
+    "added": [
+      [
+        "track",
+        "VM_RAW",
+        0,
+        16399999,
+        29500000,
+        17950000,
+        29500000,
+        1800000
+      ]
+    ]
+  },
+  "other_copper_pads_vias_zone_outlines_identical": true,
+  "assembly_marks": "DRV8701_RGE24 corner/dot graphics retained on F.Fab in library and board, plus clear board-level F.Silk pin1 dots",
+  "label_changes": "All references on top except R10 below its component on B.SilkS; MAIN POWER, SLEEP ENABLE and board title on back; ON=right/pin3 and OFF=left/pin1 preserved",
+  "changed_scripts": [
+    "tools/build_board.py",
+    "tools/make_footprints.py"
+  ],
+  "scope": "Manual silk cleanup plus root-authorized VM_RAW C18.1 input neck widening0.9mm to1.8mm; no automatic routing"
+}

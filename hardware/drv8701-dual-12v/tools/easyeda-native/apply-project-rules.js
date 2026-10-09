@@ -8,7 +8,7 @@ const encoding=unitArg||'mil-real-export-V4.1.36';
 const U=encoding==='mil-real-export-V4.1.36'?1000/25.4:encoding==='internal10mil-current-schema'?1/.254:null;
 if(!projectDir||!U)throw new Error('Usage: apply-project-rules.js <project> [mil-real-export-V4.1.36|internal10mil-current-schema]');
 const files=[];function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const f=path.join(d,e.name);if(e.isDirectory())walk(f);else if(e.name.endsWith('.epcb2'))files.push(f);}}walk(projectDir);
-const evidence={unitEncoding:encoding,unitConflict:'Latest official TRuleContext description uses 0.254mm internal units; real official V4.1.36 PCB template uses apparent mil values. No desktop client was available to resolve that discrepancy.',clearanceMm:.15,minTraceMm:.15,minDrillMm:.2,minAnnularRingMm:.1,defaultViaDiameterMm:.45,defaultViaDrillMm:.2,defaultTrackWidthsMm:{VM:1.8,MOTOR:.7,GATE:.25,SIGNAL:.2},rules:[]};
+const evidence={unitEncoding:encoding,unitConflict:'Latest official TRuleContext description uses 0.254mm internal units; real official V4.1.36 PCB template uses apparent mil values. No desktop client was available to resolve that discrepancy.',clearanceMm:.15,minTraceMm:.15,minDrillMm:.2,minAnnularRingMm:.1,defaultViaDiameterMm:.45,defaultViaDrillMm:.2,defaultTrackWidthsMm:{VM:1.8,VM_RAW:1.8,MOTOR:.7,GATE:.25,SIGNAL:.2},netRuleAssignments:[],rules:[]};
 for(const file of files){
  const records=E.readRecords(file),docs=[];for(const r of records){if(r.type==='DOCHEAD')docs.push({head:r,records:[]});else docs.at(-1).records.push(r);}
  const pcb=docs.find(d=>d.head.body.docType==='PCB');
@@ -27,7 +27,8 @@ for(const file of files){
  addRule('DFM_PAD_RING_DEFECT','DRV8701_min_annular_ring',{unit:'mm',minRingWidth:.1*U},'DEFAULT');
  addRule('SOLDER','solderMaskExpansion',{unit:'mm',padTopExpan:0,padBotExpan:0,viaTopExpan:-1000,viaBotExpan:-1000,testPointTopExpan:0,testPointBotExpan:0},'DEFAULT');
  const netNames=pcb.records.filter(r=>r.type==='NET').map(r=>JSON.parse(r.id)[1]).filter(Boolean);
- for(const n of netNames){const type=n==='VM'?'VM':/^[LR]_[AB]$/.test(n)?'MOTOR':/^[LR]_G[HL][12]$/.test(n)?'GATE':'SIGNAL';
+ for(const n of netNames){const type=['VM','VM_RAW'].includes(n)?'VM':/^[LR]_[AB]$/.test(n)?'MOTOR':/^[LR]_G[HL][12]$/.test(n)?'GATE':'SIGNAL';
+  evidence.netRuleAssignments.push({net:n,trackRule:'DRV8701_'+type,defaultWidthMm:evidence.defaultTrackWidthsMm[type]});
   const id=JSON.stringify(['RULE_SELECTOR',['NET',n]]),body={ruleOrder:1,ruleKeyValue:{TRACK:'DRV8701_'+type},copperValue:{},innerPlaneValue:{}};
   const r=record('RULE_SELECTOR',id,body),old=pcb.records.findIndex(x=>x.id===id);if(old<0)pcb.records.push(r);else pcb.records[old]=r;
  }

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_sch</source>
-    <date>2026-10-08T15:53:47+0000</date>
+    <source>/workspace/codex/hardware/drv8701-dual-12v/DRV8701_DUAL_12V.kicad_sch</source>
+    <date>2026-10-09T05:21:04+0000</date>
     <tool>Eeschema 9.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>DRV8701 DUAL MOTOR / 12 V</title>
         <company>Source: 8701 driver board, no current sensing 2.0</company>
-        <rev>1.0</rev>
-        <date>2026-10-08</date>
+        <rev>B</rev>
+        <date>2026-10-09</date>
         <source>DRV8701_DUAL_12V.kicad_sch</source>
         <comment number="1" value="Manual PCB routing only; no hardware validation"/>
-        <comment number="2" value="Original source values and net connections preserved"/>
+        <comment number="2" value="Rev B: authorized main eFuse; original values retained; P2 input rail split"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
         <comment number="5" value=""/>
@@ -294,6 +294,42 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>91efb947-0478-5cec-9bb6-884578d91ec4</tstamps>
     </comp>
+    <comp ref="C18">
+      <value>4.7uF</value>
+      <footprint>DRV8701_Custom:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a3f8977-e774-5fa7-8b42-a87194a78f25</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>10nF</value>
+      <footprint>DRV8701_Custom:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="C" description="Unpolarized capacitor"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7ad9aec-8352-5997-8468-6d29a3677cdf</tstamps>
+    </comp>
     <comp ref="CN1">
       <value>XT30UPB-M</value>
       <footprint>DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</footprint>
@@ -400,13 +436,13 @@
       <value>XT30UPB-M</value>
       <footprint>DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</footprint>
       <fields>
-        <field name="Source">Original PDF; connections and values retained</field>
+        <field name="Source">Original PDF; Rev B authorized P2.1 input rail split</field>
         <field name="Footprint">DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
-      <libsource lib="DRV8701_Custom" part="XT30_POWER" description="External 12 V supply entry; connected supply drives VM and GND"/>
-      <property name="Source" value="Original PDF; connections and values retained"/>
+      <libsource lib="DRV8701_Custom" part="XT30_POWER" description="External 12 V supply entry; Rev B connected supply drives VM_RAW and GND"/>
+      <property name="Source" value="Original PDF; Rev B authorized P2.1 input rail split"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -638,6 +674,76 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>9b8064a2-6498-508f-8c3c-49b6f2768e82</tstamps>
     </comp>
+    <comp ref="R10">
+      <value>100kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c41c878c-67f3-52f9-99b3-6e20fecf3105</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>33kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17833ebd-2c24-5ab3-8809-cf3f790a8b05</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>40.2kΩ</value>
+      <footprint>DRV8701_Custom:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="R" description="Resistor"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7da2d7a-5788-5270-9e00-828f3c98a4dc</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SS12D10G4</value>
+      <footprint>DRV8701_Custom:SS12D10G4</footprint>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:SS12D10G4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="SS12D10G4" description="SPDT slide switch: pin 2 common; pins 1 and 3 throws; see instance nets for function"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcd028fa-5a95-5b70-acc8-841a06aa63e7</tstamps>
+    </comp>
     <comp ref="U1">
       <value>DRV8701ERGET</value>
       <footprint>DRV8701_Custom:DRV8701_RGE24</footprint>
@@ -681,12 +787,29 @@
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
-      <libsource lib="DRV8701_Custom" part="SS12D10G4" description="SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3"/>
+      <libsource lib="DRV8701_Custom" part="SS12D10G4" description="SPDT slide switch: pin 2 common; pins 1 and 3 throws; see instance nets for function"/>
       <property name="Source" value="Original PDF; connections and values retained"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d827f031-87fd-59ae-bfed-c4a8b0476fc3</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>TPS25910RSAR</value>
+      <footprint>DRV8701_Custom:TPS25910_RSA16</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps25910.pdf</datasheet>
+      <fields>
+        <field name="Source">Authorized Rev B main power addition</field>
+        <field name="Footprint">DRV8701_Custom:TPS25910_RSA16</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps25910.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="DRV8701_Custom" part="TPS25910RSAR" description="TI TPS25910 high-side eFuse: active-low EN16; IN1/2/3; internally common OUT10/11/12 (10 represents power output); GND EP17"/>
+      <property name="Source" value="Authorized Rev B main power addition"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV8701_DUAL_12V.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9e5366a-c6f6-5b16-9b28-2decbf414173</tstamps>
     </comp>
   </components>
   <libparts>
@@ -840,13 +963,13 @@
       </pins>
     </libpart>
     <libpart lib="DRV8701_Custom" part="SS12D10G4">
-      <description>SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3</description>
+      <description>SPDT slide switch: pin 2 common; pins 1 and 3 throws; see instance nets for function</description>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">SS12D10G4</field>
         <field name="Footprint"/>
         <field name="Datasheet"/>
-        <field name="Description">SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3</field>
+        <field name="Description">SPDT slide switch: pin 2 common; pins 1 and 3 throws; see instance nets for function</field>
       </fields>
       <pins>
         <pin num="1" name="OFF" type="passive"/>
@@ -874,6 +997,35 @@
         <pin num="8" name="D" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="DRV8701_Custom" part="TPS25910RSAR">
+      <description>TI TPS25910 high-side eFuse: active-low EN16; IN1/2/3; internally common OUT10/11/12 (10 represents power output); GND EP17</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS25910RSAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">TI TPS25910 high-side eFuse: active-low EN16; IN1/2/3; internally common OUT10/11/12 (10 represents power output); GND EP17</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="IN" type="power_in"/>
+        <pin num="3" name="IN" type="power_in"/>
+        <pin num="4" name="GATE" type="output"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="ILIM" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="OUT" type="power_out"/>
+        <pin num="11" name="OUT" type="passive"/>
+        <pin num="12" name="OUT" type="passive"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="FLT" type="open_collector"/>
+        <pin num="16" name="EN" type="input"/>
+        <pin num="17" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="DRV8701_Custom" part="XT30_OUTPUT">
       <description>Motor output connector; source schematic numbering retained</description>
       <fields>
@@ -889,23 +1041,23 @@
       </pins>
     </libpart>
     <libpart lib="DRV8701_Custom" part="XT30_POWER">
-      <description>External 12 V supply entry; connected supply drives VM and GND</description>
+      <description>External 12 V supply entry; Rev B connected supply drives VM_RAW and GND</description>
       <fields>
         <field name="Reference">P</field>
         <field name="Value">XT30_POWER</field>
         <field name="Footprint"/>
         <field name="Datasheet"/>
-        <field name="Description">External 12 V supply entry; connected supply drives VM and GND</field>
+        <field name="Description">External 12 V supply entry; Rev B connected supply drives VM_RAW and GND</field>
       </fields>
       <pins>
-        <pin num="1" name="+12V" type="power_out"/>
+        <pin num="1" name="+12V_RAW" type="power_out"/>
         <pin num="2" name="GND" type="power_out"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
     <library logical="DRV8701_Custom">
-      <uri>/workspace/drv8701_board/DRV8701_Custom.kicad_sym</uri>
+      <uri>/workspace/codex/hardware/drv8701-dual-12v/DRV8701_Custom.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -925,6 +1077,8 @@
       <node ref="C12" pin="2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -945,6 +1099,9 @@
       <node ref="Q8" pin="1" pinfunction="S" pintype="passive"/>
       <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="Q8" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="ON" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="20" pinfunction="SN" pintype="input"/>
       <node ref="U1" pin="21" pinfunction="SP" pintype="input"/>
@@ -955,6 +1112,13 @@
       <node ref="U2" pin="21" pinfunction="SP" pintype="input"/>
       <node ref="U2" pin="25" pinfunction="EP" pintype="power_in"/>
       <node ref="U2" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="17" pinfunction="EP" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="9" pinfunction="GND" pintype="power_in"/>
     </net>
     <net code="4" name="/L_A" class="Default">
       <node ref="C16" pin="1" pintype="passive"/>
@@ -1040,7 +1204,21 @@
       <node ref="LED2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="/R_A" class="Default">
+    <net code="20" name="/PWR_EN" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="COM" pintype="passive"/>
+      <node ref="U6" pin="16" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="21" name="/PWR_GATE" class="Default">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="GATE" pintype="output"/>
+    </net>
+    <net code="22" name="/PWR_ILIM" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="23" name="/R_A" class="Default">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="CN2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="Q5" pin="1" pinfunction="S" pintype="passive"/>
@@ -1052,13 +1230,13 @@
       <node ref="Q6" pin="8" pinfunction="D" pintype="passive"/>
       <node ref="U2" pin="23" pinfunction="SH2" pintype="input"/>
     </net>
-    <net code="21" name="/R_AVDD" class="Default">
+    <net code="24" name="/R_AVDD" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="U2" pin="12" pinfunction="IDRIVE" pintype="input"/>
       <node ref="U2" pin="6" pinfunction="VREF" pintype="input"/>
       <node ref="U2" pin="7" pinfunction="AVDD" pintype="power_out"/>
     </net>
-    <net code="22" name="/R_B" class="Default">
+    <net code="25" name="/R_B" class="Default">
       <node ref="CN2" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="Q7" pin="1" pinfunction="S" pintype="passive"/>
       <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
@@ -1070,51 +1248,51 @@
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U2" pin="18" pinfunction="SH1" pintype="input"/>
     </net>
-    <net code="23" name="/R_CPH" class="Default">
+    <net code="26" name="/R_CPH" class="Default">
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="CPH" pintype="output"/>
     </net>
-    <net code="24" name="/R_CPL" class="Default">
+    <net code="27" name="/R_CPL" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="CPL" pintype="output"/>
     </net>
-    <net code="25" name="/R_DVDD" class="Default">
+    <net code="28" name="/R_DVDD" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="DVDD" pintype="power_out"/>
     </net>
-    <net code="26" name="/R_EN_IN" class="Default">
+    <net code="29" name="/R_EN_IN" class="Default">
       <node ref="CN3" pin="1" pinfunction="R_EN" pintype="output"/>
       <node ref="U2" pin="14" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="27" name="/R_GH1" class="Default">
+    <net code="30" name="/R_GH1" class="Default">
       <node ref="Q7" pin="4" pinfunction="G" pintype="input"/>
       <node ref="U2" pin="17" pinfunction="GH1" pintype="output"/>
     </net>
-    <net code="28" name="/R_GH2" class="Default">
+    <net code="31" name="/R_GH2" class="Default">
       <node ref="Q5" pin="4" pinfunction="G" pintype="input"/>
       <node ref="U2" pin="24" pinfunction="GH2" pintype="output"/>
     </net>
-    <net code="29" name="/R_GL1" class="Default">
+    <net code="32" name="/R_GL1" class="Default">
       <node ref="Q8" pin="4" pinfunction="G" pintype="input"/>
       <node ref="U2" pin="19" pinfunction="GL1" pintype="output"/>
     </net>
-    <net code="30" name="/R_GL2" class="Default">
+    <net code="33" name="/R_GL2" class="Default">
       <node ref="Q6" pin="4" pinfunction="G" pintype="input"/>
       <node ref="U2" pin="22" pinfunction="GL2" pintype="output"/>
     </net>
-    <net code="31" name="/R_PH_IN" class="Default">
+    <net code="34" name="/R_PH_IN" class="Default">
       <node ref="CN3" pin="2" pinfunction="R_PH" pintype="output"/>
       <node ref="U2" pin="15" pinfunction="PH" pintype="input"/>
     </net>
-    <net code="32" name="/R_SNUBBER" class="Default">
+    <net code="35" name="/R_SNUBBER" class="Default">
       <node ref="C17" pin="2" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
     </net>
-    <net code="33" name="/R_VCP" class="Default">
+    <net code="36" name="/R_VCP" class="Default">
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="VCP" pintype="power_out"/>
     </net>
-    <net code="34" name="/VM" class="Default">
+    <net code="37" name="/VM" class="Default">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C15" pin="1" pintype="passive"/>
@@ -1122,7 +1300,6 @@
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
-      <node ref="P2" pin="1" pinfunction="+12V" pintype="power_out"/>
       <node ref="Q1" pin="5" pinfunction="D" pintype="passive"/>
       <node ref="Q1" pin="6" pinfunction="D" pintype="passive"/>
       <node ref="Q1" pin="7" pinfunction="D" pintype="passive"/>
@@ -1142,27 +1319,44 @@
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="VM" pintype="power_in"/>
       <node ref="U2" pin="1" pinfunction="VM" pintype="power_in"/>
+      <node ref="U6" pin="10" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U6" pin="11" pinfunction="OUT" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="OUT" pintype="passive"/>
     </net>
-    <net code="35" name="unconnected-(U1-SNSOUT-Pad10)" class="Default">
+    <net code="38" name="/VM_RAW" class="Default">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="P2" pin="1" pinfunction="+12V_RAW" pintype="power_out"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="IN" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="IN" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="39" name="unconnected-(SW1-OFF-Pad1)" class="Default">
+      <node ref="SW1" pin="1" pinfunction="OFF" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U1-SNSOUT-Pad10)" class="Default">
       <node ref="U1" pin="10" pinfunction="SNSOUT" pintype="output+no_connect"/>
     </net>
-    <net code="36" name="unconnected-(U1-SO-Pad11)" class="Default">
+    <net code="41" name="unconnected-(U1-SO-Pad11)" class="Default">
       <node ref="U1" pin="11" pinfunction="SO" pintype="output+no_connect"/>
     </net>
-    <net code="37" name="unconnected-(U1-nFAULT-Pad9)" class="Default">
+    <net code="42" name="unconnected-(U1-nFAULT-Pad9)" class="Default">
       <node ref="U1" pin="9" pinfunction="nFAULT" pintype="open_collector+no_connect"/>
     </net>
-    <net code="38" name="unconnected-(U2-SNSOUT-Pad10)" class="Default">
+    <net code="43" name="unconnected-(U2-SNSOUT-Pad10)" class="Default">
       <node ref="U2" pin="10" pinfunction="SNSOUT" pintype="output+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(U2-SO-Pad11)" class="Default">
+    <net code="44" name="unconnected-(U2-SO-Pad11)" class="Default">
       <node ref="U2" pin="11" pinfunction="SO" pintype="output+no_connect"/>
     </net>
-    <net code="40" name="unconnected-(U2-nFAULT-Pad9)" class="Default">
+    <net code="45" name="unconnected-(U2-nFAULT-Pad9)" class="Default">
       <node ref="U2" pin="9" pinfunction="nFAULT" pintype="open_collector+no_connect"/>
     </net>
-    <net code="41" name="unconnected-(U5-OFF-Pad1)" class="Default">
+    <net code="46" name="unconnected-(U5-OFF-Pad1)" class="Default">
       <node ref="U5" pin="1" pinfunction="OFF" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U6-FLT-Pad15)" class="Default">
+      <node ref="U6" pin="15" pinfunction="FLT" pintype="open_collector+no_connect"/>
     </net>
   </nets>
 </export>

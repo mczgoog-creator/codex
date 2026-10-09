@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-10-09T05:53:59.729960+00:00",
+  "pcb_sha256": "daa3c5be68e8667a06f6da7ec5fd3c1238de758fb6982bcae6e130e6b8204989",
+  "source_unchanged": true,
+  "vector_pdf_pages": 5,
+  "pdf_layer_order": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu",
+    "F.SilkS"
+  ],
+  "bottom_png_svg_view": "mirrored, viewed from bottom",
+  "pdf_layer_view": "unmirrored, viewed through top",
+  "pcb_geometry_modified": false,
+  "files_sha256": {
+    "pcb_top.svg": "2f792019c7ca9d5f7265930379dca1d8b2e824b789b84207f04b5032c6c09c45",
+    "pcb_top.png": "3f43748380b1e16e794ed781885ab3458178796d8bedefbd41dcea64b48410be",
+    "pcb_bottom.svg": "f0e9990e6abb450209786a629bf8e62bcd676d7295c2fbb6f03bf176d3580943",
+    "pcb_bottom.png": "2fbd7f9b6a93b9d6c081ef41e8fe014cb933973548c58a7d69870dca921bb088",
+    "pcb_layer_pdfs/DRV8701_DUAL_12V-F_Cu.pdf": "6b3dd55b7ac0f169c5ab95f3480345bc305a9fda969b0ce045ac130a5fee2a8c",
+    "pcb_layer_pdfs/DRV8701_DUAL_12V-In1_Cu.pdf": "127008ece9be76b2e79239266276b6ed1cc988086003985c19928c12d518e4f1",
+    "pcb_layer_pdfs/DRV8701_DUAL_12V-In2_Cu.pdf": "252fb85432ab384dac4c709f5d8b0b349bae5eed4dad76bca590e191b9d9b560",
+    "pcb_layer_pdfs/DRV8701_DUAL_12V-B_Cu.pdf": "4364000feeebed4c24cb8c9c6f00487242ef6f239207268ca9d0df606e3dfab1",
+    "pcb_layer_pdfs/DRV8701_DUAL_12V-F_Silkscreen.pdf": "f433d9befec02d916c894ef073111546f6c4181b7ae63b9283fa6511d3f7f5ba",
+    "PCB_layers_review.pdf": "4bdaf1a15f67f08dfc4325f5bd22d130ff2ee92716fa52bb003b94ea6b338229"
+  }
+}

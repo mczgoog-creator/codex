@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert this source-faithful manually routed KiCad 9 PCB into genuine KiCad 5 syntax.
+"""Convert the reviewed manually routed KiCad 9 PCB into genuine KiCad 5 syntax.
 
 This is a document-format conversion, not placement/routing/fill generation.
 Parser/serializer is dependency-free and preserves decimal input tokens exactly.
@@ -239,14 +239,26 @@ def netclasses_legacy(project):
     return out
 
 def convert(base,outdir):
+    REPORT.clear()
+    STAMP_MAP.clear()
     outdir.mkdir(parents=True,exist_ok=True)
     src=parse((base/'DRV8701_DUAL_12V.kicad_pcb').read_text())
     sch=parse((base/'DRV8701_DUAL_12V.kicad_sch').read_text())
     symbols={}
+    virtual_symbols={}
     for node in children(sch,'symbol'):
         ref=next(p[2] for p in children(node,'property') if str(p[1])=='Reference')
-        symbols[ref]=stamp(value(node,'uuid'))
-    if len(symbols)!=38 or len(set(symbols.values()))!=38: raise ValueError('Schematic timestamp identity mismatch')
+        target=symbols if str(value(node,'on_board','yes'))=='yes' else virtual_symbols
+        if ref in symbols or ref in virtual_symbols:
+            raise ValueError('Duplicate schematic component reference: '+str(ref))
+        target[ref]=stamp(value(node,'uuid'))
+    all_stamps=list(symbols.values())+list(virtual_symbols.values())
+    if len(all_stamps)!=len(children(sch,'symbol')) or len(set(all_stamps))!=len(all_stamps):
+        raise ValueError('Schematic timestamp identity mismatch')
+    footprint_refs=[next(v[2] for v in children(node,'property') if str(v[1])=='Reference')
+                    for node in children(src,'footprint')]
+    if len(set(footprint_refs))!=len(footprint_refs) or set(footprint_refs)!=set(symbols):
+        raise ValueError('Schematic/PCB component reference sets differ')
     project=json.loads((base/'DRV8701_DUAL_12V.kicad_pro').read_text())
     out=n('kicad_pcb',n('version',a('20171130')),n('host',a('pcbnew'),a('5.1.12')))
     for node in src[1:]:
@@ -289,7 +301,7 @@ def convert(base,outdir):
     libdir=outdir/'DRV8701_Custom.pretty'; libdir.mkdir(exist_ok=True)
     for srcfile in sorted((base/'DRV8701_Custom.pretty').glob('*.kicad_mod')):
         libdir.joinpath(srcfile.name).write_text(serialize(module_legacy(parse(srcfile.read_text()),standalone=True))+'\n')
-    (outdir/'pcb-format-conversion.json').write_text(json.dumps({'source_version':'20241229','target_version':'20171130','target_reader':'KiCad 5.1','symbol_timestamp_prefixes_unique':True,'component_timestamp_map':{str(k):str(v) for k,v in symbols.items()},'zone_policy':'native-refill-retain-original-constraints','transform_counts':dict(REPORT),'official_syntax_reference':'https://github.com/KiCad/kicad-source-mirror/tree/2758acfd4265f295c14a5bf009fa742e4abad131/pcbnew','sha256_source':hashlib.sha256((base/'DRV8701_DUAL_12V.kicad_pcb').read_bytes()).hexdigest(),'sha256_initial_unfilled_target':hashlib.sha256(outfile.read_bytes()).hexdigest()},indent=2)+'\n')
+    (outdir/'pcb-format-conversion.json').write_text(json.dumps({'source_version':'20241229','target_version':'20171130','target_reader':'KiCad 5.1','symbol_timestamp_prefixes_unique':True,'component_timestamp_map':{str(k):str(v) for k,v in symbols.items()},'nonphysical_schematic_timestamp_map':{str(k):str(v) for k,v in virtual_symbols.items()},'zone_policy':'native-refill-retain-original-constraints','transform_counts':dict(REPORT),'official_syntax_reference':'https://github.com/KiCad/kicad-source-mirror/tree/2758acfd4265f295c14a5bf009fa742e4abad131/pcbnew','sha256_source':hashlib.sha256((base/'DRV8701_DUAL_12V.kicad_pcb').read_bytes()).hexdigest(),'sha256_initial_unfilled_target':hashlib.sha256(outfile.read_bytes()).hexdigest()},indent=2)+'\n')
     print(outfile)
 
 if __name__=='__main__':

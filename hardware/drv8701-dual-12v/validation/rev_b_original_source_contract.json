@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "revision": "B",
+  "original_source_sha256": "5fe34e962b121847c78609d269503a5184870e272b5e86f9133f7b740469b86e",
+  "original_component_values_preserved": 38,
+  "original_physical_pins_compared": 173,
+  "unchanged_original_physical_pins": 172,
+  "authorized_existing_pin_deltas": [
+    {
+      "pin": "P2.1",
+      "from": "VM",
+      "to": "VM_RAW"
+    }
+  ],
+  "added_references": [
+    "C18",
+    "C19",
+    "R10",
+    "R11",
+    "R12",
+    "SW1",
+    "U6"
+  ],
+  "source_faithful": false,
+  "remaining_original_circuit_preserved": true,
+  "errors": []
+}

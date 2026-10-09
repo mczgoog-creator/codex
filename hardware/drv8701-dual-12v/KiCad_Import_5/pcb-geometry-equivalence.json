@@ -1,33 +1,78 @@
 {
   "reader": "9.0.2",
-  "source_sha256": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
-  "legacy_sha256": "ab34bc200ca05e84dce2275fd3891df67ee4836e229cac37e3d61c3bec4b1466",
+  "source_sha256": "daa3c5be68e8667a06f6da7ec5fd3c1238de758fb6982bcae6e130e6b8204989",
+  "legacy_sha256": "ed6ec68d8e7d5f9813d19a62a4ff790a1654f8aa404fd44d8327108e59098a7a",
   "exactly_equal_excluding_native_fill_cache": true,
   "component_link_errors": [],
   "library_geometry_errors": [],
   "counts": {
-    "footprints": 38,
-    "pads": 181,
-    "tracks": 258,
-    "vias": 76,
-    "zone_boundaries_and_settings": 3,
+    "footprints": 45,
+    "pads": 211,
+    "tracks": 592,
+    "vias": 151,
+    "zone_boundaries_and_settings": 12,
     "outline": 4
   },
   "source_fill_cache": [
     {
       "layer": "F.Cu",
       "filled": true,
-      "vertices": 5006
+      "vertices": 5406
+    },
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 12
+    },
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 12
+    },
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 12
+    },
+    {
+      "layer": "F.Cu",
+      "filled": true,
+      "vertices": 12
     },
     {
       "layer": "B.Cu",
       "filled": true,
-      "vertices": 2677
+      "vertices": 3701
     },
     {
       "layer": "In1.Cu",
       "filled": true,
-      "vertices": 2572
+      "vertices": 3759
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": true,
+      "vertices": 49
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": true,
+      "vertices": 90
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": true,
+      "vertices": 9
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": true,
+      "vertices": 12
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": true,
+      "vertices": 49
     }
   ],
   "legacy_fill_cache": [
@@ -37,12 +82,57 @@
       "vertices": 0
     },
     {
+      "layer": "F.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "F.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "F.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "F.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
       "layer": "B.Cu",
       "filled": false,
       "vertices": 0
     },
     {
       "layer": "In1.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In2.Cu",
+      "filled": false,
+      "vertices": 0
+    },
+    {
+      "layer": "In2.Cu",
       "filled": false,
       "vertices": 0
     }

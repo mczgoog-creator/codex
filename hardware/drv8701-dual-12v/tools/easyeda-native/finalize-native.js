@@ -33,14 +33,16 @@ const globalPasteMargin=num(sourceSetup,'pad_to_paste_clearance',0,0);
 const footprints = children(root, 'footprint').map(fp => {
   const props = Object.fromEntries(children(fp, 'property').map(p => [p[1].v, p[2].v]));
   for (const tx of children(fp, 'fp_text')) if (tx[1]?.v === 'reference') props.Reference = tx[2]?.v;
+  for (const tx of children(fp, 'fp_text')) if (tx[1]?.v === 'value') props.Value ??= tx[2]?.v;
   const refNode=children(fp,'property').find(p=>p[1]?.v==='Reference') || children(fp,'fp_text').find(p=>p[1]?.v==='reference');
   const effects=child(refNode||[],'effects'),font=child(effects||[],'font');
-  return {name: fp[1].v, ref: props.Reference, angle: num(fp, 'at', 2),
+  return {name: fp[1].v, ref: props.Reference, value: props.Value, angle: num(fp, 'at', 2),
     x: num(fp, 'at'), y: num(fp, 'at', 1), layer: str(fp, 'layer'),
     referenceText:refNode?{x:num(refNode,'at'),y:num(refNode,'at',1),angle:num(refNode,'at',2),
       size:num(font||[],'size',0,.65),width:num(font||[],'thickness',0,.12),
       hidden:refNode.some(v=>v?.v==='hide') || effects?.some(v=>v?.v==='hide') || str(refNode,'hide')==='yes'}:null,
     pads: children(fp, 'pad').map(p => {
+      for(const key of ['zone_connect','thermal_gap','thermal_bridge_width'])if(child(p,key))throw new Error(`Per-pad ${key} override on ${props.Reference}.${p[1].v} requires a verified native mapping.`);
       const drill = child(p,'drill'), dv=values(drill).filter(v=>v!==undefined);
       const oval=dv[0]==='oval', dx=Number(dv[oval?1:0]||0),dy=Number(dv[oval?2:0]||0);
       const offset=child(drill||[],'offset');
@@ -60,7 +62,30 @@ const layerRows = (child(root, 'layers') || []).slice(1).filter(Array.isArray);
 const copperLayers = layerRows.filter(n => /^(F|B|In\d+)\.Cu$/.test(n[1]?.v)).map(n => n[1].v);
 const innerLayers = copperLayers.filter(n => /^In\d/.test(n));
 const copperIds = [1, ...innerLayers.map(n => 14 + Number(n.match(/In(\d+)/)[1])), 2];
-const report = {source: kicadPcb, project: path.join(projectDir,idxFile), copperLayers, corrections:[], padCoordinates:[], warnings:[]};
+const layerId=n=>n==='F.Cu'?1:n==='B.Cu'?2:/^In\d+\.Cu$/.test(n)?14+Number(n.match(/In(\d+)/)[1]):null;
+const sourceZones=[];
+for(const z of children(root,'zone')){
+  if(child(z,'keepout'))continue;
+  const cp=child(z,'connect_pads')||[],fill=child(z,'fill')||[];
+  const connection=values(cp)[0],padConnection=connection==='yes'?'DIRECT':connection==='no'?'NON_CONNECT':connection===undefined?'DIVERGENCE':null;
+  if(!padConnection)throw new Error(`Unsupported source zone pad connection ${connection}`);
+  const fillMode=str(fill,'mode',0,'polygon');
+  if(fillMode!=='polygon')throw new Error(`Source zone hatch mode ${fillMode} requires a verified native mapping.`);
+  const islandMode=num(fill,'island_removal_mode');
+  if(![0,1].includes(islandMode))throw new Error('Area-threshold island removal has no verified native boolean keepIsland equivalent.');
+  const net=child(z,'net_name')?str(z,'net_name'):children(root,'net').find(n=>n[1]?.v===str(z,'net'))?.[2]?.v||'';
+  for(const layer of child(z,'layer')?[str(z,'layer')]:values(child(z,'layers'))){
+    sourceZones.push({net,layer,layerId:layerId(layer),priority:num(z,'priority'),minimumThicknessMm:num(z,'min_thickness'),
+      clearanceMm:num(cp,'clearance'),padConnection,fillMode,thermalGapMm:num(fill,'thermal_gap'),thermalSpokeWidthMm:num(fill,'thermal_bridge_width'),
+      keepIsland:islandMode===1,islandRemovalMode:islandMode,minimumIslandAreaMm2:num(fill,'island_area_min',0,10)});
+  }
+}
+// The current design uses one common connection/clearance setting for all
+// zones. Use the documented default COPPER rule rather than inventing a
+// per-zone rule-selector encoding. Reject nonuniform settings explicitly.
+const zoneRuleKey=z=>JSON.stringify([z.clearanceMm,z.padConnection,z.thermalGapMm,z.thermalSpokeWidthMm]);
+if(new Set(sourceZones.map(zoneRuleKey)).size>1)throw new Error('Nonuniform source zone connection/clearance settings require a verified per-zone native selector mapping.');
+const report = {source: kicadPcb, project: path.join(projectDir,idxFile), copperLayers, corrections:[], padCoordinates:[], zoneSettings:[], warnings:[]};
 function splitDocs(records) {
   const docs=[];
   for (const rec of records) {
@@ -197,15 +222,48 @@ for(const file of files) {
       const pcbMeta=d.records.find(r=>r.type==='META');
       if(pcbMeta&&!pcbMeta.body.board)pcbMeta.body.board=Object.keys(index.profile.boards)[0];
       const byId=new Map(d.records.map(r=>[r.id,r]));
+      const nativePours=d.records.filter(r=>r.type==='POUR');
+      if(nativePours.length!==sourceZones.length)throw new Error('Source/native zone count differs before zone-parameter preservation.');
+      nativePours.forEach((r,i)=>{
+        const s=sourceZones[i];
+        if(r.body.netName!==s.net||r.body.layerId!==s.layerId)throw new Error('Source/native zone order differs; cannot attach source parameters reliably.');
+        r.body.order=s.priority;
+        // The official converter documents POUR.width as the real-export mm
+        // exception. Solid-fill fineness follows the PCB mil length encoding.
+        r.body.width=s.minimumThicknessMm;
+        r.body.pourType={pourType:'SOLID',fineness:s.minimumThicknessMm*MIL};
+        r.body.keepIsland=s.keepIsland;
+        report.zoneSettings.push({...s,nativePourId:r.id,nativeMinimumWidthEncoding:'POUR.width mm / SOLID fineness mil'});
+      });
+      if(sourceZones.length){
+        const s=sourceZones[0],rule=d.records.find(r=>r.id===JSON.stringify(['RULE','COPPER','copperRegion']));
+        if(!rule)throw new Error('Missing authentic default COPPER rule template.');
+        const pads=()=>({isOpen:true,content:copperIds.map(layerId=>({layerId,connType:s.padConnection,spoSpac:s.thermalGapMm*MIL,spoWidth:s.thermalSpokeWidthMm*MIL,spoAng:90}))});
+        rule.body.ruleContext={unit:'mm',sglPad:pads(),mulPad:pads(),track:{isOpen:true,content:copperIds.map(layerId=>({layerId,connType:'DIRECT'}))}};
+        report.corrections.push(`Preserved ${sourceZones.length} zone priorities, solid minimum thickness, island mode, and common ${s.padConnection} pad connection / thermal settings.`);
+        report.warnings.push('POUR.width uses the official real-export mm exception; solid fineness and thermal rule lengths use PCB mil encoding. Actual desktop refill interpretation remains unverified.');
+      }
       const attrs=new Map();
       for(const r of d.records)if(r.type==='ATTR') {if(!attrs.has(r.body.parentId))attrs.set(r.body.parentId,{});attrs.get(r.body.parentId)[r.body.key]=r.body.value;}
       for(const r of d.records.filter(r=>r.type==='COMPONENT')) {
         const ref=attrs.get(r.id)?.Designator;
         const src=sourceByRef.get(ref);
         if(!src)throw new Error(`No source placement for ${ref}`);
+        if(typeof src.value!=='string')throw new Error(`No source component value for ${ref}`);
         if(src.layer!=='F.Cu')throw new Error(`Bottom-side component ${ref} requires a separately verified mirror transform.`);
         r.body.angle=mod(src.angle);
         const refAttr=d.records.find(ar=>ar.type==='ATTR'&&ar.body.parentId===r.id&&ar.body.key==='Designator');
+        // Keep each placed value in the PCB as well as in the schematic.
+        // Several values share a symbol/footprint device, so this belongs on
+        // the component instance rather than its shared library DEVICE.
+        let valueAttr=d.records.find(ar=>ar.type==='ATTR'&&ar.body.parentId===r.id&&ar.body.key==='Name');
+        if(!valueAttr){
+          if(!refAttr)throw new Error(`No source attribute style for ${ref}`);
+          valueAttr=JSON.parse(JSON.stringify(refAttr));
+          valueAttr.id=r.id+crypto.randomBytes(8).toString('hex');valueAttr.head.id=valueAttr.id;
+          valueAttr.body.key='Name';d.records.push(valueAttr);
+        }
+        Object.assign(valueAttr.body,{value:src.value,keyVisible:false,valueVisible:false});
         if(refAttr&&src.referenceText){
           const s=src.referenceText,rad=src.angle*Math.PI/180,c=Math.cos(rad),sn=Math.sin(rad);
           Object.assign(refAttr.body,{x:(src.x+c*s.x+sn*s.y)*MIL,y:-(src.y-sn*s.x+c*s.y)*MIL,
@@ -230,6 +288,7 @@ for(const file of files) {
         });
       }
       report.corrections.push('Corrected component and footprint-pad rotation; verified all placed pad centers against source.');
+      report.corrections.push(`Preserved ${footprints.length} placed component values in PCB Name attributes.`);
       for(const r of d.records.filter(r=>r.type==='LAYER')) {
         const lid=r.body.layerId;
         if(lid>=15&&lid<=46) {r.body.use=copperIds.includes(lid);r.body.show=r.body.use;}

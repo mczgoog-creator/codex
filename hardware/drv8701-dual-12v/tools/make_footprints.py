@@ -76,13 +76,13 @@ def main():
     p.rect(-2,-2,2,2)
     for sx in [-1,1]:
         for sy in [-1,1]:
-            p.line(sx*1.68,sy*2.40,sx*2.40,sy*2.40)
-            p.line(sx*2.40,sy*1.68,sx*2.40,sy*2.40)
-    p.circle(-2.70,-1.25,.13,'F.SilkS',.12)
+            p.line(sx*1.68,sy*2.40,sx*2.40,sy*2.40,'F.Fab')
+            p.line(sx*2.40,sy*1.68,sx*2.40,sy*2.40,'F.Fab')
+    p.circle(-2.70,-1.25,.13,'F.Fab',.12)
     p.court(-2.5,-2.5,2.5,2.5)
     p.save()
 
-    p=Footprint('TPH1R403NL_SOPAdvance','TPH1R403NL SOP Advance 5x5 body / nominal6mm lead span; source1-3, gate4, drain5-8 and exposed-drain pad5. JLC native footprint crosscheck. Exact Toshiba part land-pattern PDF still unavailable: hardware review required before fabrication.',source='Native JLC footprint 572e0c5f381c446594eedc8b8157fefb.efoo from public project mirror-zdxddmx/eda/ProPrj_DRV8701电机双驱.epro; only library geometry reused, board layout not reused.')
+    p=Footprint('TPH1R403NL_SOPAdvance','TPH1R403NL ordinary SOP Advance 5x5 body / nominal6mm lead span; source1-3, gate4, drain5-8 and exposed-drain pad5. Native JLC land geometry crosschecked against Toshiba Rev3.0.A, page8 package outline. Purchase ordinary SOP Advance, not the different SOP Advance(N) package. Toshiba provides a package outline, not a recommended PCB land pattern.',source='Toshiba TPH1R403NL datasheet Rev3.0.A (2026-04-14), source/Toshiba_TPH1R403NL_Rev3_0_A.pdf, page8; native JLC footprint 572e0c5f381c446594eedc8b8157fefb.efoo from public project mirror-zdxddmx/eda/ProPrj_DRV8701电机双驱.epro; only library geometry reused, board layout not reused.')
     for i,x in enumerate([-1.905,-.635,.635,1.905],1):
         p.pad(i,x,2.77,.5,1.2,role='G' if i==4 else 'S')
     for i,x in enumerate([1.905,.635,-.635,-1.905],5):
@@ -95,9 +95,27 @@ def main():
     p.court(-2.75,-3.70,2.75,3.70)
     p.save()
 
+    p=Footprint('TPS25910_RSA16','TI TPS25910 RSA0016B VQFN16 4x4mm, pitch0.65mm. Exact recommended copper land pattern: peripheral pads0.60x0.31mm, opposite pad-row centres3.8mm; exposed thermal pad17 2.7x2.7mm, GND. Hot-air/paste required for centre-pad soldering. For stencil manufacture, use TI four-window 1.19x1.19mm paste recommendation instead of a single full exposed-pad opening.',source='Texas Instruments TPS25910 SLUSAR6D datasheet, official https://www.ti.com/lit/ds/symlink/tps25910.pdf; package RSA0016B example board layout, drawing4219093/A08/2021.')
+    for i in range(4):
+        p.pad(i+1,-1.9,-.975+i*.65,.60,.31,roundratio=.05/.31)
+        p.pad(i+5,-.975+i*.65,1.9,.31,.60,roundratio=.05/.31)
+        p.pad(i+9,1.9,.975-i*.65,.60,.31,roundratio=.05/.31)
+        p.pad(i+13,.975-i*.65,-1.9,.31,.60,roundratio=.05/.31)
+    p.pad(17,0,0,2.7,2.7,shape='rect',role='GND_EP')
+    p.rect(-2,-2,2,2)
+    for sx in [-1,1]:
+        for sy in [-1,1]:
+            p.line(sx*1.42,sy*2.40,sx*2.40,sy*2.40)
+            p.line(sx*2.40,sy*1.42,sx*2.40,sy*2.40)
+    p.circle(-2.70,-.975,.13,'F.SilkS',.12)
+    p.court(-2.5,-2.5,2.5,2.5)
+    p.save()
+
     passive('C_0603_1608Metric',1.6,.8,.8,.95,.95)
     passive('R_0603_1608Metric',1.6,.8,.8,.95,.95)
     passive('LED_0603_1608Metric',1.6,.8,.8,.95,.95,True)
+    passive('C_0805_2012Metric',2.0,1.25,1.0,1.2,1.45)
+    passive('R_0805_2012Metric',2.0,1.25,1.0,1.2,1.45)
     passive('R_1210_3225Metric',3.2,2.5,1.55,1.15,2.7)
 
     p=Footprint('D_SOD123','SOD-123 BZT52 family 2-pin; pin1 cathode, pin2 anode; verify selected manufacturer; hand-solderable pads.',source='Industry SOD-123 body nominal2.8x1.8mm, lead-span nominal3.7mm')

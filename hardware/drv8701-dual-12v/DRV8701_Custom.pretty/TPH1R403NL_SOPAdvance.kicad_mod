@@ -1,5 +1,5 @@
 (footprint "TPH1R403NL_SOPAdvance" (version 20240108) (generator "manual_dr8701_project") (layer "F.Cu")
-  (descr "TPH1R403NL SOP Advance 5x5 body / nominal6mm lead span; source1-3, gate4, drain5-8 and exposed-drain pad5. JLC native footprint crosscheck. Exact Toshiba part land-pattern PDF still unavailable: hardware review required before fabrication.")
+  (descr "TPH1R403NL ordinary SOP Advance 5x5 body / nominal6mm lead span; source1-3, gate4, drain5-8 and exposed-drain pad5. Native JLC land geometry crosschecked against Toshiba Rev3.0.A, page8 package outline. Purchase ordinary SOP Advance, not the different SOP Advance(N) package. Toshiba provides a package outline, not a recommended PCB land pattern.")
   (attr smd)
   (fp_text reference "REF**" (at 0 -4.2) (layer "F.SilkS") (effects (font (size 0.7 0.7) (thickness 0.12))))
   (fp_text value "TPH1R403NL_SOPAdvance" (at 0 4.2) (layer "F.Fab") (hide yes) (effects (font (size 0.7 0.7) (thickness 0.12))))

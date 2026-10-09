@@ -6,11 +6,11 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "DRV8701 DUAL MOTOR / 12 V"
-Date "2026-10-08"
-Rev "1.0"
+Date "2026-10-09"
+Rev "B"
 Comp "Source: 8701 driver board, no current sensing 2.0"
 Comment1 "Manual PCB routing only; no hardware validation"
-Comment2 "Original source values and net connections preserved"
+Comment2 "Rev B: authorized main eFuse; original values retained; P2 input rail split"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -173,13 +173,13 @@ $EndComp
 $Comp
 L DRV8701_Custom:XT30_OUTPUT CN1
 U 1 1 D658B4E5
-P 5900 7650
-F 0 "CN1" H 5900 7150 50 0000 C CNN
-F 1 "XT30UPB-M" H 5900 7250 40 0000 C CNN
-F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 5900 7650 50 0001 C CNN
-F 3 "" H 5900 7650 50 0001 C CNN
-F 4 "Original PDF; connections and values retained" H 5900 7650 50 0001 C CNN "Source"
-	1    5900 7650
+P 6900 5100
+F 0 "CN1" H 6900 4600 50 0000 C CNN
+F 1 "XT30UPB-M" H 6900 4700 40 0000 C CNN
+F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 6900 5100 50 0001 C CNN
+F 3 "" H 6900 5100 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 6900 5100 50 0001 C CNN "Source"
+	1    6900 5100
 	1    0    0    -1
 $EndComp
 $Comp
@@ -341,13 +341,97 @@ $EndComp
 $Comp
 L DRV8701_Custom:XT30_OUTPUT CN2
 U 1 1 FDFA0590
-P 14000 7650
-F 0 "CN2" H 14000 7150 50 0000 C CNN
-F 1 "XT30UPB-M" H 14000 7250 40 0000 C CNN
-F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 14000 7650 50 0001 C CNN
-F 3 "" H 14000 7650 50 0001 C CNN
-F 4 "Original PDF; connections and values retained" H 14000 7650 50 0001 C CNN "Source"
-	1    14000 7650
+P 15000 5100
+F 0 "CN2" H 15000 4600 50 0000 C CNN
+F 1 "XT30UPB-M" H 15000 4700 40 0000 C CNN
+F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 15000 5100 50 0001 C CNN
+F 3 "" H 15000 5100 50 0001 C CNN
+F 4 "Original PDF; connections and values retained" H 15000 5100 50 0001 C CNN "Source"
+	1    15000 5100
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:TPS25910RSAR U6
+U 1 1 F9E5366A
+P 5700 7750
+F 0 "U6" H 5700 6850 50 0000 C CNN
+F 1 "TPS25910RSAR" H 5700 6950 40 0000 C CNN
+F 2 "DRV8701_Custom:TPS25910_RSA16" H 5700 7750 50 0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps25910.pdf" H 5700 7750 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 5700 7750 50 0001 C CNN "Source"
+	1    5700 7750
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C18
+U 1 1 7A3F8977
+P 8000 7250
+F 0 "C18" H 8150 7200 50 0000 C CNN
+F 1 "4.7uF" H 8150 7300 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0805_2012Metric" H 8000 7250 50 0001 C CNN
+F 3 "" H 8000 7250 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 8000 7250 50 0001 C CNN "Source"
+	1    8000 7250
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R10
+U 1 1 C41C878C
+P 8000 8150
+F 0 "R10" H 8150 8100 50 0000 C CNN
+F 1 "100kΩ" H 8150 8200 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 8000 8150 50 0001 C CNN
+F 3 "" H 8000 8150 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 8000 8150 50 0001 C CNN "Source"
+	1    8000 8150
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R11
+U 1 1 17833EBD
+P 12300 7400
+F 0 "R11" H 12450 7350 50 0000 C CNN
+F 1 "33kΩ" H 12450 7450 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 12300 7400 50 0001 C CNN
+F 3 "" H 12300 7400 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 12300 7400 50 0001 C CNN "Source"
+	1    12300 7400
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:R R12
+U 1 1 D7DA2D7A
+P 13400 7400
+F 0 "R12" H 13550 7350 50 0000 C CNN
+F 1 "40.2kΩ" H 13550 7450 40 0000 C CNN
+F 2 "DRV8701_Custom:R_0603_1608Metric" H 13400 7400 50 0001 C CNN
+F 3 "" H 13400 7400 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 13400 7400 50 0001 C CNN "Source"
+	1    13400 7400
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:C C19
+U 1 1 E7AD9AEC
+P 13400 8300
+F 0 "C19" H 13550 8250 50 0000 C CNN
+F 1 "10nF" H 13550 8350 40 0000 C CNN
+F 2 "DRV8701_Custom:C_0603_1608Metric" H 13400 8300 50 0001 C CNN
+F 3 "" H 13400 8300 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 13400 8300 50 0001 C CNN "Source"
+	1    13400 8300
+	1    0    0    -1
+$EndComp
+$Comp
+L DRV8701_Custom:SS12D10G4 SW1
+U 1 1 FCD028FA
+P 15050 7700
+F 0 "SW1" H 15050 7200 50 0000 C CNN
+F 1 "SS12D10G4" H 15050 7300 40 0000 C CNN
+F 2 "DRV8701_Custom:SS12D10G4" H 15050 7700 50 0001 C CNN
+F 3 "" H 15050 7700 50 0001 C CNN
+F 4 "Authorized Rev B main power addition" H 15050 7700 50 0001 C CNN "Source"
+	1    15050 7700
 	1    0    0    -1
 $EndComp
 $Comp
@@ -358,7 +442,7 @@ F 0 "P2" H 1100 9200 50 0000 C CNN
 F 1 "XT30UPB-M" H 1100 9300 40 0000 C CNN
 F 2 "DRV8701_Custom:AMASS_XT30UPB_M_SourceNumbering" H 1100 9700 50 0001 C CNN
 F 3 "" H 1100 9700 50 0001 C CNN
-F 4 "Original PDF; connections and values retained" H 1100 9700 50 0001 C CNN "Source"
+F 4 "Original PDF; Rev B authorized P2.1 input rail split" H 1100 9700 50 0001 C CNN "Source"
 	1    1100 9700
 	1    0    0    -1
 $EndComp
@@ -691,7 +775,7 @@ Wire Wire Line
 	7250 4000 7450 4000
 Text Label 7450 4000 0 40 ~ 0
 L_B
-Text Notes 4150 4900 0 40 ~ 0
+Text Notes 4150 4750 0 40 ~ 0
 SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad
 Text Notes 700 5200 0 50 ~ 0
 Original charge-pump and supply capacitors: all 100nF
@@ -762,14 +846,14 @@ Wire Wire Line
 Text Label 2400 8500 0 40 ~ 0
 L_B
 Wire Wire Line
-	5700 7600 5500 7600
-Text Label 5500 7600 2 40 ~ 0
+	6700 5050 6500 5050
+Text Label 6500 5050 2 40 ~ 0
 L_A
 Wire Wire Line
-	5700 7700 5500 7700
-Text Label 5500 7700 2 40 ~ 0
+	6700 5150 6500 5150
+Text Label 6500 5150 2 40 ~ 0
 L_B
-Text Notes 4600 8250 0 40 ~ 0
+Text Notes 700 6500 0 40 ~ 0
 12V motor: 0.4A rated / 1.8A stall max
 Text Notes 8800 1000 0 70 ~ 0
 R MOTOR CHANNEL — ORIGINAL PH/EN DRIVER
@@ -992,7 +1076,7 @@ Wire Wire Line
 	15350 4000 15550 4000
 Text Label 15550 4000 0 40 ~ 0
 R_B
-Text Notes 12250 4900 0 40 ~ 0
+Text Notes 12250 4750 0 40 ~ 0
 SOP Advance: S=1,2,3; G=4; D=5,6,7,8 + thermal pad
 Text Notes 8800 5200 0 50 ~ 0
 Original charge-pump and supply capacitors: all 100nF
@@ -1063,21 +1147,143 @@ Wire Wire Line
 Text Label 10500 8500 0 40 ~ 0
 R_B
 Wire Wire Line
-	13800 7600 13600 7600
-Text Label 13600 7600 2 40 ~ 0
+	14800 5050 14600 5050
+Text Label 14600 5050 2 40 ~ 0
 R_A
 Wire Wire Line
-	13800 7700 13600 7700
-Text Label 13600 7700 2 40 ~ 0
+	14800 5150 14600 5150
+Text Label 14600 5150 2 40 ~ 0
 R_B
-Text Notes 12700 8250 0 40 ~ 0
+Text Notes 8800 6500 0 40 ~ 0
 12V motor: 0.4A rated / 1.8A stall max
+Text Notes 4100 6650 0 50 ~ 0
+REV B MAIN HIGH-SIDE POWER
+Text Notes 11900 6650 0 40 ~ 0
+SW1 ON = EN low; OFF = divider high
+Wire Wire Line
+	5150 7350 4950 7350
+Text Label 4950 7350 2 40 ~ 0
+VM_RAW
+Wire Wire Line
+	5150 7450 4950 7450
+Text Label 4950 7450 2 40 ~ 0
+VM_RAW
+Wire Wire Line
+	5150 7550 4950 7550
+Text Label 4950 7550 2 40 ~ 0
+VM_RAW
+Wire Wire Line
+	5150 7650 4950 7650
+Text Label 4950 7650 2 40 ~ 0
+PWR_GATE
+Wire Wire Line
+	5150 7750 4950 7750
+Text Label 4950 7750 2 40 ~ 0
+GND
+Wire Wire Line
+	5150 7850 4950 7850
+Text Label 4950 7850 2 40 ~ 0
+GND
+Wire Wire Line
+	5150 7950 4950 7950
+Text Label 4950 7950 2 40 ~ 0
+PWR_ILIM
+Wire Wire Line
+	5150 8050 4950 8050
+Text Label 4950 8050 2 40 ~ 0
+GND
+Wire Wire Line
+	5150 8150 4950 8150
+Text Label 4950 8150 2 40 ~ 0
+GND
+Wire Wire Line
+	6250 7350 6450 7350
+Text Label 6450 7350 0 40 ~ 0
+VM
+Wire Wire Line
+	6250 7450 6450 7450
+Text Label 6450 7450 0 40 ~ 0
+VM
+Wire Wire Line
+	6250 7550 6450 7550
+Text Label 6450 7550 0 40 ~ 0
+VM
+Wire Wire Line
+	6250 7650 6450 7650
+Text Label 6450 7650 0 40 ~ 0
+GND
+Wire Wire Line
+	6250 7750 6450 7750
+Text Label 6450 7750 0 40 ~ 0
+GND
+NoConn ~ 6250 7850
+Wire Wire Line
+	6250 7950 6450 7950
+Text Label 6450 7950 0 40 ~ 0
+PWR_EN
+Wire Wire Line
+	6250 8050 6450 8050
+Text Label 6450 8050 0 40 ~ 0
+GND
+Wire Wire Line
+	8000 7100 8000 6900
+Text Label 8000 6900 0 40 ~ 0
+VM_RAW
+Wire Wire Line
+	8000 7400 8000 7600
+Text Label 8000 7600 0 40 ~ 0
+GND
+Wire Wire Line
+	8000 8000 8000 7800
+Text Label 8000 7800 0 40 ~ 0
+VM_RAW
+Wire Wire Line
+	8000 8300 8000 8500
+Text Label 8000 8500 0 40 ~ 0
+PWR_EN
+Wire Wire Line
+	12300 7250 12300 7050
+Text Label 12300 7050 0 40 ~ 0
+PWR_EN
+Wire Wire Line
+	12300 7550 12300 7750
+Text Label 12300 7750 0 40 ~ 0
+GND
+Wire Wire Line
+	13400 7250 13400 7050
+Text Label 13400 7050 0 40 ~ 0
+PWR_ILIM
+Wire Wire Line
+	13400 7550 13400 7750
+Text Label 13400 7750 0 40 ~ 0
+GND
+Wire Wire Line
+	13400 8150 13400 7950
+Text Label 13400 7950 0 40 ~ 0
+PWR_GATE
+Wire Wire Line
+	13400 8450 13400 8650
+Text Label 13400 8650 0 40 ~ 0
+GND
+NoConn ~ 15350 7600
+Wire Wire Line
+	14750 7700 14550 7700
+Text Label 14550 7700 2 40 ~ 0
+PWR_EN
+Wire Wire Line
+	15350 7800 15550 7800
+Text Label 15550 7800 0 40 ~ 0
+GND
+Text Notes 4100 8550 0 40 ~ 0
+5A nominal limit; about 11ms typical start
+Text Notes 11300 8650 0 40 ~ 0
+OFF chip input standby: 2.5mA typ / 4mA max
 Text Notes 700 8875 0 70 ~ 0
 COMMON POWER, ENABLE AND ORIGINAL FOUR-SIGNAL INTERFACE
 Wire Wire Line
 	900 9650 700 9650
 Text Label 700 9650 2 40 ~ 0
-VM
+VM_RAW
 Wire Wire Line
 	900 9750 700 9750
 Text Label 700 9750 2 40 ~ 0
@@ -1164,11 +1370,11 @@ Wire Wire Line
 Text Label 14550 9850 2 40 ~ 0
 L_EN_IN
 Text Notes 700 10500 0 40 ~ 0
-SOURCE-FAITHFUL DESIGN — values and connections intentionally retained; no hardware validation.
+REV B: authorized main power addition; all original values retained; only P2.1 changed to VM_RAW.
 Text Notes 700 10600 0 40 ~ 0
 CN3 has no ground pin: controller must share ground via power return. 3V3 is a 10k-fed zener node.
 Text Notes 700 10700 0 40 ~ 0
-VREF/IDRIVE tied to AVDD; SP/SN grounded; nFAULT/SNSOUT/SO NC. No external current sensing or limit.
+VREF/IDRIVE tied to AVDD; SP/SN grounded; nFAULT/SNSOUT/SO NC. U6 adds a shared supply current limit.
 Text Notes 700 10800 0 40 ~ 0
 Original 100nF bypass values retained: compare TI recommendations before manufacture.
 $EndSCHEMATC

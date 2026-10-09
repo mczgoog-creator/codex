@@ -1,17 +1,18 @@
 {
-  "generatedAt": "2026-10-09T09:41:57.834281+08:00",
+  "generatedAt": "2026-10-09T14:01:29.621968+08:00",
+  "revision": "B",
   "status": "Web import uses the separate KiCad5 archive; full source package retained for review; hardware not validated",
   "webImportArchive": "DRV8701_12V_KiCad5_Import.zip",
   "webImportGuide": "IMPORT_IN_WEB_PRO.md",
   "webImportFormat": "KiCad 5.1 legacy .pro/.sch/.lib/.kicad_pcb with local libraries",
   "easyedaActualWebImportVerified": false,
   "webImportValidation": "validation/kicad5-import-validation.json",
-  "webImportArchiveSha256": "16d29c8f063f8b118e5d523f60ba6e37a8b48e80fd3f017d3731b83368945ce0",
+  "webImportArchiveSha256": "08b3c022a112a24fdfd89fdef64d4fe3dfde696b8731721e5b9b43120ce6d8fd",
   "actualKiCad5Drc": {
     "errors": 0,
     "unconnected_pads": 0,
     "report": "KiCad_Import_5/validation/legacy5_drc.rpt",
-    "report_time": "2026-10-09 01:34:30",
+    "report_time": "2026-10-09 05:53:30",
     "refill_all_zones": true,
     "report_all_track_errors": true,
     "test_tracks_against_filled_copper": true
@@ -21,15 +22,15 @@
     "warnings": 0,
     "report": "KiCad_Import_5/validation/DRV8701_DUAL_12V.erc"
   },
-  "legacyImportTracks": 290,
+  "legacyImportTracks": 624,
   "legacyImportDrainBridgeSegments": 32,
   "legacyDrainBridgeAddedPhysicalCopperMm2": 0.0,
   "nativeEntry": "EasyEDA_Pro/DRV8701_DUAL_12V.eprj3",
   "nativeClientTarget": "EasyEDA Pro V4.1+ offline/semi-offline desktop",
-  "sourcePcbSha256": "4f76eaefc70ba14337c8a3de2dbd9494918d8f0f154babf507084da217b934c1",
+  "sourcePcbSha256": "daa3c5be68e8667a06f6da7ec5fd3c1238de758fb6982bcae6e130e6b8204989",
   "boardMm": [
-    48,
-    36
+    39,
+    60
   ],
   "layers": 4,
   "nominalTotalThicknessMm": 1.5999999999999999,
@@ -44,14 +45,38 @@
     "motorEachOuter": 0.7,
     "commonVMOuter": 1.8
   },
-  "components": 38,
-  "nets": 34,
-  "uniquePhysicalPins": 173,
-  "padInstances": 181,
-  "segments": 258,
-  "vias": 76,
-  "pours": 3,
-  "sourceValuesAndConnectionsPreserved": true,
+  "components": 45,
+  "nets": 38,
+  "uniquePhysicalPins": 203,
+  "padInstances": 211,
+  "segments": 592,
+  "vias": 151,
+  "pours": 12,
+  "sourceValuesAndConnectionsPreserved": false,
+  "originalComponentValuesPreserved": true,
+  "remainingOriginalCircuitPreserved": true,
+  "authorizedCircuitChange": "P2.1 VM to VM_RAW; seven added main-power components",
+  "mainPowerControl": {
+    "ic": "TPS25910RSA",
+    "switch": "SW1 controls active-low EN; contacts do not carry motor current",
+    "continuousDeviceRatingA": 5,
+    "currentLimitA": [
+      4.5,
+      5.0,
+      5.5
+    ],
+    "offDeviceBiasCurrentMa": {
+      "typical": 2.5,
+      "maximum": 4.0
+    },
+    "startup": "Keep U5 disabled and motor EN=0 until VM is stable"
+  },
+  "layoutGeometryAuditPassed": true,
+  "engineeringAudit": "validation/rev_b_engineering_audit.json",
+  "layoutGeometryAudit": "validation/layout_geometry_audit.json",
+  "firstPowerOnInstructions": "FIRST_POWER_ON.md",
+  "previewExportAudit": "validation/preview_exports.json",
+  "driverCapacitorMaxMeasuredPathMm": 2.9713,
   "autorouterUsed": false,
   "pathfinderUsed": false,
   "kicadErc": {
@@ -63,14 +88,14 @@
     "unconnectedItems": 0,
     "exclusionsUsed": false
   },
-  "schematicSourceNetEquivalent": true,
+  "schematicDesignNetEquivalent": true,
   "nativeSchematicNetEquivalent": true,
   "nativePcbNetAndCopperEquivalent": true,
   "nativeFormat": {
-    "outerRecords": 3129,
-    "outerValid": 3129,
-    "schemaValidRecords": 1526,
-    "documentedFieldDifferences": 4058,
+    "outerRecords": 4096,
+    "outerValid": 4096,
+    "schemaValidRecords": 1877,
+    "documentedFieldDifferences": 5273,
     "unexplainedFailures": 0,
     "unmappedTypes": 0
   },
@@ -85,6 +110,8 @@
     "Actual EasyEDA client was unavailable; confirm dimensions, stack, units, copper filling and DRC in client.",
     "Current official schema and real exported template differ; all known differences are listed in native-format-validation.json.",
     "Original 100nF charge-pump/LDO caps, Zener feed, IDRIVE choice and control interface without GND are preserved by user request.",
-    "Gate/SH geometry is not strict Kelvin and local VM bypass includes two vias; switching waveforms need hardware measurement."
+    "SW1 cuts forward input power to VM; the eFuse still consumes input bias. C15 charge and motor regeneration can retain output voltage.",
+    "Start with both bridges disabled; soft-start timing depends on gate-current tolerances and internal SOA limiting.",
+    "C18 effective capacitance, via plating, actual connector fit, switching waveforms and temperature require procurement or bench checks."
   ]
 }

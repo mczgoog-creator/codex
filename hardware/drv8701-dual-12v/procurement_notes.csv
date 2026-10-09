@@ -9,4 +9,9 @@ D1,BZT52C3V3,1,SOD123,Exact 3.3V Zener model; pin1 K / pin2 A; low-current Zener
 LED1 LED2,KT-0603R,2,0603,Red LED; pin1 K / pin2 A,Original model and network preserved
 CN1 CN2 P2,XT30UPB-M,3,Through-hole pitch 5mm,Check board-mount male part; source pin1 positive at +2.5mm and pin2 negative at -2.5mm; motor polarity is phase-dependent,Source numbering intentionally differs from some library conventions
 CN3,XH2.54-4P,1,Through-hole pitch 2.54mm,Buy 2.54mm-pitch part matching footprint; four signals only; controller needs separate common GND,Do not substitute JST 2.50mm part without footprint check
-U5,SS12D10G4,1,Through-hole slide switch,Body 12.7x6.7mm; pin pitch 4.8mm; user pin 1.3x0.8mm fits 2.3x1.1mm slots; no mounting holes,Exact native footprint and user dimensions cross-checked
+U5 SW1,SS12D10G4,2,Through-hole slide switch,Body 12.7x6.7mm; pin pitch 4.8mm; user pin 1.3x0.8mm fits 2.3x1.1mm slots; no mounting holes,Exact footprint and user dimensions cross-checked; U5 controls nSLEEP and SW1 controls active-low TPS25910 EN
+U6,TPS25910RSAR,1,VQFN RSA16 4x4mm 0.65mm pitch,Exact RSA package; 17th exposed pad to GND; solder EP and follow TI RSA0016B land/stencil pattern; do not substitute a different package,TI SLUSAR6D and TPS25910EVM SLVU760A read; 17-pad footprint independently checked; board thermal performance untested
+R10 R11,100kΩ / 33kΩ,2,0603,R10=100kΩ; R11=33kΩ; 1%; at least 0.1W; TPS25910 EN divider,Rev B added values checked against control schematic
+R12,40.2kΩ,1,0603,1%; at least 0.1W; TPS25910 ILIM resistor,TI gives 4.5A minimum / 5A typical / 5.5A maximum limit for 40.2kΩ; not a per-motor current sensor
+C18,4.7uF,1,0805,50V X7R; select exact part with effective capacitance >=1uF at 12V after DC bias and tolerance; this is an engineering procurement target and not a TI hard minimum,No exact purchased part selected; manufacturer DC-bias curve not yet verified
+C19,10nF,1,0603,50V C0G; +/-5%; TPS25910 GATE ramp capacitor,TI gate-charge model checked; startup timing and thermal/SOA behavior require board measurement

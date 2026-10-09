@@ -1,15 +1,16 @@
-# DRV8701 双电机板：手册核对与原样保留风险
+# DRV8701 双电机板 · Rev B：手册核对与原图保留范围
 
-用户最新约束：原图连接、元件值严格保留。以下研究不授权修改电气连接或电容/电阻值。封装尺寸与额定耐压/功率可依据实际使用选择。
+原图驱动电路的连接和元件值按用户要求保留。用户随后授权Rev B加入主电源控制，因此原38件取值不变、原有引脚仅P2.1从VM改为VM_RAW，其余连接保持；新增U6、SW1、R10–R12、C18、C19。原图保留问题不因新开关或布局重排而解除。差异范围见 [rev_b_original_source_contract.json](../validation/rev_b_original_source_contract.json)。封装尺寸及额定耐压／功率可依据实际使用选择。
 
 ## 资料状态
 
 - TI 官方原文：SLVSCX5B，2015-03，2015-07 修订。官网 https://www.ti.com/lit/ds/symlink/drv8701.pdf 。
-- 官网当前在云机器 CONNECT 返回403；使用 Tinkerforge 官方开源硬件仓库所附 TI 原厂文档镜像：https://github.com/Tinkerforge/performance-dc-bricklet/blob/master/datasheets/drv8701.pdf 。
+- 首次访问TI官网受阻时，使用了Tinkerforge官方开源硬件仓库所附TI原厂文档镜像：https://github.com/Tinkerforge/performance-dc-bricklet/blob/master/datasheets/drv8701.pdf 。该说明记录读取来源，不表示当前所有厂商下载仍被阻止。
 - 交付包内原厂文档镜像为 `TI_DRV8701_SLVSCX5B.pdf`。PDF SHA256：5993f171a311fa8403ba77d5921534348ffddbbcf0c5d59c00c46b074671d850。
 - TPH1R403NL 精确 Toshiba 官方 PDF 已成功下载并读取：https://toshiba.semicon-storage.com/info/TPH1R403NL_datasheet_en_20191030.pdf?did=14296&prodName=TPH1R403NL 。实际 PDF 内容为 2026-04-14 Rev.3.0.A；交付文件 `Toshiba_TPH1R403NL_Rev3_0_A.pdf`，完整核对见 `tph1r403nl_manufacturer_review.md`。
-- 第三方该器件KiCad工程供交叉核对：https://github.com/CaptainJaja/DRV8701_2Motors 。本机 `mirror-captainjaja/lib/TPH1R403NL.pretty/TPH1R403NL.kicad_mod`。这是第三方封装，不能代替Toshiba机械图。
+- 第三方该器件KiCad工程供交叉核对：https://github.com/CaptainJaja/DRV8701_2Motors ，其中 `lib/TPH1R403NL.pretty/TPH1R403NL.kicad_mod`。这是第三方封装，不能代替Toshiba机械图。
 - 最终 MOS 焊盘几何依据 https://github.com/zdxddmx/smartcar-hardware 内 `eda/ProPrj_DRV8701电机双驱.epro` 的精确型号嘉立创原生封装 `572e0c5f381c446594eedc8b8157fefb`；具体尺寸见交付包 `footprint_geometry.json`。仅复用库几何，布局与每段布线均另行人工规划。
+- Rev B新增主电源使用TI TPS25910RSAR，已读取SLUSAR6D及EVM SLVU760A；引脚、RSA16封装、限流和启动要求见 [tps25910_power_control_review.md](tps25910_power_control_review.md)。
 
 ## 原图关键网络复核
 
@@ -41,11 +42,13 @@
 
 ## IDRIVE表（仅参考，不修改源图）
 
-TI p20：<1kΩ→GND 6/12.5mA；33kΩ±5%→GND 12.5/25mA；200kΩ±5%→GND 25/50mA；悬空或>500kΩ→GND 100/200mA；68kΩ±5%→AVDD 150/300mA；<1kΩ→AVDD 25/50mA。只有最后一项关闭高边OCP。未来另行电气修订可200kΩ→GND维持原驱动电流并恢复高边OCP。原厂tDRIVE≈2.5µs；最终 MOS Qg/Qgd 应按 exact TPH 手册核实是否在时间内充放电。
+TI p20：<1kΩ→GND 6/12.5mA；33kΩ±5%→GND 12.5/25mA；200kΩ±5%→GND 25/50mA；悬空或>500kΩ→GND 100/200mA；68kΩ±5%→AVDD 150/300mA；<1kΩ→AVDD 25/50mA。只有最后一项关闭高边OCP。未来另行电气修订可200kΩ→GND维持原驱动电流并恢复高边OCP。本版仍按原图接AVDD。已读取的TPH1R403NL手册给出典型Qg=46nC（10V）；25／50mA一阶估算约1.84／0.92µs，低于TI典型tDRIVE约2.5µs，但Qg没有最大值保证，不能据此宣称最坏公差或实板VGS已通过。详见 [MOS原厂核对](tph1r403nl_manufacturer_review.md)。
 
 ## PCB布局依据
 
-TI p33：VM–GND 100nF应尽量贴近pin1并以粗线/地平面到IC GND；bulk应靠近外部FET高电流回路；跨层时用多个过孔减小感抗；100nF CPH–CPL贴近pin3/4；VCP–VM电容贴近pin1/2；AVDD/DVDD去耦靠近pin7/8；SH1/SH2是高电流相节点，门极线尽量短，避开不相关控制线。
+TI p33：VM–GND 100nF应尽量贴近pin1并以粗线/地平面到IC GND；bulk应靠近外部FET高电流回路；跨层时用多个过孔减小感抗；100nF CPH–CPL贴近pin3/4；VCP–VM电容贴近pin1/2；AVDD/DVDD去耦靠近pin7/8；SH1/SH2参考连接高电流相节点，门极线尽量短，避开不相关控制线。
+
+Rev B静态几何核对：14条泵／电源去耦至芯片的关键路径全在顶层、0转层，最长2.9713 mm；供电显式路径先到C3/C10再到VM脚，C15正极是主供电汇合／两路分流点。每组高边源极与低边漏极由短直连和相节点宽铜相接，功率转层用四孔阵列。源参考独立回到源脚，但GH1约19.22 mm、GH2约13.56 mm且均有两个转层孔，仍需样板开关波形验证。详见 [实际布局审计](../validation/layout_geometry_audit.json)、[本版工程审计](../validation/rev_b_engineering_audit.json)。
 
 TI附录RGE0024F：封装4×4mm，0.5mm pitch；PCB端子24个焊盘0.24×0.60mm，对侧端子焊盘中心距离3.8mm；EP为2.8×2.8mm，必须焊接。QFN中心焊盘无法只靠普通烙铁充分焊接，建议焊膏+热风/预热或手动回流。焊膏开窗采用分区，防漂浮/锡珠；可选0.2mm热孔，若非填孔会吸锡，应设计钢网开口绕开。
 
@@ -67,6 +70,8 @@ IPC-2221近似公式 I=k ΔT^0.44 A^0.725，A[平方mil]；外层k=0.048，内�
 
 建议外层每电机电流通路0.70mm，公共VM/GND1.80mm或等效宽度连续铺铜；若长线改为内层需按内层数值，不能复用外层宽度。芯片/FET焊盘出口短颈缩与过孔是局部限制，宜短颈缩、铜皮包覆、多个并联过孔；电流线不能经QFN窄焊盘传输。此经验式提供温升初筛，不替代实板验证或IPC-2152对具体堆叠的分析。
 
+本版按上述条件采用外层电机0.70 mm、公共主干1.80 mm、In2.Cu公共VM铜带4.6 mm和F/In1/B地铜。最后将C18.1至U6 IN汇流段由0.9 mm加宽为1.8 mm，见 [最终修正记录](../validation/rev_b_final_silk_cleanup.json)。冻结后的KiCad9 DRC为0违规／0未连接，原理图ERC为0错误／0警告；该成绩不替代真实专业版导入与通电测试。
+
 ## 原图RC吸收功率（保持值，选合适封装）
 
 两组电机跨端串联100nF+100Ω，τ=10µs。若标准DRV8701E EN-PWM慢衰减，电机端电压每周期0↔12V，频率20kHz、50%占空比：P_R=C V² f·tanh(T/(4RC))≈0.244W；充分充放电上界0.288W。高频极限约V²/(4R)=0.36W，故R8/R9建议1210且额定≥0.5W（原100Ω不变）。0603/0805一般0.1/0.125W额定不足。若PH每周期强制翻转产生−12↔+12V，功率约4倍，需要不同功率封装并实测；原4pin正常使用应PH固定方向、EN输入PWM。
@@ -75,5 +80,5 @@ IPC-2221近似公式 I=k ΔT^0.44 A^0.725，A[平方mil]；外层k=0.048，内�
 
 1. 采购时匹配原厂 p8 普通 SOP Advance 封装，并核对实际焊接工艺。原厂电气和机械手册现已读取；推荐 PCB 铜焊盘图未包含在该手册中。
 2. 在真实嘉立创 EDA 专业版客户端中确认打开、尺寸、叠层和规则单位，重建铺铜并运行 DRC。
-3. 上述核实完成后制作样板；冷启动、睡眠/唤醒、1.8A瞬时负载下测AVDD/DVDD/VCP与3V3/nSLEEP；记录nFAULT可用临时测量，不添加板上连接。
+3. 上述核实完成后制作样板；先保持U5休眠／两路EN=0启动SW1，VM稳定后再使能电机；按 [首次上电步骤](../FIRST_POWER_ON.md) 测VM启动、冷启动、睡眠／唤醒和1.8A瞬时负载下的AVDD／DVDD／VCP与3V3／nSLEEP；nFAULT可用临时测量，不添加板上连接。
 4. 按实际PWM频率和模式测试R8/R9温升及MOS开关波形，检查原图电容值下是否CPUV触发。制造完成不等于电气规格已实测通过。

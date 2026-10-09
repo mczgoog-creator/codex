@@ -29,6 +29,10 @@ $CMP DRV8701ERGET
 D Texas Instruments DRV8701E PH/EN, RGE24 VQFN + exposed ground pad
 $ENDCMP
 #
+$CMP TPS25910RSAR
+D TI TPS25910 high-side eFuse: active-low EN16; IN1/2/3; internally common OUT10/11/12 (10 represents power output); GND EP17
+$ENDCMP
+#
 $CMP TPH1R403NL
 D Toshiba N-MOSFET SOP Advance: 1/2/3 source, 4 gate, 5/6/7/8 drain; thermal pad is drain
 $ENDCMP
@@ -38,7 +42,7 @@ D Motor output connector; source schematic numbering retained
 $ENDCMP
 #
 $CMP XT30_POWER
-D External 12 V supply entry; connected supply drives VM and GND
+D External 12 V supply entry; Rev B connected supply drives VM_RAW and GND
 $ENDCMP
 #
 $CMP CONTROL_4PIN
@@ -46,7 +50,7 @@ D External controller signal entry; original connector has no ground terminal
 $ENDCMP
 #
 $CMP SS12D10G4
-D SPDT slide switch: pin 2 common to NSLEEP, pin 1 NC, pin 3 3V3
+D SPDT slide switch: pin 2 common; pins 1 and 3 throws; see instance nets for function
 $ENDCMP
 #
 #End Doc Library

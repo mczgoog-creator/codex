@@ -1,17 +1,19 @@
 {
   "source": "DRV8701_DUAL_12V.kicad_sch",
-  "source_sha256": "642f0af1d8e44ea7d2db1c35512eceb67f7d1ccb20e4d2d50548fd96d415ca2f",
+  "source_sha256": "da70605eba1826030f21ac655e2cb976c7ec27bc7cdd6379871e1fb34a657f04",
   "schematic_format": "EESchema Schematic File Version 4 (KiCad 5.1 legacy)",
   "symbol_library_format": "EESchema-LIBRARY Version 2.4",
   "project_format": "KiCad 5 INI .pro",
   "source_component_uuid_prefixes_unique": true,
   "component_timestamp_rule": "8 uppercase hex characters from source instance UUID prefix",
   "counts": {
-    "components": 38,
-    "wires": 166,
-    "labels": 166,
-    "no_connects": 7,
-    "texts": 15
+    "components": 45,
+    "schematic_symbols": 45,
+    "nonphysical_symbols": 0,
+    "wires": 194,
+    "labels": 194,
+    "no_connects": 9,
+    "texts": 19
   },
   "symbol_definition_pins": {
     "R": 2,
@@ -20,6 +22,7 @@
     "D_Zener": 2,
     "LED": 2,
     "DRV8701ERGET": 25,
+    "TPS25910RSAR": 17,
     "TPH1R403NL": 8,
     "XT30_OUTPUT": 2,
     "XT30_POWER": 2,

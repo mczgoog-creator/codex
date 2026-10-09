@@ -1,8 +1,22 @@
 {
   "passed": true,
-  "components": 38,
-  "named_nets": 34,
-  "physical_pin_assignments": 173,
-  "source_faithful": true,
+  "revision": "B",
+  "components": 45,
+  "named_nets": 38,
+  "physical_pin_assignments": 203,
+  "connected_pins": 194,
+  "nc_pins": 9,
+  "nc_isolation_checked": true,
+  "source_faithful": false,
+  "authorized_revision": true,
+  "remaining_original_circuit_preserved": true,
+  "actual_original_pin_deltas": [
+    {
+      "pin": "P2.1",
+      "from": "VM",
+      "to": "VM_RAW"
+    }
+  ],
+  "all_component_values_checked": true,
   "errors": []
 }

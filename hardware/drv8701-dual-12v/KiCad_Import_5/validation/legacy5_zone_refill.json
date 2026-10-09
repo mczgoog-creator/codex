@@ -1,0 +1,129 @@
+{
+  "runtime": "5.1.9+dfsg1-1+deb11u1",
+  "pcb_sha256": "9a3c8fdb61f1dae50bffcb43237f213516b9bf2498949c9935e0004946a90040",
+  "all_zones_filled": true,
+  "phase_priority_and_direct_connection_verified": true,
+  "ground_priority_and_direct_connection_verified": true,
+  "zones": [
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "priority": 0,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4657,
+      "filled_area_mm2": 1606.065216085209
+    },
+    {
+      "net": "L_B",
+      "layer": "F.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 8.9975
+    },
+    {
+      "net": "R_B",
+      "layer": "F.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 8.9975
+    },
+    {
+      "net": "R_A",
+      "layer": "F.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 8.9975
+    },
+    {
+      "net": "L_A",
+      "layer": "F.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 8.9975
+    },
+    {
+      "net": "GND",
+      "layer": "B.Cu",
+      "priority": 0,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 3028,
+      "filled_area_mm2": 1727.797821100924
+    },
+    {
+      "net": "GND",
+      "layer": "In1.Cu",
+      "priority": 0,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 3058,
+      "filled_area_mm2": 2078.836617921422
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 39,
+      "filled_area_mm2": 32.776776154064
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 74,
+      "filled_area_mm2": 192.521052308128
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 33.415
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 4,
+      "filled_area_mm2": 33.415
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "priority": 2,
+      "pad_connection": 2,
+      "pad_connection_name": "DIRECT",
+      "filled": true,
+      "fill_vertices": 39,
+      "filled_area_mm2": 32.776776154064
+    }
+  ]
+}

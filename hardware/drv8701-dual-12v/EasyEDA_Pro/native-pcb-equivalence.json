@@ -1,17 +1,247 @@
 {
   "passed": true,
-  "source": "/workspace/drv8701_board/DRV8701_DUAL_12V.kicad_pcb",
-  "nativePcb": "/workspace/drv8701_board/EasyEDA_Pro/pcb/PCB1.epcb2",
-  "components": 38,
-  "uniquePhysicalPins": 173,
-  "padInstances": 181,
-  "namedNets": 34,
-  "tracks": 258,
-  "vias": 76,
+  "source": "/workspace/codex/hardware/drv8701-dual-12v/DRV8701_DUAL_12V.kicad_pcb",
+  "nativePcb": "/workspace/codex/hardware/drv8701-dual-12v/EasyEDA_Pro/pcb/PCB1.epcb2",
+  "components": 45,
+  "uniquePhysicalPins": 203,
+  "padInstances": 211,
+  "namedNets": 38,
+  "tracks": 592,
+  "vias": 151,
   "outlineEdges": 4,
-  "zones": 3,
-  "zoneBorders": 3,
-  "filledCopperPolygons": 3,
+  "zones": 12,
+  "zoneBorders": 12,
+  "filledCopperPolygons": 12,
+  "zoneSettingsReport": [
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "layerId": 1,
+      "priority": 0,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "def32c1091bc0991",
+      "nativePriority": 0,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "L_B",
+      "layer": "F.Cu",
+      "layerId": 1,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "e346dd8786b6c836",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "R_B",
+      "layer": "F.Cu",
+      "layerId": 1,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "cf82541ecf036d2d",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "R_A",
+      "layer": "F.Cu",
+      "layerId": 1,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "542382a2ae2571fb",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "L_A",
+      "layer": "F.Cu",
+      "layerId": 1,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "d182c0f03e0f0dff",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "GND",
+      "layer": "B.Cu",
+      "layerId": 2,
+      "priority": 0,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "df53c1d59a1ca142",
+      "nativePriority": 0,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "GND",
+      "layer": "In1.Cu",
+      "layerId": 15,
+      "priority": 0,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "059fbc73b874c4fa",
+      "nativePriority": 0,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "layerId": 16,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "c3aa340723450b4d",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "layerId": 16,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "f561172efe63cb0c",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "layerId": 16,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "81c60b0c7d0f2f34",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "layerId": 16,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "f43048b4826a1c9e",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    },
+    {
+      "net": "VM",
+      "layer": "In2.Cu",
+      "layerId": 16,
+      "priority": 2,
+      "clearanceMm": 0.15,
+      "minimumThicknessMm": 0.15,
+      "padConnection": "DIRECT",
+      "thermalGapMm": 0.25,
+      "thermalSpokeWidthMm": 0.5,
+      "fillMode": "polygon",
+      "islandRemovalMode": 0,
+      "keepIsland": false,
+      "minimumIslandAreaMm2": 10,
+      "nativePourId": "490dd59ce0dd5797",
+      "nativePriority": 2,
+      "nativePadConnection": "DIRECT",
+      "areaThresholdStatus": "Unused: all unconnected islands removed"
+    }
+  ],
   "copperLayerReport": [
     {
       "name": "F.Cu",
@@ -108,10 +338,15 @@
   "totalPhysicalThicknessMm": 1.5999999999999999,
   "widthByNet": {
     "VM": {
-      "segments": 20,
+      "segments": 115,
       "widthsMm": [
         0.25,
         0.3,
+        0.45,
+        0.7,
+        0.9,
+        1,
+        1.1,
         1.8
       ],
       "nativeLayerIds": [
@@ -130,7 +365,7 @@
       ]
     },
     "L_CPH": {
-      "segments": 3,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -139,7 +374,7 @@
       ]
     },
     "L_CPL": {
-      "segments": 3,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -148,14 +383,16 @@
       ]
     },
     "GND": {
-      "segments": 41,
+      "segments": 147,
       "widthsMm": [
         0.2,
         0.5,
-        0.7
+        0.7,
+        0.9
       ],
       "nativeLayerIds": [
-        1
+        1,
+        2
       ]
     },
     "L_AVDD": {
@@ -165,11 +402,11 @@
       ],
       "nativeLayerIds": [
         1,
-        2
+        16
       ]
     },
     "L_DVDD": {
-      "segments": 1,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -178,7 +415,7 @@
       ]
     },
     "NSLEEP": {
-      "segments": 8,
+      "segments": 17,
       "widthsMm": [
         0.2
       ],
@@ -188,18 +425,17 @@
       ]
     },
     "L_EN_IN": {
-      "segments": 5,
+      "segments": 7,
       "widthsMm": [
         0.2
       ],
       "nativeLayerIds": [
         1,
-        2,
         16
       ]
     },
     "L_PH_IN": {
-      "segments": 4,
+      "segments": 6,
       "widthsMm": [
         0.2
       ],
@@ -209,7 +445,7 @@
       ]
     },
     "L_GH1": {
-      "segments": 7,
+      "segments": 6,
       "widthsMm": [
         0.25
       ],
@@ -219,17 +455,18 @@
       ]
     },
     "L_B": {
-      "segments": 20,
+      "segments": 33,
       "widthsMm": [
         0.2,
         0.25,
         0.5,
-        0.7
+        0.7,
+        0.9,
+        1
       ],
       "nativeLayerIds": [
         1,
-        2,
-        16
+        2
       ]
     },
     "L_GL1": {
@@ -253,12 +490,14 @@
       ]
     },
     "L_A": {
-      "segments": 19,
+      "segments": 35,
       "widthsMm": [
         0.2,
         0.25,
         0.5,
-        0.7
+        0.7,
+        0.9,
+        1
       ],
       "nativeLayerIds": [
         1,
@@ -285,7 +524,7 @@
       ]
     },
     "R_CPH": {
-      "segments": 3,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -294,7 +533,7 @@
       ]
     },
     "R_CPL": {
-      "segments": 3,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -309,11 +548,11 @@
       ],
       "nativeLayerIds": [
         1,
-        2
+        16
       ]
     },
     "R_DVDD": {
-      "segments": 1,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
@@ -322,26 +561,27 @@
       ]
     },
     "R_EN_IN": {
-      "segments": 3,
-      "widthsMm": [
-        0.2
-      ],
-      "nativeLayerIds": [
-        1
-      ]
-    },
-    "R_PH_IN": {
-      "segments": 5,
+      "segments": 4,
       "widthsMm": [
         0.2
       ],
       "nativeLayerIds": [
         1,
-        16
+        2
+      ]
+    },
+    "R_PH_IN": {
+      "segments": 4,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2
       ]
     },
     "R_GH1": {
-      "segments": 7,
+      "segments": 6,
       "widthsMm": [
         0.25
       ],
@@ -351,17 +591,18 @@
       ]
     },
     "R_B": {
-      "segments": 20,
+      "segments": 33,
       "widthsMm": [
         0.2,
         0.25,
         0.5,
-        0.7
+        0.7,
+        0.9,
+        1
       ],
       "nativeLayerIds": [
         1,
-        2,
-        16
+        2
       ]
     },
     "R_GL1": {
@@ -385,17 +626,18 @@
       ]
     },
     "R_A": {
-      "segments": 22,
+      "segments": 35,
       "widthsMm": [
         0.2,
         0.25,
         0.5,
-        0.7
+        0.7,
+        0.9,
+        1
       ],
       "nativeLayerIds": [
         1,
-        2,
-        16
+        2
       ]
     },
     "R_GH2": {
@@ -409,7 +651,7 @@
       ]
     },
     "L_SNUBBER": {
-      "segments": 1,
+      "segments": 2,
       "widthsMm": [
         0.25
       ],
@@ -418,7 +660,7 @@
       ]
     },
     "R_SNUBBER": {
-      "segments": 1,
+      "segments": 2,
       "widthsMm": [
         0.25
       ],
@@ -427,14 +669,13 @@
       ]
     },
     "3V3": {
-      "segments": 9,
+      "segments": 13,
       "widthsMm": [
         0.2,
         0.25
       ],
       "nativeLayerIds": [
         1,
-        2,
         16
       ]
     },
@@ -454,6 +695,49 @@
       ],
       "nativeLayerIds": [
         1
+      ]
+    },
+    "VM_RAW": {
+      "segments": 38,
+      "widthsMm": [
+        0.2,
+        0.25,
+        0.45,
+        0.7,
+        1.1,
+        1.8
+      ],
+      "nativeLayerIds": [
+        1,
+        2
+      ]
+    },
+    "PWR_GATE": {
+      "segments": 3,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "PWR_ILIM": {
+      "segments": 2,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1
+      ]
+    },
+    "PWR_EN": {
+      "segments": 8,
+      "widthsMm": [
+        0.2
+      ],
+      "nativeLayerIds": [
+        1,
+        2
       ]
     }
   },

@@ -18,6 +18,11 @@
       "source_and_legacy_pad_geometry_identical": true
     },
     {
+      "footprint": "C_0805_2012Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
       "footprint": "DRV8701_RGE24",
       "physical_pads": 25,
       "source_and_legacy_pad_geometry_identical": true
@@ -38,6 +43,11 @@
       "source_and_legacy_pad_geometry_identical": true
     },
     {
+      "footprint": "R_0805_2012Metric",
+      "physical_pads": 2,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
       "footprint": "R_1210_3225Metric",
       "physical_pads": 2,
       "source_and_legacy_pad_geometry_identical": true
@@ -50,6 +60,11 @@
     {
       "footprint": "TPH1R403NL_SOPAdvance",
       "physical_pads": 9,
+      "source_and_legacy_pad_geometry_identical": true
+    },
+    {
+      "footprint": "TPS25910_RSA16",
+      "physical_pads": 17,
       "source_and_legacy_pad_geometry_identical": true
     },
     {

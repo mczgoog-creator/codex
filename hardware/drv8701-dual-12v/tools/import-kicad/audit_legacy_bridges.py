@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prove 32 legacy-connectivity bridge tracks add no physical copper.
+"""Prove explicit legacy-connectivity bridge tracks add no physical copper.
 
 Read-only. Original source never changes. This audit checks real KiCad-loaded
 shapes: outer approximation of each track's full capsule is wholly contained
@@ -12,7 +12,7 @@ os.environ.setdefault('KICAD_CONFIG_HOME','/workspace/scratch/kicad-config')
 from pathlib import Path
 import sys,json,collections,hashlib
 import pcbnew as p
-from audit_legacy_pcb import board_snapshot,library_snapshot,xy
+from audit_legacy_pcb import board_snapshot,library_snapshot,xy,angle
 
 WIDTH_NM=250000
 MAX_ERROR_NM=1
@@ -63,10 +63,13 @@ def main():
     added_rows=[json.loads(x) for x in added.elements()]
     added_undirected=collections.Counter(undirected_key(x) for x in added_rows)
     retained_fields={k:source[k]==target[k] for k in source if k!='tracks'}
-    expected={}
+    candidates={}
     source_components={f.GetReference():f for f in source_board.GetFootprints()}
-    for ref in ['Q'+str(i) for i in range(1,9)]:
-        fp=source_components[ref]
+    mosfets={ref:fp for ref,fp in source_components.items()
+             if str(fp.GetFPID().GetLibItemName())=='TPH1R403NL_SOPAdvance'}
+    if set(mosfets)!={'Q'+str(i) for i in range(1,9)}:
+        raise ValueError('Expected the eight original motor MOSFETs')
+    for ref,fp in sorted(mosfets.items()):
         drain=[pad for pad in fp.Pads() if pad.GetNumber() in {'5','6','7','8'}]
         exposed=max(drain,key=lambda pad:pad.GetSize().x*pad.GetSize().y)
         small=[pad for pad in drain if pad is not exposed]
@@ -76,10 +79,17 @@ def main():
             pos=pad.GetPosition();ep=exposed.GetPosition()
             if p.F_Cu not in pad.GetLayerSet().Seq() or pad.GetNetname()!=exposed.GetNetname():
                 raise ValueError('Unexpected original pad net/layer: '+ref)
-            row=dict(start=xy(pos),end=[int(pos.x),int(ep.y)],width=WIDTH_NM,layer='F.Cu',net=pad.GetNetname())
+            orientation=angle(fp)
+            if orientation not in {0,90,180,270}:
+                raise ValueError('Unexpected non-cardinal original MOSFET rotation: '+ref)
+            end=[int(pos.x),int(ep.y)] if orientation in {0,180} else [int(ep.x),int(pos.y)]
+            row=dict(start=xy(pos),end=end,width=WIDTH_NM,layer='F.Cu',net=pad.GetNetname())
             key=undirected_key(row)
-            if key in expected:raise ValueError('Duplicate expected bridge')
-            expected[key]=(ref,pad,exposed,row)
+            if key in candidates:raise ValueError('Duplicate expected bridge')
+            candidates[key]=(ref,pad,exposed,row)
+    source_undirected=collections.Counter(undirected_key(x) for x in source['tracks'])
+    # A source segment already representing the bridge is preserved, never duplicated.
+    expected={key:value for key,value in candidates.items() if not source_undirected[key]}
     expected_counter=collections.Counter(expected.keys())
     unexpected=[json.loads(x) for x in (added_undirected-expected_counter).elements()]
     absent=[json.loads(x) for x in (expected_counter-added_undirected).elements()]
@@ -102,7 +112,7 @@ def main():
     lib_equal=source_lib==target_lib
     # Legacy SCH timestamp is exactly the source instance UUID prefix. Compare
     # loaded old-format paths with the component identity map supplied by converter.
-    timestamp_path=base/'KiCad_Import_5/pcb-format-conversion.json'
+    timestamp_path=legacy/'pcb-format-conversion.json'
     timestamps=json.loads(timestamp_path.read_text())['component_timestamp_map']
     link_errors=[]
     for fp in target_board.GetFootprints():
@@ -110,19 +120,20 @@ def main():
         if got!=timestamps[fp.GetReference()]:link_errors.append(fp.GetReference())
     failures=[]
     if missing_source:failures.append('Original track multiset was modified or lost')
-    if len(source['tracks'])!=258 or len(target['tracks'])!=290 or len(added_rows)!=32:failures.append('Unexpected track counts')
-    if unexpected or absent:failures.append('Additional segments differ from the 32 authorised drain bridges')
+    if len(target['tracks'])!=len(source['tracks'])+len(expected) or len(added_rows)!=len(expected):failures.append('Unexpected track counts')
+    if unexpected or absent:failures.append('Additional segments differ from the authorised drain bridges')
     if any(not v for v in retained_fields.values()):failures.append('Physical geometry or zone parameters changed')
     if not lib_equal:failures.append('Footprint library pad geometry changed')
     if link_errors:failures.append('Schematic component path mismatch')
-    if len(bridges)!=32 or any(not x['full_track_capsule_contained_in_original_pad_union'] for x in bridges):failures.append('Bridge copper containment proof failed')
-    if len(target['vias'])!=76:failures.append('Via count changed')
+    if len(bridges)!=len(expected) or any(not x['full_track_capsule_contained_in_original_pad_union'] for x in bridges):failures.append('Bridge copper containment proof failed')
+    if len(target['vias'])!=len(source['vias']):failures.append('Via count changed')
     report=dict(reader=p.Version(),source_sha256=hashlib.sha256(source_path.read_bytes()).hexdigest(),legacy_sha256=hashlib.sha256(target_path.read_bytes()).hexdigest(),passed=not failures,
-      source_track_segments=258,legacy_track_segments=len(target['tracks']),added_bridge_segments=len(added_rows),
-      original_258_track_segment_multiset_retained=not missing_source,added_segments_exactly_authorised_drain_bridges=not unexpected and not absent,
+      source_track_segments=len(source['tracks']),legacy_track_segments=len(target['tracks']),added_bridge_segments=len(added_rows),
+      candidate_bridge_segments=len(candidates),source_already_contains_bridge_segments=len(candidates)-len(expected),
+      original_track_segment_multiset_retained=not missing_source,added_segments_exactly_authorised_drain_bridges=not unexpected and not absent,
       equivalence_excluding_added_bridges_and_version_specific_zone_fill_cache=retained_fields,
-      original_76_vias_retained=retained_fields['vias'],physical_pad_count=len(target['pads']),
-      all_38_schematic_component_paths_retained=not link_errors,
+      source_via_count=len(source['vias']),legacy_via_count=len(target['vias']),original_vias_retained=retained_fields['vias'],physical_pad_count=len(target['pads']),
+      schematic_component_path_count=len(timestamps),all_schematic_component_paths_retained=not link_errors,
       library_pad_geometry_unchanged=lib_equal,
       physical_copper_added_by_bridges_mm2=sum(x['outside_original_pad_union_area_mm2'] for x in bridges),
       geometric_proof=dict(method='Conservative polygon BooleanSubtract: outward track capsule minus union of inward original small-drain and exposed-drain pad shapes',max_arc_error_nm=MAX_ERROR_NM,track_error_direction='ERROR_OUTSIDE',pad_error_direction='ERROR_INSIDE',includes_track_endpoint_caps=True,numeric_coordinate_units='nanometres; integer clipping',source_shapes_from='actual pcbnew PAD.TransformShapeToPolygon for original roundrect/rect pads'),
